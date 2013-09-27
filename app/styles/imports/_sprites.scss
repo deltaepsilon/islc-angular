@@ -1,0 +1,18 @@
+$sprites:
+  background,
+  beginner,
+  how-does-it-work,
+  islc-logo,
+  learn-your-way,
+  left-arrow-circle,
+  make-paper-sing,
+  personal-feedback,
+  right-arrow-circle,
+  student-work;
+
+// Sprites
+@each $sprite in $sprites {
+  .background-#{$sprite} {
+    @include use-sprite($sprite);
+  }
+}

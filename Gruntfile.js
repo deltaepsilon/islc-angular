@@ -27,6 +27,7 @@ module.exports = function (grunt) {
   } catch (e) {}
 
   grunt.initConfig({
+    appConfig: grunt.file.readJSON('./config/appConfig.json'),
     yeoman: yeomanConfig,
     watch: {
       coffee: {
@@ -247,7 +248,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
-            'bower_components/**/*',
+            'lib/**/*',
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*'
           ]
@@ -311,6 +312,21 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/scripts/scripts.js': [
             '<%= yeoman.dist %>/scripts/scripts.js'
           ]
+        }
+      }
+    },
+    compass: {
+      dev: {
+        options: {
+          cssDir         : '<%= appConfig.app.src %>/<%= appConfig.app.assets.styles %>',
+          fontsDir       : '<%= appConfig.app.src %>/<%= appConfig.app.assets.fonts %>',
+          httpFontsPath  : '../<%= appConfig.app.assets.fonts %>',
+          imagesDir      : '<%= appConfig.app.src %>/<%= appConfig.app.assets.images %>',
+          httpImagesPath : '../<%= appConfig.app.assets.images %>',
+          importPath     : '<%= appConfig.app.src %>/<%= appConfig.app.assets.lib %>',
+          javascriptsDir : '<%= appConfig.app.dev %>/<%= appConfig.app.assets.scripts %>',
+          sassDir        : '<%= appConfig.app.src %>/<%= appConfig.app.assets.styles %>',
+          httpGeneratedImagesPath : '../<%= appConfig.app.assets.images %>'
         }
       }
     }

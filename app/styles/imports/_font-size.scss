@@ -1,0 +1,15 @@
+$font-primary      : "museo-sans", sans-serif;
+$font-sizes        :
+  xx-small 10px,
+  x-small  12px,
+  small    14px,
+  medium   16px,
+  x-medium 18px,
+  large    22px,
+  x-large  30px;
+
+@each $size in $font-sizes {
+  .text-#{nth($size, 1)} {
+    font-size : nth($size, 2);
+  }
+}
