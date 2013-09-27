@@ -29,7 +29,7 @@
     <!-- Add your site or application content here -->
     <div class="container">
         <nav id="top-nav" ui-view="nav">
-            <div class="logo"></div>
+            <div class="islc-logo"></div>
             <ul id="nav-links" class="pure-menu-horizontal">
                 <li ng-repeat="link in links"><a ui-shref="{{ link.state }}">{{ link.text }}</a></li>
             </ul>
@@ -64,7 +64,6 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/Nav.js"></script>
         <!-- endbuild -->
 </body>
