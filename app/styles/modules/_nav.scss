@@ -1,0 +1,38 @@
+#top-nav {
+  padding: 20px 0 32px;
+  position: relative;
+
+  &:before {
+    @include before();
+    @include absolute(67px, 0, 0, 0);
+    @extend .background-green1;
+    height: 2px;
+
+  }
+
+  .islc-logo {
+    @include use-sprite(islc-logo, -1);
+    @extend .background-white;
+    float: right;
+    position: relative;
+    width: 313px;
+  }
+
+  .nav-link-item {
+    float: right;
+  }
+
+  .nav-link {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  #nav-links {
+    width: 60% !important;
+  }
+}

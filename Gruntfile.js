@@ -52,6 +52,12 @@ module.exports = function (grunt) {
           '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
+      },
+      compass: {
+        files: [
+          '<%= appConfig.app.src %>/<%= appConfig.app.assets.styles %>/{,*/}*.scss'
+        ],
+        tasks: ['compass']
       }
     },
     autoprefixer: {

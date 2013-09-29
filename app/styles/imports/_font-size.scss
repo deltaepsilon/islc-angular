@@ -1,3 +1,18 @@
+$border-sizes        :
+  xx-small 2px,
+  x-small  4px,
+  small    6px,
+  medium   8px,
+  x-medium 10px,
+  large    12px,
+  x-large  14px;
+
+@each $size in $border-sizes {
+  .border-radius-#{nth($size, 1)} {
+    @include border-radius(nth($size, 2));
+  }
+}
+
 $font-primary      : "museo-sans", sans-serif;
 $font-sizes        :
   xx-small 10px,
@@ -5,11 +20,16 @@ $font-sizes        :
   small    14px,
   medium   16px,
   x-medium 18px,
-  large    22px,
-  x-large  30px;
+  large    20px,
+  x-large  40px;
 
 @each $size in $font-sizes {
   .text-#{nth($size, 1)} {
     font-size : nth($size, 2);
   }
+}
+
+// Circle border.
+.circle {
+  @include border-radius(50%);
 }

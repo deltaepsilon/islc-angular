@@ -1,5 +1,13 @@
 $colors:
-  green1 green;
+  green1 #8abfb1,
+  green2 #1b7f64,
+  gray1 #f3f3f4,
+  gray2 #dcddde,
+  gray3 #505151,
+
+  gray #333,
+  white #fff,
+  black #000;
 
 // Background colors class names.
 @each $color in $colors {
@@ -13,4 +21,17 @@ $colors:
   .text-#{nth($color, 1)} {
     color : nth($color, 2);
   }
+}
+
+@function getValueByKey($map, $key) {
+  @each $index in $map {
+    @if nth($index, 1) == $key {
+      @return nth($index, 2);
+    }
+  }
+}
+
+// Get a color by it name on the colors list.
+@function getColor($colorName) {
+  @return getValueByKey($colors, $colorName);
 }

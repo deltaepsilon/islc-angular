@@ -12,13 +12,16 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
     }
 
     $stateProvider
+      .state('nav', {
+        abstract: true
+      })
       .state('root', {
         url: '',
         views: {
           nav: nav,
           body: {
             templateUrl: 'views/partials/root.html',
-            controller: 'RootController'
+            controller: 'RootCtrl'
           }
         }
       })
@@ -28,7 +31,7 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
           nav: nav,
           body: {
             templateUrl: 'views/partials/sign-in.html',
-            controller: 'SignInController'
+            controller: 'SignInCtrl'
           }
         }
       })
@@ -38,7 +41,7 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
           nav: nav,
           body: {
             templateUrl: 'views/partials/shop.html',
-            controller: 'ShopController'
+            controller: 'ShopCtrl'
           }
         }
       })
@@ -47,7 +50,7 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
         views: {
           nav: nav,
           body: {
-            templateUrl: 'views/partials/faq.html',
+            templateUrl: 'views/partials/faq.html'
           }
         }
       })

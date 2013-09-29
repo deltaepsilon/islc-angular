@@ -29,13 +29,16 @@
     <!-- Add your site or application content here -->
     <div class="container">
         <nav id="top-nav" ui-view="nav">
-            <div class="islc-logo"></div>
-            <ul id="nav-links" class="pure-menu-horizontal">
-                <li ng-repeat="link in links"><a ui-shref="{{ link.state }}">{{ link.text }}</a></li>
-            </ul>
+            Empty top nav. Get this fixed.
         </nav>
-        <div ui-view="body">body</div>
+        <div ui-view="body">
+            Empty body. Get this fixed.
+        </div>
     </div>
+
+    <footer id="copyright-footer">
+        &copy; Melissa Esplin 2013
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -55,7 +58,7 @@
         <script src="lib/angular-resource/angular-resource.js"></script>
         <script src="lib/angular-cookies/angular-cookies.js"></script>
         <script src="lib/angular-sanitize/angular-sanitize.js"></script>
-        <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="lib/lodash/dist/lodash.min.js"></script>
         <script src="lib/lodash/dist/lodash.min.js"></script>
         <script src="lib/lodash/dist/lodash.min.js"></script>
@@ -65,6 +68,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/Nav.js"></script>
+        <script src="scripts/controllers/Root.js"></script>
         <!-- endbuild -->
 </body>
 </html>

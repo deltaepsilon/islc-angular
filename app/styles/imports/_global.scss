@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+html, button, .pure-g-r [class *= "pure-u"] {
+  @extend .text-gray3;
+  font-family: 'Museo sans', helvetica, sans-serif;
+}
+
+a {
+  @extend .text-gray3;
+  text-decoration: none;
+}
+
+p, ul, ol {
+  @extend .text-medium;
+  font-weight: 100;
+}
+
+.pure-g, .pure-g-r {
+  letter-spacing: inherit;
+  font-family: inherit;
+}
+
+.header {
+  text-transform: uppercase;
+}
+
+h1 {
+  @extend .header;
+  @extend .text-x-large;
+  letter-spacing: 8px;
+  font-weight: 300;
+}
+
+h2 {
+  @extend .header;
+  @extend .text-large;
+}
+
+h3 {
+  @extend .header;
+  @extend .text-x-medium;
+}
+
+h4 {
+  @extend .header;
+  @extend .text-medium;
+}
+
+h5 {
+  @extend .header;
+  @extend .text-small;
+}
+
+h6 {
+  @extend .header;
+  @extend .text-x-small;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.bordered {
+  border: 1px solid getColor(gray1);
+}
+
+.border-right {
+  border-right: 1px solid getColor(gray1);
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.aligned-list {
+  padding-left: 1em;
+}
+
+$background-url: url('../images/icons-2x/background.png');
+.background-repeating {
+  background-image: $background-url;
+  background-size: 765px 665px;
+  background-position: 0 -50px;
+}
+
+$background-gray-url: url('../images/icons-2x/background-gray.png');
+.background-repeating-gray {
+  background-image: $background-gray-url;
+  background-size: 765px 665px;
+  background-position: -50px;
+}

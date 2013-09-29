@@ -1,1 +1,12 @@
-nav
+<div class="pure-g-r">
+    <div class="pure-u-2-5">
+        <div class="islc-logo"></div>
+    </div>
+
+    <ul id="nav-links" class="pure-menu-horizontal pure-u-2-5">
+        <li class="nav-link-item" ng-repeat="link in links">
+            <a class="nav-link" ng-href="{{ link.href }}">{{ link.text }}</a>
+        </li>
+    </ul>
+    <div id="nav-stretch" class="pure-u-1-5 pure-visible-desktop"></div>
+</div>

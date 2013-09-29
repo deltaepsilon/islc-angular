@@ -1,11 +1,16 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope) {
+  .controller('NavCtrl', function ($scope, $state) {
     $scope.links = [
-      {state: 'signIn', text: 'sign in'},
-      {state: 'shop', text: 'shop'},
+      {state: 'supplies', text: 'supplies'},
       {state: 'faq', text: 'faqs'},
-      {state: 'supplies', text: 'supplies'}
+      {state: 'shop', text: 'shop'},
+      {state: 'signIn', text: 'sign in'}
     ];
+
+    var i = $scope.links.length;
+    while (i--) {
+      $scope.links[i].href = $state.href($scope.links[i].state);
+    }
   });

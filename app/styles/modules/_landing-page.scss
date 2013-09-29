@@ -1,0 +1,96 @@
+.landing-page {
+
+  .header {
+    margin: 0;
+  }
+
+  .single {
+    margin: 40px 0;
+    padding: 25px 0;
+
+    .button-cta {
+      margin: 26px 0;
+    }
+
+    p {
+      line-height: 28px;
+      max-width: 385px;
+      padding-right: 50px;
+    }
+  }
+
+  $button-cta-min-width: 400px;
+  .button-cta {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    min-width: $button-cta-min-width;
+  }
+
+  .background-make-paper-sing {
+    margin-bottom: 50px;
+  }
+
+  .triple {
+    border-width: 2px;
+    margin-bottom: 47px;
+    padding: 18px;
+
+    p {
+      margin: 17px;
+      line-height: 24px;
+    }
+  }
+
+  .student-work {
+    margin-bottom: 50px;
+  }
+
+  .background-how-does-it-work {
+    margin: 50px;
+  }
+
+  .bordered {
+    border-width: 2px;
+    margin: 0px;
+    padding: 46px 46px 66px;
+    position: relative;
+    max-width: 700px;
+    line-height: 24px;
+
+    .button-cta {
+      @include absolute(inherit, inherit, -30px, 50%);
+      margin-left: -.5 * $button-cta-min-width;
+
+    }
+  }
+
+  .email-footer {
+    margin: 200px 0 36px;
+
+    p {
+      max-width: 400px;
+    }
+
+    .centered {
+      display: block;
+    }
+
+    input {
+      width: 85%;
+      font-size: 18px;
+      text-transform: uppercase;
+      border: 2px solid getColor(gray3);
+      border-radius: 0;
+      padding: 8px;
+      letter-spacing: 4px;
+      font-weight: 200;
+
+      font-size: 18px;
+      font-weight: 700;
+
+      @include placeholder(getColor(gray2));
+    }
+  }
+
+}
