@@ -16,10 +16,11 @@
 @import "imports/mixins";
 
 
-// Colors
-
 // Modules
 @import "modules/buttons";
 @import "modules/nav";
 @import "modules/footer";
 @import "modules/landing-page";
+
+// Directives
+@import "directives/qv-slider";

@@ -1,0 +1,59 @@
+.qv-slider {
+  $qv-slider-image-width: 350px;
+
+  position: relative;
+  height: $qv-slider-image-width;
+  
+  &:before {
+    @include absolute(0, inherit, 0, 0);
+    //@include background-image(linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)));
+    content: '';
+    width: 50px;
+    z-index: 1;
+  }
+
+  &:after {
+    @include absolute(0, 0, 0, inherit);
+    //@include background-image(linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)));
+    content: '';
+    width: 50px;
+    z-index: 1;
+  }
+  
+  .qv-slider-list {
+    @include absolute(0, inherit, inherit, 0);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+
+    @include transition(margin, 300ms, ease);
+  }
+
+  .qv-slider-list-item {
+    display: inline;
+    margin: 0 15px;
+  }
+
+
+  .qv-slider-image {
+    @extend .background-white;
+    width: $qv-slider-image-width;
+    height: $qv-slider-image-width;
+  }
+
+  .qv-slider-button {
+    cursor: pointer;
+    margin-top: -25px;
+    z-index: 2;
+  }
+
+  $qv-slider-offset: 20px;
+  .qv-slider-left-button {
+    @include absolute(50%, inherit, inherit, $qv-slider-offset);
+  }
+
+  .qv-slider-right-button {
+    @include absolute(50%, $qv-slider-offset, inherit, inherit);
+  }
+}

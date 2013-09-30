@@ -157,7 +157,7 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-medium, p, ul, ol, h4 {
+.text-medium, p, ul, ol, h4, .landing-page .linkout {
   font-size: 16px;
 }
 
@@ -532,7 +532,7 @@
 }
 
 /* line 14, imports/_colors.scss */
-.background-white, #top-nav .islc-logo {
+.background-white, #top-nav .islc-logo, .qv-slider .qv-slider-image {
   background-color: white;
 }
 
@@ -802,7 +802,7 @@ h1 {
 }
 /* line 30, modules/_landing-page.scss */
 .landing-page .background-make-paper-sing {
-  margin-bottom: 50px;
+  margin: 50px auto;
 }
 /* line 34, modules/_landing-page.scss */
 .landing-page .triple {
@@ -820,10 +820,14 @@ h1 {
   margin-bottom: 50px;
 }
 /* line 49, modules/_landing-page.scss */
+.landing-page .background-student-work {
+  margin-bottom: 25px;
+}
+/* line 53, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 53, modules/_landing-page.scss */
+/* line 57, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -832,7 +836,7 @@ h1 {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 61, modules/_landing-page.scss */
+/* line 65, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -841,19 +845,19 @@ h1 {
   left: 50%;
   margin-left: -200px;
 }
-/* line 68, modules/_landing-page.scss */
+/* line 72, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 200px 0 36px;
 }
-/* line 71, modules/_landing-page.scss */
+/* line 75, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 75, modules/_landing-page.scss */
+/* line 79, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 79, modules/_landing-page.scss */
+/* line 83, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   font-size: 18px;
@@ -877,4 +881,87 @@ h1 {
 /* line 22, imports/_mixins.scss */
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dcddde;
+}
+/* line 100, modules/_landing-page.scss */
+.landing-page .linkout {
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+/* line 1, directives/_qv-slider.scss */
+.qv-slider {
+  position: relative;
+  height: 350px;
+}
+/* line 7, directives/_qv-slider.scss */
+.qv-slider:before {
+  position: absolute;
+  top: 0;
+  right: inherit;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 50px;
+  z-index: 1;
+}
+/* line 15, directives/_qv-slider.scss */
+.qv-slider:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: inherit;
+  content: '';
+  width: 50px;
+  z-index: 1;
+}
+/* line 23, directives/_qv-slider.scss */
+.qv-slider .qv-slider-list {
+  position: absolute;
+  top: 0;
+  right: inherit;
+  bottom: inherit;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-transition: margin 300ms ease;
+  -moz-transition: margin 300ms ease;
+  -ms-transition: margin 300ms ease;
+  -o-transition: margin 300ms ease;
+  transition: margin 300ms ease;
+}
+/* line 33, directives/_qv-slider.scss */
+.qv-slider .qv-slider-list-item {
+  display: inline;
+  margin: 0 15px;
+}
+/* line 39, directives/_qv-slider.scss */
+.qv-slider .qv-slider-image {
+  width: 350px;
+  height: 350px;
+}
+/* line 45, directives/_qv-slider.scss */
+.qv-slider .qv-slider-button {
+  cursor: pointer;
+  margin-top: -25px;
+  z-index: 2;
+}
+/* line 52, directives/_qv-slider.scss */
+.qv-slider .qv-slider-left-button {
+  position: absolute;
+  top: 50%;
+  right: inherit;
+  bottom: inherit;
+  left: 20px;
+}
+/* line 56, directives/_qv-slider.scss */
+.qv-slider .qv-slider-right-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  bottom: inherit;
+  left: inherit;
 }

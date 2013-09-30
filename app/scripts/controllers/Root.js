@@ -1,10 +1,9 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('RootCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('RootCtrl', function ($scope, melissa, studentWork) {
+    $scope.images = {
+      studentWork: studentWork,
+      melissa: melissa
+    }
   });

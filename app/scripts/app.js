@@ -2,8 +2,6 @@
 
 angular.module('islcAngularApp', ['restangular', 'ui.router'])
   .config(function ($stateProvider, $urlRouterProvider) {
-//    Restangular.setBaseUrl('/angular');
-
     $urlRouterProvider.otherwise('/root');
 
     var nav = {
@@ -21,7 +19,15 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
           nav: nav,
           body: {
             templateUrl: 'views/partials/root.html',
-            controller: 'RootCtrl'
+            controller: 'RootCtrl',
+            resolve: {
+              melissa: function (assetService) {
+                return assetService.getImages('calligraphy/assets/melissa');
+              },
+              studentWork: function (assetService) {
+                return assetService.getImages('calligraphy/assets/student-work');
+              }
+            }
           }
         }
       })

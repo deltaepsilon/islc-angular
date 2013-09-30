@@ -28,7 +28,7 @@
   }
 
   .background-make-paper-sing {
-    margin-bottom: 50px;
+    margin: 50px auto;
   }
 
   .triple {
@@ -44,6 +44,10 @@
 
   .student-work {
     margin-bottom: 50px;
+  }
+
+  .background-student-work {
+    margin-bottom: 25px;
   }
 
   .background-how-does-it-work {
@@ -91,6 +95,13 @@
 
       @include placeholder(getColor(gray2));
     }
+  }
+
+  .linkout {
+    @extend .text-medium;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px;
   }
 
 }
