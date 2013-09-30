@@ -684,6 +684,67 @@ h1 {
   background-position: -50px;
 }
 
+@media (min-width: 980px) {
+  /* line 3, imports/_media-queries.scss */
+  .centered-desktop {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 8, imports/_media-queries.scss */
+  .pull-right-desktop {
+    float: right;
+  }
+
+  /* line 12, imports/_media-queries.scss */
+  .pull-left-desktop {
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  /* line 24, imports/_media-queries.scss */
+  .centered-phone, .centered-tablet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 29, imports/_media-queries.scss */
+  .pull-right-phone, .pull-right-tablet {
+    float: right;
+  }
+
+  /* line 33, imports/_media-queries.scss */
+  .pull-left-phone, .pull-left-tablet {
+    float: left;
+  }
+
+  /* line 37, imports/_media-queries.scss */
+  .no-padding-phone, .no-padding-tablet {
+    padding: 0 !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 44, imports/_media-queries.scss */
+  .centered-tablet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 49, imports/_media-queries.scss */
+  .pull-right-tablet {
+    float: right;
+  }
+
+  /* line 53, imports/_media-queries.scss */
+  .pull-left-tablet {
+    float: left;
+  }
+
+  /* line 57, imports/_media-queries.scss */
+  .no-padding-tablet {
+    padding: 0 !important;
+  }
+}
 /* line 1, modules/_buttons.scss */
 .button-cta {
   -webkit-box-shadow: 1px 1px 2px #333333;
@@ -785,49 +846,50 @@ h1 {
 }
 /* line 11, modules/_landing-page.scss */
 .landing-page .single .button-cta {
-  margin: 26px 0;
+  margin-top: 26px;
+  margin_bottom: 26px;
 }
-/* line 15, modules/_landing-page.scss */
+/* line 16, modules/_landing-page.scss */
 .landing-page .single p {
   line-height: 28px;
   max-width: 385px;
   padding-right: 50px;
 }
-/* line 23, modules/_landing-page.scss */
+/* line 24, modules/_landing-page.scss */
 .landing-page .button-cta {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   min-width: 400px;
 }
-/* line 30, modules/_landing-page.scss */
+/* line 31, modules/_landing-page.scss */
 .landing-page .background-make-paper-sing {
   margin: 50px auto;
 }
-/* line 34, modules/_landing-page.scss */
+/* line 35, modules/_landing-page.scss */
 .landing-page .triple {
   border-width: 2px;
   margin-bottom: 47px;
   padding: 18px;
 }
-/* line 39, modules/_landing-page.scss */
+/* line 40, modules/_landing-page.scss */
 .landing-page .triple p {
   margin: 17px;
   line-height: 24px;
 }
-/* line 45, modules/_landing-page.scss */
+/* line 46, modules/_landing-page.scss */
 .landing-page .student-work {
   margin-bottom: 50px;
 }
-/* line 49, modules/_landing-page.scss */
+/* line 50, modules/_landing-page.scss */
 .landing-page .background-student-work {
   margin-bottom: 25px;
 }
-/* line 53, modules/_landing-page.scss */
+/* line 54, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 57, modules/_landing-page.scss */
+/* line 58, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -836,7 +898,7 @@ h1 {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 65, modules/_landing-page.scss */
+/* line 66, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -845,19 +907,23 @@ h1 {
   left: 50%;
   margin-left: -200px;
 }
-/* line 72, modules/_landing-page.scss */
+/* line 73, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 200px 0 36px;
 }
-/* line 75, modules/_landing-page.scss */
+/* line 76, modules/_landing-page.scss */
+.landing-page .email-footer .email-footer-item {
+  margin-bottom: 15px;
+}
+/* line 80, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 79, modules/_landing-page.scss */
+/* line 84, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 83, modules/_landing-page.scss */
+/* line 88, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   font-size: 18px;
@@ -882,7 +948,7 @@ h1 {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dcddde;
 }
-/* line 100, modules/_landing-page.scss */
+/* line 105, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;

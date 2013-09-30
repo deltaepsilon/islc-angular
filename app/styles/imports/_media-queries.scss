@@ -1,0 +1,60 @@
+// Desktop
+@media (min-width: 980px) {
+  .centered-desktop {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pull-right-desktop {
+    float: right;
+  }
+
+  .pull-left-desktop {
+    float: left;
+  }
+}
+
+// Sub-Phone
+@media (max-width: 480px) {
+
+}
+
+// Phone
+@media (max-width: 767px) {
+  .centered-phone, .centered-tablet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pull-right-phone, .pull-right-tablet {
+    float: right;
+  }
+
+  .pull-left-phone, .pull-left-tablet {
+    float: left;
+  }
+
+  .no-padding-phone, .no-padding-tablet {
+    padding: 0 !important;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 979px) {
+  .centered-tablet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pull-right-tablet {
+    float: right;
+  }
+
+  .pull-left-tablet {
+    float: left;
+  }
+
+  .no-padding-tablet {
+    padding: 0 !important;
+  }
+}
