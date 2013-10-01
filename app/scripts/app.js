@@ -2,7 +2,7 @@
 
 angular.module('islcAngularApp', ['restangular', 'ui.router'])
   .config(function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/root');
+    $urlRouterProvider.otherwise('/');
 
     var nav = {
       templateUrl: 'views/partials/nav.html',
@@ -11,6 +11,18 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
         user: function (userService) {
           return userService.getUser();
         }
+      }
+    },
+    body = {
+      templateUrl: 'views/partials/root.html',
+        controller: 'RootCtrl',
+        resolve: {
+          melissa: function (assetService) {
+            return assetService.getImages('calligraphy/assets/melissa');
+          },
+          studentWork: function (assetService) {
+            return assetService.getImages('calligraphy/assets/student-work');
+          }
       }
     }
 
@@ -22,17 +34,14 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
         url: '',
         views: {
           nav: nav,
-          body: {
-            templateUrl: 'views/partials/root.html',
-            controller: 'RootCtrl',
-            resolve: {
-              melissa: function (assetService) {
-                return assetService.getImages('calligraphy/assets/melissa');
-              },
-              studentWork: function (assetService) {
-                return assetService.getImages('calligraphy/assets/student-work');
-              }
-            }
+          body: body
+        }
+      })
+      .state('root.login', {
+        url: '/login',
+        views: {
+          login: {
+            templateUrl: 'angular/login.html'
           }
         }
       })

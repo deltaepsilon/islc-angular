@@ -1,0 +1,48 @@
+#login {
+
+  $form-padding: 15px;
+  form {
+    @include absolute(47px, 0, inherit, inherit);
+    background-color: rgba(255, 255, 255, .95);
+    border: 2px solid getColor(green1);
+    padding: $form-padding;
+  }
+
+  div {
+    height: 30px;
+  }
+
+  input, label, a {
+    @extend .text-medium;
+    font-weight: 200;
+  }
+
+  label[for="remember_me"] {
+    @extend .text-x-small;
+  }
+
+  #username, #password {
+    margin-bottom: 5px;
+    width: 150px;
+  }
+
+  #password {
+    float: right;
+  }
+
+  #_submit {
+    @extend .button-secondary;
+    @include absolute(77px, $form-padding, inherit, inherit);
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
+  br {
+    display: none;
+  }
+
+  #reset-password {
+    float: right;
+  }
+
+}

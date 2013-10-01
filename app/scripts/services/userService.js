@@ -7,6 +7,7 @@ angular.module('islcAngularApp')
     return {
       getUser: function () {
         return Restangular.one('user').get();
+
       }
     }
   });

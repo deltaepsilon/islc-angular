@@ -147,7 +147,7 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-small, h6 {
+.text-x-small, h6, #login label[for="remember_me"] {
   font-size: 12px;
 }
 
@@ -157,7 +157,7 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-medium, p, ul, ol, h4, .landing-page .linkout {
+.text-medium, p, ul, ol, h4, #login input, #login label, #login a, .landing-page .linkout {
   font-size: 16px;
 }
 
@@ -572,7 +572,7 @@
 }
 
 /* line 21, imports/_colors.scss */
-.text-white, .button-cta, .button-secondary {
+.text-white, .button-cta, .button-secondary, #login #_submit {
   color: white;
 }
 
@@ -619,66 +619,71 @@ h1 {
 }
 
 /* line 61, imports/_global.scss */
+.relative {
+  position: relative;
+}
+
+/* line 65, imports/_global.scss */
 .centered {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-/* line 67, imports/_global.scss */
+/* line 71, imports/_global.scss */
 .pull-right {
   float: right;
 }
 
-/* line 71, imports/_global.scss */
+/* line 75, imports/_global.scss */
 .pull-left {
   float: left;
 }
 
-/* line 75, imports/_global.scss */
+/* line 79, imports/_global.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 79, imports/_global.scss */
+/* line 83, imports/_global.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 83, imports/_global.scss */
+/* line 87, imports/_global.scss */
 .bordered {
   border: 1px solid #f3f3f4;
 }
 
-/* line 87, imports/_global.scss */
+/* line 91, imports/_global.scss */
 .border-right {
   border-right: 1px solid #f3f3f4;
 }
 
-/* line 91, imports/_global.scss */
+/* line 95, imports/_global.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 95, imports/_global.scss */
+/* line 99, imports/_global.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 99, imports/_global.scss */
+/* line 103, imports/_global.scss */
 .aligned-list {
   padding-left: 1em;
 }
 
-/* line 104, imports/_global.scss */
+/* line 108, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/icons-2x/background.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 111, imports/_global.scss */
-.background-repeating-gray, .button-secondary {
+/* line 115, imports/_global.scss */
+.background-repeating-gray, .button-secondary, #login #_submit {
   background-image: url("../images/icons-2x/background-gray.png");
   background-size: 765px 665px;
   background-position: -50px;
@@ -757,7 +762,7 @@ h1 {
 }
 
 /* line 13, modules/_buttons.scss */
-.button-secondary {
+.button-secondary, #login #_submit {
   display: block;
   border: none;
   padding: 10px 25px;
@@ -809,9 +814,10 @@ h1 {
 }
 /* line 21, modules/_nav.scss */
 #top-nav .nav-link-item {
+  cursor: pointer;
   float: right;
 }
-/* line 25, modules/_nav.scss */
+/* line 26, modules/_nav.scss */
 #top-nav .nav-link {
   display: inline-block;
   font-size: 14px;
@@ -821,7 +827,7 @@ h1 {
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {
-  /* line 35, modules/_nav.scss */
+  /* line 36, modules/_nav.scss */
   #nav-links {
     width: 60% !important;
   }
@@ -833,6 +839,53 @@ h1 {
   margin-top: 15px;
   padding: 15px 0 45px;
   text-align: center;
+}
+
+/* line 4, modules/_login.scss */
+#login form {
+  position: absolute;
+  top: 47px;
+  right: 0;
+  bottom: inherit;
+  left: inherit;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid #8abfb1;
+  padding: 15px;
+}
+/* line 11, modules/_login.scss */
+#login div {
+  height: 30px;
+}
+/* line 15, modules/_login.scss */
+#login input, #login label, #login a {
+  font-weight: 200;
+}
+/* line 24, modules/_login.scss */
+#login #username, #login #password {
+  margin-bottom: 5px;
+  width: 150px;
+}
+/* line 29, modules/_login.scss */
+#login #password {
+  float: right;
+}
+/* line 33, modules/_login.scss */
+#login #_submit {
+  position: absolute;
+  top: 77px;
+  right: 15px;
+  bottom: inherit;
+  left: inherit;
+  font-size: 12px;
+  padding: 7px 10px;
+}
+/* line 40, modules/_login.scss */
+#login br {
+  display: none;
+}
+/* line 44, modules/_login.scss */
+#login #reset-password {
+  float: right;
 }
 
 /* line 3, modules/_landing-page.scss */
