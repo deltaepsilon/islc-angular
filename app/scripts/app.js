@@ -6,7 +6,12 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
 
     var nav = {
       templateUrl: 'views/partials/nav.html',
-      controller: 'NavCtrl'
+      controller: 'NavCtrl',
+      resolve: {
+        user: function (userService) {
+          return userService.getUser();
+        }
+      }
     }
 
     $stateProvider

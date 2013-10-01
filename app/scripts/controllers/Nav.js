@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, user) {
+    $rootScope.user = user;
+    console.log(user);
     $scope.links = [
       {state: 'supplies', text: 'supplies'},
       {state: 'faq', text: 'faqs'},
