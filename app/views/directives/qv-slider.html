@@ -1,9 +1,10 @@
 <div class="qv-slider">
-    <div class="qv-slider-button qv-slider-left-button background-left-arrow-circle" ng-click="slide(-380)" ng-hide="hideLeft"></div>
+    <div class="qv-slider-button qv-slider-left-button background-left-arrow-circle" ng-click="slide(380)" ng-hide="hideRight"></div>
     <ul class="qv-slider-list">
         <li class="qv-slider-list-item" ng-repeat="image in images">
-            <img class="qv-slider-image" src="{{ image }}" alt="{{ image }}"/>
+            <img class="qv-slider-image" src="{{ image.src }}" alt="{{ image.text }}"/>
+            <a class="qv-slider-link" href="{{ image.href }}" ng-show="image.href" target="_blank">{{ image.text }}</a>
         </li>
     </ul>
-    <div class="qv-slider-button qv-slider-right-button background-right-arrow-circle" ng-click="slide(380)" ng-hide="hideRight"></div>
+    <div class="qv-slider-button qv-slider-right-button background-right-arrow-circle" ng-click="slide(-380)" ng-hide="hideLeft"></div>
 </div>

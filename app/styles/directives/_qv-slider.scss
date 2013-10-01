@@ -33,6 +33,7 @@
   .qv-slider-list-item {
     display: inline;
     margin: 0 15px;
+    position: relative;
   }
 
 
@@ -40,6 +41,19 @@
     @extend .background-white;
     width: $qv-slider-image-width;
     height: $qv-slider-image-width;
+  }
+
+  .qv-slider-link {
+    @include absolute(inherit, 0, 0, 0);
+    @extend .text-medium;
+
+    background: rgba(0, 0, 0, .9);
+    color: white;
+    height: 43px;
+    letter-spacing: 2px;
+    padding: 14px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .qv-slider-button {

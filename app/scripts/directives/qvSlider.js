@@ -6,7 +6,36 @@ angular.module('islcAngularApp')
       templateUrl: '/views/directives/qv-slider.html',
       restrict: 'A',
       scope: {
-        images: '=qvSlider'
+        imageList: '=qvSlider'
+      },
+      link: function ($scope) {
+        var list = $scope.imageList,
+          i = list ? list.length : 0,
+          images = [],
+          FILENAME_REGEX = /[^\/]+\.\w+$/,
+          TEXT_REGEX = /(_|\.\w+$)/g,
+          filename,
+          parts;
+
+        while (i--) {
+          filename = list[i].match(FILENAME_REGEX)[0];
+          parts = filename.split('|');
+          console.log('filename', filename, parts);
+          if (parts.length >= 2) {
+            images.push({
+              src: list[i],
+              href: 'http://' + parts[0],
+              text: parts[1].replace(TEXT_REGEX, ' ').trim()
+            });
+          } else {
+            images.push({
+              src: list[i]
+            });
+          }
+
+        }
+
+        $scope.images = images;
       },
       controller: function ($scope, $element) {
         var list = $element.find('.qv-slider-list');

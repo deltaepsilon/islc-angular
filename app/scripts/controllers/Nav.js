@@ -3,7 +3,7 @@
 angular.module('islcAngularApp')
   .controller('NavCtrl', function ($scope, $state, $rootScope, user, userService) {
     $rootScope.user = user;
-    console.log(user);
+
     $scope.links = [
       {state: 'root.user', text: 'account'},
       {state: 'root.login', text: 'sign in'},

@@ -157,7 +157,7 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-medium, p, ul, ol, h4, #login input, #login label, #login a, .landing-page .linkout {
+.text-medium, p, ul, ol, h4, #login input, #login label, #login a, .landing-page .linkout, .qv-slider .qv-slider-link {
   font-size: 16px;
 }
 
@@ -1056,19 +1056,35 @@ h1 {
 .qv-slider .qv-slider-list-item {
   display: inline;
   margin: 0 15px;
+  position: relative;
 }
-/* line 39, directives/_qv-slider.scss */
+/* line 40, directives/_qv-slider.scss */
 .qv-slider .qv-slider-image {
   width: 350px;
   height: 350px;
 }
-/* line 45, directives/_qv-slider.scss */
+/* line 46, directives/_qv-slider.scss */
+.qv-slider .qv-slider-link {
+  position: absolute;
+  top: inherit;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  height: 43px;
+  letter-spacing: 2px;
+  padding: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 59, directives/_qv-slider.scss */
 .qv-slider .qv-slider-button {
   cursor: pointer;
   margin-top: -25px;
   z-index: 2;
 }
-/* line 52, directives/_qv-slider.scss */
+/* line 66, directives/_qv-slider.scss */
 .qv-slider .qv-slider-left-button {
   position: absolute;
   top: 50%;
@@ -1076,7 +1092,7 @@ h1 {
   bottom: inherit;
   left: 20px;
 }
-/* line 56, directives/_qv-slider.scss */
+/* line 70, directives/_qv-slider.scss */
 .qv-slider .qv-slider-right-button {
   position: absolute;
   top: 50%;
