@@ -44,10 +44,10 @@
   }
 
   .qv-slider-link {
-    @include absolute(inherit, 0, 0, 0);
+    @include absolute(inherit, 4px, 4px, 0);
     @extend .text-medium;
 
-    background: rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0, .7);
     color: white;
     height: 43px;
     letter-spacing: 2px;

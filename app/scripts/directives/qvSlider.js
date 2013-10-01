@@ -20,7 +20,7 @@ angular.module('islcAngularApp')
         while (i--) {
           filename = list[i].match(FILENAME_REGEX)[0];
           parts = filename.split('|');
-          console.log('filename', filename, parts);
+
           if (parts.length >= 2) {
             images.push({
               src: list[i],
