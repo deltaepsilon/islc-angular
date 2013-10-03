@@ -147,7 +147,7 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-small, h6, #login label[for="remember_me"] {
+.text-x-small, h6, [action="login_check"] label[for="remember_me"] {
   font-size: 12px;
 }
 
@@ -157,7 +157,7 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-medium, p, ul, ol, h4, .button-primary, #login input, #login label, #login a, .landing-page .linkout, .qv-form input, .qv-slider .qv-slider-link {
+.text-medium, p, ul, ol, h4, .button-primary, [action="login_check"] input, [action="login_check"] label, [action="login_check"] a, .landing-page .linkout, .qv-form input, .qv-slider .qv-slider-link {
   font-size: 16px;
 }
 
@@ -582,7 +582,7 @@
 }
 
 /* line 22, imports/_colors.scss */
-.text-white, .button-cta, .button-primary, .button-secondary, #login #_submit {
+.text-white, .button-cta, .button-primary, .button-secondary, [action="login_check"] #_submit {
   color: white;
 }
 
@@ -715,7 +715,7 @@ h2 {
 }
 
 /* line 130, imports/_global.scss */
-.background-repeating-gray, .button-primary, .button-secondary, #login #_submit {
+.background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit {
   background-image: url("../images/icons-2x/background-gray.png");
   background-position: -50px -30px;
 }
@@ -815,7 +815,7 @@ button[disabled] {
 }
 
 /* line 33, modules/_buttons.scss */
-.button-secondary, #login #_submit {
+.button-secondary, [action="login_check"] #_submit {
   display: block;
   border: none;
   padding: 10px 25px;
@@ -894,36 +894,25 @@ button[disabled] {
   text-align: center;
 }
 
-/* line 4, modules/_login.scss */
-#login form {
-  position: absolute;
-  top: 47px;
-  right: 0;
-  bottom: inherit;
-  left: inherit;
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 2px solid #98ccb6;
-  padding: 15px;
-}
-/* line 11, modules/_login.scss */
-#login div {
+/* line 9, modules/_login.scss */
+[action="login_check"] div {
   height: 30px;
 }
-/* line 15, modules/_login.scss */
-#login input, #login label, #login a {
+/* line 13, modules/_login.scss */
+[action="login_check"] input, [action="login_check"] label, [action="login_check"] a {
   font-weight: 200;
 }
-/* line 24, modules/_login.scss */
-#login #username, #login #password {
+/* line 22, modules/_login.scss */
+[action="login_check"] #username, [action="login_check"] #password {
   margin-bottom: 5px;
   width: 150px;
 }
-/* line 29, modules/_login.scss */
-#login #password {
+/* line 27, modules/_login.scss */
+[action="login_check"] #password {
   float: right;
 }
-/* line 33, modules/_login.scss */
-#login #_submit {
+/* line 31, modules/_login.scss */
+[action="login_check"] #_submit {
   position: absolute;
   top: 77px;
   right: 15px;
@@ -932,12 +921,12 @@ button[disabled] {
   font-size: 12px;
   padding: 7px 10px;
 }
-/* line 40, modules/_login.scss */
-#login br {
+/* line 38, modules/_login.scss */
+[action="login_check"] br {
   display: none;
 }
-/* line 44, modules/_login.scss */
-#login #reset-password {
+/* line 42, modules/_login.scss */
+[action="login_check"] #reset-password {
   float: right;
 }
 

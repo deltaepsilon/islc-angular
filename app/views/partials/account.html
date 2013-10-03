@@ -4,7 +4,7 @@
 
         <form class="qv-form full-width-form centered" name="accountForm" action="">
             <h3 class="clearfix text-green2">Your login.</h3>
-            <div class="clear-fix form-errors">
+            <div class="clearfix form-errors">
                 <span class="form-error" ng-show="accountForm.serverError">{{ accountForm.serverError }}</span>
             </div>
             <div class="clearfix pure-g-r">
@@ -53,6 +53,7 @@
                         id="account-comment-email"
                         class="pull-left"
                         name="commentEmail"
+                        ng-model="user.comment_email"
                         type="checkbox"
                     />
                 </div>

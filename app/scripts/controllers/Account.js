@@ -2,7 +2,8 @@
 
 angular.module('islcAngularApp')
   .controller('AccountCtrl', function ($scope, userService) {
-//    $scope.user.verification = '';
+
+    console.log($scope.accountForm);
 
     $scope.saveUser = function (user) {
       userService.update(user).then(function (res) {

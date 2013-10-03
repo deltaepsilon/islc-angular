@@ -1,12 +1,10 @@
-#login {
+[action="login_check"] {
 
   $form-padding: 15px;
-  form {
-    @include absolute(47px, 0, inherit, inherit);
-    background-color: rgba(255, 255, 255, .95);
-    border: 2px solid getColor(green1);
-    padding: $form-padding;
-  }
+    //@include absolute(47px, 0, inherit, inherit);
+    //background-color: rgba(255, 255, 255, .95);
+    //border: 2px solid getColor(green1);
+    //padding: $form-padding;
 
   div {
     height: 30px;

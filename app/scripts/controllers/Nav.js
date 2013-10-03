@@ -1,12 +1,13 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state, $rootScope, user, userService) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, _, user) {
     $rootScope.user = user;
 
     $scope.links = [
       {state: 'account', text: 'account'},
-      {state: 'root.login', text: 'sign in'},
+      {state: 'login', text: 'sign in'},
+      {state: 'register', text: 'register'},
       {state: 'supplies', text: 'supplies'},
       {state: 'faq', text: 'faqs'},
       {state: 'shop', text: 'shop'}
@@ -18,13 +19,25 @@ angular.module('islcAngularApp')
     }
 
     $scope.showLink = function (state) {
-      var user = !!$rootScope.user;
+      var user = !!$rootScope.user,
+        currentState = $state.current.name,
+        loginStates = ['register', 'reset', 'login'],
+        isLogin = function () {
+          return _.indexOf(loginStates, currentState) !== -1
+        };
 
       switch (state) {
-        case 'root.login':
+        case 'login':
+          if (isLogin()) {
+            return false;
+          } else {
+            return !user;
+          }
+          break;
+        case 'register':
           return !user;
           break;
-        case 'root.user':
+        case 'account':
           return user;
           break;
         case 'logout':

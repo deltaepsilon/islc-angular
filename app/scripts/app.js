@@ -37,37 +37,33 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
           body: body
         }
       })
-      .state('root.login', {
+      .state('login', {
         url: '/login',
         views: {
-          login: {
+          nav: nav,
+          body: {
+            controller: 'LoginCtrl',
             templateUrl: 'angular/login.html'
           }
         }
       })
-      .state('root.reset', {
-        url: '/reset',
-        views: {
-          login: {
-            templateUrl: 'angular/reset.html'
-          }
-        }
-      })
-      .state('root.register', {
+      .state('register', {
         url: '/register',
         views: {
-          login: {
+          nav: nav,
+          body: {
+            controller: 'LoginCtrl',
             templateUrl: 'angular/register.html'
           }
         }
       })
-      .state('signIn', {
-        url: '/sign-in',
+      .state('reset', {
+        url: '/reset',
         views: {
           nav: nav,
           body: {
-            templateUrl: 'views/partials/sign-in.html',
-            controller: 'SignInCtrl'
+            controller: 'LoginCtrl',
+            templateUrl: 'angular/reset.html'
           }
         }
       })
