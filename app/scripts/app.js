@@ -15,14 +15,14 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
     },
     body = {
       templateUrl: 'views/partials/root.html',
-        controller: 'RootCtrl',
-        resolve: {
-          melissa: function (assetService) {
-            return assetService.getImages('calligraphy/assets/melissa');
-          },
-          studentWork: function (assetService) {
-            return assetService.getImages('calligraphy/assets/student-work');
-          }
+      controller: 'RootCtrl',
+      resolve: {
+        melissa: function (assetService) {
+          return assetService.getImages('calligraphy/assets/melissa');
+        },
+        studentWork: function (assetService) {
+          return assetService.getImages('calligraphy/assets/student-work');
+        }
       }
     }
 
@@ -80,6 +80,15 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
           nav: nav,
           body: {
             templateUrl: 'views/partials/supplies.html'
+          }
+        }
+      })
+      .state('account', {
+        url: '/account',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/account.html'
           }
         }
       });

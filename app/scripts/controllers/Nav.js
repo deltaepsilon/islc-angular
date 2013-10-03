@@ -5,7 +5,7 @@ angular.module('islcAngularApp')
     $rootScope.user = user;
 
     $scope.links = [
-      {state: 'root.user', text: 'account'},
+      {state: 'account', text: 'account'},
       {state: 'root.login', text: 'sign in'},
       {state: 'supplies', text: 'supplies'},
       {state: 'faq', text: 'faqs'},
