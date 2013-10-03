@@ -1,26 +1,83 @@
-<div class="pure-g-r account-management">
-    <div class="pure-u-1">
-        <h1 class="header centered">It's your account.</h1>
-    </div>
-
-    <div class="pure-u-1 pure-g-r background-gray1 single">
-        <div class="pure-u-1-2">
-            <p class="pull-right-desktop centered-tablet no-padding-phone single-text text-x-medium">
-                Preserve the art of calligraphy. Make paper beautiful with a modern twist on a 6th century art.
-            </p>
-        </div>
-        <div class="pure-u-1-2">
-            <button class="button-cta centered-phone" ng-click="convert('online-calligraphy-course')">learn calligraphy today</button>
-        </div>
-    </div>
+<div class="pure-g-r account-management padded-wrapper">
 
     <div class="pure-u-1 pure-g-r">
-        <h2>User Details</h2>
-        <form action="">
-            <span pure-u-2-5>
-                <label for="account-email">Your email</label>
-                <input id="account-email" type="email"/>
-            </span>
+
+        <form class="qv-form full-width-form centered" name="accountForm" action="">
+            <h3 class="clearfix text-green2">Your login.</h3>
+            <div class="clear-fix form-errors">
+                <span class="form-error" ng-show="accountForm.serverError">{{ accountForm.serverError }}</span>
+            </div>
+            <div class="clearfix pure-g-r">
+                <input
+                    id="account-email"
+                    class="pure-u-3-5 pull-left"
+                    name="email"
+                    type="email"
+                    placeholder="Email..."
+                    ng-model="user.email"
+                />
+                <div class="form-error pure-u-2-5" ng-show="accountForm.email.$invalid">That email looks invalid</div>
+            </div>
+            <div class="clearfix pure-g-r">
+                <input
+                    id="account-new-password"
+                    class="pure-u-3-5 pull-left"
+                    name="password"
+                    type="password"
+                    placeholder="New password..."
+                    ng-model="user.password"
+                    ng-minlength="3"
+                />
+                <div class="form-error pure-u-2-5" ng-show="accountForm.password.$error.minlength">Your password is too short</div>
+            </div>
+            <div class="clearfix pure-g-r">
+                <input
+                    id="account-verification"
+                    class="pure-u-3-5 pull-left"
+                    name="verification"
+                    type="password"
+                    placeholder="Verify new password..."
+                    ng-model="user.verification"
+                    ng-minlength='3'
+                    qv-password-verify="user.password"
+                    password-verification="user.verification"
+                    form-verification="accountForm.verification"
+                />
+                <div class="form-error pure-u-2-5" ng-show="accountForm.verification.$error.required">Please confirm your password</div>
+                <div class="form-error pure-u-2-5" ng-show="accountForm.verification.$error.verify">Verification does not match</div>
+            </div>
+            <div class="clearfix pure-g-r">
+                <div class="pure-u-3-5">
+                    <label class="inline-label pull-left" for="account-comment-email">Comment Notification Email</label>
+                    <input
+                        id="account-comment-email"
+                        class="pull-left"
+                        name="commentEmail"
+                        type="checkbox"
+                    />
+                </div>
+
+            </div>
+            <div class="clearfix pure-g-r">
+                <input
+                    id="account-current-password"
+                    class="pure-u-3-5 pull-left"
+                    name="oldpassword"
+                    type="password"
+                    placeholder="Current password..."
+                    ng-model="user.oldpassword"
+                    ng-required="true"
+                />
+                <div class="form-error pure-u-2-5" ng-show="accountForm.oldpassword.serverError">
+                    Wrong password... <a ui-sref="root.reset">reset it</a>?
+                </div>
+            </div>
+            <div class="clearfix pure-g-r">
+                <div class="pure-u-1-5">
+                    <button class="button-primary full-width" ng-click="saveUser(user)" ng-disabled="accountForm.$invalid">Save</button>
+                </div>
+            </div>
+
 
         </form>
     </div>

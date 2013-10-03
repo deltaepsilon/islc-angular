@@ -1,6 +1,8 @@
 // Core.
 @import "compass";
 @import "compass/css3/box-shadow";
+@import "compass/css3/opacity";
+@import "compass/utilities/general/clearfix";
 //@import "compass/reset";
 
 
@@ -23,6 +25,7 @@
 @import "modules/footer";
 @import "modules/login";
 @import "modules/landing-page";
+@import "modules/form";
 
 // Directives
 @import "directives/qv-slider";

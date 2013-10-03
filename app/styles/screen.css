@@ -152,17 +152,17 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-small, h5, #copyright-footer {
+.text-small, h5, #copyright-footer, .qv-form label, .form-error {
   font-size: 14px;
 }
 
 /* line 27, imports/_font-size.scss */
-.text-medium, p, ul, ol, h4, #login input, #login label, #login a, .landing-page .linkout, .qv-slider .qv-slider-link {
+.text-medium, p, ul, ol, h4, .button-primary, #login input, #login label, #login a, .landing-page .linkout, .qv-form input, .qv-slider .qv-slider-link {
   font-size: 16px;
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-medium, h3 {
+.text-x-medium, h3, .landing-page .email-footer input {
   font-size: 18px;
 }
 
@@ -501,82 +501,92 @@
   }
 }
 
-/* line 14, imports/_colors.scss */
+/* line 15, imports/_colors.scss */
 .background-green1, #top-nav:before {
-  background-color: #8abfb1;
+  background-color: #98ccb6;
 }
 
-/* line 14, imports/_colors.scss */
+/* line 15, imports/_colors.scss */
 .background-green2 {
-  background-color: #1b7f64;
+  background-color: #177f62;
 }
 
-/* line 14, imports/_colors.scss */
-.background-gray1 {
-  background-color: #f3f3f4;
+/* line 15, imports/_colors.scss */
+.background-gray1, .qv-form [required] {
+  background-color: #f2f2f2;
 }
 
-/* line 14, imports/_colors.scss */
+/* line 15, imports/_colors.scss */
 .background-gray2 {
-  background-color: #dcddde;
+  background-color: #dddddd;
 }
 
-/* line 14, imports/_colors.scss */
+/* line 15, imports/_colors.scss */
 .background-gray3 {
-  background-color: #505151;
+  background-color: #414141;
 }
 
-/* line 14, imports/_colors.scss */
+/* line 15, imports/_colors.scss */
+.background-red1 {
+  background-color: #bd3f42;
+}
+
+/* line 15, imports/_colors.scss */
 .background-gray {
   background-color: #333333;
 }
 
-/* line 14, imports/_colors.scss */
+/* line 15, imports/_colors.scss */
 .background-white, #top-nav .islc-logo, .qv-slider .qv-slider-image {
   background-color: white;
 }
 
-/* line 14, imports/_colors.scss */
+/* line 15, imports/_colors.scss */
 .background-black {
   background-color: black;
 }
 
-/* line 21, imports/_colors.scss */
+/* line 22, imports/_colors.scss */
 .text-green1 {
-  color: #8abfb1;
+  color: #98ccb6;
 }
 
-/* line 21, imports/_colors.scss */
+/* line 22, imports/_colors.scss */
 .text-green2 {
-  color: #1b7f64;
+  color: #177f62;
 }
 
-/* line 21, imports/_colors.scss */
+/* line 22, imports/_colors.scss */
 .text-gray1 {
-  color: #f3f3f4;
+  color: #f2f2f2;
 }
 
-/* line 21, imports/_colors.scss */
+/* line 22, imports/_colors.scss */
 .text-gray2 {
-  color: #dcddde;
+  color: #dddddd;
 }
 
-/* line 21, imports/_colors.scss */
+/* line 22, imports/_colors.scss */
 .text-gray3, html, button, .pure-g-r [class*="pure-u"], a {
-  color: #505151;
+  color: #414141;
 }
 
-/* line 21, imports/_colors.scss */
+/* line 22, imports/_colors.scss */
+.text-red1 {
+  color: #bd3f42;
+}
+
+/* line 22, imports/_colors.scss */
 .text-gray {
   color: #333333;
 }
 
-/* line 21, imports/_colors.scss */
-.text-white, .button-cta, .button-secondary, #login #_submit {
+/* line 22, imports/_colors.scss */
+.text-white, .button-cta, .button-primary, .button-secondary, #login #_submit {
   color: white;
 }
 
-/* line 21, imports/_colors.scss */
+/* line 22, imports/_colors.scss */
 .text-black {
   color: black;
 }
@@ -609,84 +619,110 @@ p, ul, ol {
 
 /* line 25, imports/_global.scss */
 .header, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
   text-transform: uppercase;
 }
 
-/* line 29, imports/_global.scss */
+/* line 30, imports/_global.scss */
 h1 {
   letter-spacing: 8px;
   font-weight: 300;
 }
 
-/* line 61, imports/_global.scss */
+/* line 37, imports/_global.scss */
+h2 {
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+/* line 65, imports/_global.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 69, imports/_global.scss */
 .relative {
   position: relative;
 }
 
-/* line 65, imports/_global.scss */
+/* line 73, imports/_global.scss */
 .centered {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 78, imports/_global.scss */
+.text-centered {
   text-align: center;
 }
 
-/* line 71, imports/_global.scss */
+/* line 82, imports/_global.scss */
 .pull-right {
   float: right;
 }
 
-/* line 75, imports/_global.scss */
+/* line 86, imports/_global.scss */
 .pull-left {
   float: left;
 }
 
-/* line 79, imports/_global.scss */
+/* line 90, imports/_global.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 83, imports/_global.scss */
+/* line 94, imports/_global.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 87, imports/_global.scss */
+/* line 98, imports/_global.scss */
 .bordered {
-  border: 1px solid #f3f3f4;
+  border: 1px solid #f2f2f2;
 }
 
-/* line 91, imports/_global.scss */
+/* line 102, imports/_global.scss */
 .border-right {
-  border-right: 1px solid #f3f3f4;
+  border-right: 1px solid #f2f2f2;
 }
 
-/* line 95, imports/_global.scss */
+/* line 106, imports/_global.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 99, imports/_global.scss */
+/* line 110, imports/_global.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 103, imports/_global.scss */
+/* line 114, imports/_global.scss */
+.full-width, .full-width-form {
+  width: 100%;
+}
+
+/* line 118, imports/_global.scss */
 .aligned-list {
   padding-left: 1em;
 }
 
-/* line 108, imports/_global.scss */
+/* line 123, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/icons-2x/background.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 115, imports/_global.scss */
-.background-repeating-gray, .button-secondary, #login #_submit {
+/* line 130, imports/_global.scss */
+.background-repeating-gray, .button-primary, .button-secondary, #login #_submit {
   background-image: url("../images/icons-2x/background-gray.png");
-  background-size: 765px 665px;
-  background-position: -50px;
+  background-position: -50px -30px;
+}
+
+/* line 135, imports/_global.scss */
+.padded-wrapper {
+  padding: 10px 20px;
 }
 
 @media (min-width: 980px) {
@@ -750,7 +786,13 @@ h1 {
     padding: 0 !important;
   }
 }
-/* line 1, modules/_buttons.scss */
+/* line 2, modules/_buttons.scss */
+button[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+/* line 7, modules/_buttons.scss */
 .button-cta {
   -webkit-box-shadow: 1px 1px 2px #333333;
   -moz-box-shadow: 1px 1px 2px #333333;
@@ -761,7 +803,18 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 13, modules/_buttons.scss */
+/* line 19, modules/_buttons.scss */
+.button-primary {
+  display: block;
+  border: none;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* line 33, modules/_buttons.scss */
 .button-secondary, #login #_submit {
   display: block;
   border: none;
@@ -826,15 +879,15 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) and (max-width: 1100px) {
-  /* line 36, modules/_nav.scss */
+@media (min-width: 1100px) {
+  /* line 42, modules/_nav.scss */
   #nav-links {
-    width: 60% !important;
+    float: left;
   }
 }
 /* line 1, modules/_footer.scss */
 #copyright-footer {
-  border-top: 1px solid #1b7f64;
+  border-top: 1px solid #177f62;
   font-weight: 200;
   margin-top: 15px;
   padding: 15px 0 45px;
@@ -849,7 +902,7 @@ h1 {
   bottom: inherit;
   left: inherit;
   background-color: rgba(255, 255, 255, 0.95);
-  border: 2px solid #8abfb1;
+  border: 2px solid #98ccb6;
   padding: 15px;
 }
 /* line 11, modules/_login.scss */
@@ -979,33 +1032,111 @@ h1 {
 /* line 88, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
-  font-size: 18px;
   text-transform: uppercase;
-  border: 2px solid #505151;
+  border: 2px solid #414141;
   border-radius: 0;
   padding: 8px;
   letter-spacing: 4px;
-  font-weight: 200;
   font-size: 18px;
-  font-weight: 700;
 }
 /* line 20, imports/_mixins.scss */
 .landing-page .email-footer input::-moz-placeholder {
-  color: #dcddde;
+  color: #dddddd;
 }
 /* line 21, imports/_mixins.scss */
 .landing-page .email-footer input::-webkit-input-placeholder {
-  color: #dcddde;
+  color: #dddddd;
 }
 /* line 22, imports/_mixins.scss */
 .landing-page .email-footer input:-ms-input-placeholder {
-  color: #dcddde;
+  color: #dddddd;
 }
-/* line 105, modules/_landing-page.scss */
+/* line 102, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px;
+}
+
+/* line 20, imports/_mixins.scss */
+.qv-form [required]::-moz-placeholder {
+  color: #333333;
+}
+/* line 21, imports/_mixins.scss */
+.qv-form [required]::-webkit-input-placeholder {
+  color: #333333;
+}
+/* line 22, imports/_mixins.scss */
+.qv-form [required]:-ms-input-placeholder {
+  color: #333333;
+}
+/* line 7, modules/_form.scss */
+.qv-form .ng-invalid {
+  border-color: #bd3f42;
+}
+/* line 11, modules/_form.scss */
+.qv-form input {
+  border: 1px solid #414141;
+  padding: 8px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+/* line 20, imports/_mixins.scss */
+.qv-form input::-moz-placeholder {
+  color: #dddddd;
+}
+/* line 21, imports/_mixins.scss */
+.qv-form input::-webkit-input-placeholder {
+  color: #dddddd;
+}
+/* line 22, imports/_mixins.scss */
+.qv-form input:-ms-input-placeholder {
+  color: #dddddd;
+}
+/* line 20, modules/_form.scss */
+.qv-form label {
+  font-weight: 100;
+}
+/* line 25, modules/_form.scss */
+.qv-form .inline-label {
+  margin: 0 10px 5px 0;
+}
+
+/* line 32, modules/_form.scss */
+.form-errors {
+  padding: 10px 20px;
+}
+/* line 35, modules/_form.scss */
+.form-errors .form-error {
+  padding: 10px 0;
+}
+
+/* line 40, modules/_form.scss */
+.form-error {
+  color: #bd3f42 !important;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+/* line 47, modules/_form.scss */
+.form-error a {
+  text-decoration: underline;
+}
+
+/* line 52, modules/_form.scss */
+.full-width-form {
+  max-width: 600px;
+}
+/* line 56, modules/_form.scss */
+.full-width-form input {
+  margin-bottom: 10px;
+}
+/* line 60, modules/_form.scss */
+.full-width-form select {
+  margin-bottom: 10px;
+}
+/* line 64, modules/_form.scss */
+.full-width-form textarea {
+  margin-bottom: 10px;
 }
 
 /* line 1, directives/_qv-slider.scss */

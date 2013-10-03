@@ -86,17 +86,14 @@
     }
 
     input {
+      @extend .text-x-medium;
       width: 85%;
-      font-size: 18px;
       text-transform: uppercase;
       border: 2px solid getColor(gray3);
       border-radius: 0;
       padding: 8px;
       letter-spacing: 4px;
-      font-weight: 200;
-
       font-size: 18px;
-      font-weight: 700;
 
       @include placeholder(getColor(gray2));
     }

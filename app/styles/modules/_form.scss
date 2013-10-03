@@ -1,0 +1,67 @@
+.qv-form {
+  [required] {
+    @extend .background-gray1;
+    @include placeholder(getColor(gray));
+  }
+
+  .ng-invalid {
+    border-color: getColor(red1);
+  }
+
+  input {
+    @extend .text-medium;
+    border: 1px solid getColor(gray3);
+    padding: 8px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    @include placeholder(getColor(gray2));
+  }
+
+  label {
+    @extend .text-small;
+    font-weight: 100;
+  }
+
+  .inline-label {
+    margin: 0 10px 5px 0;
+
+  }
+
+}
+
+.form-errors {
+  padding: 10px 20px;
+
+  .form-error {
+    padding: 10px 0;
+  }
+}
+
+.form-error {
+  @extend .text-small;
+
+  color: getColor(red1) !important;
+  padding: 14px 10px;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.full-width-form {
+  @extend .full-width;
+  max-width: 600px;
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  select {
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    margin-bottom: 10px;
+  }
+}

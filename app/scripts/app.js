@@ -9,7 +9,7 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
       controller: 'NavCtrl',
       resolve: {
         user: function (userService) {
-          return userService.getUser();
+          return userService.get();
         }
       }
     },
@@ -42,6 +42,22 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
         views: {
           login: {
             templateUrl: 'angular/login.html'
+          }
+        }
+      })
+      .state('root.reset', {
+        url: '/reset',
+        views: {
+          login: {
+            templateUrl: 'angular/reset.html'
+          }
+        }
+      })
+      .state('root.register', {
+        url: '/register',
+        views: {
+          login: {
+            templateUrl: 'angular/register.html'
           }
         }
       })
@@ -88,7 +104,8 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
         views: {
           nav: nav,
           body: {
-            templateUrl: 'views/partials/account.html'
+            templateUrl: 'views/partials/account.html',
+            controller: 'AccountCtrl'
           }
         }
       });
