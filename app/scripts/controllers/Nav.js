@@ -6,7 +6,7 @@ angular.module('islcAngularApp')
 
     $scope.links = [
       {state: 'account', text: 'account'},
-      {state: 'login', text: 'sign in'},
+      {state: 'login', text: 'log in'},
       {state: 'register', text: 'register'},
       {state: 'supplies', text: 'supplies'},
       {state: 'faq', text: 'faqs'},
@@ -21,7 +21,7 @@ angular.module('islcAngularApp')
     $scope.showLink = function (state) {
       var user = !!$rootScope.user,
         currentState = $state.current.name,
-        loginStates = ['register', 'reset', 'login'],
+        loginStates = ['login'],
         isLogin = function () {
           return _.indexOf(loginStates, currentState) !== -1
         };
