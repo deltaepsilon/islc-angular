@@ -1,0 +1,21 @@
+<table class="qv-table">
+    <thead ng-class="table.thead.class">
+    <tr ng-repeat="row in table.thead.rows">
+        <th ng-repeat="col in row" ng-class="col.class | lowercase" colspan="{{ col.colspan }}">{{ col.text }}</th>
+    </tr>
+    </thead>
+    <tbody ng-class="table.tbody.class">
+    <tr ng-repeat="row in table.tbody.rows">
+        <td ng-repeat="col in row" ng-class="col.class | lowercase" colspan="{{ col.colspan }}">
+            <div class="inner-cell"><span class="before">{{ col.before }}</span><span cs-link="{{ col.href }}" link-text="{{ col.text }}" class="text">{{ col.text }}</span><span class="after">{{ col.after }}</span></div>
+        </td>
+    </tr>
+    </tbody>
+    <tfoot ng-class="table.tfoot.class">
+    <tr ng-repeat="row in table.tfoot.rows">
+        <td ng-repeat="col in row" ng-class="col.class | lowercase" ng-href="col.href" colspan="{{ col.colspan }}">
+            <div class="inner-cell"><span class="before">{{ col.before }}</span><span cs-link="{{ col.href }}" link-text="{{ col.text }}" class="text">{{ col.text }}</span><span class="after">{{ col.after }}</span></div>
+        </td>
+    </tr>
+    </tfoot>
+</table>

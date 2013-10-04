@@ -77,6 +77,10 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
             resolve: {
               address: function (addressService) {
                 return addressService.get();
+              },
+              transactions: function (transactionService) {
+                console.log('here too');
+                return transactionService.get();
               }
             }
           }
