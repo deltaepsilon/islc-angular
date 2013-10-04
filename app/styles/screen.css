@@ -707,20 +707,35 @@ h2 {
   padding-left: 1em;
 }
 
-/* line 123, imports/_global.scss */
+/* line 122, imports/_global.scss */
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* line 126, imports/_global.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 130, imports/_global.scss */
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* line 135, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/icons-2x/background.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 130, imports/_global.scss */
+/* line 142, imports/_global.scss */
 .background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit {
   background-image: url("../images/icons-2x/background-gray.png");
   background-position: -50px -30px;
 }
 
-/* line 135, imports/_global.scss */
+/* line 147, imports/_global.scss */
 .padded-wrapper {
   padding: 10px 20px;
 }

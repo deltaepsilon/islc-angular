@@ -8,9 +8,9 @@ angular.module('islcAngularApp')
       {state: 'account', text: 'account'},
       {state: 'login', text: 'log in'},
       {state: 'register', text: 'register'},
-      {state: 'supplies', text: 'supplies'},
       {state: 'faq', text: 'faqs'},
-      {state: 'shop', text: 'shop'}
+      {state: 'supplies', text: 'supplies'},
+      {state: 'products', text: 'products'}
     ];
 
     var i = $scope.links.length;

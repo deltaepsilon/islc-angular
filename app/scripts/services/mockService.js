@@ -22,7 +22,29 @@ angular.module('islcAngularApp')
             rows:[]
           }
         };
+      },
+      getProductsTable: function () {
+        return {
+          thead: {
+            rows: [
+              [
+                {text: 'id'},
+                {text: 'quantity'},
+                {text: 'price'},
+                {text: 'title'},
+                {text: 'type'}
+              ]
+            ]
+          },
+          tbody: {
+            rows: []
+          },
+          tfoot: {
+            rows:[]
+          }
+        };
       }
+
     };
 
   });

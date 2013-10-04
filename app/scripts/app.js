@@ -85,6 +85,36 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
           }
         }
       })
+      .state('transaction', {
+        url: '/transaction/:id',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/transaction.html',
+            controller: 'TransactionCtrl',
+            resolve: {
+              transaction: function ($stateParams, transactionService) {
+                return transactionService.get($stateParams.id);
+              }
+            }
+          }
+        }
+      })
+      .state('product', {
+        url: '/product/:id',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/product.html',
+            controller: 'ProductCtrl',
+            resolve: {
+              product: function ($stateParams, productService) {
+                return productService.get($stateParams.id);
+              }
+            }
+          }
+        }
+      })
       .state('shop', {
         url: '/shop',
         views: {

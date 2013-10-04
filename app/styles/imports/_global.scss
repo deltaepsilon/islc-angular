@@ -119,6 +119,18 @@ h6 {
   padding-left: 1em;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
 $background-url: url('../images/icons-2x/background.png');
 .background-repeating {
   background-image: $background-url;

@@ -16,7 +16,7 @@ angular.module('islcAngularApp')
           notificationService.error('User', res.error);
         } else {
           $scope.userForm.serverError = undefined;
-          $scope.userForm.userForm.serverError = undefined;
+          $scope.userForm.oldpassword.serverError = undefined;
           $scope.userForm.verification.$dirty = false;
           $scope.userForm.verification.$pristine = true;
 
