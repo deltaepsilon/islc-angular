@@ -6,8 +6,6 @@ angular.module('islcAngularApp')
     $scope.transactions = transactions;
     $scope.transactionsTable = transactionService.getTable($scope.transactions);
 
-    console.log($scope.transactionsTable.tbody.rows[0][2].href);
-
     $scope.saveUser = function (user) {
       userService.update(user).then(function (res) {
         if (res.error) {

@@ -157,12 +157,12 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-medium, p, ul, ol, h4, .button-primary, [action="login_check"] input, [action="login_check"] label, [action="login_check"] a, .landing-page .linkout, .qv-form input, .qv-slider .qv-slider-link {
+.text-medium, p, ul, ol, h4, .button-primary, [action="login_check"] input, [action="login_check"] label, [action="login_check"] a, .landing-page .linkout, .qv-form input, .qv-form textarea, .qv-slider .qv-slider-link {
   font-size: 16px;
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-medium, h3, .landing-page .email-footer input {
+.text-x-medium, h3, .landing-page .email-footer input, .qv-table th, .qv-table td {
   font-size: 18px;
 }
 
@@ -502,7 +502,7 @@
 }
 
 /* line 15, imports/_colors.scss */
-.background-green1, #top-nav:before {
+.background-green1, #top-nav:before, .qv-table th {
   background-color: #98ccb6;
 }
 
@@ -698,7 +698,7 @@ h2 {
 }
 
 /* line 114, imports/_global.scss */
-.full-width, .full-width-form {
+.full-width, .full-width-form, .qv-table {
   width: 100%;
 }
 
@@ -1064,22 +1064,22 @@ button[disabled] {
   border-color: #bd3f42;
 }
 /* line 11, modules/_form.scss */
-.qv-form input {
+.qv-form input, .qv-form textarea {
   border: 1px solid #414141;
   padding: 8px;
   letter-spacing: 1px;
   font-weight: 100;
 }
 /* line 20, imports/_mixins.scss */
-.qv-form input::-moz-placeholder {
+.qv-form input::-moz-placeholder, .qv-form textarea::-moz-placeholder {
   color: #dddddd;
 }
 /* line 21, imports/_mixins.scss */
-.qv-form input::-webkit-input-placeholder {
+.qv-form input::-webkit-input-placeholder, .qv-form textarea::-webkit-input-placeholder {
   color: #dddddd;
 }
 /* line 22, imports/_mixins.scss */
-.qv-form input:-ms-input-placeholder {
+.qv-form input:-ms-input-placeholder, .qv-form textarea:-ms-input-placeholder {
   color: #dddddd;
 }
 /* line 20, modules/_form.scss */
@@ -1126,6 +1126,28 @@ button[disabled] {
 /* line 64, modules/_form.scss */
 .full-width-form textarea {
   margin-bottom: 10px;
+}
+
+/* line 4, modules/_table.scss */
+.qv-table th {
+  border-bottom: 1px solid #414141;
+  font-weight: 300;
+  padding: 5px 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 15, modules/_table.scss */
+.qv-table td {
+  font-weight: 100;
+  padding: 5px 10px;
+}
+/* line 23, modules/_table.scss */
+.qv-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* line 28, modules/_table.scss */
+.qv-table a {
+  text-decoration: underline;
 }
 
 /* line 1, directives/_qv-slider.scss */

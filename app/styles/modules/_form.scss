@@ -8,7 +8,7 @@
     border-color: getColor(red1);
   }
 
-  input {
+  input, textarea {
     @extend .text-medium;
     border: 1px solid getColor(gray3);
     padding: 8px;

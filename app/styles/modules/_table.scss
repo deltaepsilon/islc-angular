@@ -1,0 +1,31 @@
+.qv-table {
+  @extend .full-width;
+
+  th {
+    @extend .text-x-medium;
+    @extend .background-green1;
+
+    border-bottom: 1px solid getColor(gray3);
+    font-weight: 300;
+    padding: 5px 10px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  td {
+    @extend .text-x-medium;
+
+    font-weight: 100;
+    padding: 5px 10px;
+  }
+
+  tr {
+    &:nth-child(even) {
+      background-color: getColor(gray1);
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
