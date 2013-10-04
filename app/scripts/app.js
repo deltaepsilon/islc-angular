@@ -79,7 +79,6 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
                 return addressService.get();
               },
               transactions: function (transactionService) {
-                console.log('here too');
                 return transactionService.get();
               }
             }

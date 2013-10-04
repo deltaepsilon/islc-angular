@@ -6,7 +6,7 @@ angular.module('islcAngularApp')
     $scope.transactions = transactions;
     $scope.transactionsTable = transactionService.getTable($scope.transactions);
 
-    console.log($scope.transactions);
+    console.log($scope.transactionsTable);
 
     $scope.saveUser = function (user) {
       userService.update(user).then(function (res) {

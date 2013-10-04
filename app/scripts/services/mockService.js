@@ -8,10 +8,11 @@ angular.module('islcAngularApp')
         return {
           thead: {
             rows: [
-              {text: 'id'},
-              {text: 'date'},
-              {text: 'products'}
-
+              [
+                {text: 'id'},
+                {text: 'date'},
+                {text: 'products'}
+              ]
             ]
           },
           tbody: {
