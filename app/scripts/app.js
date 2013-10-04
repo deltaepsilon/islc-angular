@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('islcAngularApp', ['restangular', 'ui.router'])
+angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
@@ -67,6 +67,21 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
           }
         }
       })
+      .state('account', {
+        url: '/account',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/account.html',
+            controller: 'AccountCtrl',
+            resolve: {
+              address: function (addressService) {
+                return addressService.get();
+              }
+            }
+          }
+        }
+      })
       .state('shop', {
         url: '/shop',
         views: {
@@ -92,16 +107,6 @@ angular.module('islcAngularApp', ['restangular', 'ui.router'])
           nav: nav,
           body: {
             templateUrl: 'views/partials/supplies.html'
-          }
-        }
-      })
-      .state('account', {
-        url: '/account',
-        views: {
-          nav: nav,
-          body: {
-            templateUrl: 'views/partials/account.html',
-            controller: 'AccountCtrl'
           }
         }
       });
