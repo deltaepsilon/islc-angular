@@ -2,18 +2,28 @@
     <div class="pure-g-r">
         <div class="clearfix pure-u-3-5 full-width-form centered">
             <h3 class="clearfix text-green2">{{ product.title }}</h3>
-            <p>
-                Transaction #{{ transaction.id }}
-            </p>
-            <p>
-                Purchase Date: {{ transaction.created | date }}
-            </p>
 
             <br>
-            <h3 class="clearfix text-green2">Products.</h3>
+            <p>
+                <h4>Price: {{ product.price }}</h4>
+            </p>
+            <p>
+                <h4 ng-show="product.days">Subscription Period: {{ product.days }} Days</h4>
+            </p>
+
+            <p class="product-description" ng-bind-html-unsafe="product.description"></p>
+
             <br>
-            <div qv-table="productsTable"></div>
+            <ul class="image-list">
+                <li class="image-list-item">
+                    <img ng-src="{{ product.key_image }}" alt=""/>
+                </li>
+                <li class="image-list-item" ng-repeat="uri in product.images">
+                    <img ng-src="{{ uri }}" alt=""/>
+                </li>
+            </ul>
             <br>
+
         </div>
     </div>
 </div>
