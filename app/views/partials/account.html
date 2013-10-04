@@ -15,8 +15,9 @@
                     type="email"
                     placeholder="Email..."
                     ng-model="user.email"
+                    qv-focus
                 />
-                <div class="form-error pure-u-2-5" ng-show="accountForm.email.$invalid">That email looks invalid</div>
+                <div class="form-error pure-u-2-5" ng-show="accountForm.email.$invalid && accountForm.email.$dirty">That email looks invalid</div>
             </div>
             <div class="clearfix pure-g-r">
                 <input
