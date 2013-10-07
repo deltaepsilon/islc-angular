@@ -10,6 +10,9 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
       resolve: {
         user: function (userService) {
           return userService.get();
+        },
+        cart: function (cartService) {
+          return cartService.get();
         }
       }
     },

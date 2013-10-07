@@ -11,6 +11,12 @@
                 <h4 ng-show="product.days">Subscription Period: {{ product.days }} Days</h4>
             </p>
 
+            <p class="pure-g-r">
+                <div class="pure-u-2-5">
+                    <button class="button-cta centered-phone full-width" ng-click="addToCart(product.id)">Add To Cart</button>
+                </div>
+            </p>
+
             <p class="product-description" ng-bind-html-unsafe="product.description"></p>
 
             <br>
@@ -23,6 +29,12 @@
                 </li>
             </ul>
             <br>
+
+            <p class="pure-g-r">
+            <div class="pure-u-2-5">
+                <button class="button-cta centered-phone full-width" ng-click="addToCart(product.id, 1)">Add To Cart</button>
+            </div>
+            </p>
 
         </div>
     </div>

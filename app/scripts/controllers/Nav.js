@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state, $rootScope, _, user) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, _, cartService, notificationService, user, cart) {
     $rootScope.user = user;
+    $rootScope.cart = cart;
 
     $scope.links = [
       {state: 'account', text: 'account'},
@@ -47,6 +48,18 @@ angular.module('islcAngularApp')
           return true;
           break;
       }
+    }
+
+    $rootScope.addToCart = function (id, quantity) {
+      debugger;
+      cartService.add(id, quantity).then(function (cart) {
+        if (cart.error) {
+          notificationService.error('Cart', cart.error);
+        } else if (cart.products) {
+          $scope.cart = cart;
+        }
+
+      });
     }
 
   });
