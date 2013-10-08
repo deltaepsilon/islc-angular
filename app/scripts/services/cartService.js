@@ -21,6 +21,14 @@ angular.module('islcAngularApp')
           quantity: quantity || 1
         }
         return Restangular.all('cart').post(query);
+      },
+
+      update: function (productId, quantity) {
+        var query = {
+          product_id: productId,
+          quantity: quantity
+        }
+        return Restangular.all('cart/update').post(query);
       }
     }
   });

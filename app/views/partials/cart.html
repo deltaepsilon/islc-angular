@@ -1,1 +1,78 @@
-ccart
+<div class="pure-g-r cart padded-wrapper">
+
+    <div id="cart-form" class="pure-u-1 pure-g-r">
+
+        <form class="qv-form full-width-form centered" name="cartForm" action="">
+            <h3 class="clearfix text-green2">Your cart.</h3>
+
+            <ul id="cart-list">
+                <li class="clearfix cart-list-item pure-g-r" ng-repeat="product in cart.products">
+                    <div class="clearfix product-title pure-u-1">
+                        <h3>{{ product.title }}</h3>
+                    </div>
+
+                    <div class="product-price pure-u-1-5">{{ product.price | currency }}</div>
+                    <div class="pure-u-1-5">
+                        <input
+                            class="full-width product-quantity"
+                            name="{{ product.title | slug }}-quantity"
+                            type="number"
+                            placeholder="Quantity..."
+                            ng-model="product.quantity"
+                            ng-change="updateCartProduct(product)"
+                        />
+                    </div>
+                    <div  class="pure-u-3-5 product-actions">
+                        <a class="button-link pull-right-desktop" ng-click="updateCart(product.id, 0)">Remove</a>
+                    </div>
+                </li>
+            </ul>
+
+        </form>
+
+
+    </div>
+
+    <div id="cart-details" class="pure-u-1 pure-g-r">
+        <form class="qv-form full-width-form centered" name="checkoutForm" action="">
+            <h3 class="clearfix text-green2">Cart Summary.</h3>
+
+            <br>
+            <table id="cart-summary" class="qv-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>price</th>
+                        <th>quantity</th>
+                        <th>total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-summary-item" ng-repeat="product in cart.products">
+                        <td class="cart-summary-title">{{ product.title }}</td>
+                        <td class="cart-summary-price">{{ product.price | currency }}</td>
+                        <td class="cart-summary-quantity">{{ product.quantity }}</td>
+                        <td class="cart-summary-total">{{ product.quantity * product.price | currency }}</td>
+                    </tr>
+
+                    <tr class="cart-summary-item">
+                        <td class="cart-summary-title">Discount</td>
+                        <td class="cart-summary-price">{{ cart.discount }}</td>
+                        <td class="cart-summary-quantity">{{ cart.discountPercentage }}</td>
+                        <td class="cart-summary-total">{{ cart.discount | currency }}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <br>
+            <div class="pure-u-1 pure-g-r">
+                <div class="pure-u-1-5">
+                    <button class="button-cta" ng-click="checkout(cart)">Checkout</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</div>

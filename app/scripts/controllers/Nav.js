@@ -55,9 +55,6 @@ angular.module('islcAngularApp')
         case 'logout':
           return user;
           break;
-        case 'cart':
-          return cart.products;
-          break;
         default:
           return true;
           break;

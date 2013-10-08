@@ -124,7 +124,12 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
           nav: nav,
           body: {
             templateUrl: 'views/partials/cart.html',
-            controller: 'CartCtrl'
+            controller: 'CartCtrl',
+            resolve: {
+              cart: function (cartService) {
+                return cartService.get();
+              }
+            }
           }
         }
       })

@@ -11,7 +11,7 @@
                 <a class="nav-link"ng-show="showLink('logout')" href="/logout">log out</a>
             </li>
             <li class="nav-link-item">
-                <a class="nav-link"ng-show="showLink('cart')" ui-sref="cart">
+                <a class="nav-link" ng-show="cart.products" ui-sref="cart">
                     cart
                     <span ng-show="cart.count">({{ cart.count }})</span>
                 </a>
