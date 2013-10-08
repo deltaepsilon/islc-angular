@@ -29,6 +29,10 @@ angular.module('islcAngularApp')
           quantity: quantity
         }
         return Restangular.all('cart/update').post(query);
+      },
+
+      setDiscount: function (code) {
+        return Restangular.all('discount').post({code: code});
       }
     }
   });

@@ -7,12 +7,17 @@ angular.module('islcAngularApp')
 
     $rootScope.$watch('cart', function () {
       var count = 0,
+        total = 0,
         cart = $rootScope.cart,
-        i = cart.products.length;
+        i = cart.products.length,
+        product;
       while (i--) {
-        count += cart.products[i].quantity;
+        product = cart.products[i];
+        count += product.quantity;
+        total += product.quantity * product.price;
       }
       $rootScope.cart.count = count;
+      $rootScope.cart.total = total;
 
     });
 

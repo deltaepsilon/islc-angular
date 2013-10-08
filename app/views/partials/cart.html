@@ -55,15 +55,35 @@
                         <td class="cart-summary-total">{{ product.quantity * product.price | currency }}</td>
                     </tr>
 
-                    <tr class="cart-summary-item">
-                        <td class="cart-summary-title">Discount</td>
-                        <td class="cart-summary-price">{{ cart.discount }}</td>
-                        <td class="cart-summary-quantity">{{ cart.discountPercentage }}</td>
-                        <td class="cart-summary-total">{{ cart.discount | currency }}</td>
+                    <tr class="cart-summary-item" ng-show="cart.discount">
+                        <td class="cart-summary-discount">
+                            Discount Code: {{ cart.discount.code }}
+                        </td>
+                        <td colspan="2">
+                            <span ng-show="cart.discount.value">{{ cart.discount.value | currency }} Discount</span>
+                            <span ng-show="cart.discount.percent">{{ cart.discount.percent | percentage }} Discount</span>
+                        </td>
+                        <td class="cart-summary-total">{{ -1 * cart.discount.value - cart.total * cart.discount.percent | currency}}</td>
                     </tr>
                 </tbody>
 
             </table>
+
+            <br>
+            <div class="pure-u-1 pure-g-r">
+
+                <div class="pure-u-2-5">
+                    <input
+                        type="text"
+                        ng-model="cart.code"
+                        placeholder="Discount code..."
+                    />
+                </div>
+                <div class="pure-u-1-5">
+                    <button class="button-secondary" ng-click="setCode(cart.code)">Add Code</button>
+                </div>
+
+            </div>
 
             <br>
             <div class="pure-u-1 pure-g-r">
