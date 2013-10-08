@@ -111,20 +111,35 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
             templateUrl: 'views/partials/product.html',
             controller: 'ProductCtrl',
             resolve: {
-              product: function ($stateParams, productService) {
+              products: function ($stateParams, productService) {
                 return productService.get($stateParams.id);
               }
             }
           }
         }
       })
-      .state('shop', {
-        url: '/shop',
+      .state('cart', {
+        url: '/cart',
         views: {
           nav: nav,
           body: {
-            templateUrl: 'views/partials/shop.html',
-            controller: 'ShopCtrl'
+            templateUrl: 'views/partials/cart.html',
+            controller: 'CartCtrl'
+          }
+        }
+      })
+      .state('products', {
+        url: '/products',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/products.html',
+            controller: 'ProductCtrl',
+            resolve: {
+              products: function (productService) {
+                return productService.get();
+              }
+            }
           }
         }
       })

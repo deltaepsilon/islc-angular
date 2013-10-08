@@ -1,20 +1,14 @@
-<div class="product padded-wrapper">
+<div class="products padded-wrapper">
     <div class="pure-g-r">
-        <div class="clearfix pure-u-3-5 full-width-form centered">
+        <div class="clearfix pure-u-3-5 full-width-form centered" ng-repeat="product in products">
             <h3 class="clearfix text-green2">{{ product.title }}</h3>
 
             <br>
             <p>
-                <h4>Price: {{ product.price }}</h4>
+            <h4>Price: {{ product.price }}</h4>
             </p>
             <p>
-                <h4 ng-show="product.days">Subscription Period: {{ product.days }} Days</h4>
-            </p>
-
-            <p class="pure-g-r">
-                <div class="pure-u-2-5">
-                    <button class="button-cta centered-phone full-width" ng-click="addToCart(product.id)">Add To Cart</button>
-                </div>
+            <h4 ng-show="product.days">Subscription Period: {{ product.days }} Days</h4>
             </p>
 
             <p class="product-description" ng-bind-html-unsafe="product.description"></p>

@@ -10,6 +10,12 @@
             <li class="nav-link-item">
                 <a class="nav-link"ng-show="showLink('logout')" href="/logout">log out</a>
             </li>
+            <li class="nav-link-item">
+                <a class="nav-link"ng-show="showLink('cart')" ui-sref="cart">
+                    cart
+                    <span ng-show="cart.count">({{ cart.count }})</span>
+                </a>
+            </li>
 
             <li class="nav-link-item" ng-repeat="link in links">
                 <a class="nav-link" ng-href="{{ link.href }}" ng-show="showLink(link.state)">{{ link.text }}</a>
@@ -17,6 +23,7 @@
         </ul>
 
         <div id="login" ui-view="login"></div>
+
     </div>
 
     <!--<div id="nav-stretch" class="pure-u-1-5 pure-visible-desktop"></div>-->

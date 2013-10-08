@@ -1,12 +1,18 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('productService', function productService($filter, Restangular, mockService, _) {
+  .service('productService', function productService($rootScope, $filter, Restangular, mockService, _) {
     Restangular.setBaseUrl('/angular');
 
     return {
-      get: function (id) {
-        return Restangular.one('product', id).get();
+      get: function (id, force) {
+        if (id) {
+          return Restangular.one('product', id).get();
+        } else if (!force && $rootScope.products) {
+          return $rootScope.products;
+        } else {
+          return Restangular.one('product').get();
+        }
 
       },
       getTable: function (products) {

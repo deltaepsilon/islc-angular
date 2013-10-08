@@ -1,9 +1,20 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state, $rootScope, _, cartService, notificationService, user, cart) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, _, cartService, productService, notificationService, user, cart) {
     $rootScope.user = user;
     $rootScope.cart = cart;
+
+    $rootScope.$watch('cart', function () {
+      var count = 0,
+        cart = $rootScope.cart,
+        i = cart.products.length;
+      while (i--) {
+        count += cart.products[i].quantity;
+      }
+      $rootScope.cart.count = count;
+
+    });
 
     $scope.links = [
       {state: 'account', text: 'account'},
@@ -44,6 +55,9 @@ angular.module('islcAngularApp')
         case 'logout':
           return user;
           break;
+        case 'cart':
+          return cart.products;
+          break;
         default:
           return true;
           break;
@@ -51,12 +65,20 @@ angular.module('islcAngularApp')
     }
 
     $rootScope.addToCart = function (id, quantity) {
-      debugger;
       cartService.add(id, quantity).then(function (cart) {
         if (cart.error) {
           notificationService.error('Cart', cart.error);
         } else if (cart.products) {
-          $scope.cart = cart;
+          $rootScope.cart = cart;
+
+          //Force update the products list. This is critical to capture any changes resulting from the cart transaction.
+          productService.get(undefined, true).then(function (products) {
+            if (products.error) {
+              notificationService.error('Products', products.error);
+            } else {
+              $rootScope.products = products;
+            }
+          });
         }
 
       });

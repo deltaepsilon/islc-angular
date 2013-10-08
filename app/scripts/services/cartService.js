@@ -6,8 +6,13 @@ angular.module('islcAngularApp')
     Restangular.setBaseUrl('/angular');
 
     return {
-      get: function () {
-        return Restangular.one('cart').get();
+      get: function (force) {
+        if (!force && $rootScope.cart) {
+          return $rootScope.cart;
+        } else {
+          return Restangular.one('cart').get();
+        }
+
       },
 
       add: function (productId, quantity) {
