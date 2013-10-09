@@ -152,7 +152,7 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-small, h5, #copyright-footer, .qv-form label, .form-error {
+.text-small, h5, .button-tertiary, #copyright-footer, .qv-form label, .form-error {
   font-size: 14px;
 }
 
@@ -162,7 +162,7 @@
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-medium, h3, .landing-page .email-footer input, .qv-table th, .qv-table td {
+.text-x-medium, h3, .button-primary, .button-secondary, [action="login_check"] #_submit, .landing-page .email-footer input, .qv-table th, .qv-table td {
   font-size: 18px;
 }
 
@@ -582,7 +582,7 @@
 }
 
 /* line 22, imports/_colors.scss */
-.text-white, .button-cta, .button-primary, .button-secondary, [action="login_check"] #_submit {
+.text-white, .button-cta, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary {
   color: white;
 }
 
@@ -730,7 +730,7 @@ h2 {
 }
 
 /* line 142, imports/_global.scss */
-.background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit {
+.background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary {
   background-image: url("../images/icons-2x/background-gray.png");
   background-position: -50px -30px;
 }
@@ -925,7 +925,6 @@ button[disabled] {
   border: none;
   padding: 5px 10px;
   text-transform: uppercase;
-  font-size: 18px;
   font-weight: 500;
   letter-spacing: 2px;
 }
@@ -936,12 +935,22 @@ button[disabled] {
   border: none;
   padding: 10px 25px;
   text-transform: uppercase;
-  font-size: 18px;
   font-weight: 700;
   letter-spacing: 5px;
 }
 
 /* line 46, modules/_buttons.scss */
+.button-tertiary {
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+/* line 60, modules/_buttons.scss */
 .button-link {
   cursor: pointer;
   text-decoration: underline;

@@ -18,6 +18,7 @@ button {
 
 .button-primary {
   @extend .text-white;
+  @extend .text-x-medium;
   @extend .background-repeating-gray;
   @extend .text-medium;
 
@@ -25,22 +26,35 @@ button {
   border: none;
   padding: 5px 10px;
   text-transform: uppercase;
-  font-size: 18px;
   font-weight: 500;
   letter-spacing: 2px;
 }
 
 .button-secondary {
   @extend .text-white;
+  @extend .text-x-medium;
   @extend .background-repeating-gray;
 
   display: block;
   border: none;
   padding: 10px 25px;
   text-transform: uppercase;
-  font-size: 18px;
   font-weight: 700;
   letter-spacing: 5px;
+}
+
+.button-tertiary {
+  @extend .text-white;
+  @extend .background-repeating-gray;
+  @extend .text-small;
+
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 .button-link {

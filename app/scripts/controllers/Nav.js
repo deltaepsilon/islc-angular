@@ -5,6 +5,15 @@ angular.module('islcAngularApp')
     $rootScope.user = user;
     $rootScope.cart = cart;
 
+    var error = location.href.match(/error=([^&]+)/);
+    if (error && error.length >= 2 ) {
+      notificationService.error('Log In', decodeURIComponent(error[1]));
+    }
+
+    $rootScope.$on('$stateChangeSuccess', function(event, to, toParams, from, fromParams) {
+      $rootScope.$previousState = from;
+    });
+
     $rootScope.$watch('cart', function () {
       var count = 0,
         total = 0,

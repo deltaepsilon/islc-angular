@@ -6,8 +6,6 @@ angular.module('islcAngularApp')
       $rootScope.cart = cart;
     }
 
-    console.log($rootScope.cart);
-
     $scope.updateCart = function (id, quantity) {
       cartService.update(id, quantity || 0).then(function (cart) {
         if (cart.error) {

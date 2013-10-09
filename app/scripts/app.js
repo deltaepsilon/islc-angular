@@ -34,7 +34,7 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         abstract: true
       })
       .state('root', {
-        url: '',
+        url: '/',
         views: {
           nav: nav,
           body: body
@@ -61,7 +61,7 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         }
       })
       .state('reset', {
-        url: '/reset',
+        url: '/reset?error',
         views: {
           nav: nav,
           body: {
