@@ -7,7 +7,12 @@ angular.module('islcAngularApp')
 
     var error = location.href.match(/error=([^&]+)/);
     if (error && error.length >= 2 ) {
-      notificationService.error('Log In', decodeURIComponent(error[1]));
+      notificationService.error('Error', decodeURIComponent(error[1]));
+    }
+
+    var notification = location.href.match(/notification=([^&]+)/);
+    if (notification && notification.length >= 2 ) {
+      notificationService.info('Notification', decodeURIComponent(notification[1]));
     }
 
     $rootScope.$on('$stateChangeSuccess', function(event, to, toParams, from, fromParams) {

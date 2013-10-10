@@ -61,12 +61,22 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         }
       })
       .state('reset', {
-        url: '/reset?error',
+        url: '/reset',
         views: {
           nav: nav,
           body: {
             controller: 'LoginCtrl',
             templateUrl: 'angular/reset.html'
+          }
+        }
+      })
+      .state('resetForm', {
+        url: '/reset/form/:token',
+        views: {
+          nav: nav,
+          body: {
+            controller: 'LoginCtrl',
+            templateUrl: 'views/partials/reset-form.html'
           }
         }
       })
