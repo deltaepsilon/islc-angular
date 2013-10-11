@@ -76,7 +76,9 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
           nav: nav,
           body: {
             controller: 'LoginCtrl',
-            templateUrl: 'views/partials/reset-form.html'
+            templateUrl: function ($stateParams) {
+              return 'angular/resetting.html/' + $stateParams.token;
+            }
           }
         }
       })
