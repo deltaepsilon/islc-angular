@@ -87,6 +87,52 @@
             </div>
 
             <br>
+
+            <div class="pure-u-1 pure-g-r" ng-show="user">
+                <h3 class="clearfix text-green2">Your card.</h3>
+                <br>
+
+                <div class="pure-u-1 pure-g-r">
+                    <div class="pure-u-3-5">
+                        <input
+                                name="cardNumber"
+                                type="text"
+                                ng-model="newCard.number"
+                                placeholder="Card number..."
+                                />
+                    </div>
+                    <div class="form-error pure-u-2-5" ng-show="checkoutForm.cardNumber.$invalid">Invalid card number</div>
+                </div>
+                <div class="pure-u-1 pure-g-r">
+                    <div class="pure-u-2-5">
+                        <select name="month" ng-model="newCard.month" ng-options="months.indexOf(m) as m for m in months"></select>
+                    </div>
+                    <div class="pure-u-2-5">
+                        <select name="year" ng-model="newCard.year" ng-options="year for year in years"></select>
+                    </div>
+
+                </div>
+
+                <div class="pure-u-1 pure-g-r">
+                    <div class="pure-u-1-5">
+                        <input
+                                name="cvc"
+                                type="text"
+                                ng-model="newCard.cvc"
+                                placeholder="Security code..."
+                                />
+                    </div>
+                    <div class="form-error pure-u-3-5" ng-show="checkoutForm.cvc.$invalid">Invalid security code</div>
+                </div>
+
+
+                <div class="pure-u-1-5">
+                    <button class="button-secondary" ng-click="setCard(newCard)">Add Card</button>
+                </div>
+
+            </div>
+
+            <br>
             <div class="pure-u-1 pure-g-r">
                 <div class="pure-u-1-5" ng-show="user">
                     <button class="button-cta" ng-click="checkout(cart)">Checkout</button>
