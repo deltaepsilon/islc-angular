@@ -93,41 +93,53 @@
                 <br>
 
                 <div class="pure-u-1 pure-g-r">
-                    <div class="pure-u-3-5">
+                    <div class="pure-u-2-5">
                         <input
-                                name="cardNumber"
-                                type="text"
-                                ng-model="newCard.number"
-                                placeholder="Card number..."
-                                />
+                            name="cardNumber"
+                            type="text"
+                            ng-model="newCard.number"
+                            ng-change="validateCardNumber(newCard.number)"
+                            placeholder="Card number..."
+                            ng-required="true"
+                        />
                     </div>
-                    <div class="form-error pure-u-2-5" ng-show="checkoutForm.cardNumber.$invalid">Invalid card number</div>
+                    <div class="form-error pure-u-3-5" ng-show="checkoutForm.cardNumber.$invalid && checkoutForm.cardNumber.$dirty">Invalid card number</div>
                 </div>
                 <div class="pure-u-1 pure-g-r">
                     <div class="pure-u-2-5">
-                        <select name="month" ng-model="newCard.month" ng-options="months.indexOf(m) as m for m in months"></select>
+                        <select name="month" ng-model="newCard.exp_month" ng-options="months.indexOf(m) as m for m in months"></select>
                     </div>
                     <div class="pure-u-2-5">
-                        <select name="year" ng-model="newCard.year" ng-options="year for year in years"></select>
+                        <select name="year" ng-model="newCard.exp_year" ng-options="year for year in years"></select>
                     </div>
 
                 </div>
 
                 <div class="pure-u-1 pure-g-r">
-                    <div class="pure-u-1-5">
+                    <div class="pure-u-2-5">
                         <input
-                                name="cvc"
-                                type="text"
-                                ng-model="newCard.cvc"
-                                placeholder="Security code..."
-                                />
+                            name="cvc"
+                            type="text"
+                            ng-model="newCard.cvc"
+                            ng-change="validateCVC(newCard.cvc)"
+                            placeholder="Security code..."
+                            ng-required="true"
+                            ng-minlength="3"
+                            ng-maxlength="4"
+                        />
                     </div>
-                    <div class="form-error pure-u-3-5" ng-show="checkoutForm.cvc.$invalid">Invalid security code</div>
+                    <div class="form-error pure-u-3-5" ng-show="checkoutForm.cvc.$invalid && checkoutForm.cvc.$dirty">Invalid security code</div>
                 </div>
 
 
                 <div class="pure-u-1-5">
-                    <button class="button-secondary" ng-click="setCard(newCard)">Add Card</button>
+                    <button
+                        class="button-secondary"
+                        ng-click="setCard(newCard)"
+                        ng-disabled="checkoutForm.$invalid || checkoutForm.cardNumber.$invalid || checkoutForm.cvc.$invalid"
+                    > Add Card
+                    </button>
+                    <div class="form-error pure-u-3-5" ng-show="checkoutForm.invalidCard">Invalid card details</div>
                 </div>
 
             </div>
@@ -135,7 +147,7 @@
             <br>
             <div class="pure-u-1 pure-g-r">
                 <div class="pure-u-1-5" ng-show="user">
-                    <button class="button-cta" ng-click="checkout(cart)">Checkout</button>
+                    <button class="button-cta" ng-click="checkout(cart)" ng-disabled="!card || !cart">Checkout</button>
                 </div>
                 <div class="pure-u-1" ng-hide="user">
                     <a class="button-link" ui-sref="login({redirect: 'cart'})">Login</a> or <a class="button-link" ui-sref="register({redirect: 'cart'})">Register</a> for checkout

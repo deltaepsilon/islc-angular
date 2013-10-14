@@ -1,11 +1,13 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('stripeService', function stripeService($q, Stripe, paramsService) {
+  .service('stripeService', function stripeService($rootScope, $q, Stripe, paramsService, Restangular) {
+    Restangular.setBaseUrl('/angular');
+
     var setPK = function () {
         var deferred = $q.defer();
         paramsService.get().then(function (params) {
-          Stripe.setPublishableKey(params.stripePK, deferred.resolve);
+          deferred.resolve(Stripe.setPublishableKey(params.stripePK));
         });
         return deferred.promise;
 
@@ -14,7 +16,7 @@ angular.module('islcAngularApp')
     return {
       createToken: function (card) {
         var deferred = $q.defer();
-        setPK.then(function () {
+        setPK().then(function () {
           Stripe.card.createToken(card, function (status, response) {
             var result = { status: status, response: response};
 
@@ -23,9 +25,10 @@ angular.module('islcAngularApp')
             } else {
               deferred.resolve(result);
             }
+            $rootScope.$apply(); // Must call $apply() because this callback is outside of Angular
           });
         });
-        return deferred;
+        return deferred.promise;
 
       },
 
@@ -43,6 +46,10 @@ angular.module('islcAngularApp')
 
       cardType: function (number) {
         return Stripe.card.cardType(number);
+      },
+
+      saveCard: function (card) {
+        return Restangular.all('card').post(card);
       }
 
     };

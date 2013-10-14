@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('CartCtrl', function ($scope, $rootScope, cartService, notificationService, moment, cart) {
+  .controller('CartCtrl', function ($scope, $rootScope, cartService, notificationService, stripeService, _, moment, cart) {
     if (!$rootScope.cart) {
       $rootScope.cart = cart;
     }
@@ -9,12 +9,22 @@ angular.module('islcAngularApp')
 
     var i =  10,
       year = moment().year(),
-      year = moment().year(),
+      month = moment().month(),
       setDefaults = function () {
         $scope.newCard = {
-          year: $scope.years[0],
-          month: 0
+          exp_year: $scope.years[0],
+          exp_month: $scope.months[0]
         };
+
+        if ($scope.checkoutForm) {
+          $scope.checkoutForm.$pristine = true;
+          $scope.checkoutForm.$dirty = false;
+          $scope.checkoutForm.cardNumber.$pristine = true;
+          $scope.checkoutForm.cardNumber.$dirty = false;
+          $scope.checkoutForm.cvc.$pristine = true;
+          $scope.checkoutForm.cvc.$dirty = false;
+        }
+
 
       };
     $scope.years = [];
@@ -52,11 +62,30 @@ angular.module('islcAngularApp')
     };
 
     $scope.setCard = function (card) {
-      console.log('setting card', card);
+      card = _.clone(card);
+      card.exp_month += 1;
+      stripeService.createToken(card).then(function (res) {
+        stripeService.saveCard(res.response).then(function (card) {
+          $scope.card = card;
+        });
+        setDefaults();
+      }, function (res) {
+        notificationService.error('Cart', res.response.error.message);
+      });
     };
 
-    $scope.checkout = function (cart) {
-      console.log('cart', cart);
+    $scope.checkout = function (cart, card) {
+      stripeService.checkout(cart, card);
     };
+
+    $scope.validateCardNumber = function (number) {
+      $scope.checkoutForm.cardNumber.$invalid = !stripeService.validateCardNumber(number);
+
+    }
+
+    $scope.validateCVC = function (cvc) {
+      $scope.checkoutForm.cvc.$invalid = !stripeService.validateCVC(cvc);
+
+    }
 
   });
