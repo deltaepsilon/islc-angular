@@ -48,8 +48,8 @@ angular.module('islcAngularApp')
         return Stripe.card.cardType(number);
       },
 
-      saveCard: function (card) {
-        return Restangular.all('card').post(card);
+      saveToken: function (token) {
+        return Restangular.all('token').post(token);
       }
 
     };

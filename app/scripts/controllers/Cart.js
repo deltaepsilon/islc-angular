@@ -13,7 +13,7 @@ angular.module('islcAngularApp')
       setDefaults = function () {
         $scope.newCard = {
           exp_year: $scope.years[0],
-          exp_month: $scope.months[0]
+          exp_month: 0
         };
 
         if ($scope.checkoutForm) {
@@ -31,8 +31,9 @@ angular.module('islcAngularApp')
     while (i--) {
       $scope.years.unshift(i + year);
     }
+    $scope.years.unshift('Expiration Year');
 
-    $scope.months = ['January (1)', 'February (2)', 'March (3)', 'April (4)', 'May (5)', 'June (6)', 'July (7)', 'August (8)', 'September (9)', 'October (10)', 'November (11)', 'December (12)'];
+    $scope.months = ['Expiration Month', 'January (1)', 'February (2)', 'March (3)', 'April (4)', 'May (5)', 'June (6)', 'July (7)', 'August (8)', 'September (9)', 'October (10)', 'November (11)', 'December (12)'];
     setDefaults();
 
     $scope.updateCart = function (id, quantity) {
@@ -61,11 +62,11 @@ angular.module('islcAngularApp')
       });
     };
 
-    $scope.setCard = function (card) {
-      card = _.clone(card);
-      card.exp_month += 1;
+    $scope.saveCard = function (card) {
+//      card = _.clone(card);
+//      card.exp_month += 1;
       stripeService.createToken(card).then(function (res) {
-        stripeService.saveCard(res.response).then(function (card) {
+        stripeService.saveToken(res.response).then(function (card) {
           $scope.card = card;
         });
         setDefaults();
