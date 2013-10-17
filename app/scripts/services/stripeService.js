@@ -32,6 +32,10 @@ angular.module('islcAngularApp')
 
       },
 
+      getToken: function () {
+        return Restangular.one('token').get();
+      },
+
       validateCardNumber: function (number) {
         return Stripe.card.validateCardNumber(number);
       },

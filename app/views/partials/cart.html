@@ -20,6 +20,8 @@
                             placeholder="Quantity..."
                             ng-model="product.quantity"
                             ng-change="updateCartProduct(product)"
+                            min="1"
+                            ng-required="true"
                         />
                     </div>
                     <div  class="pure-u-3-5 product-actions">
@@ -51,8 +53,8 @@
                     <tr class="cart-summary-item" ng-repeat="product in cart.products">
                         <td class="cart-summary-title">{{ product.title }}</td>
                         <td class="cart-summary-price">{{ product.price | currency }}</td>
-                        <td class="cart-summary-quantity">{{ product.quantity }}</td>
-                        <td class="cart-summary-total">{{ product.quantity * product.price | currency }}</td>
+                        <td class="cart-summary-quantity">{{ product.quantity || '?' }}</td>
+                        <td class="cart-summary-total">{{ product.quantity * product.price | currency}}</td>
                     </tr>
 
                     <tr class="cart-summary-item" ng-show="cart.discount">
@@ -64,6 +66,12 @@
                             <span ng-show="cart.discount.percent">{{ cart.discount.percent | percentage }} Discount</span>
                         </td>
                         <td class="cart-summary-total">{{ -1 * cart.discount.value - cart.total * cart.discount.percent | currency}}</td>
+                    </tr>
+
+                    <tr id="cart-total" class="cart-summary-item">
+                        <td><strong>Total:</strong></td>
+                        <td colspan="2"></td>
+                        <td>{{ cart.total | currency }}</td>
                     </tr>
                 </tbody>
 
@@ -86,11 +94,43 @@
 
             </div>
 
-            <br>
+
+
+            <div class="pure-u-1" ng-show="token">
+                <br>
+                <h3 class="clearfix text-green2">Your Card.</h3>
+                <br>
+
+                <table class="qv-table">
+                    <thead>
+                        <tr>
+                            <th>Card Number</th>
+                            <th>Card Type</th>
+                            <th>Expiration Month</th>
+                            <th>Expiration Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> *****{{ token.card.last4 }}</td>
+                            <td>{{ token.card.type }}</td>
+                            <td>{{ token.card.exp_month }}</td>
+                            <td>{{ token.card.exp_year }}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+            </div>
+
+
 
             <div class="pure-u-1 pure-g-r" ng-show="user">
-                <h3 class="clearfix text-green2">Your card.</h3>
-                <br>
+                <h3 class="clearfix text-green2" ng-show="token">Change Card.</h3>
+                <h3 class="clearfix text-green2" ng-hide="token">Add Card.</h3>
+                <br class="pure-u-1">
+                <br class="pure-u-1">
 
                 <div class="pure-u-1 pure-g-r">
                     <div class="pure-u-2-5">
@@ -146,15 +186,17 @@
             </div>
 
             <br>
-            <div class="pure-u-1 pure-g-r">
-                <div class="pure-u-1-5" ng-show="user">
-                    <button class="button-cta" ng-click="checkout(cart)" ng-disabled="!card || !cart">Checkout</button>
-                </div>
-                <div class="pure-u-1" ng-hide="user">
-                    <a class="button-link" ui-sref="login({redirect: 'cart'})">Login</a> or <a class="button-link" ui-sref="register({redirect: 'cart'})">Register</a> for checkout
-                </div>
-            </div>
         </form>
+
+        <!--Keep the checkout button out of the form so that required fields will not prevent submission-->
+        <div class="pure-u-1 pure-g-r">
+            <div class="pure-u-1-5" ng-show="user">
+                <button class="button-cta" ng-click="checkout()" ng-disabled="!cart || !token || cartForm.$invalid">Checkout</button>
+            </div>
+            <div class="pure-u-1" ng-hide="user">
+                <a class="button-link" ui-sref="login({redirect: 'cart'})">Login</a> or <a class="button-link" ui-sref="register({redirect: 'cart'})">Register</a> for checkout
+            </div>
+        </div>
     </div>
 
 

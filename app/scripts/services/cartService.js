@@ -33,6 +33,10 @@ angular.module('islcAngularApp')
 
       setDiscount: function (code) {
         return Restangular.all('discount').post({code: code});
+      },
+
+      checkout: function () {
+        return Restangular.all('stripe/checkout').get();
       }
     }
   });

@@ -140,6 +140,9 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
             resolve: {
               cart: function (cartService) {
                 return cartService.get();
+              },
+              token: function (stripeService) {
+                return stripeService.getToken();
               }
             }
           }
