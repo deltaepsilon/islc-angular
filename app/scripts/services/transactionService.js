@@ -14,7 +14,7 @@ angular.module('islcAngularApp')
         var table = mockService.getTransactionTable();
         _.map(transactions, function (transaction) {
           table.tbody.rows.push([
-            {text: transaction.id},
+            {text: transaction.id, href: '#/transaction/' + transaction.id},
             {text: $filter('date')(transaction.created)},
             {text: transaction.products.length, href: '#/transaction/' + transaction.id}
           ]);

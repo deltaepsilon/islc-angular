@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('CartCtrl', function ($scope, $rootScope, cartService, notificationService, stripeService, _, moment, cart, token) {
+  .controller('CartCtrl', function ($scope, $rootScope, $state, cartService, notificationService, stripeService, _, moment, cart, token) {
     if (!$rootScope.cart) {
       $rootScope.cart = cart;
     }
@@ -98,8 +98,17 @@ angular.module('islcAngularApp')
 
     $scope.checkout = function () {
       cartService.checkout().then(function (transaction) {
-        console.log('transaction complete', transaction);
-        cartService.get(true); //Force reload the cart. We wouldn't want stuff to show up in the cart without reason.
+        //Force reload the cart. We wouldn't want stuff to show up in the cart without reason.
+        cartService.get(true).then(function (cart) {
+          $rootScope.cart = cart;
+        });
+
+        if (transaction.error) {
+          notificationService.error('Checkout', transaction.error);
+        } else {
+          $state.go('transaction', {id: transaction.id});
+        }
+
       });
 
     };

@@ -36,7 +36,7 @@ angular.module('islcAngularApp')
       },
 
       checkout: function () {
-        return Restangular.all('stripe/checkout').get();
+        return Restangular.one('stripe/checkout').get();
       }
     }
   });
