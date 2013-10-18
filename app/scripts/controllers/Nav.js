@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state, $rootScope, _, cartService, productService, notificationService, user, cart) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, _, cartService, productService, notificationService, user, cart, subscriptions) {
     $rootScope.user = user;
     $rootScope.cart = cart;
+    $rootScope.subscriptions = subscriptions;
 
     var error = location.href.match(/error=([^&]+)/);
     if (error && error.length >= 2 ) {
@@ -35,19 +36,20 @@ angular.module('islcAngularApp')
 
     });
 
-    $scope.links = [
-      {state: 'account', text: 'account'},
-      {state: 'login', text: 'log in'},
-      {state: 'register', text: 'register'},
-      {state: 'faq', text: 'faqs'},
-      {state: 'supplies', text: 'supplies'},
-      {state: 'products', text: 'products'}
-    ];
-
-    var i = $scope.links.length;
-    while (i--) {
-      $scope.links[i].href = $state.href($scope.links[i].state);
-    }
+//    $scope.links = [
+//      {state: 'account', text: 'account'},
+//      {state: 'account', text: 'account'},
+//      {state: 'login', text: 'log in'},
+//      {state: 'register', text: 'register'},
+//      {state: 'faq', text: 'faqs'},
+//      {state: 'supplies', text: 'supplies'},
+//      {state: 'products', text: 'products'}
+//    ];
+//
+//    var i = $scope.links.length;
+//    while (i--) {
+//      $scope.links[i].href = $state.href($scope.links[i].state);
+//    }
 
     $scope.showLink = function (state) {
       var user = !!$rootScope.user,
@@ -73,6 +75,9 @@ angular.module('islcAngularApp')
           break;
         case 'logout':
           return user;
+          break;
+        case 'subscriptions':
+          return user && subscriptions.length;
           break;
         default:
           return true;

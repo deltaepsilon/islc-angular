@@ -8,8 +8,37 @@
     <div class="pure-u-3-5 relative">
         <ul id="nav-links" class="pure-menu-horizontal">
             <li class="nav-link-item">
-                <a class="nav-link"ng-show="showLink('logout')" href="/logout">log out</a>
+                <a class="nav-link" ng-show="showLink('logout')" href="/logout">log out</a>
             </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('account')" ui-sref="account">account</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('login')" ui-sref="login">log in</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('register')" ui-sref="register">register</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('faq')" ui-sref="faq">faq</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('supplies')" ui-sref="supplies">supplies</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('products')" ui-sref="products">products</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('subscriptions')" ui-sref="subscriptions">subscriptions</a>
+            </li>
+
             <li class="nav-link-item">
                 <a class="nav-link" ng-show="cart.products" ui-sref="cart">
                     cart
@@ -17,12 +46,10 @@
                 </a>
             </li>
 
-            <li class="nav-link-item" ng-repeat="link in links">
-                <a class="nav-link" ng-href="{{ link.href }}" ng-show="showLink(link.state)">{{ link.text }}</a>
-            </li>
+            <!--<li class="nav-link-item" ng-repeat="link in links">-->
+                <!--<a class="nav-link" ng-href="{{ link.href }}" ng-show="showLink(link.state)">{{ link.text }}</a>-->
+            <!--</li>-->
         </ul>
-
-        <div id="login" ui-view="login"></div>
 
     </div>
 

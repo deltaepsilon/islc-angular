@@ -13,6 +13,9 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         },
         cart: function (cartService) {
           return cartService.get();
+        },
+        subscriptions: function (subscriptionService) {
+          return subscriptionService.get();
         }
       }
     },
