@@ -1288,6 +1288,15 @@ button[disabled] {
   text-decoration: underline;
 }
 
+/* line 3, modules/_subscription.scss */
+.subscriptions .key-image {
+  max-height: 100px;
+}
+/* line 7, modules/_subscription.scss */
+.subscriptions .start-course-button {
+  text-decoration: none;
+}
+
 /* line 1, directives/_qv-slider.scss */
 .qv-slider {
   position: relative;

@@ -1,0 +1,36 @@
+<div class="pure-g-r subscriptions padded-wrapper">
+
+    <div class="pure-u-3-5 centered">
+        <h3 class="clearfix text-green2">Your subscriptions.</h3>
+
+        <br>
+
+        <table class="qv-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>title</th>
+                    <th>expires</th>
+                    <th>time remaining</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="subscription in subscriptions">
+                    <td>
+                        <img class="key-image" ng-src="{{ subscription.product.key_image }}" alt="{{ subscription.slug }}"/>
+                    </td>
+                    <td>{{ subscription.product.title }}</td>
+                    <td>
+                        <span ng-show="subscription.reset">{{ subscription.expires | date }}</span>
+                        <a class="button button-secondary button-link text-centered start-course-button" ng-hide="subscription.reset" ui-sref="content.subscription({slug: subscription.product.slug})">Start Course</a>
+                    </td>
+                    <td>
+                        <span ng-show="subscription.reset">{{ subscription.expires }}</span>
+                        <span ng-hide="subscription.reset">Course Not Started</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

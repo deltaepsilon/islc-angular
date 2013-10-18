@@ -166,6 +166,62 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
           }
         }
       })
+      .state('subscriptions', {
+        url: '/subscriptions',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/subscriptions.html',
+            controller: 'SubscriptionCtrl',
+            resolve: {
+              subscriptions: function (subscriptionService) {
+                return subscriptionService.get();
+              }
+            }
+          }
+        }
+      })
+      .state('content', {
+        url: '/content',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/content.html',
+            controller: 'ContentCtrl',
+            resolve: {
+              content: function (contentService) {
+                return contentService.get();
+              }
+            }
+          }
+        }
+      })
+      .state('content.subscription', {
+        url: '/:productSlug',
+        views: {
+          subscription: {
+            templateUrl: 'views/partials/subscription.html',
+            resolve: {
+              product: function (contentService, $stateParams) {
+                return contentService.get($stateParams.productSlug);
+              }
+            }
+          }
+        }
+      })
+      .state('content.subscription.page', {
+        url: '/:pageSlug',
+        views: {
+          page: {
+            templateUrl: 'views/partials/page.html',
+            resolve: {
+              page: function (contentService, $stateParams) {
+                return contentService.getPage($stateParams.pageSlug);
+              }
+            }
+          }
+        }
+      })
       .state('faq', {
         url: '/faq',
         views: {
