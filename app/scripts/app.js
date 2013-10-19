@@ -187,12 +187,6 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
           nav: nav,
           body: {
             templateUrl: 'views/partials/content.html',
-            controller: 'ContentCtrl',
-            resolve: {
-              content: function (contentService) {
-                return contentService.get();
-              }
-            }
           }
         }
       })
@@ -201,8 +195,9 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         views: {
           subscription: {
             templateUrl: 'views/partials/subscription.html',
+            controller: 'ContentCtrl',
             resolve: {
-              product: function (contentService, $stateParams) {
+              pages: function (contentService, $stateParams) {
                 return contentService.get($stateParams.productSlug);
               }
             }
@@ -213,12 +208,7 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         url: '/:pageSlug',
         views: {
           page: {
-            templateUrl: 'views/partials/page.html',
-            resolve: {
-              page: function (contentService, $stateParams) {
-                return contentService.getPage($stateParams.pageSlug);
-              }
-            }
+            templateUrl: 'views/partials/page.html'
           }
         }
       })
