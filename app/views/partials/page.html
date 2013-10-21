@@ -1,3 +1,7 @@
-<div>
-    Page.html
+<div class="pure-g-r">
+    <div class="pure-u-1">
+        <h3 class="clearfix text-green2">{{ page.title }}</h3>
+    </div>
+
+    <div class="pure-u-1" ng-bind-html-unsafe="page.signed_html"></div>
 </div>

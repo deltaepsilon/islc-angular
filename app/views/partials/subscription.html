@@ -1,3 +1,15 @@
-<div>
-    Subscription.html
+<div class="pure-g-r subscription padded-wrapper">
+
+    <div class="pure-1-5">
+        <ul>
+            <li ng-repeat="page in pages">
+                <a ui-sref="content.subscription.page({pageSlug: page.slug})">{{ page.title }}</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <div class="pure-4-5" ui-view="page"></div>
+
 </div>

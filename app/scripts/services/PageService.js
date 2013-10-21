@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('contentService', function contentService(Restangular) {
+  .service('pageService', function pageService(Restangular) {
     Restangular.setBaseUrl('/angular');
 
     return {
       get: function (slug) {
-        return Restangular.one('content', slug).get();
+        return Restangular.one('page', slug).get();
       }
     };
   });

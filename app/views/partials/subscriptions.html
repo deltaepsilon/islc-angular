@@ -19,10 +19,13 @@
                     <td>
                         <img class="key-image" ng-src="{{ subscription.product.key_image }}" alt="{{ subscription.slug }}"/>
                     </td>
-                    <td>{{ subscription.product.title }}</td>
+                    <td>
+                        <a ng-show="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">{{ subscription.product.title }}</a>
+                        <span ng-hide="subscription.reset">{{ subscription.product.title }}</span>
+                    </td>
                     <td>
                         <span ng-show="subscription.reset">{{ subscription.expires | date }}</span>
-                        <a class="button button-secondary button-link text-centered start-course-button" ng-hide="subscription.reset" ui-sref="content.subscription({slug: subscription.product.slug})">Start Course</a>
+                        <a class="button button-secondary button-link text-centered start-course-button" ng-hide="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">Start Course</a>
                     </td>
                     <td>
                         <span ng-show="subscription.reset">{{ subscription.expires }}</span>

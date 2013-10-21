@@ -186,7 +186,7 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         views: {
           nav: nav,
           body: {
-            templateUrl: 'views/partials/content.html',
+            templateUrl: 'views/partials/content.html'
           }
         }
       })
@@ -208,7 +208,13 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         url: '/:pageSlug',
         views: {
           page: {
-            templateUrl: 'views/partials/page.html'
+            templateUrl: 'views/partials/page.html',
+            controller: 'PageCtrl',
+            resolve: {
+              page: function (pageService, $stateParams) {
+                return pageService.get($stateParams.pageSlug);
+              }
+            }
           }
         }
       })
