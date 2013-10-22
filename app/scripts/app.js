@@ -43,6 +43,24 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
           body: body
         }
       })
+      .state('faq', {
+        url: '/faq',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/faq.html'
+          }
+        }
+      })
+      .state('supplies', {
+        url: '/supplies',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/supplies.html'
+          }
+        }
+      })
       .state('login', {
         url: '/login',
         views: {
@@ -218,21 +236,18 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
           }
         }
       })
-      .state('faq', {
-        url: '/faq',
+      .state('gallery', {
+        url: '/gallery',
         views: {
           nav: nav,
           body: {
-            templateUrl: 'views/partials/faq.html'
-          }
-        }
-      })
-      .state('supplies', {
-        url: '/supplies',
-        views: {
-          nav: nav,
-          body: {
-            templateUrl: 'views/partials/supplies.html'
+            templateUrl: 'views/partials/gallery.html',
+            controller: 'GalleryCtrl',
+            resolve: {
+              galleries: function (galleryService) {
+                return galleryService.get();
+              }
+            }
           }
         }
       });

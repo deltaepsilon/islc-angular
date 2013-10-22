@@ -79,6 +79,9 @@ angular.module('islcAngularApp')
         case 'subscriptions':
           return user && subscriptions.length;
           break;
+        case 'gallery':
+          return user && subscriptions.length;
+          break;
         default:
           return true;
           break;
