@@ -1,63 +1,20 @@
-<div class="pure-g-r gallery padded-wrapper">
+<div class="pure-g-r gallery">
     <div class="pure-u-1">
-        <form class="qv-form full-width-form centered" name="galleryForm" action="/angular/gallery" target="uploadTarget" method="POST">
-            <h3 class="clearfix text-green2">Upload a gallery image.</h3>
+        <h3 class="clearfix text-green2">{{ gallery.title }}</h3>
 
-            <br>
+        <p>{{ gallery.description }}</p>
 
-            <div class="clearfix pure-g-r">
-                <input
-                    id="gallery-title"
-                    class="pure-u-1 pull-left"
-                    name="title"
-                    type="text"
-                    placeholder="Gallery title..."
-                    ng-model="newGallery.title"
-                    ng-change="fileChange(newGallery)"
-                    qv-focus
-                />
-            </div>
+        <br>
+        <button class="button button-secondary" ng-click="removeGallery(gallery)">delete</button>
 
-            <div class="clearfix pure-g-r">
-                <textarea
-                    id="gallery-description"
-                    class="pure-u-1 pull-left"
-                    name="description"
-                    placeholder="Gallery description..."
-                    ng-model="newGallery.description"
-                />
-            </div>
+        <br>
+        <img ng-src="{{ gallery.signed_uri }}" alt=""/>
 
-            <div class="clearfix pure-g-r">
-                <input
-                    id="gallery-file"
-                    class="pure-u-1 pull-left"
-                    name="file"
-                    type="file"
-                    placeholder="Gallery file..."
-                    ng-required="true"
-                    qv-file
-
-                />
-            </div>
-
-            <div class="clearfix pure-g-r">
-                <button class="button button-secondary" ng-disabled="!newGallery.file">Upload</button>
-            </div>
-
-
-        </form>
-    </div>
-
-    <div class="pure-u-1">
+        <br>
         <ul>
-            <li ng-repeat="gallery in galleries">
-                <img ng-src="{{ gallery.signed_uri }}" alt=""/>
-                <ul>
-                    <li ng-repeat="comment in gallery.comments">{{ comment.comment }}</li>
-                </ul>
-            </li>
+            <li ng-repeat="comment in gallery.comments">{{ comment.comment }}</li>
         </ul>
     </div>
+
 
 </div>

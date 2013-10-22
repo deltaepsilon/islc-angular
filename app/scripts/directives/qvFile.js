@@ -5,10 +5,11 @@ angular.module('islcAngularApp')
     return {
       restrict: 'A',
       link: function postLink(scope, element, attrs) {
-        element.on('change', function () {
-          $rootScope.$broadcast('fileChange', element.val());
+        element.on('change onload', function () {
+          $rootScope.$broadcast(attrs.qvFile, element.val());
 
         });
+
       }
     };
   });

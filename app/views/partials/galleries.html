@@ -1,0 +1,63 @@
+<div class="pure-g-r galleries padded-wrapper">
+    <div class="pure-u-1">
+        <form class="qv-form full-width-form centered" name="galleryForm" action="/angular/gallery" target="uploadTarget" method="POST" enctype="multipart/form-data">
+            <h3 class="clearfix text-green2">Upload a gallery image.</h3>
+
+            <br>
+
+            <div class="clearfix pure-g-r">
+                <input
+                    id="gallery-title"
+                    class="pure-u-1 pull-left"
+                    name="title"
+                    type="text"
+                    placeholder="Gallery title..."
+                    ng-model="newGallery.title"
+                    ng-change="fileChange(newGallery)"
+                    qv-focus
+                />
+            </div>
+
+            <div class="clearfix pure-g-r">
+                <textarea
+                    id="gallery-description"
+                    class="pure-u-1 pull-left"
+                    name="description"
+                    placeholder="Gallery description..."
+                    ng-model="newGallery.description"
+                />
+            </div>
+
+            <div class="clearfix pure-g-r">
+                <input
+                    id="gallery-file"
+                    class="pure-u-1 pull-left"
+                    name="file"
+                    type="file"
+                    placeholder="Gallery file..."
+                    ng-required="true"
+                    qv-file="fileChange"
+
+                />
+            </div>
+
+            <div class="clearfix pure-g-r">
+                <button class="button button-secondary" ng-disabled="!newGallery.file">Upload</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="pure-u-1-5">
+        <ul>
+            <li ng-repeat="gallery in galleries">
+                <a ui-sref="gallery.view({ id: gallery.id })">{{ gallery.title || gallery.id }}</a>
+                <button class="button button-secondary" ng-click="removeGallery(gallery)">delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pure-u-4-5" ui-view="galleryView"></div>
+
+</div>

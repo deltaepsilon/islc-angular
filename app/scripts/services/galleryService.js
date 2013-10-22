@@ -13,6 +13,10 @@ angular.module('islcAngularApp')
         } else {
           return Restangular.one('gallery').get();
         }
+      },
+
+      remove: function (id) {
+        return Restangular.one('gallery', id).remove();
       }
     }
   });

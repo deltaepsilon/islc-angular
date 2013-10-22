@@ -52,7 +52,7 @@
         &copy; Melissa Esplin 2013
     </footer>
 
-    <iframe id="uploadTarget" name="uploadTarget" height="0" width="0" frameborder="0"></iframe>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -117,6 +117,20 @@
         <script src="scripts/controllers/Gallery.js"></script>
         <script src="scripts/services/galleryService.js"></script>
         <script src="scripts/directives/qvFile.js"></script>
+        <script src="scripts/controllers/IFrame.js"></script>
+        <script src="scripts/controllers/Galleries.js"></script>
         <!-- endbuild -->
+
+    <script type="text/javascript">
+        var iFrameOnLoad = function (target) {
+            var scope = angular.element(target).scope();
+            if (scope && scope.iFrameLoad) {
+                scope.iFrameLoad(target);
+            }
+        }
+    </script>
+    <div ng-controller="IFrameCtrl">
+        <iframe id="uploadTarget" name="uploadTarget" height="0" width="0" frameborder="0" qv-file="iFrameLoad" onload="iFrameOnLoad(this);"></iframe>
+    </div>
 </body>
 </html>

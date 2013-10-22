@@ -1,26 +1,17 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('GalleryCtrl', function ($rootScope, $scope, galleries, $timeout) {
-    console.log('galleries', galleries);
-    $rootScope.galleries = galleries;
-    $rootScope.newGallery = {};
+  .controller('GalleryCtrl', function ($rootScope, $scope, gallery, galleryService, $state) {
+    $scope.gallery = gallery;
 
-    $scope.$on('fileChange', function (e, value) {
-      $timeout(function () {
-        $scope.newGallery.file = value;
-        $scope.$digest();
-      });
 
-    });
-
-    $scope.fileChange = function (value) {
-
-      $scope.$apply(function () {
-        $scope.newGallery.file = value;
+    $scope.removeGallery = function (gallery) {
+      galleryService.remove(gallery.id).then(function (res) {
+        galleryService.get(null, true).then(function (galleries) {
+          $rootScope.galleries = galleries;
+          $state.go('gallery');
+        });
       });
     };
-
-
 
   });

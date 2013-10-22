@@ -241,11 +241,25 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         views: {
           nav: nav,
           body: {
-            templateUrl: 'views/partials/gallery.html',
-            controller: 'GalleryCtrl',
+            templateUrl: 'views/partials/galleries.html',
+            controller: 'GalleriesCtrl',
             resolve: {
               galleries: function (galleryService) {
                 return galleryService.get();
+              }
+            }
+          }
+        }
+      })
+      .state('gallery.view', {
+        url: '/:id',
+        views: {
+          galleryView: {
+            templateUrl: 'views/partials/gallery.html',
+            controller: 'GalleryCtrl',
+            resolve: {
+              gallery: function (galleryService, $stateParams) {
+                return galleryService.get($stateParams.id);
               }
             }
           }
