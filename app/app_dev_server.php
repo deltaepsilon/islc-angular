@@ -8,10 +8,10 @@ use Symfony\Component\Debug\Debug;
 //umask(0000);
 
 
-$loader = require_once __DIR__.'/../app/bootstrap.php.cache';
+$loader = require_once getenv('ISLC_ROOT').'/app/bootstrap.php.cache';
 Debug::enable();
 
-require_once __DIR__.'/../app/AppKernel.php';
+require_once getenv('ISLC_ROOT').'/app/AppKernel.php';
 
 $kernel = new AppKernel('dev', true);
 $kernel->loadClassCache();
