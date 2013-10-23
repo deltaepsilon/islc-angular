@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-html, button, .pure-g-r [class *= "pure-u"] {
+html, button {
   @extend .text-gray3;
   font-family: 'Museo sans', helvetica, sans-serif;
 }
@@ -15,11 +15,6 @@ a {
 p, ul, ol {
   @extend .text-medium;
   font-weight: 100;
-}
-
-.pure-g, .pure-g-r {
-  letter-spacing: inherit;
-  font-family: inherit;
 }
 
 .header {
