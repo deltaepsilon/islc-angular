@@ -2,9 +2,20 @@
 
 angular.module('islcAngularApp')
   .controller('NavCtrl', function ($scope, $state, $rootScope, _, cartService, productService, notificationService, user, cart, subscriptions) {
+    //Basic route security... you wouldn't want users to get hung up if they hit the wrong page
+    var secureRoutes = ['gallery', 'content', 'subscriptions', 'account'];
+    if (!user) {
+      if (~_.indexOf(secureRoutes, $state.current.name)) {
+        $state.go('root');
+      }
+    }
+
     $rootScope.user = user;
     $rootScope.cart = cart;
-    $rootScope.subscriptions = subscriptions;
+
+    if (!subscriptions.error) {
+      $rootScope.subscriptions = subscriptions;
+    }
 
     var error = location.href.match(/error=([^&]+)/);
     if (error && error.length >= 2 ) {
@@ -15,6 +26,8 @@ angular.module('islcAngularApp')
     if (notification && notification.length >= 2 ) {
       notificationService.info('Notification', decodeURIComponent(notification[1]));
     }
+
+
 
     $rootScope.$on('$stateChangeSuccess', function(event, to, toParams, from, fromParams) {
       $rootScope.$previousState = from;

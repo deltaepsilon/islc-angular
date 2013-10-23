@@ -4,33 +4,35 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
-    var nav = {
-      templateUrl: 'views/partials/nav.html',
-      controller: 'NavCtrl',
-      resolve: {
-        user: function (userService) {
-          return userService.get();
-        },
-        cart: function (cartService) {
-          return cartService.get();
-        },
-        subscriptions: function (subscriptionService) {
-          return subscriptionService.get();
+
+    var secureRoutes = ['gallery', 'content', 'subscriptions', 'account'],
+      nav = {
+        templateUrl: 'views/partials/nav.html',
+        controller: 'NavCtrl',
+        resolve: {
+          user: function (userService, $state, $stateParams) {
+            return userService.get();
+          },
+          cart: function (cartService) {
+            return cartService.get();
+          },
+          subscriptions: function (subscriptionService) {
+            return subscriptionService.get();
+          }
+        }
+      },
+      body = {
+        templateUrl: 'views/partials/root.html',
+        controller: 'RootCtrl',
+        resolve: {
+          melissa: function (assetService) {
+            return assetService.getImages('calligraphy/assets/melissa');
+          },
+          studentWork: function (assetService) {
+            return assetService.getImages('calligraphy/assets/student-work');
+          }
         }
       }
-    },
-    body = {
-      templateUrl: 'views/partials/root.html',
-      controller: 'RootCtrl',
-      resolve: {
-        melissa: function (assetService) {
-          return assetService.getImages('calligraphy/assets/melissa');
-        },
-        studentWork: function (assetService) {
-          return assetService.getImages('calligraphy/assets/student-work');
-        }
-      }
-    }
 
     $stateProvider
       .state('nav', {

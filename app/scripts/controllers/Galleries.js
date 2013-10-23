@@ -1,8 +1,14 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('GalleriesCtrl', function ($rootScope, $scope, galleries, galleryService, $timeout, $state) {
-    $rootScope.galleries = galleries;
+  .controller('GalleriesCtrl', function ($rootScope, $scope, galleries, galleryService, $timeout, $state, notificationService) {
+
+    if (galleries.error) {
+      notificationService.error('Gallery', galleries.error);
+    } else {
+      $rootScope.galleries = galleries;
+    }
+
     $rootScope.newGallery = {};
 
     $scope.$on('fileChange', function (e, value) {
@@ -18,6 +24,7 @@ angular.module('islcAngularApp')
         $rootScope.galleries = galleries;
 
         if (galleries && galleries.length) {
+          $scope.newGallery = {};
           $state.go('gallery.view', {id: galleries[0].id});
         }
 
