@@ -2,9 +2,15 @@
 
 angular.module('islcAngularApp')
   .controller('AccountCtrl', function ($scope, notificationService, userService, addressService, transactionService, address, transactions) {
-    $scope.address = address;
-    $scope.transactions = transactions;
-    $scope.transactionsTable = transactionService.getTable($scope.transactions);
+    if (!address.error) {
+      $scope.address = address;
+    }
+
+    if (!transactions.error) {
+      $scope.transactions = transactions;
+      $scope.transactionsTable = transactionService.getTable($scope.transactions);
+    }
+
 
     $scope.saveUser = function (user) {
       userService.update(user).then(function (res) {
