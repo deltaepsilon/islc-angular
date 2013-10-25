@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
+angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router', 'angular-markdown'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
@@ -172,7 +172,7 @@ angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router'])
         }
       })
       .state('products', {
-        url: '/products',
+        url: '/products/:category',
         views: {
           nav: nav,
           body: {

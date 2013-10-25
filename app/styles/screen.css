@@ -1693,6 +1693,27 @@ h2 {
   padding: 10px 20px;
 }
 
+/* line 146, imports/_global.scss */
+.justify {
+  text-align: justify;
+}
+
+/* line 150, imports/_global.scss */
+.justified {
+  display: inline;
+}
+
+/* line 154, imports/_global.scss */
+.stretch {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 159, imports/_global.scss */
+.clear-both {
+  clear: both;
+}
+
 @media (min-width: 980px) {
   /* line 3, imports/_media-queries.scss */
   .centered-desktop {
@@ -2340,6 +2361,31 @@ button[disabled] {
   float: right;
   font-weight: 700;
   margin-top: 9px;
+}
+
+/* line 55, modules/_product.scss */
+.product-wrapper {
+  max-width: 990px;
+}
+/* line 58, modules/_product.scss */
+.product-wrapper .product-images {
+  float: right;
+  max-width: 580px;
+}
+/* line 63, modules/_product.scss */
+.product-wrapper .product-details {
+  padding: 0 15px;
+}
+/* line 67, modules/_product.scss */
+.product-wrapper .product-image {
+  width: 163px;
+  margin: 0 15px 25px;
+}
+/* line 71, modules/_product.scss */
+.product-wrapper .product-image:first-of-type {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 1px;
 }
 
 /* line 1, directives/_qv-slider.scss */

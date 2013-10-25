@@ -53,5 +53,25 @@
 }
 
 .product-wrapper {
+  max-width: 990px;
 
+  .product-images {
+    float: right;
+    max-width: 580px;
+  }
+
+  .product-details {
+    padding: 0 15px;
+  }
+
+  .product-image {
+    width: 163px;
+    margin: 0 15px 25px;
+
+    &:first-of-type {
+      width: 100%;
+      padding-right: 30px;
+      padding-left: 1px;
+    }
+  }
 }

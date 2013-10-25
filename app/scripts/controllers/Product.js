@@ -2,7 +2,7 @@
 
 angular.module('islcAngularApp')
   .controller('ProductCtrl', function ($scope, $rootScope, $stateParams, products) {
-    $scope.category = undefined;
+    $scope.category = $stateParams.category;
 
     if ($stateParams.id) {
       $scope.product = products;

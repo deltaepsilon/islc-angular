@@ -1,41 +1,26 @@
+<div class="background-gray1">
+    <ul class="link-list">
+        <a class="link-list-item" ui-sref="products">all</a>
+        <a class="link-list-item" ui-sref="products({category: 'workshop'})">workshops</a>
+        <a class="link-list-item" ui-sref="products({category: 'digital'})">downloads</a>
+        <a class="link-list-item" ui-sref="products({category: 'physical'})">goodies</a>
+    </ul>
+</div>
 <div class="product padded-wrapper">
-    <div class="pure-g-r">
-        <div class="clearfix pure-u-3-5 full-width-form centered">
-            <h3 class="clearfix text-green2">{{ product.title }}</h3>
+    <div class="pure-g-r product-wrapper product-{{ product.category || product.type }} centered">
 
-            <br>
-            <p>
-                <h4>Price: {{ product.price }}</h4>
-            </p>
-            <p>
-                <h4 ng-show="product.days">Subscription Period: {{ product.days }} Days</h4>
-            </p>
+        <div class="pure-u-3-5 product-images">
 
-            <p class="pure-g-r">
-                <div class="pure-u-2-5">
-                    <button class="button-cta centered-phone full-width" ng-click="addToCart(product.id)">Add To Cart</button>
-                </div>
-            </p>
-
-            <p class="product-description" ng-bind-html-unsafe="product.description"></p>
-
-            <br>
-            <ul class="image-list">
-                <li class="image-list-item">
-                    <img ng-src="{{ product.key_image }}" alt=""/>
-                </li>
-                <li class="image-list-item" ng-repeat="uri in product.images">
-                    <img ng-src="{{ uri }}" alt=""/>
-                </li>
-            </ul>
-            <br>
-
-            <p class="pure-g-r">
-            <div class="pure-u-2-5">
-                <button class="button-cta centered-phone full-width" ng-click="addToCart(product.id, 1)">Add To Cart</button>
+            <img class="product-image" ng-src="{{ uri }}" alt="{{ product.title }}" ng-repeat="uri in product.images"/>
+            <div class="stretch"></div>
+        </div>
+        <div class="pure-u-2-5 product-details">
+            <div class="product-title">{{ product.title }}</div>
+            <div class="product-price">{{ product.price | currency | trimDecimal }}</div>
+            <button class="button-highlight" ng-click="addToCart(product.id, 1)">Add To Cart</button>
+            <div class="product-description">
+                <markdown ng-model="product.description" line-breaks="true" strip="true"></markdown>
             </div>
-            </p>
-
         </div>
     </div>
 </div>

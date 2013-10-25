@@ -142,3 +142,20 @@ $background-gray-url: url('../images/icons-2x/background-gray.png');
 .padded-wrapper {
   padding: 10px 20px;
 }
+
+.justify {
+  text-align: justify;
+}
+
+.justified {
+  display: inline;
+}
+
+.stretch {
+  display: inline-block;
+  width: 100%;
+}
+
+.clear-both {
+  clear: both;
+}
