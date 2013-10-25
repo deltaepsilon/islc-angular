@@ -11,6 +11,13 @@
       content: "";
       display: block;
     }
+
+    &:hover {
+      .product-title {
+        font-weight: 700 !important;
+        max-width: 262px;
+      }
+    }
   }
 
   .product-image {

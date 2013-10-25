@@ -2310,6 +2310,11 @@ button[disabled] {
   display: block;
 }
 /* line 16, modules/_product.scss */
+.products-wrapper .product:hover .product-title {
+  font-weight: 700 !important;
+  max-width: 262px;
+}
+/* line 23, modules/_product.scss */
 .products-wrapper .product-image {
   font-weight: 200;
   letter-spacing: 2px;
@@ -2318,7 +2323,7 @@ button[disabled] {
   width: 300px;
   height: 300px;
 }
-/* line 27, modules/_product.scss */
+/* line 34, modules/_product.scss */
 .products-wrapper .product-title {
   display: inline-block;
   font-weight: 200;
@@ -2329,7 +2334,7 @@ button[disabled] {
   max-width: 260px;
   text-transform: uppercase;
 }
-/* line 40, modules/_product.scss */
+/* line 47, modules/_product.scss */
 .products-wrapper .product-price {
   display: inline-block;
   float: right;
