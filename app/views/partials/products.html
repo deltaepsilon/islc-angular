@@ -1,35 +1,18 @@
+<div class="background-gray1">
+    <ul class="link-list">
+        <li class="link-list-item" ng-click="filterProducts()" ng-class="{active: isActive()}">all</li>
+        <li class="link-list-item" ng-click="filterProducts('workshop')" ng-class="{active: isActive('workshop')}">workshops</li>
+        <li class="link-list-item" ng-click="filterProducts('digital')" ng-class="{active: isActive('digital')}">downloads</li>
+        <li class="link-list-item" ng-click="filterProducts('physical')" ng-class="{active: isActive('physical')}">goodies</li>
+    </ul>
+</div>
 <div class="products padded-wrapper">
-    <div class="pure-g-r">
-        <div class="clearfix pure-u-3-5 full-width-form centered" ng-repeat="product in products">
-            <h3 class="clearfix text-green2">{{ product.title }}</h3>
+    <div class="pure-g-r products-wrapper centered">
 
-            <br>
-            <p>
-            <h4>Price: {{ product.price }}</h4>
-            </p>
-            <p>
-            <h4 ng-show="product.days">Subscription Period: {{ product.days }} Days</h4>
-            </p>
-
-            <p class="product-description" ng-bind-html-unsafe="product.description"></p>
-
-            <br>
-            <ul class="image-list">
-                <li class="image-list-item">
-                    <img ng-src="{{ product.key_image }}" alt=""/>
-                </li>
-                <li class="image-list-item" ng-repeat="uri in product.images">
-                    <img ng-src="{{ uri }}" alt=""/>
-                </li>
-            </ul>
-            <br>
-
-            <p class="pure-g-r">
-            <div class="pure-u-2-5">
-                <button class="button-cta centered-phone full-width" ng-click="addToCart(product.id, 1)">Add To Cart</button>
-            </div>
-            </p>
-
-        </div>
+        <a class="pure-u-1-3 product product-{{ product.category || product.type }}" ng-repeat="product in products | filter:category" ui-sref="product({id: product.id})">
+            <img class="product-image" ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
+            <div class="product-title">{{ product.title }}</div>
+            <div class="product-price">{{ product.price | currency | trimDecimal }}</div>
+        </a>
     </div>
 </div>

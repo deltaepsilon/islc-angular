@@ -1,0 +1,43 @@
+.link-list {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 10px;
+  overflow: hidden;
+  padding: 25px 15px;
+  text-align: center;
+  text-transform: uppercase;
+
+  .link-list-item {
+    @include border-radius(2px);
+    border: 1px solid transparent;
+
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    position: relative;
+    
+    &:hover {
+      border-color: getColor(gray3);  
+    }
+
+    &:last-of-type {
+      &:after {
+        content: "";
+      }
+    }
+
+    &:after {
+      content: "•";
+      position: absolute;
+      right: -13px;
+    }
+  }
+
+  .active {
+    border-color: getColor(gray3);
+    cursor: default !important;
+
+  }
+}

@@ -1,14 +1,15 @@
-/*
+@charset "UTF-8";
+/*!
 Pure v0.3.0
 Copyright 2013 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 https://github.com/yui/pure/blob/master/LICENSE.md
 */
-/*
+/*!
 normalize.css v1.1.2 | MIT License | git.io/normalize
 Copyright (c) Nicolas Gallagher and Jonathan Neal
 */
-/* normalize.css v1.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -558,7 +559,7 @@ table {
   border-spacing: 0;
 }
 
-/*
+/*!
 Pure v0.3.0
 Copyright 2013 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
@@ -1110,7 +1111,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 27, imports/_font-size.scss */
-.text-small, h5, .button-tertiary, #copyright-footer, .qv-form label, .form-error {
+.text-small, h5, .button-tertiary, #copyright-footer, .qv-form label, .form-error, .products-wrapper .product-title {
   font-size: 14px;
 }
 
@@ -1470,7 +1471,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 15, imports/_colors.scss */
-.background-gray1, .qv-form [required] {
+.background-gray1, .qv-form [required], .products-wrapper .product-image {
   background-color: #f2f2f2;
 }
 
@@ -2247,6 +2248,93 @@ button[disabled] {
 /* line 7, modules/_subscription.scss */
 .subscriptions .start-course-button {
   text-decoration: none;
+}
+
+/* line 1, modules/_list.scss */
+.link-list {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 10px;
+  overflow: hidden;
+  padding: 25px 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 11, modules/_list.scss */
+.link-list .link-list-item {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  position: relative;
+}
+/* line 21, modules/_list.scss */
+.link-list .link-list-item:hover {
+  border-color: #414141;
+}
+/* line 26, modules/_list.scss */
+.link-list .link-list-item:last-of-type:after {
+  content: "";
+}
+/* line 31, modules/_list.scss */
+.link-list .link-list-item:after {
+  content: "•";
+  position: absolute;
+  right: -13px;
+}
+/* line 38, modules/_list.scss */
+.link-list .active {
+  border-color: #414141;
+  cursor: default !important;
+}
+
+/* line 1, modules/_product.scss */
+.products-wrapper {
+  max-width: 990px;
+}
+/* line 4, modules/_product.scss */
+.products-wrapper .product {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 15px 12px;
+  min-height: 358px;
+}
+/* line 10, modules/_product.scss */
+.products-wrapper .product:after {
+  content: "";
+  display: block;
+}
+/* line 16, modules/_product.scss */
+.products-wrapper .product-image {
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+  height: 300px;
+}
+/* line 27, modules/_product.scss */
+.products-wrapper .product-title {
+  display: inline-block;
+  font-weight: 200;
+  float: left;
+  letter-spacing: 2px;
+  line-height: 17px;
+  margin-top: 9px;
+  max-width: 260px;
+  text-transform: uppercase;
+}
+/* line 40, modules/_product.scss */
+.products-wrapper .product-price {
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  margin-top: 9px;
 }
 
 /* line 1, directives/_qv-slider.scss */
