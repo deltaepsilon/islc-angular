@@ -15,8 +15,25 @@ angular.module('islcAngularApp')
     }
 
     $scope.filterProducts = function (category) {
-      console.log('setting', category);
       $scope.category = category;
     };
+
+    $scope.selectImage = function (index) {
+      var newImage,
+        oldImage;
+
+      if ($scope.product && $scope.product.images && index) {
+        newImage = $scope.product.images.splice(index, 1);
+        newImage = newImage[0];
+
+        oldImage = $scope.product.images.splice(0, 1);
+        oldImage = oldImage[0];
+
+        $scope.product.images.unshift(newImage);
+        $scope.product.images.splice(index, 0, oldImage);
+        console.log($scope.product.images[index]);
+      }
+
+    }
 
   });

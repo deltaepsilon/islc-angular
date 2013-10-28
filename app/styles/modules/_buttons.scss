@@ -57,6 +57,28 @@ button {
   letter-spacing: 1px;
 }
 
+.button-highlight {
+  @extend .text-white;
+  @extend .background-repeating-gray;
+
+  font-size: 17px;
+  display: block;
+  border: none;
+  padding: 20px 65px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+
+  &:after {
+    @include absolute(8px, 8px, 8px, 8px);
+
+    border: 1px solid getColor(white);
+    content: "";
+    display: block;
+
+  }
+}
+
 .button-link {
   cursor: pointer;
   text-decoration: underline;

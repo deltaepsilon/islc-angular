@@ -11,12 +11,15 @@
 
         <div class="pure-u-3-5 product-images">
 
-            <img class="product-image" ng-src="{{ uri }}" alt="{{ product.title }}" ng-repeat="uri in product.images"/>
+            <img class="product-image" ng-src="{{ uri }}" alt="{{ product.title }}" ng-repeat="uri in product.images" ng-click="selectImage($index)"/>
             <div class="stretch"></div>
         </div>
         <div class="pure-u-2-5 product-details">
-            <div class="product-title">{{ product.title }}</div>
-            <div class="product-price">{{ product.price | currency | trimDecimal }}</div>
+            <div class="product-meta clearfix">
+                <div class="product-title pull-left">{{ product.title }}</div>
+                <div class="product-price pull-right">{{ product.price | currency | trimDecimal }}</div>
+            </div>
+
             <button class="button-highlight" ng-click="addToCart(product.id, 1)">Add To Cart</button>
             <div class="product-description">
                 <markdown ng-model="product.description" line-breaks="true" strip="true"></markdown>

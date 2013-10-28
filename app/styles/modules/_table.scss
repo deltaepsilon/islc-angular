@@ -30,3 +30,34 @@
   }
 }
 
+.table-width {
+  width: 960px;
+
+  .thead-bar {
+    position: relative;
+    min-height: 30px;
+    height: 100%;
+    padding: 6px 0 ;
+
+    &:before {
+      @extend .background-gray1;
+      @include absolute(0, -5000px, 0, -5000px);
+
+      content: "";
+      display: block;
+      z-index: -1;
+    }
+  }
+
+  th {
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding-top: 28px;
+    vertical-align: top;
+  }
+
+}

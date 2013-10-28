@@ -1,202 +1,193 @@
+<div>
+    <ul class="link-list">
+        <li class="link-list-item">your cart</li>
+    </ul>
+</div>
 <div class="pure-g-r cart padded-wrapper">
 
-    <div id="cart-form" class="pure-u-1 pure-g-r">
+    <div id="cart-form" class="pure-u-1">
 
-        <form class="qv-form full-width-form centered" name="cartForm" action="">
-            <h3 class="clearfix text-green2">Your cart.</h3>
-
-            <ul id="cart-list">
-                <li class="clearfix cart-list-item pure-g-r" ng-repeat="product in cart.products">
-                    <div class="clearfix product-title pure-u-1">
-                        <h3>{{ product.title }}</h3>
-                    </div>
-
-                    <div class="product-price pure-u-1-5">{{ product.price | currency }}</div>
-                    <div class="pure-u-1-5">
-                        <input
-                            class="full-width product-quantity"
-                            name="{{ product.title | slug }}-quantity"
-                            type="number"
-                            placeholder="Quantity..."
-                            ng-model="product.quantity"
-                            ng-change="updateCartProduct(product)"
-                            min="1"
-                            ng-required="true"
-                        />
-                    </div>
-                    <div  class="pure-u-3-5 product-actions">
-                        <a class="button-link pull-right-desktop" ng-click="updateCart(product.id, 0)">Remove</a>
-                    </div>
-                </li>
-            </ul>
-
-        </form>
-
-
-    </div>
-
-    <div id="cart-details" class="pure-u-1 pure-g-r">
-        <form class="qv-form full-width-form centered" name="checkoutForm" action="">
-            <h3 class="clearfix text-green2">Cart Summary.</h3>
-
-            <br>
-            <table id="cart-summary" class="qv-table">
+        <form class="qv-form" name="cartForm" action="">
+            <table class="table-width centered">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th colspan="2">
+                            <div class="thead-bar">product & description</div>
+                        </th>
                         <th>price</th>
-                        <th>quantity</th>
+                        <th>qty</th>
                         <th>total</th>
+                        <th>
+                            <div class="thead-bar"></div>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="cart-summary-item" ng-repeat="product in cart.products">
-                        <td class="cart-summary-title">{{ product.title }}</td>
-                        <td class="cart-summary-price">{{ product.price | currency }}</td>
-                        <td class="cart-summary-quantity">{{ product.quantity || '?' }}</td>
-                        <td class="cart-summary-total">{{ product.quantity * product.price | currency}}</td>
+                    <tr ng-repeat="product in cart.products">
+                        <td class="product-image">
+                            <a ui-sref="product({id: product.id})">
+                                <img ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
+                            </a>
+                        </td>
+                        <td class="product-title-and-description">
+                            <a class="product-title button-link" ui-sref="product({id: product.id})">{{ product.title }}</a>
+                            <div class="product-description">
+                                <markdown ng-model="product.description" line-breaks="true" strip="true" cs-truncate="195"></markdown>
+                            </div>
+                        </td>
+                        <td class="product-price">
+                            {{ product.price | currency }}
+                        </td>
+                        <td class="product-quantity">
+                            <input
+                                class="full-width product-quantity"
+                                name="{{ product.title | slug }}-quantity"
+                                type="number"
+                                placeholder="Quantity..."
+                                ng-model="product.quantity"
+                                ng-change="updateCartProduct(product)"
+                                min="1"
+                                ng-required="true"
+                            />
+                        </td>
+                        <td class="product-total">
+                            {{ product.quantity * product.price | currency}}
+                        </td>
+                        <td class="product-actions">
+                            <a class="remove-button" ng-click="updateCart(product.id, 0)">X</a>
+                        </td>
                     </tr>
+                </tbody>
+                <tfoot>
 
-                    <tr class="cart-summary-item" ng-show="cart.discount">
-                        <td class="cart-summary-discount">
+                    <tr ng-show="cart.discount">
+                        <td class="sub-total text-centered" colspan="2">
                             Discount Code: {{ cart.discount.code }}
                         </td>
-                        <td colspan="2">
+                        <td class="sub-total text-centered" colspan="2">
                             <span ng-show="cart.discount.value">{{ cart.discount.value | currency }} Discount</span>
                             <span ng-show="cart.discount.percent">{{ cart.discount.percent | percentage }} Discount</span>
                         </td>
-                        <td class="cart-summary-total">{{ -1 * cart.discount.value - cart.total * cart.discount.percent | currency}}</td>
+                        <td class="sub-total" colspan="2">
+                            {{ -1 * cart.discount.value - cart.total * cart.discount.percent | currency}}
+                        </td>
                     </tr>
 
-                    <tr id="cart-total" class="cart-summary-item">
-                        <td><strong>Total:</strong></td>
+                    <tr>
                         <td colspan="2"></td>
-                        <td>{{ cart.total | currency }}</td>
+                        <td class="sub-total text-centered" colspan="2">Order Total:</td>
+                        <td class="sub-total">{{ cart.total | currency }}</td>
+                        <td class="sub-total"></td>
                     </tr>
-                </tbody>
 
+                    <tr>
+                        <td colspan="2"></td>
+                        <td colspan="2">
+                            <input
+                                name="discountCode"
+                                type="text"
+                                ng-model="cart.code"
+                                placeholder="Discount code..."
+                            />
+                        </td>
+                        <td colspan="2">
+                            <button class="button-tertiary" ng-click="setCode(cart.code)" ng-disabled="!cartForm.discountCode.$modelValue">Add Code</button>
+                        </td>
+                    </tr>
+                </tfoot>
             </table>
-
-            <br>
-            <div class="pure-u-1 pure-g-r">
-
-                <div class="pure-u-2-5">
-                    <input
-                        name="discountCode"
-                        type="text"
-                        ng-model="cart.code"
-                        placeholder="Discount code..."
-                    />
-                </div>
-                <div class="pure-u-2-5">
-                    <button class="button-tertiary" ng-click="setCode(cart.code)" ng-disabled="!checkoutForm.discountCode.$modelValue">Add Code</button>
-                </div>
-
-            </div>
-
-
-
-            <div class="pure-u-1" ng-show="token">
-                <br>
-                <h3 class="clearfix text-green2">Your Card.</h3>
-                <br>
-
-                <table class="qv-table">
-                    <thead>
-                        <tr>
-                            <th>Card Number</th>
-                            <th>Card Type</th>
-                            <th>Expiration Month</th>
-                            <th>Expiration Year</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> *****{{ token.card.last4 }}</td>
-                            <td>{{ token.card.type }}</td>
-                            <td>{{ token.card.exp_month }}</td>
-                            <td>{{ token.card.exp_year }}</td>
-
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
-
-            </div>
-
-
-
-            <div class="pure-u-1 pure-g-r" ng-show="user">
-                <h3 class="clearfix text-green2" ng-show="token">Change Card.</h3>
-                <h3 class="clearfix text-green2" ng-hide="token">Add Card.</h3>
-                <br class="pure-u-1">
-                <br class="pure-u-1">
-
-                <div class="pure-u-1 pure-g-r">
-                    <div class="pure-u-2-5">
-                        <input
-                            name="cardNumber"
-                            type="text"
-                            ng-model="newCard.number"
-                            ng-change="validateCardNumber(newCard.number)"
-                            placeholder="Card number..."
-                            ng-required="true"
-                        />
-                    </div>
-                    <div class="form-error pure-u-3-5" ng-show="checkoutForm.cardNumber.$invalid && checkoutForm.cardNumber.$dirty">Invalid card number</div>
-                </div>
-                <div class="pure-u-1 pure-g-r">
-                    <div class="pure-u-2-5">
-                        <select name="month" ng-model="newCard.exp_month" ng-options="months.indexOf(m) as m for m in months"></select>
-                    </div>
-                    <div class="pure-u-2-5">
-                        <select name="year" ng-model="newCard.exp_year" ng-options="year for year in years"></select>
-                    </div>
-
-                </div>
-
-                <div class="pure-u-1 pure-g-r">
-                    <div class="pure-u-2-5">
-                        <input
-                            name="cvc"
-                            type="text"
-                            ng-model="newCard.cvc"
-                            ng-change="validateCVC(newCard.cvc)"
-                            placeholder="Security code..."
-                            ng-required="true"
-                            ng-minlength="3"
-                            ng-maxlength="4"
-                        />
-                    </div>
-                    <div class="form-error pure-u-3-5" ng-show="checkoutForm.cvc.$invalid && checkoutForm.cvc.$dirty">Invalid security code</div>
-                </div>
-
-
-                <div class="pure-u-1-5">
-                    <button
-                        class="button-secondary"
-                        ng-click="saveCard(newCard)"
-                        ng-disabled="checkoutForm.$invalid || checkoutForm.cardNumber.$invalid || checkoutForm.cvc.$invalid"
-                    > Add Card
-                    </button>
-                    <div class="form-error pure-u-3-5" ng-show="checkoutForm.invalidCard">Invalid card details</div>
-                </div>
-
-            </div>
-
-            <br>
         </form>
 
-        <!--Keep the checkout button out of the form so that required fields will not prevent submission-->
-        <div class="pure-u-1 pure-g-r">
-            <div class="pure-u-1-5" ng-show="user">
-                <button class="button-cta" ng-click="checkout()" ng-disabled="!cart || !token || cartForm.$invalid">Checkout</button>
+    </div>
+</div>
+
+
+
+<div>
+    <ul class="link-list">
+        <li class="link-list-item">your card</li>
+    </ul>
+</div>
+<div class="pure-g-r card padded-wrapper">
+    <div class="card-details">
+        <table class="table-width centered" ng-show="token">
+            <thead>
+                <tr>
+                    <th>cart number</th>
+                    <th>card type</th>
+                    <th>expiration month</th>
+                    <th>expiration year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> *****{{ token.card.last4 }}</td>
+                    <td>{{ token.card.type }}</td>
+                    <td>{{ token.card.exp_month }}</td>
+                    <td>{{ token.card.exp_year }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form class="qv-form full-width-form centered pure-g-r" name="checkoutForm" action="">
+            <div class="pure-u-1">
+                <h3>change card</h3>
             </div>
-            <div class="pure-u-1" ng-hide="user">
-                <a class="button-link" ui-sref="login({redirect: 'cart'})">Login</a> or <a class="button-link" ui-sref="register({redirect: 'cart'})">Register</a> for checkout
+
+            <div class="pure-u-4-5">
+                <input
+                    name="cardNumber"
+                    type="text"
+                    ng-model="newCard.number"
+                    ng-change="validateCardNumber(newCard.number)"
+                    placeholder="Card number..."
+                    ng-required="true"
+                />
             </div>
-        </div>
+            <div class="pure-u-1-5">
+                <input
+                    name="cvc"
+                    type="text"
+                    ng-model="newCard.cvc"
+                    ng-change="validateCVC(newCard.cvc)"
+                    placeholder="Security code..."
+                    ng-required="true"
+                    ng-minlength="3"
+                    ng-maxlength="4"
+                />
+
+            </div>
+
+            <div class="pure-u-1-2">
+                <select name="month" ng-model="newCard.exp_month" ng-options="months.indexOf(m) as m for m in months"></select>
+            </div>
+            <div class="pure-u-1-2">
+                <select name="year" ng-model="newCard.exp_year" ng-options="year for year in years"></select>
+            </div>
+            <div class="pure-1-5">
+                <button
+                    class="button-secondary"
+                    ng-click="saveCard(newCard)"
+                    ng-disabled="checkoutForm.$invalid || checkoutForm.cardNumber.$invalid || checkoutForm.cvc.$invalid"
+                > Add Card
+                </button>
+            </div>
+            <div class="pure-4-5">
+                <div class="form-error" ng-show="checkoutForm.cardNumber.$invalid && checkoutForm.cardNumber.$dirty">Invalid card number</div>
+                <div class="form-error" ng-show="checkoutForm.cvc.$invalid && checkoutForm.cvc.$dirty">Invalid security code</div>
+                <div class="form-error" ng-show="checkoutForm.invalidCard">Invalid card details</div>
+            </div>
+
+
+        </form>
     </div>
 
-
+    <div class="pure-u-1 checkout">
+        <div ng-show="user">
+            <!--<button id="checkout-button" class="button-highlight" ng-click="checkout()" ng-disabled="!cart || !token || cartForm.$invalid">Complete Checkout</button>-->
+        </div>
+        <div id="login-to-checkout" ng-hide="user">
+            <a class="button-link" ui-sref="login({redirect: 'cart'})">Login</a> or <a class="button-link" ui-sref="register({redirect: 'cart'})">Register</a> for checkout
+        </div>
+    </div>
 </div>

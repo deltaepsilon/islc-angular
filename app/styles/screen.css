@@ -1116,7 +1116,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 27, imports/_font-size.scss */
-.text-medium, p, ul, ol, h4, .button-primary, [action="login_check"] input, [action="login_check"] label, [action="login_check"] a, .landing-page .linkout, .qv-form input, .qv-form textarea, .qv-slider .qv-slider-link {
+.text-medium, html, button, p, ul, ol, h4, .button-primary, [action="login_check"] input, [action="login_check"] label, [action="login_check"] a, .landing-page .linkout, .qv-form input, .qv-form textarea, .product-details .product-title, .qv-slider .qv-slider-link {
   font-size: 16px;
 }
 
@@ -1136,7 +1136,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 33, imports/_font-size.scss */
-.circle {
+.circle, .cart .remove-button {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1471,7 +1471,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 15, imports/_colors.scss */
-.background-gray1, .qv-form [required], .products-wrapper .product-image {
+.background-gray1, .qv-form [required], .table-width .thead-bar:before, .cart .sub-total, .products-wrapper .product-image {
   background-color: #f2f2f2;
 }
 
@@ -1541,7 +1541,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 22, imports/_colors.scss */
-.text-white, .button-cta, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary {
+.text-white, .button-cta, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight {
   color: white;
 }
 
@@ -1558,158 +1558,159 @@ this the same font stack that Normalize.css sets for the `body`.
 /* line 5, imports/_global.scss */
 html, button {
   font-family: 'Museo sans', helvetica, sans-serif;
+  font-weight: 200;
 }
 
-/* line 10, imports/_global.scss */
+/* line 12, imports/_global.scss */
 a {
   text-decoration: none;
 }
 
-/* line 15, imports/_global.scss */
+/* line 17, imports/_global.scss */
 p, ul, ol {
   font-weight: 100;
 }
 
-/* line 20, imports/_global.scss */
+/* line 22, imports/_global.scss */
 .header, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 25, imports/_global.scss */
+/* line 27, imports/_global.scss */
 h1 {
   letter-spacing: 8px;
   font-weight: 300;
 }
 
-/* line 32, imports/_global.scss */
+/* line 34, imports/_global.scss */
 h2 {
   letter-spacing: 2px;
   font-weight: 300;
 }
 
-/* line 60, imports/_global.scss */
+/* line 62, imports/_global.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 64, imports/_global.scss */
+/* line 66, imports/_global.scss */
 .relative {
   position: relative;
 }
 
-/* line 68, imports/_global.scss */
+/* line 70, imports/_global.scss */
 .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 73, imports/_global.scss */
+/* line 75, imports/_global.scss */
 .text-centered {
   text-align: center;
 }
 
-/* line 77, imports/_global.scss */
+/* line 79, imports/_global.scss */
 .pull-right {
   float: right;
 }
 
-/* line 81, imports/_global.scss */
+/* line 83, imports/_global.scss */
 .pull-left {
   float: left;
 }
 
-/* line 85, imports/_global.scss */
+/* line 87, imports/_global.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 89, imports/_global.scss */
+/* line 91, imports/_global.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 93, imports/_global.scss */
+/* line 95, imports/_global.scss */
 .bordered {
   border: 1px solid #f2f2f2;
 }
 
-/* line 97, imports/_global.scss */
+/* line 99, imports/_global.scss */
 .border-right {
   border-right: 1px solid #f2f2f2;
 }
 
-/* line 101, imports/_global.scss */
+/* line 103, imports/_global.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 105, imports/_global.scss */
+/* line 107, imports/_global.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 109, imports/_global.scss */
+/* line 111, imports/_global.scss */
 .full-width, .full-width-form, .qv-table {
   width: 100%;
 }
 
-/* line 113, imports/_global.scss */
+/* line 115, imports/_global.scss */
 .aligned-list {
   padding-left: 1em;
 }
 
-/* line 117, imports/_global.scss */
+/* line 119, imports/_global.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 121, imports/_global.scss */
+/* line 123, imports/_global.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 125, imports/_global.scss */
+/* line 127, imports/_global.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 130, imports/_global.scss */
+/* line 132, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/icons-2x/background.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 137, imports/_global.scss */
-.background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary {
+/* line 139, imports/_global.scss */
+.background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight {
   background-image: url("../images/icons-2x/background-gray.png");
   background-position: -50px -30px;
 }
 
-/* line 142, imports/_global.scss */
+/* line 144, imports/_global.scss */
 .padded-wrapper {
   padding: 10px 20px;
 }
 
-/* line 146, imports/_global.scss */
+/* line 148, imports/_global.scss */
 .justify {
   text-align: justify;
 }
 
-/* line 150, imports/_global.scss */
+/* line 152, imports/_global.scss */
 .justified {
   display: inline;
 }
 
-/* line 154, imports/_global.scss */
+/* line 156, imports/_global.scss */
 .stretch {
   display: inline-block;
   width: 100%;
 }
 
-/* line 159, imports/_global.scss */
+/* line 161, imports/_global.scss */
 .clear-both {
   clear: both;
 }
@@ -1925,6 +1926,28 @@ button[disabled] {
 }
 
 /* line 60, modules/_buttons.scss */
+.button-highlight {
+  font-size: 17px;
+  display: block;
+  border: none;
+  padding: 20px 65px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+/* line 72, modules/_buttons.scss */
+.button-highlight:after {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  border: 1px solid white;
+  content: "";
+  display: block;
+}
+
+/* line 82, modules/_buttons.scss */
 .button-link {
   cursor: pointer;
   text-decoration: underline;
@@ -2202,40 +2225,51 @@ button[disabled] {
 .qv-form .inline-label {
   margin: 0 10px 5px 0;
 }
+/* line 30, modules/_form.scss */
+.qv-form .form-link {
+  display: inline-block;
+  font-weight: 500;
+  padding: 6px 2px;
+  vertical-align: middle;
+}
+/* line 36, modules/_form.scss */
+.qv-form .form-link:hover {
+  text-decoration: underline;
+}
 
-/* line 32, modules/_form.scss */
+/* line 44, modules/_form.scss */
 .form-errors {
   padding: 10px 20px;
 }
-/* line 35, modules/_form.scss */
+/* line 47, modules/_form.scss */
 .form-errors .form-error {
   padding: 10px 0;
 }
 
-/* line 40, modules/_form.scss */
+/* line 52, modules/_form.scss */
 .form-error {
   color: #bd3f42 !important;
   padding: 14px 10px;
   text-transform: uppercase;
 }
-/* line 47, modules/_form.scss */
+/* line 59, modules/_form.scss */
 .form-error a {
   text-decoration: underline;
 }
 
-/* line 52, modules/_form.scss */
+/* line 64, modules/_form.scss */
 .full-width-form {
   max-width: 600px;
 }
-/* line 56, modules/_form.scss */
+/* line 68, modules/_form.scss */
 .full-width-form input {
   margin-bottom: 10px;
 }
-/* line 60, modules/_form.scss */
+/* line 72, modules/_form.scss */
 .full-width-form select {
   margin-bottom: 10px;
 }
-/* line 64, modules/_form.scss */
+/* line 76, modules/_form.scss */
 .full-width-form textarea {
   margin-bottom: 10px;
 }
@@ -2260,6 +2294,80 @@ button[disabled] {
 /* line 28, modules/_table.scss */
 .qv-table a {
   text-decoration: underline;
+}
+
+/* line 33, modules/_table.scss */
+.table-width {
+  width: 960px;
+}
+/* line 36, modules/_table.scss */
+.table-width .thead-bar {
+  position: relative;
+  min-height: 30px;
+  height: 100%;
+  padding: 6px 0;
+}
+/* line 42, modules/_table.scss */
+.table-width .thead-bar:before {
+  position: absolute;
+  top: 0;
+  right: -5000px;
+  bottom: 0;
+  left: -5000px;
+  content: "";
+  display: block;
+  z-index: -1;
+}
+/* line 52, modules/_table.scss */
+.table-width th {
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 58, modules/_table.scss */
+.table-width td {
+  padding-top: 28px;
+  vertical-align: top;
+}
+
+/* line 3, modules/_cart.scss */
+.cart .product-image {
+  padding-right: 20px;
+  width: 185px;
+}
+/* line 7, modules/_cart.scss */
+.cart .product-image img {
+  min-height: 164px;
+}
+/* line 12, modules/_cart.scss */
+.cart .product-title-and-description {
+  padding: inherit 10px;
+}
+/* line 16, modules/_cart.scss */
+.cart .product-title {
+  font-weight: 300;
+  margin-bottom: 51px;
+  text-transform: uppercase;
+}
+/* line 22, modules/_cart.scss */
+.cart .product-quantity {
+  width: 75px;
+  margin-right: 20px;
+}
+/* line 27, modules/_cart.scss */
+.cart .remove-button {
+  border: 1px solid #414141;
+  cursor: pointer;
+  display: block;
+  padding: 8px 12px;
+  margin-left: 20px;
+  text-align: center;
+}
+/* line 39, modules/_cart.scss */
+.cart .sub-total {
+  font-weight: 300;
+  padding: 22px 0;
+  text-transform: uppercase;
 }
 
 /* line 3, modules/_subscription.scss */
@@ -2314,28 +2422,48 @@ button[disabled] {
   cursor: default !important;
 }
 
-/* line 1, modules/_product.scss */
+/* line 2, modules/_product.scss */
 .products-wrapper {
   max-width: 990px;
 }
-/* line 4, modules/_product.scss */
+/* line 5, modules/_product.scss */
 .products-wrapper .product {
   cursor: pointer;
   display: inline-block;
   padding: 0 15px 12px;
   min-height: 358px;
 }
-/* line 10, modules/_product.scss */
+/* line 11, modules/_product.scss */
 .products-wrapper .product:after {
   content: "";
   display: block;
 }
-/* line 16, modules/_product.scss */
+/* line 17, modules/_product.scss */
 .products-wrapper .product:hover .product-title {
   font-weight: 700 !important;
   max-width: 262px;
 }
-/* line 23, modules/_product.scss */
+/* line 24, modules/_product.scss */
+.products-wrapper .product-image-wrapper {
+  position: relative;
+}
+/* line 27, modules/_product.scss */
+.products-wrapper .product-image-wrapper .product-hidden-button {
+  position: absolute;
+  top: inherit;
+  right: inherit;
+  bottom: 4px;
+  left: inherit;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  padding: 20px 66px 15px;
+  white-space: nowrap;
+}
+/* line 38, modules/_product.scss */
+.products-wrapper .product-image-wrapper:hover .product-hidden-button {
+  opacity: 1;
+}
+/* line 44, modules/_product.scss */
 .products-wrapper .product-image {
   font-weight: 200;
   letter-spacing: 2px;
@@ -2344,7 +2472,7 @@ button[disabled] {
   width: 300px;
   height: 300px;
 }
-/* line 34, modules/_product.scss */
+/* line 55, modules/_product.scss */
 .products-wrapper .product-title {
   display: inline-block;
   font-weight: 200;
@@ -2355,7 +2483,7 @@ button[disabled] {
   max-width: 260px;
   text-transform: uppercase;
 }
-/* line 47, modules/_product.scss */
+/* line 68, modules/_product.scss */
 .products-wrapper .product-price {
   display: inline-block;
   float: right;
@@ -2363,29 +2491,56 @@ button[disabled] {
   margin-top: 9px;
 }
 
-/* line 55, modules/_product.scss */
+/* line 76, modules/_product.scss */
 .product-wrapper {
   max-width: 990px;
 }
-/* line 58, modules/_product.scss */
+/* line 79, modules/_product.scss */
 .product-wrapper .product-images {
   float: right;
   max-width: 580px;
 }
-/* line 63, modules/_product.scss */
+/* line 84, modules/_product.scss */
 .product-wrapper .product-details {
   padding: 0 15px;
 }
-/* line 67, modules/_product.scss */
+/* line 88, modules/_product.scss */
 .product-wrapper .product-image {
+  cursor: pointer;
   width: 163px;
   margin: 0 15px 25px;
 }
-/* line 71, modules/_product.scss */
+/* line 93, modules/_product.scss */
 .product-wrapper .product-image:first-of-type {
+  cursor: default;
   width: 100%;
   padding-right: 30px;
   padding-left: 1px;
+}
+
+/* line 105, modules/_product.scss */
+.product-details .product-title {
+  font-weight: 200;
+  max-width: 250px;
+  text-transform: uppercase;
+}
+/* line 112, modules/_product.scss */
+.product-details .product-price {
+  font-weight: 700;
+}
+/* line 116, modules/_product.scss */
+.product-details .button-highlight {
+  margin: 27px auto 28px;
+  position: relative;
+}
+/* line 122, modules/_product.scss */
+.product-details .product-description {
+  line-height: 19px;
+}
+/* line 126, modules/_product.scss */
+.product-details li {
+  text-indent: -14px;
+  padding-left: 14px;
 }
 
 /* line 1, directives/_qv-slider.scss */

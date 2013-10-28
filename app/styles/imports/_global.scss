@@ -4,7 +4,9 @@
 
 html, button {
   @extend .text-gray3;
+  @extend .text-medium;
   font-family: 'Museo sans', helvetica, sans-serif;
+  font-weight: 200;
 }
 
 a {
