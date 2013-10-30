@@ -19,91 +19,91 @@
             <form class="qv-form" name="cartForm" action="">
                 <table class="table-width centered">
                     <thead>
-                    <tr>
-                        <th colspan="2">
-                            <div class="thead-bar">product & description</div>
-                        </th>
-                        <th>price</th>
-                        <th>qty</th>
-                        <th>total</th>
-                        <th>
-                            <div class="thead-bar"></div>
-                        </th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">
+                                <div class="thead-bar">product & description</div>
+                            </th>
+                            <th>price</th>
+                            <th>qty</th>
+                            <th>total</th>
+                            <th>
+                                <div class="thead-bar"></div>
+                            </th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="product in cart.products">
-                        <td class="product-image">
-                            <a ui-sref="product({id: product.id})">
-                                <img ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
-                            </a>
-                        </td>
-                        <td class="product-title-and-description">
-                            <a class="product-title button-link" ui-sref="product({id: product.id})">{{ product.title }}</a>
-                            <div class="product-description">
-                                <markdown ng-model="product.description" line-breaks="true" strip="true" cs-truncate="195"></markdown>
-                            </div>
-                        </td>
-                        <td class="product-price">
-                            {{ product.price | currency }}
-                        </td>
-                        <td class="product-quantity">
-                            <input
-                                    class="full-width product-quantity"
-                                    name="{{ product.title | slug }}-quantity"
-                                    type="number"
-                                    placeholder="Quantity..."
-                                    ng-model="product.quantity"
-                                    ng-change="updateCartProduct(product)"
-                                    min="1"
-                                    ng-required="true"
-                                    />
-                        </td>
-                        <td class="product-total">
-                            {{ product.quantity * product.price | currency}}
-                        </td>
-                        <td class="product-actions">
-                            <a class="remove-button" ng-click="updateCart(product.id, 0)">X</a>
-                        </td>
-                    </tr>
+                        <tr ng-repeat="product in cart.products">
+                            <td class="product-image">
+                                <a ui-sref="product({id: product.id})">
+                                    <img ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
+                                </a>
+                            </td>
+                            <td class="product-title-and-description">
+                                <a class="product-title button-link" ui-sref="product({id: product.id})">{{ product.title }}</a>
+                                <div class="product-description">
+                                    <markdown ng-model="product.description" line-breaks="true" strip="true" cs-truncate="195"></markdown>
+                                </div>
+                            </td>
+                            <td class="product-price">
+                                {{ product.price | currency }}
+                            </td>
+                            <td class="product-quantity">
+                                <input
+                                        class="full-width product-quantity"
+                                        name="{{ product.title | slug }}-quantity"
+                                        type="number"
+                                        placeholder="Quantity..."
+                                        ng-model="product.quantity"
+                                        ng-change="updateCartProduct(product)"
+                                        min="1"
+                                        ng-required="true"
+                                        />
+                            </td>
+                            <td class="product-total">
+                                {{ product.quantity * product.price | currency}}
+                            </td>
+                            <td class="product-actions">
+                                <a class="remove-button" ng-click="updateCart(product.id, 0)">X</a>
+                            </td>
+                        </tr>
                     </tbody>
                     <tfoot>
 
-                    <tr ng-show="cart.discount">
-                        <td class="sub-total text-centered" colspan="2">
-                            Discount Code: {{ cart.discount.code }}
-                        </td>
-                        <td class="sub-total text-centered" colspan="2">
-                            <span ng-show="cart.discount.value">{{ cart.discount.value | currency }} Discount</span>
-                            <span ng-show="cart.discount.percent">{{ cart.discount.percent | percentage }} Discount</span>
-                        </td>
-                        <td class="sub-total" colspan="2">
-                            {{ -1 * cart.discount.value - cart.total * cart.discount.percent | currency}}
-                        </td>
-                    </tr>
+                        <tr ng-show="cart.discount">
+                            <td class="sub-total text-centered" colspan="2">
+                                Discount Code: {{ cart.discount.code }}
+                            </td>
+                            <td class="sub-total text-centered" colspan="2">
+                                <span ng-show="cart.discount.value">{{ cart.discount.value | currency }} Discount</span>
+                                <span ng-show="cart.discount.percent">{{ cart.discount.percent | percentage }} Discount</span>
+                            </td>
+                            <td class="sub-total" colspan="2">
+                                {{ cart.discountDollars | currency}}
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td colspan="2"></td>
-                        <td class="sub-total text-centered" colspan="2">Total:</td>
-                        <td class="sub-total">{{ cart.total | currency }}</td>
-                        <td class="sub-total"></td>
-                    </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td class="sub-total text-centered" colspan="2">Total:</td>
+                            <td class="sub-total">{{ cart.total | currency }}</td>
+                            <td class="sub-total"></td>
+                        </tr>
 
-                    <tr>
-                        <td colspan="2"></td>
-                        <td colspan="3">
-                            <input
-                                    class="span-9"
-                                    name="discountCode"
-                                    type="text"
-                                    ng-model="cart.code"
-                                    placeholder="Discount code..."
-                                    />
-                        </td>
-                        <td colspan="1">
-                            <button class="button-tertiary" ng-click="setCode(cart.code)" ng-disabled="!cartForm.discountCode.$modelValue">Add</button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td colspan="3">
+                                <input
+                                        class="span-9"
+                                        name="discountCode"
+                                        type="text"
+                                        ng-model="cart.code"
+                                        placeholder="Discount code..."
+                                        />
+                            </td>
+                            <td colspan="1">
+                                <button class="button-tertiary" ng-click="setCode(cart.code)" ng-disabled="!cartForm.discountCode.$modelValue">Add</button>
+                            </td>
+                        </tr>
                     </tfoot>
                 </table>
             </form>
@@ -111,18 +111,20 @@
         </div>
     </div>
 
-    <div class="pure-u-1 login-prompt text-centered" ng-hide="user">
+    <div class="pure-u-1 login-prompt text-centered" ng-hide="user.username">
         <a ui-sref="login({redirect: 'cart'})">log in</a> or <a ui-sref="register({redirect: 'cart'})">register</a> to check out
     </div>
 
 
 
-    <div ng-show="user && token">
+    <div ng-show="user && token && cart.total">
+        <br>
+        <br>
         <h2 class="thick text-centered">your card</h2>
     </div>
     <div class="pure-g-r card padded-wrapper" ng-show="user">
         <div class="pure-u-1 card-details">
-            <table class="table-width centered" ng-show="token">
+            <table class="table-width centered" ng-show="token && cart.total">
                 <thead>
                 <tr>
                     <th>cart number</th>
@@ -144,10 +146,11 @@
             </table>
 
             <br>
-
+            <br>
+            <br>
             <br>
 
-            <form class="qv-form card-form full-width-form centered pure-g-r" name="checkoutForm" action="">
+            <form class="qv-form card-form full-width-form centered pure-g-r" name="checkoutForm" action="" ng-show="cart.total">
                 <div class="pure-u-1 title">
                     <h2 class="text-centered" ng-hide="token">add card</h2>
                     <h2 class="text-centered" ng-show="token">change card</h2>
@@ -205,14 +208,14 @@
             </form>
         </div>
 
-        <div class="pure-u-1 checkout" ng-show="user && token">
+        <div class="pure-u-1 checkout" ng-show="user && token || !cart.total">
             <br>
             <br>
             <button
                     id="checkout-button"
                     class="button-highlight centered"
                     ng-click="checkout()"
-                    ng-disabled="!cart || !token || cartForm.$invalid"
+                    ng-disabled="cart.total && (!cart || !token || cartForm.$invalid)"
                     > Complete Checkout
             </button>
         </div>

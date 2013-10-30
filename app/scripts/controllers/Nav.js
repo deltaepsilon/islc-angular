@@ -38,12 +38,24 @@ angular.module('islcAngularApp')
         total = 0,
         cart = $rootScope.cart,
         i = cart.products.length,
-        product;
+        product,
+        discount;
       while (i--) {
         product = cart.products[i];
         count += product.quantity;
         total += product.quantity * product.price;
       }
+
+      if (cart.discount) {
+        if (cart.discount.percent) {
+          discount = -1 * total * cart.discount.percent;
+        } else if (cart.discount.value) {
+          discount = -1 * cart.discount.value;
+        }
+        total = Math.max(0, total + discount);
+      }
+
+      $rootScope.cart.discountDollars = discount;
       $rootScope.cart.count = count;
       $rootScope.cart.total = total;
 

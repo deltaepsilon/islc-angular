@@ -1,18 +1,51 @@
 <div class="transaction padded-wrapper">
     <div class="pure-g-r">
-        <div class="clearfix pure-u-3-5 full-width-form centered">
-            <p>
-                Transaction #{{ transaction.id }}
-            </p>
-            <p>
-                Purchase Date: {{ transaction.created | date }}
-            </p>
+        <div class="pure-u-1">
+            <h2>thank you for your purchase</h2>
+
+            <h2 class="text-centered">transaction #{{ transaction.id }}</h2>
+        </div>
+
+
+        <div class="pure-u-1">
 
             <br>
-            <h3 class="clearfix text-green2">Products.</h3>
+            <table class="table-width centered">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>date</th>
+                        <th>qty</th>
+                        <th>
+                            <div class="thead-bar">title</div>
+                        </th>
+                        <th>type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="product in transaction.products">
+                        <td>
+                            {{ product.id }}
+                        </td>
+                        <td>
+                            {{ product.created | date }}
+                        </td>
+                        <td>{{ product.quantity }}</td>
+                        <td>
+                            <a class="button-link" ui-sref="product({id: product.id})">{{ product.title }}</a>
+                        </td>
+                        <td class="capitalize">{{ product.category || product.type }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pure-u-1" ng-show="productSlug">
             <br>
-            <div qv-table="productsTable"></div>
             <br>
+            <a ui-sref="content.subscription({productSlug: productSlug})">
+                <button class="button-highlight centered">take me to my coursework</button>
+            </a>
         </div>
     </div>
 </div>
