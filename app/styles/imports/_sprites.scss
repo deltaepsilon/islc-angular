@@ -5,11 +5,12 @@ $sprites:
   how-does-it-work,
   islc-logo,
   learn-your-way,
-  left-arrow-circle,
+  left-arrow,
   make-paper-sing,
   personal-feedback,
-  right-arrow-circle,
-  student-work;
+  right-arrow,
+  student-work,
+  thankyou;
 
 // Sprites
 @each $sprite in $sprites {
