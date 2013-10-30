@@ -65,9 +65,11 @@ button {
   display: block;
   border: none;
   padding: 20px 65px 15px;
+  position: relative;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 5px;
+
 
   &:after {
     @include absolute(8px, 8px, 8px, 8px);

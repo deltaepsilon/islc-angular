@@ -28,9 +28,14 @@
       @include absolute(inherit, inherit, 4px, inherit);
 
       background: rgba(0, 0, 0, 0.6);
+      font-size: 13px;
       opacity: 0;
-      padding: 20px 66px 15px;
+      padding: 13px 79px 11px;
       white-space: nowrap;
+
+      &:hover {
+        @extend .background-black;
+      }
 
     }
 

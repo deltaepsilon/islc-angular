@@ -24,6 +24,10 @@ p, ul, ol {
   text-transform: uppercase;
 }
 
+.thick {
+  font-weight: 300;
+}
+
 h1 {
   @extend .header;
   @extend .text-x-large;
@@ -36,7 +40,7 @@ h2 {
   @extend .text-large;
 
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 h3 {
@@ -161,3 +165,43 @@ $background-gray-url: url('../images/icons-2x/background-gray.png');
 .clear-both {
   clear: both;
 }
+
+.span-1 {
+  width: 10%;
+}
+
+.span-2 {
+  width: 20%;
+}
+
+.span-3 {
+  width: 30%;
+}
+
+.span-4 {
+  width: 40%;
+}
+
+.span-5 {
+  width: 50%;
+}
+
+.span-6 {
+  width: 60%;
+}
+
+.span-7 {
+  width: 70%;
+}
+
+.span-8 {
+  width: 80%;
+}
+.span-9 {
+  width: 90%;
+}
+
+.span-10 {
+  width: 100%;
+}
+
