@@ -9,7 +9,7 @@
 <div class="product padded-wrapper">
     <div class="pure-g-r product-wrapper product-{{ product.category || product.type }} centered">
 
-        <div class="pure-u-3-5 product-images">
+        <div class="pure-u-3-5 product-images centered-tablet">
 
             <img class="product-image" ng-src="{{ uri }}" alt="{{ product.title }}" ng-repeat="uri in product.images" ng-click="selectImage($index)"/>
             <div class="stretch"></div>

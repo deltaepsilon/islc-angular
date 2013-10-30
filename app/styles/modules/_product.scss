@@ -120,6 +120,12 @@
 // Product Page
 .product-details {
 
+  .product-meta {
+    margin: auto;
+    max-width: 300px;
+
+  }
+
   .product-title {
     @extend .text-medium;
     font-weight: 200;

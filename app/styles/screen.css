@@ -2675,25 +2675,30 @@ button[disabled] {
 }
 
 /* line 123, modules/_product.scss */
+.product-details .product-meta {
+  margin: auto;
+  max-width: 300px;
+}
+/* line 129, modules/_product.scss */
 .product-details .product-title {
   font-weight: 200;
   max-width: 250px;
   text-transform: uppercase;
 }
-/* line 130, modules/_product.scss */
+/* line 136, modules/_product.scss */
 .product-details .product-price {
   font-weight: 700;
 }
-/* line 134, modules/_product.scss */
+/* line 140, modules/_product.scss */
 .product-details .button-highlight {
   margin: 27px auto 28px;
   position: relative;
 }
-/* line 140, modules/_product.scss */
+/* line 146, modules/_product.scss */
 .product-details .product-description {
   line-height: 19px;
 }
-/* line 144, modules/_product.scss */
+/* line 150, modules/_product.scss */
 .product-details li {
   text-indent: -14px;
   padding-left: 14px;
