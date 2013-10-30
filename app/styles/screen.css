@@ -1638,155 +1638,165 @@ h2 {
 }
 
 /* line 83, imports/_global.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 87, imports/_global.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 91, imports/_global.scss */
 .pull-right {
   float: right;
 }
 
-/* line 87, imports/_global.scss */
+/* line 95, imports/_global.scss */
 .pull-left {
   float: left;
 }
 
-/* line 91, imports/_global.scss */
+/* line 99, imports/_global.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 95, imports/_global.scss */
+/* line 103, imports/_global.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 99, imports/_global.scss */
+/* line 107, imports/_global.scss */
 .bordered {
   border: 1px solid #f2f2f2;
 }
 
-/* line 103, imports/_global.scss */
+/* line 111, imports/_global.scss */
 .border-right {
   border-right: 1px solid #f2f2f2;
 }
 
-/* line 107, imports/_global.scss */
+/* line 115, imports/_global.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 111, imports/_global.scss */
+/* line 119, imports/_global.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 115, imports/_global.scss */
+/* line 123, imports/_global.scss */
 .full-width, .full-width-form, .qv-table {
   width: 100%;
 }
 
-/* line 119, imports/_global.scss */
+/* line 127, imports/_global.scss */
 .aligned-list {
   padding-left: 1em;
 }
 
-/* line 123, imports/_global.scss */
+/* line 131, imports/_global.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 127, imports/_global.scss */
+/* line 135, imports/_global.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 131, imports/_global.scss */
+/* line 139, imports/_global.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 136, imports/_global.scss */
+/* line 144, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/icons-2x/background.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 143, imports/_global.scss */
+/* line 151, imports/_global.scss */
 .background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight {
   background-image: url("../images/icons-2x/background-gray.png");
   background-position: -50px -30px;
 }
 
-/* line 148, imports/_global.scss */
+/* line 156, imports/_global.scss */
 .padded-wrapper {
   padding: 10px 20px;
 }
 
-/* line 152, imports/_global.scss */
+/* line 160, imports/_global.scss */
 .justify {
   text-align: justify;
 }
 
-/* line 156, imports/_global.scss */
+/* line 164, imports/_global.scss */
 .justified {
   display: inline;
 }
 
-/* line 160, imports/_global.scss */
+/* line 168, imports/_global.scss */
 .stretch {
   display: inline-block;
   width: 100%;
 }
 
-/* line 165, imports/_global.scss */
+/* line 173, imports/_global.scss */
 .clear-both {
   clear: both;
 }
 
-/* line 169, imports/_global.scss */
+/* line 177, imports/_global.scss */
 .span-1 {
   width: 10%;
 }
 
-/* line 173, imports/_global.scss */
+/* line 181, imports/_global.scss */
 .span-2 {
   width: 20%;
 }
 
-/* line 177, imports/_global.scss */
+/* line 185, imports/_global.scss */
 .span-3 {
   width: 30%;
 }
 
-/* line 181, imports/_global.scss */
+/* line 189, imports/_global.scss */
 .span-4 {
   width: 40%;
 }
 
-/* line 185, imports/_global.scss */
+/* line 193, imports/_global.scss */
 .span-5 {
   width: 50%;
 }
 
-/* line 189, imports/_global.scss */
+/* line 197, imports/_global.scss */
 .span-6 {
   width: 60%;
 }
 
-/* line 193, imports/_global.scss */
+/* line 201, imports/_global.scss */
 .span-7 {
   width: 70%;
 }
 
-/* line 197, imports/_global.scss */
+/* line 205, imports/_global.scss */
 .span-8 {
   width: 80%;
 }
 
-/* line 200, imports/_global.scss */
+/* line 208, imports/_global.scss */
 .span-9 {
   width: 90%;
 }
 
-/* line 204, imports/_global.scss */
+/* line 212, imports/_global.scss */
 .span-10 {
   width: 100%;
 }
@@ -2555,32 +2565,44 @@ button[disabled] {
   cursor: default !important;
 }
 
-/* line 2, modules/_product.scss */
-.products-wrapper {
-  max-width: 990px;
+@media (min-width: 705px) and (max-width: 1030px) {
+  /* line 3, modules/_product.scss */
+  .products-wrapper {
+    max-width: 660px !important;
+  }
 }
-/* line 5, modules/_product.scss */
+@media (max-width: 704px) {
+  /* line 9, modules/_product.scss */
+  .products-wrapper {
+    max-width: 330px !important;
+  }
+}
+/* line 14, modules/_product.scss */
+.products-wrapper {
+  max-width: 1000px;
+}
+/* line 17, modules/_product.scss */
 .products-wrapper .product {
   cursor: pointer;
   display: inline-block;
   padding: 0 15px 12px;
   min-height: 358px;
+  width: 330px;
 }
-/* line 11, modules/_product.scss */
+/* line 24, modules/_product.scss */
 .products-wrapper .product:after {
   content: "";
   display: block;
 }
-/* line 17, modules/_product.scss */
+/* line 30, modules/_product.scss */
 .products-wrapper .product:hover .product-title {
   font-weight: 700 !important;
-  max-width: 262px;
 }
-/* line 24, modules/_product.scss */
+/* line 36, modules/_product.scss */
 .products-wrapper .product-image-wrapper {
   position: relative;
 }
-/* line 27, modules/_product.scss */
+/* line 39, modules/_product.scss */
 .products-wrapper .product-image-wrapper .product-hidden-button {
   position: absolute;
   top: inherit;
@@ -2593,11 +2615,11 @@ button[disabled] {
   padding: 13px 79px 11px;
   white-space: nowrap;
 }
-/* line 43, modules/_product.scss */
+/* line 55, modules/_product.scss */
 .products-wrapper .product-image-wrapper:hover .product-hidden-button {
   opacity: 1;
 }
-/* line 49, modules/_product.scss */
+/* line 61, modules/_product.scss */
 .products-wrapper .product-image {
   font-weight: 200;
   letter-spacing: 2px;
@@ -2606,7 +2628,7 @@ button[disabled] {
   width: 300px;
   height: 300px;
 }
-/* line 60, modules/_product.scss */
+/* line 72, modules/_product.scss */
 .products-wrapper .product-title {
   display: inline-block;
   font-weight: 200;
@@ -2614,10 +2636,10 @@ button[disabled] {
   letter-spacing: 2px;
   line-height: 17px;
   margin-top: 9px;
-  max-width: 260px;
+  max-width: 245px;
   text-transform: uppercase;
 }
-/* line 73, modules/_product.scss */
+/* line 85, modules/_product.scss */
 .products-wrapper .product-price {
   display: inline-block;
   float: right;
@@ -2625,26 +2647,26 @@ button[disabled] {
   margin-top: 9px;
 }
 
-/* line 81, modules/_product.scss */
+/* line 93, modules/_product.scss */
 .product-wrapper {
   max-width: 990px;
 }
-/* line 84, modules/_product.scss */
+/* line 96, modules/_product.scss */
 .product-wrapper .product-images {
   float: right;
   max-width: 580px;
 }
-/* line 89, modules/_product.scss */
+/* line 101, modules/_product.scss */
 .product-wrapper .product-details {
   padding: 0 15px;
 }
-/* line 93, modules/_product.scss */
+/* line 105, modules/_product.scss */
 .product-wrapper .product-image {
   cursor: pointer;
   width: 163px;
   margin: 0 15px 25px;
 }
-/* line 98, modules/_product.scss */
+/* line 110, modules/_product.scss */
 .product-wrapper .product-image:first-of-type {
   cursor: default;
   width: 100%;
@@ -2652,26 +2674,26 @@ button[disabled] {
   padding-left: 1px;
 }
 
-/* line 110, modules/_product.scss */
+/* line 123, modules/_product.scss */
 .product-details .product-title {
   font-weight: 200;
   max-width: 250px;
   text-transform: uppercase;
 }
-/* line 117, modules/_product.scss */
+/* line 130, modules/_product.scss */
 .product-details .product-price {
   font-weight: 700;
 }
-/* line 121, modules/_product.scss */
+/* line 134, modules/_product.scss */
 .product-details .button-highlight {
   margin: 27px auto 28px;
   position: relative;
 }
-/* line 127, modules/_product.scss */
+/* line 140, modules/_product.scss */
 .product-details .product-description {
   line-height: 19px;
 }
-/* line 131, modules/_product.scss */
+/* line 144, modules/_product.scss */
 .product-details li {
   text-indent: -14px;
   padding-left: 14px;
