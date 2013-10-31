@@ -1,3 +1,9 @@
+textarea {
+  font-family: 'Museo sans';
+  font-weight: 200;
+  padding: 5px;
+}
+
 .qv-form {
   [required] {
     @extend .background-gray1;

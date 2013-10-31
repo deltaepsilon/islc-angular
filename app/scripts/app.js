@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router', 'angular-markdown'])
+angular.module('islcAngularApp', ['restangular', 'notifications', 'ui.router', 'angular-markdown', 'ngSanitize'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 

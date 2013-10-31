@@ -1,0 +1,17 @@
+.modal-backdrop {
+  @extend .background-gray;
+
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, .9);
+}
+
+.modal {
+  $modal-padding: 30px;
+  @include absolute($modal-padding, $modal-padding, $modal-padding, $modal-padding);
+}

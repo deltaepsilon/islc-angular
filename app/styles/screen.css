@@ -1492,7 +1492,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 15, imports/_colors.scss */
-.background-gray1, .qv-form [required], .table-width .thead-bar:before, #cart .sub-total, .card-form, .products-wrapper .product-image {
+.background-gray1, .qv-form [required], .table-width .thead-bar:before, #cart .sub-total, .card-form, .products-wrapper .product-image, #gallery .comment {
   background-color: #f2f2f2;
 }
 
@@ -1512,12 +1512,12 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 15, imports/_colors.scss */
-.background-gray {
+.background-gray, .modal-backdrop {
   background-color: #333333;
 }
 
 /* line 15, imports/_colors.scss */
-.background-white, #top-nav .islc-logo, .qv-slider .qv-slider-image, .qv-slider .qv-slider-button {
+.background-white, #top-nav .islc-logo, #gallery .image-wrapper:after, #gallery .comment:nth-child(2n), .qv-slider .qv-slider-image, .qv-slider .qv-slider-button {
   background-color: white;
 }
 
@@ -2301,6 +2301,13 @@ button[disabled] {
   padding: 10px;
 }
 
+/* line 1, modules/_form.scss */
+textarea {
+  font-family: 'Museo sans';
+  font-weight: 200;
+  padding: 5px;
+}
+
 /* line 20, imports/_mixins.scss */
 .qv-form [required]::-moz-placeholder {
   color: #333333;
@@ -2313,11 +2320,11 @@ button[disabled] {
 .qv-form [required]:-ms-input-placeholder {
   color: #333333;
 }
-/* line 7, modules/_form.scss */
+/* line 13, modules/_form.scss */
 .qv-form .ng-invalid {
   border-color: #bd3f42;
 }
-/* line 11, modules/_form.scss */
+/* line 17, modules/_form.scss */
 .qv-form input, .qv-form textarea {
   border: 1px solid #414141;
   padding: 8px;
@@ -2336,59 +2343,59 @@ button[disabled] {
 .qv-form input:-ms-input-placeholder, .qv-form textarea:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 20, modules/_form.scss */
+/* line 26, modules/_form.scss */
 .qv-form label {
   font-weight: 100;
 }
-/* line 25, modules/_form.scss */
+/* line 31, modules/_form.scss */
 .qv-form .inline-label {
   margin: 0 10px 5px 0;
 }
-/* line 30, modules/_form.scss */
+/* line 36, modules/_form.scss */
 .qv-form .form-link {
   display: inline-block;
   font-weight: 500;
   padding: 6px 2px;
   vertical-align: middle;
 }
-/* line 36, modules/_form.scss */
+/* line 42, modules/_form.scss */
 .qv-form .form-link:hover {
   text-decoration: underline;
 }
 
-/* line 44, modules/_form.scss */
+/* line 50, modules/_form.scss */
 .form-errors {
   padding: 10px 20px;
 }
-/* line 47, modules/_form.scss */
+/* line 53, modules/_form.scss */
 .form-errors .form-error {
   padding: 10px 0;
 }
 
-/* line 52, modules/_form.scss */
+/* line 58, modules/_form.scss */
 .form-error {
   color: #bd3f42 !important;
   padding: 14px 10px;
   text-transform: uppercase;
 }
-/* line 59, modules/_form.scss */
+/* line 65, modules/_form.scss */
 .form-error a {
   text-decoration: underline;
 }
 
-/* line 64, modules/_form.scss */
+/* line 70, modules/_form.scss */
 .full-width-form {
   max-width: 600px;
 }
-/* line 68, modules/_form.scss */
+/* line 74, modules/_form.scss */
 .full-width-form input {
   margin-bottom: 10px;
 }
-/* line 72, modules/_form.scss */
+/* line 78, modules/_form.scss */
 .full-width-form select {
   margin-bottom: 10px;
 }
-/* line 76, modules/_form.scss */
+/* line 82, modules/_form.scss */
 .full-width-form textarea {
   margin-bottom: 10px;
 }
@@ -2826,16 +2833,104 @@ button[disabled] {
   padding-left: 14px;
 }
 
-/* line 2, modules/gallery.scss */
+/* line 2, modules/_gallery.scss */
 #galleries-table .gallery-title {
   max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 10, modules/gallery.scss */
+/* line 10, modules/_gallery.scss */
 #galleries-table .gallery-description {
   max-width: 500px;
+}
+
+/* line 17, modules/_gallery.scss */
+#gallery {
+  padding: 30px 0;
+}
+/* line 20, modules/_gallery.scss */
+#gallery .image-wrapper {
+  cursor: pointer;
+  position: relative;
+}
+/* line 24, modules/_gallery.scss */
+#gallery .image-wrapper:after {
+  position: absolute;
+  top: 0;
+  right: inherit;
+  bottom: inherit;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  content: "CLICK TO ZOOM";
+  display: block;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+/* line 37, modules/_gallery.scss */
+#gallery .gallery-title {
+  padding: 14px 0;
+}
+/* line 41, modules/_gallery.scss */
+#gallery .gallery-description {
+  margin: 0 0 30px;
+}
+/* line 45, modules/_gallery.scss */
+#gallery .comments {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 50, modules/_gallery.scss */
+#gallery .comment {
+  padding: 25px 30px;
+}
+/* line 62, modules/_gallery.scss */
+#gallery .comment-username {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 68, modules/_gallery.scss */
+#gallery .comment-date {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 10px;
+}
+/* line 74, modules/_gallery.scss */
+#gallery .new-comment {
+  font-weight: 200;
+  width: 100%;
+  margin: 10px 0;
+  min-height: 100px;
+}
+
+/* line 84, modules/_gallery.scss */
+[modal-target="gallery-image"] .gallery-image {
+  display: block;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* line 1, modules/_modal.scss */
+.modal-backdrop {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 14, modules/_modal.scss */
+.modal {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
 }
 
 /* line 1, directives/_qv-slider.scss */

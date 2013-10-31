@@ -1,24 +1,30 @@
-<div id="gallery" class="pure-g-r gallery" ng-show="gallery">
+<div id="gallery" class="pure-g-r gallery" ng-show="gallery.id">
 
-    <div class="pure-u-2-5">
-        <img class="gallery-image" ng-src="{{ gallery.signed_uri }}" alt="{{ gallery.title }}"/>
-        <h4>{{ gallery.title }}</h4>
+    <div class="pure-u-2-5 padded-wrapper">
+        <div class="image-wrapper" qv-image-expand=".gallery-image">
+            <img class="gallery-image" ng-src="{{ gallery.signed_uri }}" alt="{{ gallery.title }}"/>
+        </div>
+        <h4 class="gallery-title">{{ gallery.title }}</h4>
     </div>
-    <div class="pure-u-3-5">
+    <div class="pure-u-3-5 padded-wrapper">
         <p class="gallery-description">
             {{ gallery.description }}
         </p>
 
-        <ul>
-            <li ng-repeat="comment in gallery.comments">
-                <h4></h4>
-                {{ comment }}
+        <ul class="comments">
+            <li class="comment" ng-repeat="comment in gallery.comments">
+                <div class="comment-username">{{ comment.user.username }}</div>
+                <div class="comment-date">{{ comment.created | date }}</div>
+                <p class="comment-text">
+                    <markdown ng-model="comment.comment" line-breaks="true" strip="true"></markdown>
+                </p>
             </li>
         </ul>
 
         <h2>new comment</h2>
-        <textarea id="newComment" name="newComment" ng-model="newComment"></textarea>
+        <textarea class="new-comment" name="newComment" ng-model="newComment"></textarea>
         <button class="button button-secondary" ng-click="addComment(newComment)">add</button>
+        <br>
 
     </div>
 

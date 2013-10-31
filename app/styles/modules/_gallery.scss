@@ -1,0 +1,90 @@
+#galleries-table {
+  .gallery-title {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+  }
+
+  .gallery-description {
+    max-width: 500px;
+
+  }
+
+}
+
+#gallery {
+  padding: 30px 0;
+
+  .image-wrapper {
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      @extend .background-white;
+      @include absolute(0, inherit, inherit, 0);
+
+      background-color: rgba(0, 0, 0, 0.4);
+      color: getColor(white);
+      content: "CLICK TO ZOOM";
+      display: block;
+      font-size: 10px;
+      padding: 5px 10px;
+    }
+  }
+  
+  .gallery-title {
+    padding: 14px 0;
+  }
+
+  .gallery-description {
+    margin: 0 0 30px;
+  }
+
+  .comments {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .comment {
+    @extend .background-gray1;
+
+    padding: 25px 30px;
+
+    &:nth-child(2n) {
+      @extend .background-white;
+
+    }
+
+  }
+
+  .comment-username {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .comment-date {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 10px;
+  }
+
+  .new-comment {
+    font-weight: 200;
+    width: 100%;
+    margin: 10px 0;
+    min-height: 100px;
+
+  }
+}
+
+[modal-target="gallery-image"] {
+  .gallery-image {
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

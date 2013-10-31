@@ -1,16 +1,31 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('GalleryCtrl', function ($rootScope, $scope, gallery, galleryService, $state) {
+  .controller('GalleryCtrl', function ($rootScope, $scope, gallery, galleryService, notificationService, $sanitize) {
+    $scope.$watch('gallery', function () {
+      if ($scope.gallery && $scope.gallery.comments) {
+        var i = $scope.gallery.comments.length;
+        while (i--) {
+          $scope.gallery.comments[i].comment = $sanitize($scope.gallery.comments[i].comment);
+        }
+      }
+
+    });
     $scope.gallery = gallery;
+    console.log('gallery', gallery);
 
+    $scope.addComment = function (newComment) {
+      galleryService.addComment($scope.gallery.id, $sanitize(newComment)).then(function (res) {
+        if (res.error) {
+          notificationService.error('Gallery', res.error);
+        } else {
+          galleryService.get($scope.gallery.id).then(function (ares) {
+            $scope.newComment = undefined;
+            $scope.gallery = ares;
 
-    $scope.removeGallery = function (gallery) {
-      galleryService.remove(gallery.id).then(function (res) {
-        galleryService.get(null, true).then(function (galleries) {
-          $rootScope.galleries = galleries;
-          $state.go('gallery');
-        });
+          });
+        }
+
       });
     };
 

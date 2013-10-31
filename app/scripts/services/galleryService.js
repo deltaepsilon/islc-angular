@@ -17,6 +17,10 @@ angular.module('islcAngularApp')
 
       remove: function (id) {
         return Restangular.one('gallery', id).remove();
+      },
+
+      addComment: function (id, comment) {
+        return Restangular.one('gallery', id).all('comment').post({comment: comment});
       }
     }
   });
