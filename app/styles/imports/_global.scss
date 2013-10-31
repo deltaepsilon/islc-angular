@@ -104,6 +104,12 @@ h6 {
   text-align: left;
 }
 
+.disabled {
+  @include opacity(0.2);
+
+  cursor: default;
+}
+
 .bordered {
   border: 1px solid getColor(gray1);
 }

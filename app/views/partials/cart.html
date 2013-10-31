@@ -32,7 +32,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="product in cart.products">
+                        <tr ng-class="'product-row-' + $index" ng-repeat="product in cart.products">
                             <td class="product-image">
                                 <a ui-sref="product({id: product.id})">
                                     <img ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
@@ -63,7 +63,7 @@
                                 {{ product.quantity * product.price | currency}}
                             </td>
                             <td class="product-actions">
-                                <a class="remove-button" ng-click="updateCart(product.id, 0)">X</a>
+                                <a class="remove-button" ng-click="updateCart(product.id, 0)" qv-disable=".product-row-{{ $index }}">X</a>
                             </td>
                         </tr>
                     </tbody>
@@ -101,7 +101,15 @@
                                         />
                             </td>
                             <td colspan="1">
-                                <button class="button-tertiary" ng-click="setCode(cart.code)" ng-disabled="!cartForm.discountCode.$modelValue">Add</button>
+                                <button
+                                    class="button-tertiary"
+                                    ng-click="setCode(cart.code)"
+                                    ng-disabled="!cartForm.discountCode.$modelValue"
+                                    qv-flash="cart"
+                                    flash-duration="3000"
+                                >
+                                    Add
+                                </button>
                             </td>
                         </tr>
                     </tfoot>
@@ -195,6 +203,10 @@
                         class="button-secondary span-9"
                         ng-click="saveCard(newCard)"
                         ng-disabled="checkoutForm.$invalid || checkoutForm.cardNumber.$invalid || checkoutForm.cvc.$invalid"
+                        qv-flash="newCard"
+                        flash-message="adding..."
+                        flash-duration="4000"
+                        style="min-width: 200px;"
                     > Add Card
                     </button>
                 </div>
@@ -212,11 +224,17 @@
             <br>
             <br>
             <button
-                    id="checkout-button"
-                    class="button-highlight centered"
-                    ng-click="checkout()"
-                    ng-disabled="cart.total && (!cart || !token || cartForm.$invalid)"
-                    > Complete Checkout
+                id="checkout-button"
+                class="button-highlight centered"
+                ng-click="checkout()"
+                ng-disabled="cart.total && (!cart || !token || cartForm.$invalid)"
+                qv-flash="cart"
+                flash-message="checking out..."
+                flash-duration="10000"
+                style="min-width: 405px;"
+                qv-disable="#checkout-button"
+            >
+                Complete Checkout
             </button>
         </div>
     </div>

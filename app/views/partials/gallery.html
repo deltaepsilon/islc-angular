@@ -23,7 +23,17 @@
 
         <h2>new comment</h2>
         <textarea class="new-comment" name="newComment" ng-model="newComment"></textarea>
-        <button class="button button-secondary" ng-click="addComment(newComment)">add</button>
+        <button
+            class="button button-secondary"
+            ng-click="addComment(newComment)"
+            qv-flash="gallery"
+            flash-message="saving..."
+            flash-duration="3000"
+            style="min-width: 180px;"
+            ng-disabled="!newComment"
+        >
+            add
+        </button>
         <br>
 
     </div>

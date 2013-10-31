@@ -78,10 +78,11 @@
     .product-hidden-button {
       @include absolute(inherit, inherit, 4px, inherit);
 
+
       background: rgba(0, 0, 0, 0.6);
       font-size: 13px;
-      opacity: 0;
       padding: 13px 79px 11px;
+      visibility: hidden;
       white-space: nowrap;
 
       &:hover {
@@ -92,7 +93,7 @@
 
     &:hover {
       .product-hidden-button {
-        opacity: 1;
+        visibility: visible;
       }
     }
   }

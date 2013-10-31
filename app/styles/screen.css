@@ -1668,135 +1668,142 @@ h2 {
 }
 
 /* line 107, imports/_global.scss */
+.disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  cursor: default;
+}
+
+/* line 113, imports/_global.scss */
 .bordered {
   border: 1px solid #f2f2f2;
 }
 
-/* line 111, imports/_global.scss */
+/* line 117, imports/_global.scss */
 .border-right {
   border-right: 1px solid #f2f2f2;
 }
 
-/* line 115, imports/_global.scss */
+/* line 121, imports/_global.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 119, imports/_global.scss */
+/* line 125, imports/_global.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 123, imports/_global.scss */
+/* line 129, imports/_global.scss */
 .full-width, .full-width-form, .qv-table {
   width: 100%;
 }
 
-/* line 127, imports/_global.scss */
+/* line 133, imports/_global.scss */
 .aligned-list {
   padding-left: 1em;
 }
 
-/* line 131, imports/_global.scss */
+/* line 137, imports/_global.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 135, imports/_global.scss */
+/* line 141, imports/_global.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 139, imports/_global.scss */
+/* line 145, imports/_global.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 144, imports/_global.scss */
+/* line 150, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/icons-2x/background.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 151, imports/_global.scss */
+/* line 157, imports/_global.scss */
 .background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight {
   background-image: url("../images/icons-2x/background-gray.png");
   background-position: -50px -30px;
 }
 
-/* line 156, imports/_global.scss */
+/* line 162, imports/_global.scss */
 .padded-wrapper {
   padding: 10px 20px;
 }
 
-/* line 160, imports/_global.scss */
+/* line 166, imports/_global.scss */
 .justify {
   text-align: justify;
 }
 
-/* line 164, imports/_global.scss */
+/* line 170, imports/_global.scss */
 .justified {
   display: inline;
 }
 
-/* line 168, imports/_global.scss */
+/* line 174, imports/_global.scss */
 .stretch {
   display: inline-block;
   width: 100%;
 }
 
-/* line 173, imports/_global.scss */
+/* line 179, imports/_global.scss */
 .clear-both {
   clear: both;
 }
 
-/* line 177, imports/_global.scss */
+/* line 183, imports/_global.scss */
 .span-1 {
   width: 10%;
 }
 
-/* line 181, imports/_global.scss */
+/* line 187, imports/_global.scss */
 .span-2 {
   width: 20%;
 }
 
-/* line 185, imports/_global.scss */
+/* line 191, imports/_global.scss */
 .span-3 {
   width: 30%;
 }
 
-/* line 189, imports/_global.scss */
+/* line 195, imports/_global.scss */
 .span-4 {
   width: 40%;
 }
 
-/* line 193, imports/_global.scss */
+/* line 199, imports/_global.scss */
 .span-5 {
   width: 50%;
 }
 
-/* line 197, imports/_global.scss */
+/* line 203, imports/_global.scss */
 .span-6 {
   width: 60%;
 }
 
-/* line 201, imports/_global.scss */
+/* line 207, imports/_global.scss */
 .span-7 {
   width: 70%;
 }
 
-/* line 205, imports/_global.scss */
+/* line 211, imports/_global.scss */
 .span-8 {
   width: 80%;
 }
 
-/* line 208, imports/_global.scss */
+/* line 214, imports/_global.scss */
 .span-9 {
   width: 90%;
 }
 
-/* line 212, imports/_global.scss */
+/* line 218, imports/_global.scss */
 .span-10 {
   width: 100%;
 }
@@ -2740,15 +2747,15 @@ textarea {
   left: inherit;
   background: rgba(0, 0, 0, 0.6);
   font-size: 13px;
-  opacity: 0;
   padding: 13px 79px 11px;
+  visibility: hidden;
   white-space: nowrap;
 }
-/* line 94, modules/_product.scss */
+/* line 95, modules/_product.scss */
 .products-wrapper .product-image-wrapper:hover .product-hidden-button {
-  opacity: 1;
+  visibility: visible;
 }
-/* line 100, modules/_product.scss */
+/* line 101, modules/_product.scss */
 .products-wrapper .product-image {
   font-weight: 200;
   letter-spacing: 2px;
@@ -2757,7 +2764,7 @@ textarea {
   width: 300px;
   height: 300px;
 }
-/* line 111, modules/_product.scss */
+/* line 112, modules/_product.scss */
 .products-wrapper .product-title {
   display: inline-block;
   font-weight: 200;
@@ -2768,7 +2775,7 @@ textarea {
   max-width: 245px;
   text-transform: uppercase;
 }
-/* line 124, modules/_product.scss */
+/* line 125, modules/_product.scss */
 .products-wrapper .product-price {
   display: inline-block;
   float: right;
@@ -2776,26 +2783,26 @@ textarea {
   margin-top: 9px;
 }
 
-/* line 132, modules/_product.scss */
+/* line 133, modules/_product.scss */
 .product-wrapper {
   max-width: 990px;
 }
-/* line 135, modules/_product.scss */
+/* line 136, modules/_product.scss */
 .product-wrapper .product-images {
   float: right;
   max-width: 580px;
 }
-/* line 140, modules/_product.scss */
+/* line 141, modules/_product.scss */
 .product-wrapper .product-details {
   padding: 0 15px;
 }
-/* line 144, modules/_product.scss */
+/* line 145, modules/_product.scss */
 .product-wrapper .product-image {
   cursor: pointer;
   width: 163px;
   margin: 0 15px 25px;
 }
-/* line 149, modules/_product.scss */
+/* line 150, modules/_product.scss */
 .product-wrapper .product-image:first-of-type {
   cursor: default;
   width: 100%;
@@ -2803,31 +2810,31 @@ textarea {
   padding-left: 1px;
 }
 
-/* line 162, modules/_product.scss */
+/* line 163, modules/_product.scss */
 .product-details .product-meta {
   margin: auto;
   max-width: 300px;
 }
-/* line 168, modules/_product.scss */
+/* line 169, modules/_product.scss */
 .product-details .product-title {
   font-weight: 200;
   max-width: 250px;
   text-transform: uppercase;
 }
-/* line 175, modules/_product.scss */
+/* line 176, modules/_product.scss */
 .product-details .product-price {
   font-weight: 700;
 }
-/* line 179, modules/_product.scss */
+/* line 180, modules/_product.scss */
 .product-details .button-highlight {
   margin: 27px auto 28px;
   position: relative;
 }
-/* line 185, modules/_product.scss */
+/* line 186, modules/_product.scss */
 .product-details .product-description {
   line-height: 19px;
 }
-/* line 189, modules/_product.scss */
+/* line 190, modules/_product.scss */
 .product-details li {
   text-indent: -14px;
   padding-left: 14px;

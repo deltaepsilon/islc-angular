@@ -43,6 +43,7 @@ angular.module('islcAngularApp')
       galleryService.remove(gallery.id).then(function (res) {
         galleryService.get(null, true).then(function (galleries) {
           $rootScope.galleries = galleries;
+          $state.go('gallery');
         });
       });
     };

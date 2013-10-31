@@ -1,4 +1,4 @@
-<div class="background-gray1">
+'<div class="background-gray1">
     <ul class="link-list">
         <li class="link-list-item" ng-click="filterProducts('')" ng-class="{active: isActive('')}">all</li>
         <li class="link-list-item" ng-click="filterProducts('workshop')" ng-class="{active: isActive('workshop')}">workshops</li>
@@ -14,7 +14,15 @@
                 <a ui-sref="product({id: product.id})">
                     <img class="product-image" ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
                 </a>
-                <button class="product-hidden-button button-highlight" ng-click="addToCart(product.id, 1)">Add To Cart</button>
+                <button
+                    class="product-hidden-button button-highlight"
+                    ng-click="addToCart(product.id, 1)"
+                    qv-flash="cart"
+                    flash-message="adding..."
+                    flash-duration="1000"
+                >
+                    Add To Cart
+                </button>
             </div>
 
             <a ui-sref="product({id: product.id})">

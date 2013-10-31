@@ -18,7 +18,7 @@
             <tr ng-hide="galleries.length">
                 <td class="text-centered text-x-medium" colspan="100%">You have no images yet. Upload something!</td>
             </tr>
-            <tr ng-repeat="gallery in galleries">
+            <tr ng-class="'gallery-row-' + $index" ng-repeat="gallery in galleries">
                 <td>
                     <a class="button-link" ui-sref="gallery.view({id: gallery.id})">
                         {{ gallery.id }}
@@ -34,7 +34,7 @@
                     <span>{{ gallery.description }}</span>
                 </td>
                 <td>
-                    <a class="button-link" ng-click="removeGallery(gallery)">Delete Gallery</a>
+                    <a class="button-link" ng-click="removeGallery(gallery)" qv-disable=".gallery-row-{{ $index }}" stop-propagation>Delete Gallery</a>
                 </td>
             </tr>
             </tbody>
@@ -91,7 +91,16 @@
             </div>
 
             <div class="clearfix">
-                <button class="button button-secondary" ng-disabled="!newGallery.file">Upload</button>
+                <button
+                    class="button button-secondary"
+                    ng-disabled="!newGallery.file"
+                    qv-flash="galleries"
+                    flash-message="saving..."
+                    flash-duration="3000"
+                    style="min-width: 180px;"
+                >
+                    Upload
+                </button>
             </div>
 
         </form>
