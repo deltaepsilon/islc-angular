@@ -20,7 +20,16 @@
                 <div class="product-price pull-right">{{ product.price | currency | trimDecimal }}</div>
             </div>
 
-            <button class="button-highlight" ng-click="addToCart(product.id, 1)">Add To Cart</button>
+            <button
+                class="button-highlight"
+                ng-click="addToCart(product.id, 1)"
+                qv-flash="cart"
+                flash-message="adding..."
+                flash-duration="1000"
+                style="min-width: 300px"
+            >
+                Add To Cart
+            </button>
             <div class="product-description">
                 <markdown ng-model="product.description" line-breaks="true" strip="true"></markdown>
             </div>
