@@ -1,11 +1,17 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('ProductCtrl', function ($scope, $rootScope, $stateParams, products) {
+  .controller('ProductCtrl', function ($scope, $rootScope, $stateParams, products, cartService, productService, notificationService) {
     $scope.category = $stateParams.category;
 
     if ($stateParams.id) {
       $scope.product = products;
+      console.log('product', products);
+      if ($scope.product.available === undefined) {
+        $scope.infiniteAvailable = true;
+      } else if ($scope.product.available === 0) {
+        $scope.outOfStock = true;
+      }
     } else {
       $rootScope.products = products;
     }
@@ -34,6 +40,31 @@ angular.module('islcAngularApp')
         console.log($scope.product.images[index]);
       }
 
+    }
+
+    $rootScope.addToCart = function (id, quantity) {
+      cartService.add(id, quantity).then(function (cart) {
+        if (cart.error) {
+          notificationService.error('Cart', cart.error);
+        } else if (cart.products) {
+          $rootScope.cart = cart;
+
+          //Force update the products list. This is critical to capture any changes resulting from the cart transaction.
+          productService.get($stateParams.id, true).then(function (res) {
+            if (res.error) {
+              notificationService.error('Products', res.error);
+            } else {
+              if ($stateParams.id) {
+                $scope.product = res;
+              } else {
+                $scope.products = res;
+              }
+
+            }
+          });
+        }
+
+      });
     }
 
   });

@@ -86,7 +86,6 @@
                     placeholder="Gallery file..."
                     ng-required="true"
                     qv-file="fileChange"
-
                 />
             </div>
 
@@ -94,10 +93,6 @@
                 <button
                     class="button button-secondary"
                     ng-disabled="!newGallery.file"
-                    qv-flash="galleries"
-                    flash-message="saving..."
-                    flash-duration="3000"
-                    style="min-width: 180px;"
                 >
                     Upload
                 </button>

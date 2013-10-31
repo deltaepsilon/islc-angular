@@ -33,10 +33,8 @@ angular.module('islcAngularApp')
     });
 
     $scope.fileChange = function (value) {
+      $scope.newGallery.file = value;
 
-      $scope.$apply(function () {
-        $scope.newGallery.file = value;
-      });
     };
 
     $scope.removeGallery = function (gallery) {
