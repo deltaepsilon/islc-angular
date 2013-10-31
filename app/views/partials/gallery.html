@@ -1,19 +1,25 @@
-<div class="pure-g-r gallery">
-    <div class="pure-u-1">
-        <h3 class="clearfix text-green2">{{ gallery.title }}</h3>
+<div id="gallery" class="pure-g-r gallery" ng-show="gallery">
 
-        <p>{{ gallery.description }}</p>
+    <div class="pure-u-2-5">
+        <img class="gallery-image" ng-src="{{ gallery.signed_uri }}" alt="{{ gallery.title }}"/>
+        <h4>{{ gallery.title }}</h4>
+    </div>
+    <div class="pure-u-3-5">
+        <p class="gallery-description">
+            {{ gallery.description }}
+        </p>
 
-        <br>
-        <button class="button button-secondary" ng-click="removeGallery(gallery)">delete</button>
-
-        <br>
-        <img ng-src="{{ gallery.signed_uri }}" alt=""/>
-
-        <br>
         <ul>
-            <li ng-repeat="comment in gallery.comments">{{ comment.comment }}</li>
+            <li ng-repeat="comment in gallery.comments">
+                <h4></h4>
+                {{ comment }}
+            </li>
         </ul>
+
+        <h2>new comment</h2>
+        <textarea id="newComment" name="newComment" ng-model="newComment"></textarea>
+        <button class="button button-secondary" ng-click="addComment(newComment)">add</button>
+
     </div>
 
 

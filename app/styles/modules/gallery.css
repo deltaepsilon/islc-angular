@@ -1,0 +1,11 @@
+/* line 2, gallery.scss */
+#galleries-table .gallery-title {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 10, gallery.scss */
+#galleries-table .gallery-description {
+  max-width: 500px;
+}

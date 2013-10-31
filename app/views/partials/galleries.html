@@ -1,8 +1,54 @@
-<div class="pure-g-r galleries padded-wrapper">
-    <div class="pure-u-1">
-        <form class="qv-form full-width-form centered" name="galleryForm" action="/angular/gallery" target="uploadTarget" method="POST" enctype="multipart/form-data">
-            <h3 class="clearfix text-green2">Upload a gallery image.</h3>
+<div class="pure-g-r galleries">
 
+    <div class="pure-u-1">
+        <h2 class="text-centered">My Gallery</h2>
+
+        <br>
+        <table id="galleries-table" class="table-width centered">
+            <thead>
+            <th>id</th>
+            <th>date</th>
+            <th>title</th>
+            <th>
+                <div class="thead-bar">description</div>
+            </th>
+            <th></th>
+            </thead>
+            <tbody>
+            <tr ng-hide="galleries.length">
+                <td class="text-centered text-x-medium" colspan="100%">You have no images yet. Upload something!</td>
+            </tr>
+            <tr ng-repeat="gallery in galleries">
+                <td>
+                    <a class="button-link" ui-sref="gallery.view({id: gallery.id})">
+                        {{ gallery.id }}
+                    </a>
+                </td>
+                <td>{{ gallery.created | date }}</td>
+                <td class="gallery-title">
+                    <a class="button-link" ui-sref="gallery.view({id: gallery.id})">
+                        {{ gallery.title || 'Untitled' }}
+                    </a>
+                </td>
+                <td class="gallery-description" qv-truncate="100">
+                    <span>{{ gallery.description }}</span>
+                </td>
+                <td>
+                    <a class="button-link" ng-click="removeGallery(gallery)">Delete Gallery</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br>
+    </div>
+
+    <div class="pure-u-1" ui-view="galleryView"></div>
+
+    <div class="pure-u-1 background-gray1">
+        <form class="qv-form full-width-form centered" name="galleryForm" action="/angular/gallery" target="uploadTarget" method="POST" enctype="multipart/form-data">
+            <br>
+            <h2 class="text-centered">upload a gallery image</h2>
             <br>
 
             <div class="clearfix pure-g-r">
@@ -18,20 +64,23 @@
                 />
             </div>
 
-            <div class="clearfix pure-g-r">
+            <div class="clearfix">
                 <textarea
                     id="gallery-description"
-                    class="pure-u-1 pull-left"
+                    class="span-10 pull-left"
                     name="description"
                     placeholder="Gallery description..."
                     ng-model="newGallery.description"
                 />
+                <label class="text-xx-small text-green2" for="gallery-description">For best critiques: share tools, materials, process and questions above.</label>
             </div>
 
-            <div class="clearfix pure-g-r">
+            <br>
+
+            <div class="clearfix">
                 <input
                     id="gallery-file"
-                    class="pure-u-1 pull-left"
+                    class="pull-left span-10"
                     name="file"
                     type="file"
                     placeholder="Gallery file..."
@@ -41,23 +90,13 @@
                 />
             </div>
 
-            <div class="clearfix pure-g-r">
+            <div class="clearfix">
                 <button class="button button-secondary" ng-disabled="!newGallery.file">Upload</button>
             </div>
 
-
         </form>
-    </div>
 
-    <div class="pure-u-1-5">
-        <ul>
-            <li ng-repeat="gallery in galleries">
-                <a ui-sref="gallery.view({ id: gallery.id })">{{ gallery.title || gallery.id }}</a>
-                <button class="button button-secondary" ng-click="removeGallery(gallery)">delete</button>
-            </li>
-        </ul>
+        <br>
     </div>
-
-    <div class="pure-u-4-5" ui-view="galleryView"></div>
 
 </div>

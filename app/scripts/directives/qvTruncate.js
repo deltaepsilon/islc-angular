@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .directive('csTruncate', function ($timeout, _) {
+  .directive('qvTruncate', function ($timeout, _) {
     return {
       restrict: 'A',
       priority: -1,

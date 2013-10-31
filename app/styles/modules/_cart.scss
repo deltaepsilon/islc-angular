@@ -31,13 +31,10 @@
 
   .remove-button {
     @extend .circle;
+    @extend .text-small;
 
-    border: 1px solid getColor(gray3);
-    cursor: pointer;
-    display: inline-block;
     padding: 8px 12px;
     margin-left: 20px;
-    text-align: center;
   }
 
   .sub-total {

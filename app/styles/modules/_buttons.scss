@@ -85,3 +85,15 @@ button {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.remove-button {
+  @extend .circle;
+  @extend .text-x-small;
+
+  border: 1px solid getColor(gray3);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  padding: 2px 5px;
+  text-align: center;
+}

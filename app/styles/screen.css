@@ -1106,12 +1106,12 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-small, h6, [action="login_check"] label[for="remember_me"] {
+.text-x-small, h6, .remove-button, [action="login_check"] label[for="remember_me"] {
   font-size: 12px;
 }
 
 /* line 27, imports/_font-size.scss */
-.text-small, h5, .button-tertiary, #copyright-footer, .qv-form label, .form-error, .products-wrapper .product-title {
+.text-small, h5, .button-tertiary, #copyright-footer, .qv-form label, .form-error, #cart .remove-button, .products-wrapper .product-title {
   font-size: 14px;
 }
 
@@ -1136,7 +1136,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 33, imports/_font-size.scss */
-.circle, #cart .remove-button, .qv-slider .qv-slider-button {
+.circle, .remove-button, #cart .remove-button, .qv-slider .qv-slider-button {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -2040,6 +2040,16 @@ button[disabled] {
   text-decoration: underline;
 }
 
+/* line 89, modules/_buttons.scss */
+.remove-button {
+  border: 1px solid #414141;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  padding: 2px 5px;
+  text-align: center;
+}
+
 /* line 1, modules/_nav.scss */
 #top-nav {
   padding: 20px 0 32px;
@@ -2407,7 +2417,7 @@ button[disabled] {
 
 /* line 33, modules/_table.scss */
 .table-width {
-  width: 960px;
+  max-width: 960px;
 }
 /* line 36, modules/_table.scss */
 .table-width .thead-bar {
@@ -2430,11 +2440,13 @@ button[disabled] {
 /* line 52, modules/_table.scss */
 .table-width th {
   font-weight: 300;
+  padding-right: 10px;
   text-align: left;
   text-transform: uppercase;
 }
-/* line 58, modules/_table.scss */
+/* line 59, modules/_table.scss */
 .table-width td {
+  padding-right: 10px;
   padding-top: 28px;
   vertical-align: top;
 }
@@ -2470,14 +2482,10 @@ button[disabled] {
 }
 /* line 32, modules/_cart.scss */
 #cart .remove-button {
-  border: 1px solid #414141;
-  cursor: pointer;
-  display: inline-block;
   padding: 8px 12px;
   margin-left: 20px;
-  text-align: center;
 }
-/* line 43, modules/_cart.scss */
+/* line 40, modules/_cart.scss */
 #cart .sub-total {
   font-weight: 300;
   letter-spacing: 5px !important;
@@ -2486,29 +2494,29 @@ button[disabled] {
   text-transform: uppercase;
 }
 
-/* line 55, modules/_cart.scss */
+/* line 52, modules/_cart.scss */
 .login-prompt {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 59, modules/_cart.scss */
+/* line 56, modules/_cart.scss */
 .login-prompt a {
   text-decoration: underline;
 }
 
-/* line 64, modules/_cart.scss */
+/* line 61, modules/_cart.scss */
 .card-form {
   padding: 30px;
 }
-/* line 69, modules/_cart.scss */
+/* line 66, modules/_cart.scss */
 .card-form .title {
   margin-bottom: 26px;
 }
-/* line 73, modules/_cart.scss */
+/* line 70, modules/_cart.scss */
 .card-form .form-error {
   padding: 0;
 }
-/* line 77, modules/_cart.scss */
+/* line 74, modules/_cart.scss */
 .card-form input {
   background-color: white !important;
 }
@@ -2816,6 +2824,18 @@ button[disabled] {
 .product-details li {
   text-indent: -14px;
   padding-left: 14px;
+}
+
+/* line 2, modules/gallery.scss */
+#galleries-table .gallery-title {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 10, modules/gallery.scss */
+#galleries-table .gallery-description {
+  max-width: 500px;
 }
 
 /* line 1, directives/_qv-slider.scss */
