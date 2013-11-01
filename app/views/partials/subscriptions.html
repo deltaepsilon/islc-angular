@@ -1,26 +1,33 @@
 <div class="pure-g-r subscriptions padded-wrapper">
 
-    <div class="pure-u-3-5 centered">
-        <h3 class="clearfix text-green2">Your subscriptions.</h3>
+
+
+    <div class="pure-u-1 centered">
+        <h2 class="text-centered">Subscriptions</h2>
 
         <br>
 
-        <table class="qv-table">
+        <table class="table-width centered">
             <thead>
                 <tr>
                     <th></th>
                     <th>title</th>
                     <th>expires</th>
-                    <th>time remaining</th>
+                    <th>
+                        <div class="thead-bar">time remaining</div>
+                    </th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="subscription in subscriptions">
                     <td>
-                        <img class="key-image" ng-src="{{ subscription.product.key_image }}" alt="{{ subscription.slug }}"/>
+                        <a ng-show="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">
+                            <img class="key-image" ng-src="{{ subscription.product.key_image }}" alt="{{ subscription.slug }}"/>
+                        </a>
+
                     </td>
                     <td>
-                        <a ng-show="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">{{ subscription.product.title }}</a>
+                        <a class="button-link" ng-show="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">{{ subscription.product.title }}</a>
                         <span ng-hide="subscription.reset">{{ subscription.product.title }}</span>
                     </td>
                     <td>
@@ -28,7 +35,7 @@
                         <a class="button button-secondary button-link text-centered start-course-button" ng-hide="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">Start Course</a>
                     </td>
                     <td>
-                        <span ng-show="subscription.reset">{{ subscription.expires }}</span>
+                        <span ng-show="subscription.reset">{{ subscription.expires | until:'days' }} Days</span>
                         <span ng-hide="subscription.reset">Course Not Started</span>
                     </td>
                 </tr>
