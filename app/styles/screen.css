@@ -1482,7 +1482,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 15, imports/_colors.scss */
-.background-green1, #top-nav:before, .qv-table th {
+.background-green1, .qv-table th {
   background-color: #98ccb6;
 }
 
@@ -1517,7 +1517,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 15, imports/_colors.scss */
-.background-white, #top-nav .islc-logo, #gallery .image-wrapper:after, #gallery .comment:nth-child(2n), .qv-slider .qv-slider-image, .qv-slider .qv-slider-button {
+.background-white, #gallery .image-wrapper:after, #gallery .comment:nth-child(2n), .qv-slider .qv-slider-image, .qv-slider .qv-slider-button {
   background-color: white;
 }
 
@@ -1824,49 +1824,70 @@ h2 {
   .pull-left-desktop {
     float: left;
   }
+
+  /* line 16, imports/_media-queries.scss */
+  .hidden-desktop {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 24, imports/_media-queries.scss */
+  .visible-desktop {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
-  /* line 24, imports/_media-queries.scss */
+  /* line 31, imports/_media-queries.scss */
   .centered-phone, .centered-tablet {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 29, imports/_media-queries.scss */
+  /* line 36, imports/_media-queries.scss */
   .pull-right-phone, .pull-right-tablet {
     float: right;
   }
 
-  /* line 33, imports/_media-queries.scss */
+  /* line 40, imports/_media-queries.scss */
   .pull-left-phone, .pull-left-tablet {
     float: left;
   }
 
-  /* line 37, imports/_media-queries.scss */
+  /* line 44, imports/_media-queries.scss */
   .no-padding-phone, .no-padding-tablet {
     padding: 0 !important;
   }
+
+  /* line 48, imports/_media-queries.scss */
+  .visible-desktop {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 44, imports/_media-queries.scss */
+  /* line 55, imports/_media-queries.scss */
   .centered-tablet {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 49, imports/_media-queries.scss */
+  /* line 60, imports/_media-queries.scss */
   .pull-right-tablet {
     float: right;
   }
 
-  /* line 53, imports/_media-queries.scss */
+  /* line 64, imports/_media-queries.scss */
   .pull-left-tablet {
     float: left;
   }
 
-  /* line 57, imports/_media-queries.scss */
+  /* line 68, imports/_media-queries.scss */
   .no-padding-tablet {
     padding: 0 !important;
+  }
+
+  /* line 72, imports/_media-queries.scss */
+  .visible-desktop {
+    display: none;
   }
 }
 /* line 1, imports/_animate.scss */
@@ -2063,10 +2084,7 @@ button[disabled] {
   position: relative;
 }
 /* line 5, modules/_nav.scss */
-#top-nav:before {
-  content: "";
-  display: block;
-  position: relative;
+#top-nav #top-nav-bar {
   position: absolute;
   top: 67px;
   right: 0;
@@ -2074,7 +2092,15 @@ button[disabled] {
   left: 0;
   height: 2px;
 }
-/* line 13, modules/_nav.scss */
+/* line 11, modules/_nav.scss */
+#top-nav .background-white, #top-nav #gallery .image-wrapper:after, #gallery #top-nav .image-wrapper:after, #top-nav #gallery .comment:nth-child(2n), #gallery #top-nav .comment:nth-child(2n), #top-nav .qv-slider .qv-slider-image, .qv-slider #top-nav .qv-slider-image, #top-nav .qv-slider .qv-slider-button, .qv-slider #top-nav .qv-slider-button {
+  border: 1px solid white;
+  outline: 1px solid white;
+  position: relative;
+  width: 310px;
+  z-index: 1;
+}
+/* line 21, modules/_nav.scss */
 #top-nav .islc-logo {
   background-image: url('../images/icons-s591652f16e.png');
   background-position: 0 -266px;
@@ -2083,12 +2109,12 @@ button[disabled] {
   display: block;
   height: 105px;
   width: 311px;
-  float: right;
-  margin-top: 3px;
+  left: -2px;
+  margin: 3px auto 0px;
   position: relative;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 13, modules/_nav.scss */
+  /* line 21, modules/_nav.scss */
   #top-nav .islc-logo {
     background-image: url('../images/icons-2x-sf1393747b1.png');
     background-size: 763px 1141px;
@@ -2097,12 +2123,16 @@ button[disabled] {
     width: 311px;
   }
 }
-/* line 23, modules/_nav.scss */
+/* line 30, modules/_nav.scss */
+#top-nav #nav-links {
+  text-align: center;
+}
+/* line 34, modules/_nav.scss */
 #top-nav .nav-link-item {
   cursor: pointer;
   float: right;
 }
-/* line 28, modules/_nav.scss */
+/* line 39, modules/_nav.scss */
 #top-nav .nav-link {
   display: inline-block;
   font-size: 14px;
@@ -2112,7 +2142,7 @@ button[disabled] {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 39, modules/_nav.scss */
+  /* line 50, modules/_nav.scss */
   #top-nav .islc-logo {
     background-image: url('../images/icons-s591652f16e.png');
     background-position: 0 -266px;
@@ -2126,7 +2156,7 @@ button[disabled] {
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 3 / 2), (-o-min-device-pixel-ratio: 3 / 2) and (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2) and (min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
-  /* line 39, modules/_nav.scss */
+  /* line 50, modules/_nav.scss */
   #top-nav .islc-logo {
     background-image: url('../images/icons-2x-sf1393747b1.png');
     background-size: 763px 1141px;
@@ -2136,8 +2166,14 @@ button[disabled] {
   }
 }
 
+@media (max-width: 767px) {
+  /* line 65, modules/_nav.scss */
+  .nav-link-item {
+    float: none !important;
+  }
+}
 @media (min-width: 1100px) {
-  /* line 54, modules/_nav.scss */
+  /* line 71, modules/_nav.scss */
   #nav-links {
     float: left;
   }
@@ -2204,48 +2240,49 @@ button[disabled] {
 /* line 16, modules/_landing-page.scss */
 .landing-page .single p {
   line-height: 28px;
-  max-width: 385px;
+  max-width: 395px;
+  padding-left: 10px;
   padding-right: 50px;
 }
-/* line 24, modules/_landing-page.scss */
+/* line 26, modules/_landing-page.scss */
 .landing-page .button-cta {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
-  min-width: 400px;
+  min-width: 0px;
 }
-/* line 31, modules/_landing-page.scss */
+/* line 33, modules/_landing-page.scss */
 .landing-page .background-make-paper-sing {
   margin: 50px auto;
 }
-/* line 35, modules/_landing-page.scss */
+/* line 37, modules/_landing-page.scss */
 .landing-page .triple {
   border-width: 2px;
   margin-bottom: 47px;
   padding: 18px;
 }
-/* line 40, modules/_landing-page.scss */
+/* line 42, modules/_landing-page.scss */
 .landing-page .triple p {
   margin: 17px;
   line-height: 24px;
 }
-/* line 46, modules/_landing-page.scss */
+/* line 48, modules/_landing-page.scss */
 .landing-page .student-work {
   margin-bottom: 50px;
 }
-/* line 50, modules/_landing-page.scss */
+/* line 52, modules/_landing-page.scss */
 .landing-page .background-student-work {
   margin-bottom: 25px;
 }
-/* line 54, modules/_landing-page.scss */
+/* line 56, modules/_landing-page.scss */
 .landing-page .how-does-it-work-wrapper {
   min-width: 384px;
 }
-/* line 58, modules/_landing-page.scss */
+/* line 60, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 62, modules/_landing-page.scss */
+/* line 64, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -2254,32 +2291,32 @@ button[disabled] {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 70, modules/_landing-page.scss */
+/* line 72, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
   right: inherit;
   bottom: -30px;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -117px;
 }
-/* line 77, modules/_landing-page.scss */
+/* line 79, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 200px 0 36px;
 }
-/* line 80, modules/_landing-page.scss */
+/* line 82, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
 }
-/* line 84, modules/_landing-page.scss */
+/* line 86, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 88, modules/_landing-page.scss */
+/* line 90, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 92, modules/_landing-page.scss */
+/* line 94, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2301,7 +2338,7 @@ button[disabled] {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 106, modules/_landing-page.scss */
+/* line 108, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;

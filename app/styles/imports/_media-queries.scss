@@ -12,11 +12,18 @@
   .pull-left-desktop {
     float: left;
   }
+
+  .hidden-desktop {
+    display: none;
+  }
+
 }
 
 // Sub-Phone
 @media (max-width: 480px) {
-
+  .visible-desktop {
+    display: none;
+  }
 }
 
 // Phone
@@ -37,6 +44,10 @@
   .no-padding-phone, .no-padding-tablet {
     padding: 0 !important;
   }
+
+  .visible-desktop {
+    display: none;
+  }
 }
 
 // Tablet
@@ -56,5 +67,9 @@
 
   .no-padding-tablet {
     padding: 0 !important;
+  }
+
+  .visible-desktop {
+    display: none;
   }
 }

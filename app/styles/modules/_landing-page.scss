@@ -15,12 +15,14 @@
 
     p {
       line-height: 28px;
-      max-width: 385px;
+      max-width: 395px;
+      padding-left: 10px;
       padding-right: 50px;
+
     }
   }
 
-  $button-cta-min-width: 400px;
+  $button-cta-min-width: 0px;
   .button-cta {
     font-size: 20px;
     font-weight: 300;
@@ -69,7 +71,7 @@
 
     .button-cta {
       @include absolute(inherit, inherit, -30px, 50%);
-      margin-left: -.5 * $button-cta-min-width;
+      margin-left: -117px;
 
     }
   }
