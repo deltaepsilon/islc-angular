@@ -4,17 +4,17 @@ button {
   }  
 }
 
-.button-cta {
-  @extend .border-radius-x-large;
-  @extend .text-white;
-  @extend .background-repeating;
-  @include single-box-shadow(getColor(gray), 1px, 1px, 2px);
-
-  display: block;
-  border: none;
-  padding: 24px;
-  text-transform: uppercase;
-}
+//.button-cta {
+//  @extend .border-radius-x-large;
+//  @extend .text-white;
+//  @extend .background-repeating;
+//  @include single-box-shadow(getColor(gray), 1px, 1px, 2px);
+//
+//  display: block;
+//  border: none;
+//  padding: 24px;
+//  text-transform: uppercase;
+//}
 
 .button-primary {
   @extend .text-white;
@@ -79,6 +79,31 @@ button {
     display: block;
 
   }
+}
+
+.button-cta {
+  @extend .text-white;
+  @extend .background-repeating;
+
+  font-size: 17px;
+  display: block;
+  border: none;
+  padding: 20px 65px 15px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+
+
+  &:after {
+    @include absolute(8px, 8px, 8px, 8px);
+
+    border: 1px solid getColor(white);
+    content: "";
+    display: block;
+
+  }
+
 }
 
 .button-link {

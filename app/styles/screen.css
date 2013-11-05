@@ -1092,7 +1092,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 11, imports/_font-size.scss */
-.border-radius-x-large, .button-cta {
+.border-radius-x-large {
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   -ms-border-radius: 14px;
@@ -1199,7 +1199,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 11, imports/_border.scss */
-.border-radius-x-large, .button-cta {
+.border-radius-x-large {
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   -ms-border-radius: 14px;
@@ -1231,50 +1231,50 @@ this the same font stack that Normalize.css sets for the `body`.
  */
 /* line 17, imports/_sprites.scss */
 .background-background {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -507px 0;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -311px -1005px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
-  height: 216px;
-  width: 200px;
+  height: 360px;
+  width: 336px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-background {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -506px 0;
-    height: 216px;
-    width: 200px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -311px -1005px;
+    height: 360px;
+    width: 336px;
   }
 }
 
 /* line 17, imports/_sprites.scss */
 .background-background-gray {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: 0 -650px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: 0 -645px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
-  height: 216px;
-  width: 200px;
+  height: 360px;
+  width: 336px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-background-gray {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: 0 -650px;
-    height: 216px;
-    width: 200px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: 0 -645px;
+    height: 360px;
+    width: 336px;
   }
 }
 
 /* line 17, imports/_sprites.scss */
 .background-beginner {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -311px -266px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: 0 -316px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1284,9 +1284,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-beginner {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -311px -266px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: 0 -316px;
     height: 27px;
     width: 121px;
   }
@@ -1294,8 +1294,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-how-does-it-work {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -200px -650px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -222px -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1305,9 +1305,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-how-does-it-work {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -200px -650px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -222px -80px;
     height: 236px;
     width: 334px;
   }
@@ -1315,8 +1315,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-islc-logo {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: 0 -266px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: 0 -1005px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1326,9 +1326,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-islc-logo {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: 0 -266px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: 0 -1005px;
     height: 105px;
     width: 311px;
   }
@@ -1336,8 +1336,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-learn-your-way {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -432px -266px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -121px -316px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1347,9 +1347,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-learn-your-way {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -432px -266px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -121px -316px;
     height: 27px;
     width: 189px;
   }
@@ -1357,8 +1357,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-left-arrow {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -572px -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -64px -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1368,9 +1368,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-left-arrow {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -572px -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -64px -80px;
     height: 21px;
     width: 16px;
   }
@@ -1378,8 +1378,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-make-paper-sing {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: 0 -492px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: 0 -487px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1389,9 +1389,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-make-paper-sing {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: 0 -492px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: 0 -487px;
     height: 158px;
     width: 763px;
   }
@@ -1399,8 +1399,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-personal-feedback {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -451px -371px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: 0 -437px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1410,9 +1410,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-personal-feedback {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -451px -371px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: 0 -437px;
     height: 27px;
     width: 210px;
   }
@@ -1420,8 +1420,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-right-arrow {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -588px -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -48px -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1431,9 +1431,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-right-arrow {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -588px -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -48px -80px;
     height: 21px;
     width: 16px;
   }
@@ -1441,8 +1441,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-student-work {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: 0 -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -210px -437px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1452,9 +1452,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-student-work {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: 0 -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -210px -437px;
     height: 50px;
     width: 524px;
   }
@@ -1462,8 +1462,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-thankyou {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: 0 -371px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -310px -316px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1473,9 +1473,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-thankyou {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: 0 -371px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -310px -316px;
     height: 121px;
     width: 451px;
   }
@@ -1562,7 +1562,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 22, imports/_colors.scss */
-.text-white, .button-cta, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .page-body h1 {
+.text-white, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .button-cta, .page-body h1 {
   color: white;
 }
 
@@ -2002,17 +2002,6 @@ button[disabled] {
   opacity: 0.3;
 }
 
-/* line 7, modules/_buttons.scss */
-.button-cta {
-  -webkit-box-shadow: 1px 1px 2px #333333;
-  -moz-box-shadow: 1px 1px 2px #333333;
-  box-shadow: 1px 1px 2px #333333;
-  display: block;
-  border: none;
-  padding: 24px;
-  text-transform: uppercase;
-}
-
 /* line 19, modules/_buttons.scss */
 .button-primary {
   display: block;
@@ -2068,16 +2057,39 @@ button[disabled] {
 }
 
 /* line 84, modules/_buttons.scss */
+.button-cta {
+  font-size: 17px;
+  display: block;
+  border: none;
+  padding: 20px 65px 15px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+/* line 98, modules/_buttons.scss */
+.button-cta:after {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  border: 1px solid white;
+  content: "";
+  display: block;
+}
+
+/* line 109, modules/_buttons.scss */
 .button-link {
   cursor: pointer;
   text-decoration: underline;
 }
-/* line 88, modules/_buttons.scss */
+/* line 113, modules/_buttons.scss */
 .button-link.active {
   font-weight: 500;
 }
 
-/* line 93, modules/_buttons.scss */
+/* line 118, modules/_buttons.scss */
 .remove-button {
   border: 1px solid #414141;
   cursor: pointer;
@@ -2111,8 +2123,8 @@ button[disabled] {
 }
 /* line 21, modules/_nav.scss */
 #top-nav .islc-logo {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: 0 -266px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: 0 -1005px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2125,9 +2137,9 @@ button[disabled] {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 21, modules/_nav.scss */
   #top-nav .islc-logo {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: 0 -266px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: 0 -1005px;
     height: 105px;
     width: 311px;
   }
@@ -2157,8 +2169,8 @@ button[disabled] {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 56, modules/_nav.scss */
   #top-nav .islc-logo {
-    background-image: url('../images/icons-sd71be79f7e.png');
-    background-position: 0 -266px;
+    background-image: url('../images/icons-se72cce3442.png');
+    background-position: 0 -1005px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
@@ -2171,9 +2183,9 @@ button[disabled] {
 @media (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 3 / 2), (-o-min-device-pixel-ratio: 3 / 2) and (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2) and (min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
   /* line 56, modules/_nav.scss */
   #top-nav .islc-logo {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: 0 -266px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: 0 -1005px;
     height: 105px;
     width: 311px;
   }
@@ -2668,8 +2680,8 @@ textarea {
 }
 /* line 36, modules/_product.scss */
 .products-wrapper .product-workshop .product-image-wrapper:before, .products-wrapper .product-subscription .product-image-wrapper:before {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -701px -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -177px -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2679,17 +2691,17 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 36, modules/_product.scss */
   .products-wrapper .product-workshop .product-image-wrapper:before, .products-wrapper .product-subscription .product-image-wrapper:before {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -701px -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -177px -80px;
     height: 27px;
     width: 19px;
   }
 }
 /* line 36, modules/_product.scss */
 .products-wrapper .product-physical .product-image-wrapper:before {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -720px -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -196px -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2699,17 +2711,17 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 36, modules/_product.scss */
   .products-wrapper .product-physical .product-image-wrapper:before {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -720px -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -196px -80px;
     height: 29px;
     width: 26px;
   }
 }
 /* line 36, modules/_product.scss */
 .products-wrapper .product-digital .product-image-wrapper:before {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -677px -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -153px -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2719,17 +2731,17 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 36, modules/_product.scss */
   .products-wrapper .product-digital .product-image-wrapper:before {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -677px -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -153px -80px;
     height: 24px;
     width: 24px;
   }
 }
 /* line 36, modules/_product.scss */
 .products-wrapper .product-gift .product-image-wrapper:before {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -653px -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -129px -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2739,9 +2751,9 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 36, modules/_product.scss */
   .products-wrapper .product-gift .product-image-wrapper:before {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -653px -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -129px -80px;
     height: 24px;
     width: 24px;
   }
@@ -2763,7 +2775,7 @@ textarea {
 }
 /* line 69, modules/_product.scss */
 .products-wrapper .product-image-wrapper:after {
-  background-image: url('../images/icons-sd71be79f7e.png');
+  background-image: url('../images/icons-se72cce3442.png');
   background-position: -99px 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -2781,8 +2793,8 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 69, modules/_product.scss */
   .products-wrapper .product-image-wrapper:after {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
     background-position: -98px 0;
     height: 80px;
     width: 80px;
@@ -3010,8 +3022,8 @@ textarea {
 }
 /* line 27, modules/_content.scss */
 #content-wrapper .previous-page-link:before {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -604px -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: -80px -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -3025,17 +3037,17 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 27, modules/_content.scss */
   #content-wrapper .previous-page-link:before {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -604px -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: -80px -80px;
     height: 22px;
     width: 49px;
   }
 }
 /* line 38, modules/_content.scss */
 #content-wrapper .next-page-link:after {
-  background-image: url('../images/icons-sd71be79f7e.png');
-  background-position: -524px -216px;
+  background-image: url('../images/icons-se72cce3442.png');
+  background-position: 0 -80px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -3049,9 +3061,9 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 38, modules/_content.scss */
   #content-wrapper .next-page-link:after {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
-    background-position: -524px -216px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
+    background-position: 0 -80px;
     height: 21px;
     width: 48px;
   }
@@ -3091,7 +3103,7 @@ textarea {
 }
 /* line 96, modules/_content.scss */
 .page-body .exercise:before {
-  background-image: url('../images/icons-sd71be79f7e.png');
+  background-image: url('../images/icons-se72cce3442.png');
   background-position: -179px 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3110,8 +3122,8 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 96, modules/_content.scss */
   .page-body .exercise:before {
-    background-image: url('../images/icons-2x-s9766a42b61.png');
-    background-size: 763px 1246px;
+    background-image: url('../images/icons-2x-sb1d9f63890.png');
+    background-size: 763px 1365px;
     background-position: -178px 0;
     height: 58px;
     width: 328px;
