@@ -1111,7 +1111,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 27, imports/_font-size.scss */
-.text-small, h5, .button-tertiary, #copyright-footer, .qv-form label, .form-error, #cart .remove-button, .products-wrapper .product-title {
+.text-small, h5, .button-tertiary, #copyright-footer, .qv-form label, .form-error, #cart .remove-button, .products-wrapper .product-title, .page-body h3, .page-body .exercise .link-list-item {
   font-size: 14px;
 }
 
@@ -1121,12 +1121,12 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-medium, h3, .button-primary, .button-secondary, [action="login_check"] #_submit, .landing-page .email-footer input, .qv-table th, .qv-table td {
+.text-x-medium, h3, .button-primary, .button-secondary, [action="login_check"] #_submit, .landing-page .email-footer input, .qv-table th, .qv-table td, .page-body h1, .page-body h2 {
   font-size: 18px;
 }
 
 /* line 27, imports/_font-size.scss */
-.text-large, h2 {
+.text-large, h2, #content-wrapper .page-link {
   font-size: 20px;
 }
 
@@ -1231,8 +1231,8 @@ this the same font stack that Normalize.css sets for the `body`.
  */
 /* line 17, imports/_sprites.scss */
 .background-background {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -330px 0;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -507px 0;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1242,9 +1242,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-background {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -330px 0;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -506px 0;
     height: 216px;
     width: 200px;
   }
@@ -1252,8 +1252,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-background-gray {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -130px 0;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: 0 -650px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1263,9 +1263,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-background-gray {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -130px 0;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: 0 -650px;
     height: 216px;
     width: 200px;
   }
@@ -1273,8 +1273,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-beginner {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -604px -216px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -311px -266px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1284,9 +1284,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-beginner {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -604px -216px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -311px -266px;
     height: 27px;
     width: 121px;
   }
@@ -1294,8 +1294,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-how-does-it-work {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: 0 -545px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -200px -650px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1305,9 +1305,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-how-does-it-work {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: 0 -545px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -200px -650px;
     height: 236px;
     width: 334px;
   }
@@ -1315,7 +1315,7 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-islc-logo {
-  background-image: url('../images/icons-s591652f16e.png');
+  background-image: url('../images/icons-sd71be79f7e.png');
   background-position: 0 -266px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1326,8 +1326,8 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-islc-logo {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
     background-position: 0 -266px;
     height: 105px;
     width: 311px;
@@ -1336,8 +1336,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-learn-your-way {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -360px -545px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -432px -266px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1347,9 +1347,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-learn-your-way {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -360px -545px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -432px -266px;
     height: 27px;
     width: 189px;
   }
@@ -1357,8 +1357,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-left-arrow {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -524px -216px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -572px -216px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1368,9 +1368,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-left-arrow {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -524px -216px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -572px -216px;
     height: 21px;
     width: 16px;
   }
@@ -1378,8 +1378,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-make-paper-sing {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: 0 -387px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: 0 -492px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1389,9 +1389,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-make-paper-sing {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: 0 -387px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: 0 -492px;
     height: 158px;
     width: 763px;
   }
@@ -1399,8 +1399,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-personal-feedback {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -549px -545px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -451px -371px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1410,9 +1410,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-personal-feedback {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -549px -545px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -451px -371px;
     height: 27px;
     width: 210px;
   }
@@ -1420,8 +1420,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-right-arrow {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -540px -216px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -588px -216px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1431,9 +1431,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-right-arrow {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -540px -216px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -588px -216px;
     height: 21px;
     width: 16px;
   }
@@ -1441,7 +1441,7 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-student-work {
-  background-image: url('../images/icons-s591652f16e.png');
+  background-image: url('../images/icons-sd71be79f7e.png');
   background-position: 0 -216px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1452,8 +1452,8 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-student-work {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
     background-position: 0 -216px;
     height: 50px;
     width: 524px;
@@ -1462,8 +1462,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 /* line 17, imports/_sprites.scss */
 .background-thankyou {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -311px -266px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: 0 -371px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1473,9 +1473,9 @@ this the same font stack that Normalize.css sets for the `body`.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 17, imports/_sprites.scss */
   .background-thankyou {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -311px -266px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: 0 -371px;
     height: 121px;
     width: 451px;
   }
@@ -1492,7 +1492,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 15, imports/_colors.scss */
-.background-gray1, .qv-form [required], .table-width .thead-bar:before, #cart .sub-total, .card-form, .products-wrapper .product-image, #gallery .comment {
+.background-gray1, .qv-form [required], .table-width .thead-bar:before, #cart .sub-total, .card-form, .products-wrapper .product-image, #gallery .comment, .page-body .exercise {
   background-color: #f2f2f2;
 }
 
@@ -1532,7 +1532,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 22, imports/_colors.scss */
-.text-green2 {
+.text-green2, .page-body h2, .page-body h3, .page-body a {
   color: #177f62;
 }
 
@@ -1562,7 +1562,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 22, imports/_colors.scss */
-.text-white, .button-cta, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight {
+.text-white, .button-cta, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .page-body h1 {
   color: white;
 }
 
@@ -1593,7 +1593,7 @@ p, ul, ol {
 }
 
 /* line 22, imports/_global.scss */
-.header, h1, h2, h3, h4, h5, h6 {
+.header, h1, h2, h3, h4, h5, h6, #content-wrapper .page-link {
   margin: 0;
   text-transform: uppercase;
 }
@@ -1604,206 +1604,211 @@ p, ul, ol {
 }
 
 /* line 31, imports/_global.scss */
+.padded {
+  padding: 15px;
+}
+
+/* line 35, imports/_global.scss */
 h1 {
   letter-spacing: 8px;
   font-weight: 300;
 }
 
-/* line 38, imports/_global.scss */
+/* line 42, imports/_global.scss */
 h2 {
   letter-spacing: 2px;
   font-weight: 200;
 }
 
-/* line 66, imports/_global.scss */
+/* line 70, imports/_global.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 70, imports/_global.scss */
+/* line 74, imports/_global.scss */
 .relative {
   position: relative;
 }
 
-/* line 74, imports/_global.scss */
+/* line 78, imports/_global.scss */
 .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 79, imports/_global.scss */
+/* line 83, imports/_global.scss */
 .text-centered {
   text-align: center;
 }
 
-/* line 83, imports/_global.scss */
+/* line 87, imports/_global.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 87, imports/_global.scss */
+/* line 91, imports/_global.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 91, imports/_global.scss */
+/* line 95, imports/_global.scss */
 .pull-right {
   float: right;
 }
 
-/* line 95, imports/_global.scss */
+/* line 99, imports/_global.scss */
 .pull-left {
   float: left;
 }
 
-/* line 99, imports/_global.scss */
+/* line 103, imports/_global.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 103, imports/_global.scss */
+/* line 107, imports/_global.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 107, imports/_global.scss */
+/* line 111, imports/_global.scss */
 .disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 113, imports/_global.scss */
+/* line 117, imports/_global.scss */
 .bordered {
   border: 1px solid #f2f2f2;
 }
 
-/* line 117, imports/_global.scss */
+/* line 121, imports/_global.scss */
 .border-right {
   border-right: 1px solid #f2f2f2;
 }
 
-/* line 121, imports/_global.scss */
+/* line 125, imports/_global.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 125, imports/_global.scss */
+/* line 129, imports/_global.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 129, imports/_global.scss */
+/* line 133, imports/_global.scss */
 .full-width, .full-width-form, .qv-table {
   width: 100%;
 }
 
-/* line 133, imports/_global.scss */
+/* line 137, imports/_global.scss */
 .aligned-list {
   padding-left: 1em;
 }
 
-/* line 137, imports/_global.scss */
+/* line 141, imports/_global.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 141, imports/_global.scss */
+/* line 145, imports/_global.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 145, imports/_global.scss */
+/* line 149, imports/_global.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 150, imports/_global.scss */
+/* line 154, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/icons-2x/background.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 157, imports/_global.scss */
-.background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight {
+/* line 161, imports/_global.scss */
+.background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .page-body h1 {
   background-image: url("../images/icons-2x/background-gray.png");
   background-position: -50px -30px;
 }
 
-/* line 162, imports/_global.scss */
+/* line 166, imports/_global.scss */
 .padded-wrapper {
   padding: 10px 20px;
 }
 
-/* line 166, imports/_global.scss */
+/* line 170, imports/_global.scss */
 .justify {
   text-align: justify;
 }
 
-/* line 170, imports/_global.scss */
+/* line 174, imports/_global.scss */
 .justified {
   display: inline;
 }
 
-/* line 174, imports/_global.scss */
+/* line 178, imports/_global.scss */
 .stretch {
   display: inline-block;
   width: 100%;
 }
 
-/* line 179, imports/_global.scss */
+/* line 183, imports/_global.scss */
 .clear-both {
   clear: both;
 }
 
-/* line 183, imports/_global.scss */
+/* line 187, imports/_global.scss */
 .span-1 {
   width: 10%;
 }
 
-/* line 187, imports/_global.scss */
+/* line 191, imports/_global.scss */
 .span-2 {
   width: 20%;
 }
 
-/* line 191, imports/_global.scss */
+/* line 195, imports/_global.scss */
 .span-3 {
   width: 30%;
 }
 
-/* line 195, imports/_global.scss */
+/* line 199, imports/_global.scss */
 .span-4 {
   width: 40%;
 }
 
-/* line 199, imports/_global.scss */
+/* line 203, imports/_global.scss */
 .span-5 {
   width: 50%;
 }
 
-/* line 203, imports/_global.scss */
+/* line 207, imports/_global.scss */
 .span-6 {
   width: 60%;
 }
 
-/* line 207, imports/_global.scss */
+/* line 211, imports/_global.scss */
 .span-7 {
   width: 70%;
 }
 
-/* line 211, imports/_global.scss */
+/* line 215, imports/_global.scss */
 .span-8 {
   width: 80%;
 }
 
-/* line 214, imports/_global.scss */
+/* line 218, imports/_global.scss */
 .span-9 {
   width: 90%;
 }
 
-/* line 218, imports/_global.scss */
+/* line 222, imports/_global.scss */
 .span-10 {
   width: 100%;
 }
@@ -2102,7 +2107,7 @@ button[disabled] {
 }
 /* line 21, modules/_nav.scss */
 #top-nav .islc-logo {
-  background-image: url('../images/icons-s591652f16e.png');
+  background-image: url('../images/icons-sd71be79f7e.png');
   background-position: 0 -266px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -2116,8 +2121,8 @@ button[disabled] {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 21, modules/_nav.scss */
   #top-nav .islc-logo {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
     background-position: 0 -266px;
     height: 105px;
     width: 311px;
@@ -2144,7 +2149,7 @@ button[disabled] {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 50, modules/_nav.scss */
   #top-nav .islc-logo {
-    background-image: url('../images/icons-s591652f16e.png');
+    background-image: url('../images/icons-sd71be79f7e.png');
     background-position: 0 -266px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2158,8 +2163,8 @@ button[disabled] {
 @media (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 3 / 2), (-o-min-device-pixel-ratio: 3 / 2) and (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2) and (min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
   /* line 50, modules/_nav.scss */
   #top-nav .islc-logo {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
     background-position: 0 -266px;
     height: 105px;
     width: 311px;
@@ -2224,7 +2229,7 @@ button[disabled] {
 }
 
 /* line 3, modules/_landing-page.scss */
-.landing-page .header, .landing-page h1, .landing-page h2, .landing-page h3, .landing-page h4, .landing-page h5, .landing-page h6 {
+.landing-page .header, .landing-page h1, .landing-page h2, .landing-page h3, .landing-page h4, .landing-page h5, .landing-page h6, .landing-page #content-wrapper .page-link, #content-wrapper .landing-page .page-link {
   margin: 0;
 }
 /* line 7, modules/_landing-page.scss */
@@ -2655,8 +2660,8 @@ textarea {
 }
 /* line 36, modules/_product.scss */
 .products-wrapper .product-workshop .product-image-wrapper:before, .products-wrapper .product-subscription .product-image-wrapper:before {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -725px -216px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -701px -216px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2666,17 +2671,17 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 36, modules/_product.scss */
   .products-wrapper .product-workshop .product-image-wrapper:before, .products-wrapper .product-subscription .product-image-wrapper:before {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -725px -216px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -701px -216px;
     height: 27px;
     width: 19px;
   }
 }
 /* line 36, modules/_product.scss */
 .products-wrapper .product-physical .product-image-wrapper:before {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -334px -545px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -720px -216px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2686,17 +2691,17 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 36, modules/_product.scss */
   .products-wrapper .product-physical .product-image-wrapper:before {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -334px -545px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -720px -216px;
     height: 29px;
     width: 26px;
   }
 }
 /* line 36, modules/_product.scss */
 .products-wrapper .product-digital .product-image-wrapper:before {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -556px -216px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -677px -216px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2706,17 +2711,17 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 36, modules/_product.scss */
   .products-wrapper .product-digital .product-image-wrapper:before {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -556px -216px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -677px -216px;
     height: 24px;
     width: 24px;
   }
 }
 /* line 36, modules/_product.scss */
 .products-wrapper .product-gift .product-image-wrapper:before {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -580px -216px;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -653px -216px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2726,9 +2731,9 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 36, modules/_product.scss */
   .products-wrapper .product-gift .product-image-wrapper:before {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -580px -216px;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -653px -216px;
     height: 24px;
     width: 24px;
   }
@@ -2750,8 +2755,8 @@ textarea {
 }
 /* line 69, modules/_product.scss */
 .products-wrapper .product-image-wrapper:after {
-  background-image: url('../images/icons-s591652f16e.png');
-  background-position: -50px 0;
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -99px 0;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2768,9 +2773,9 @@ textarea {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 69, modules/_product.scss */
   .products-wrapper .product-image-wrapper:after {
-    background-image: url('../images/icons-2x-sf1393747b1.png');
-    background-size: 763px 1141px;
-    background-position: -50px 0;
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -98px 0;
     height: 80px;
     width: 80px;
   }
@@ -2966,15 +2971,143 @@ textarea {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
 }
 
-/* line 14, modules/_modal.scss */
+/* line 15, modules/_modal.scss */
 .modal {
   position: absolute;
   top: 30px;
   right: 30px;
   bottom: 30px;
   left: 30px;
+}
+
+/* line 3, modules/_content.scss */
+#content-wrapper .subscription-list {
+  padding-right: 30px;
+}
+/* line 6, modules/_content.scss */
+#content-wrapper .subscription-list li {
+  padding-bottom: 15px;
+}
+/* line 11, modules/_content.scss */
+#content-wrapper .page-link {
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+/* line 21, modules/_content.scss */
+#content-wrapper .previous-page-link:before {
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -604px -216px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 22px;
+  width: 49px;
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 21, modules/_content.scss */
+  #content-wrapper .previous-page-link:before {
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -604px -216px;
+    height: 22px;
+    width: 49px;
+  }
+}
+/* line 32, modules/_content.scss */
+#content-wrapper .next-page-link:after {
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -524px -216px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 21px;
+  width: 48px;
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 32, modules/_content.scss */
+  #content-wrapper .next-page-link:after {
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -524px -216px;
+    height: 21px;
+    width: 48px;
+  }
+}
+
+/* line 45, modules/_content.scss */
+.page-body h1 {
+  padding: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 55, modules/_content.scss */
+.page-body h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 30px 0 15px;
+}
+/* line 64, modules/_content.scss */
+.page-body h3 {
+  font-weight: 500;
+  font-style: italic;
+  line-height: 18px;
+}
+/* line 73, modules/_content.scss */
+.page-body a {
+  text-decoration: underline;
+}
+/* line 79, modules/_content.scss */
+.page-body img, .page-body video {
+  display: table-cell;
+  margin: 30px auto;
+}
+/* line 84, modules/_content.scss */
+.page-body .exercise {
+  padding: 45px 30px 30px;
+  position: relative;
+}
+/* line 90, modules/_content.scss */
+.page-body .exercise:before {
+  background-image: url('../images/icons-sd71be79f7e.png');
+  background-position: -179px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 58px;
+  width: 328px;
+  position: absolute;
+  top: 15px;
+  right: inherit;
+  bottom: inherit;
+  left: 50%;
+  margin-left: -164px;
+  content: "";
+  display: block;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 90, modules/_content.scss */
+  .page-body .exercise:before {
+    background-image: url('../images/icons-2x-s9766a42b61.png');
+    background-size: 763px 1246px;
+    background-position: -178px 0;
+    height: 58px;
+    width: 328px;
+  }
+}
+/* line 102, modules/_content.scss */
+.page-body .exercise .link-list-item:after {
+  top: 4px;
 }
 
 /* line 1, directives/_qv-slider.scss */

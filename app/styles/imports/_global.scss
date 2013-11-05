@@ -28,6 +28,10 @@ p, ul, ol {
   font-weight: 300;
 }
 
+.padded {
+  padding: 15px;
+}
+
 h1 {
   @extend .header;
   @extend .text-x-large;

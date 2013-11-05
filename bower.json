@@ -15,10 +15,14 @@
     "angular-notify": "git@github.com:deltaepsilon/angular-notifications.git#~0.1.1",
     "animate.css": "~2.1.0",
     "momentjs": "~2.3.1",
-    "angular-markdown": "~0.0.1"
+    "angular-markdown": "~0.0.1",
+    "angular-google-analytics": "git@github.com:revolunet/angular-google-analytics.git"
   },
   "devDependencies": {
     "angular-mocks": "~1.0.7",
     "angular-scenario": "~1.0.7"
+  },
+  "resolutions": {
+    "angular": "1.0.8"
   }
 }

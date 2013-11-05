@@ -1,0 +1,108 @@
+#content-wrapper {
+
+  .subscription-list {
+    padding-right: 30px;
+
+    li {
+      padding-bottom: 15px;
+    }
+  }
+
+  .page-link {
+    @extend .header;
+    @extend .text-large;
+
+    letter-spacing: 2px;
+    font-weight: 200;
+
+  }
+
+  .previous-page-link {
+    &:before {
+      @include use-sprite(left-arrow-thin);
+
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  .next-page-link {
+    &:after {
+      @include use-sprite(right-arrow-thin);
+
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: 3px;
+    }
+  }
+}
+
+.page-body {
+
+  h1 {
+    @extend .text-white;
+    @extend .text-x-medium;
+    @extend .background-repeating-gray;
+
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  h2 {
+    @extend .text-green2;
+    @extend .text-x-medium;
+
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 30px 0 15px;
+  }
+
+  h3 {
+    @extend .text-green2;
+    @extend .text-small;
+
+    font-weight: 500;
+    font-style: italic;
+    line-height: 18px;
+  }
+
+  a {
+    @extend .text-green2;
+
+    text-decoration: underline;
+  }
+
+  img, video {
+    display: table-cell;
+    margin: 30px auto;
+  }
+
+  .exercise {
+    @extend .background-gray1;
+
+    padding: 45px 30px 30px;
+    position: relative;
+
+    &:before {
+      @include use-sprite(assignment);
+      @include absolute(15px, inherit, inherit, 50%);
+
+      margin-left: -164px;
+      content: "";
+      display: block;
+    }
+
+    .link-list-item {
+      @extend .text-small;
+
+      &:after {
+        top: 4px;
+      }
+    }
+
+  }
+}
