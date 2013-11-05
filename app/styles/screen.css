@@ -2072,8 +2072,12 @@ button[disabled] {
   cursor: pointer;
   text-decoration: underline;
 }
+/* line 88, modules/_buttons.scss */
+.button-link.active {
+  font-weight: 500;
+}
 
-/* line 89, modules/_buttons.scss */
+/* line 93, modules/_buttons.scss */
 .remove-button {
   border: 1px solid #414141;
   cursor: pointer;
@@ -2137,7 +2141,7 @@ button[disabled] {
   cursor: pointer;
   float: right;
 }
-/* line 39, modules/_nav.scss */
+/* line 40, modules/_nav.scss */
 #top-nav .nav-link {
   display: inline-block;
   font-size: 14px;
@@ -2145,9 +2149,13 @@ button[disabled] {
   padding: 10px 20px;
   text-transform: uppercase;
 }
+/* line 47, modules/_nav.scss */
+#top-nav .nav-link:hover, #top-nav .nav-link .active {
+  text-decoration: underline;
+}
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 50, modules/_nav.scss */
+  /* line 56, modules/_nav.scss */
   #top-nav .islc-logo {
     background-image: url('../images/icons-sd71be79f7e.png');
     background-position: 0 -266px;
@@ -2161,7 +2169,7 @@ button[disabled] {
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 3 / 2), (-o-min-device-pixel-ratio: 3 / 2) and (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2) and (min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
-  /* line 50, modules/_nav.scss */
+  /* line 56, modules/_nav.scss */
   #top-nav .islc-logo {
     background-image: url('../images/icons-2x-s9766a42b61.png');
     background-size: 763px 1246px;
@@ -2172,13 +2180,13 @@ button[disabled] {
 }
 
 @media (max-width: 767px) {
-  /* line 65, modules/_nav.scss */
+  /* line 71, modules/_nav.scss */
   .nav-link-item {
     float: none !important;
   }
 }
 @media (min-width: 1100px) {
-  /* line 71, modules/_nav.scss */
+  /* line 77, modules/_nav.scss */
   #nav-links {
     float: left;
   }
@@ -2992,11 +3000,15 @@ textarea {
   padding-bottom: 15px;
 }
 /* line 11, modules/_content.scss */
+#content-wrapper .subscription-list a:hover, #content-wrapper .subscription-list a.active {
+  text-decoration: underline;
+}
+/* line 17, modules/_content.scss */
 #content-wrapper .page-link {
   letter-spacing: 2px;
   font-weight: 200;
 }
-/* line 21, modules/_content.scss */
+/* line 27, modules/_content.scss */
 #content-wrapper .previous-page-link:before {
   background-image: url('../images/icons-sd71be79f7e.png');
   background-position: -604px -216px;
@@ -3011,7 +3023,7 @@ textarea {
   top: 3px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 21, modules/_content.scss */
+  /* line 27, modules/_content.scss */
   #content-wrapper .previous-page-link:before {
     background-image: url('../images/icons-2x-s9766a42b61.png');
     background-size: 763px 1246px;
@@ -3020,7 +3032,7 @@ textarea {
     width: 49px;
   }
 }
-/* line 32, modules/_content.scss */
+/* line 38, modules/_content.scss */
 #content-wrapper .next-page-link:after {
   background-image: url('../images/icons-sd71be79f7e.png');
   background-position: -524px -216px;
@@ -3035,7 +3047,7 @@ textarea {
   top: 3px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 32, modules/_content.scss */
+  /* line 38, modules/_content.scss */
   #content-wrapper .next-page-link:after {
     background-image: url('../images/icons-2x-s9766a42b61.png');
     background-size: 763px 1246px;
@@ -3045,39 +3057,39 @@ textarea {
   }
 }
 
-/* line 45, modules/_content.scss */
+/* line 51, modules/_content.scss */
 .page-body h1 {
   padding: 15px;
   margin-top: 30px;
   text-align: center;
 }
-/* line 55, modules/_content.scss */
+/* line 61, modules/_content.scss */
 .page-body h2 {
   font-weight: 500;
   letter-spacing: 2px;
   margin: 30px 0 15px;
 }
-/* line 64, modules/_content.scss */
+/* line 70, modules/_content.scss */
 .page-body h3 {
   font-weight: 500;
   font-style: italic;
   line-height: 18px;
 }
-/* line 73, modules/_content.scss */
+/* line 79, modules/_content.scss */
 .page-body a {
   text-decoration: underline;
 }
-/* line 79, modules/_content.scss */
+/* line 85, modules/_content.scss */
 .page-body img, .page-body video {
   display: table-cell;
   margin: 30px auto;
 }
-/* line 84, modules/_content.scss */
+/* line 90, modules/_content.scss */
 .page-body .exercise {
   padding: 45px 30px 30px;
   position: relative;
 }
-/* line 90, modules/_content.scss */
+/* line 96, modules/_content.scss */
 .page-body .exercise:before {
   background-image: url('../images/icons-sd71be79f7e.png');
   background-position: -179px 0;
@@ -3096,7 +3108,7 @@ textarea {
   display: block;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 90, modules/_content.scss */
+  /* line 96, modules/_content.scss */
   .page-body .exercise:before {
     background-image: url('../images/icons-2x-s9766a42b61.png');
     background-size: 763px 1246px;
@@ -3105,7 +3117,7 @@ textarea {
     width: 328px;
   }
 }
-/* line 102, modules/_content.scss */
+/* line 108, modules/_content.scss */
 .page-body .exercise .link-list-item:after {
   top: 4px;
 }

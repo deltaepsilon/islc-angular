@@ -6,6 +6,12 @@
     li {
       padding-bottom: 15px;
     }
+
+    a {
+      &:hover, &.active {
+        text-decoration: underline;
+      }
+    }
   }
 
   .page-link {

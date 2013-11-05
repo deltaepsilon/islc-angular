@@ -84,6 +84,10 @@ button {
 .button-link {
   cursor: pointer;
   text-decoration: underline;
+
+  &.active {
+    font-weight: 500;
+  }
 }
 
 .remove-button {
