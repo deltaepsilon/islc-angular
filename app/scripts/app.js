@@ -8,8 +8,12 @@ angular.module('islcAngularApp', [
     'ngSanitize',
     'angular-google-analytics'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, AnalyticsProvider) {
     $urlRouterProvider.otherwise('/');
+
+    AnalyticsProvider.setAccount('UA-6859198-11');
+    AnalyticsProvider.trackPages(true);
+    AnalyticsProvider.setDomainName(location.hostname);
 
 
     var secureRoutes = ['gallery', 'content', 'subscriptions', 'account'],

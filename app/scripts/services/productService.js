@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('productService', function productService($rootScope, $filter, Restangular, mockService, _) {
+  .service('productService', function productService($rootScope, $filter, Restangular, mockService, $q, _) {
     Restangular.setBaseUrl('/angular');
 
     return {
@@ -9,7 +9,9 @@ angular.module('islcAngularApp')
         if (id) {
           return Restangular.one('product', id).get();
         } else if (!force && $rootScope.products) {
-          return $rootScope.products;
+          var deferred = $q.defer()
+          deferred.resolve($rootScope.products);
+          return deferred.promise;
         } else {
           return Restangular.one('product').get();
         }

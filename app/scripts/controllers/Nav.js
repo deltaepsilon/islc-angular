@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state, $rootScope, _, cartService, productService, notificationService, user, cart, subscriptions) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, $q, _, cartService, productService, notificationService, user, cart, subscriptions) {
     //Basic route security... you wouldn't want users to get hung up if they hit the wrong page
     var secureRoutes = ['gallery', 'content', 'subscriptions', 'account'];
     if (!user) {
@@ -61,21 +61,6 @@ angular.module('islcAngularApp')
 
     });
 
-//    $scope.links = [
-//      {state: 'account', text: 'account'},
-//      {state: 'account', text: 'account'},
-//      {state: 'login', text: 'log in'},
-//      {state: 'register', text: 'register'},
-//      {state: 'faq', text: 'faqs'},
-//      {state: 'supplies', text: 'supplies'},
-//      {state: 'products', text: 'products'}
-//    ];
-//
-//    var i = $scope.links.length;
-//    while (i--) {
-//      $scope.links[i].href = $state.href($scope.links[i].state);
-//    }
-
     $scope.showLink = function (state) {
       var user = !!$rootScope.user,
         currentState = $state.current.name,
@@ -114,11 +99,15 @@ angular.module('islcAngularApp')
     }
 
     $rootScope.addToCart = function (id, quantity) {
+      var deferred = $q.defer();
+
       cartService.add(id, quantity).then(function (cart) {
         if (cart.error) {
           notificationService.error('Cart', cart.error);
         } else if (cart.products) {
           $rootScope.cart = cart;
+
+          deferred.resolve($rootScope.cart);
 
           //Force update the products list. This is critical to capture any changes resulting from the cart transaction.
           productService.get(undefined, true).then(function (products) {
@@ -131,6 +120,25 @@ angular.module('islcAngularApp')
         }
 
       });
+
+      return deferred.promise;
     }
+
+    $rootScope.convert = function (slug, quantity) {
+      productService.get().then(function (products) {
+        var i = products.length;
+        while (i--) {
+          if (products[i].slug === slug) {
+            $rootScope.addToCart(products[i].id, quantity || 1).then(function (cart) {
+              $state.go('cart');
+            });
+            break;
+
+          }
+        }
+      });
+
+
+    };
 
   });
