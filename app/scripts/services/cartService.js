@@ -43,14 +43,12 @@ angular.module('islcAngularApp')
 
         promise.then(function (transaction) {
           if (!transaction.error) {
-            console.log('transaction', transaction);
-            var affiliate = '',
+            var affiliate = transaction.user.affiliate ? transaction.user.affiliate.affiliate : '',
               product,
-              i = transaction.products.length;
-            if (transaction.user.affiliate) {
-              affiliate = transaction.user.affiliate.affiliate;
-            }
-            Analytics.addTransaction(transaction.id, affiliate, transaction.amount, transaction.tax || 0, transaction.shipping || 0, transaction.user.address.city || '', transaction.user.address.state || '', transaction.user.address.country || '');
+              i = transaction.products.length,
+              address = transaction.user.address || {};
+
+            Analytics.addTransaction(transaction.id, affiliate, transaction.amount, transaction.tax || 0, transaction.shipping || 0, address.city || '', address.state || '', address.country || '');
 
             while (i--) {
               product = transaction.products[i];
