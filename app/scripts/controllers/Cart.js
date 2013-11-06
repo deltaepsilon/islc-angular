@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('CartCtrl', function ($scope, $rootScope, $state, cartService, notificationService, stripeService, _, moment, cart, token, $timeout) {
+  .controller('CartCtrl', function ($scope, $rootScope, $state, cartService, notificationService, stripeService, _, moment, cart, token, $timeout, subscriptionService) {
     if (!$rootScope.cart) {
       $rootScope.cart = cart;
     }
@@ -96,7 +96,11 @@ angular.module('islcAngularApp')
         if (transaction.error) {
           notificationService.error('Checkout', transaction.error);
         } else {
-          $state.go('transaction', {id: transaction.id});
+          subscriptionService.get(null, true).then(function (subscriptions) {
+            $rootScope.subscriptions = subscriptions;
+            $state.go('transaction', {id: transaction.id});
+          });
+
         }
 
         //Force reload the cart. We wouldn't want stuff to show up in the cart without reason.
