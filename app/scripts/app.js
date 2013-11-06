@@ -8,7 +8,10 @@ angular.module('islcAngularApp', [
     'ngSanitize',
     'angular-google-analytics'
   ])
-  .config(function ($stateProvider, $urlRouterProvider, AnalyticsProvider) {
+  .config(function ($locationProvider, $stateProvider, $urlRouterProvider, AnalyticsProvider) {
+
+    $locationProvider.hashPrefix('!');
+
     $urlRouterProvider.otherwise('/');
 
     AnalyticsProvider.setAccount('UA-6859198-11');

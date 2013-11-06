@@ -21,7 +21,7 @@ angular.module('islcAngularApp')
         var table = mockService.getProductsTable(),
           link;
         _.map(products, function (product) {
-          link = '#/product/' + product.id;
+          link = '#!/product/' + product.id;
           table.tbody.rows.push([
             {text: product.id, href: link},
             {text: product.quantity},
