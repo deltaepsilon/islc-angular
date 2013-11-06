@@ -48,7 +48,7 @@ angular.module('islcAngularApp')
               i = transaction.products.length,
               address = transaction.user.address || {};
 
-            Analytics.addTransaction(transaction.id, affiliate, transaction.amount, transaction.tax || 0, transaction.shipping || 0, address.city || '', address.state || '', address.country || '');
+            Analytics.addTrans(transaction.id, affiliate, transaction.amount, transaction.tax || 0, transaction.shipping || 0, address.city || '', address.state || '', address.country || '');
 
             while (i--) {
               product = transaction.products[i];
