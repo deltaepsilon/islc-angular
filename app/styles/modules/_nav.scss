@@ -44,8 +44,12 @@
     padding: 10px 20px;
     text-transform: uppercase;
 
-    &:hover, .active {
+    &:hover, &.active {
       text-decoration: underline;
+    }
+    
+    &.active {
+      cursor: default;
     }
 
   }
