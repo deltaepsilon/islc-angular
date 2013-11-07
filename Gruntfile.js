@@ -258,7 +258,7 @@ module.exports = function (grunt) {
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*',
             'gallery',
-            'app.php,
+            'app.php',
             'fonts'
           ]
         }, {
@@ -267,6 +267,17 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>/images',
           src: [
             'generated/*'
+          ]
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>',
+          src: [
+            'app.php',
+            'views',
+            'fonts',
+            'gallery'
           ]
         }]
       },
