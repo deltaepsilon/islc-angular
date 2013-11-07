@@ -256,10 +256,7 @@ module.exports = function (grunt) {
             '.htaccess',
             'lib/**/*',
             'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*',
-            'gallery',
-            'app.php',
-            'fonts'
+            'styles/fonts/*'
           ]
         }, {
           expand: true,
@@ -275,9 +272,10 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             'app.php',
-            'views',
-            'fonts',
-            'gallery'
+            'fonts/**/*',
+            'gallery',
+            'views/**/*',
+            'images/**/*'
           ]
         }]
       },
