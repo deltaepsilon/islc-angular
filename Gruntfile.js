@@ -256,7 +256,10 @@ module.exports = function (grunt) {
             '.htaccess',
             'lib/**/*',
             'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
+            'styles/fonts/*',
+            'gallery',
+            'app.php,
+            'fonts'
           ]
         }, {
           expand: true,
@@ -286,7 +289,7 @@ module.exports = function (grunt) {
       dist: [
         'coffee',
         'copy:styles',
-        'imagemin',
+        //'imagemin',
         'svgmin',
         'htmlmin'
       ]
@@ -369,9 +372,9 @@ module.exports = function (grunt) {
     'concat',
     'copy:dist',
     'cdnify',
-    'ngmin',
+    //'ngmin',
     'cssmin',
-    'uglify',
+    //'uglify',
     'rev',
     'usemin'
   ]);
