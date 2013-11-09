@@ -29,7 +29,10 @@ angular.module('islcAngularApp')
 
 
 
-    $timeout($scope.htmlReady()); //Call htmlReady on first load for PhantomJS renderer's sake
+    if (typeof window.callPhantom === 'function') {
+      $timeout($scope.htmlReady()); //Call htmlReady on first load for PhantomJS renderer's sake
+    }
+
     $rootScope.$on('$stateChangeSuccess', function(event, to, toParams, from, fromParams) {
       $rootScope.$previousState = from;
     });
