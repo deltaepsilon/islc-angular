@@ -6,7 +6,8 @@ angular.module('islcAngularApp', [
     'ui.router',
     'angular-markdown',
     'ngSanitize',
-    'angular-google-analytics'
+    'angular-google-analytics',
+    'seo'
   ])
   .config(function ($locationProvider, $stateProvider, $urlRouterProvider, AnalyticsProvider) {
 

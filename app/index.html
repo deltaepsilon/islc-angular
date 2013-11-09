@@ -9,6 +9,7 @@
     <title>I Still Love Calligraphy</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=400, initial-scale=1.0">
+    <meta name="fragment" content="!" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css(.tmp) styles/main.css -->
@@ -30,15 +31,259 @@
     <div class="container">
         <nav id="top-nav" ui-view="nav">
             <!--BEGINNING OF STATIC CONTENT-->
+            <noscript>
+                <div class="pure-g-r">
+                    <div id="top-nav-bar" class="pure-u-1 background-green1"></div>
+                    <div class="pure-u-2-5">
+                        <a href="#">
+                            <div class="background-white pull-right-desktop centered-tablet">
+                                <div class="islc-logo"></div>
+                            </div>
 
+                        </a>
+                    </div>
+
+                    <div class="pure-u-3-5 relative">
+                        <ul id="nav-links" class="pure-menu-horizontal">
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('logout')" href="/logout" style="display: none;">log out</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('account')" ui-sref="account" qv-active="" href="#!/account" style="display: none;">account</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('login')" ui-sref="login" qv-active="" href="#!/login">log in</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('register')" ui-sref="register" qv-active="" href="#!/register">register</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('faq')" ui-sref="faq" qv-active="" href="#!/faq">faq</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('supplies')" ui-sref="supplies" qv-active="" href="#!/supplies">supplies</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('products')" ui-sref="products" qv-active="" href="#!/products/">products</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('gallery')" ui-sref="gallery" qv-active="" href="#!/gallery" style="display: none;">gallery</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="showLink('subscriptions')" ui-sref="subscriptions" qv-active="" href="#!/subscriptions" style="display: none;">subscriptions</a>
+                            </li>
+
+                            <li class="nav-link-item">
+                                <a class="nav-link" ng-show="cart.products" ui-sref="cart" qv-active="" href="#!/cart" style="display: none;">
+                                    cart
+                                    <span ng-show="cart.count" class="ng-binding" style="display: none;">(0)</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </noscript>
 
             <!--END OF STATIC CONTENT-->
 
         </nav>
         <div ui-view="body">
-            <div style="height: 2000px;"></div>
-
             <!--BEGINNING OF STATIC CONTENT-->
+            <noscript>
+                <div class="pure-g-r landing-page ng-scope">
+                    <div class="pure-u-1">
+                        <h1 class="header centered text-centered">learn modern calligraphy</h1>
+                    </div>
+
+                    <div class="pure-u-1 pure-g-r background-gray1 single">
+                        <div class="pure-u-1-2">
+                            <p class="pull-right-desktop centered-tablet no-padding-phone single-text text-x-medium">
+                                Preserve the art of calligraphy. Make paper beautiful with a modern twist on a 6th century art.
+                            </p>
+                        </div>
+                        <div class="pure-u-1-2">
+                            <button class="button-cta centered-phone" ng-click="convert('online-calligraphy-course')" qv-disable=".button-cta">learn calligraphy today</button>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-1 ng-isolate-scope ng-scope" qv-slider="images.melissa"><div class="qv-slider">
+                        <div class="qv-slider-button qv-slider-left-button" ng-click="slide(380)" ng-hide="hideRight" style="display: none;">
+                            <div class="background-left-arrow"></div>
+                        </div>
+                        <ul class="qv-slider-list">
+                            <!-- ngRepeat: image in images --><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-8.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-8.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-7.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-7.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-6.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-6.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-5.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-5.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-2.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-2.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-megans-prayer-2.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-megans-prayer-2.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-friendship-cs-lewis-quote-2.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-friendship-cs-lewis-quote-2.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-lettered-cards-1.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-lettered-cards-1.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-everyday-im-hustlin.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-everyday-im-hustlin.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istilllovecalligraphy-custom-calligraphy-notecards2.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istilllovecalligraphy-custom-calligraphy-notecards2.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" target="_blank" style="display: none;"></a>
+                        </li>
+                        </ul>
+                        <div class="qv-slider-button qv-slider-right-button" ng-click="slide(-380)" ng-hide="hideLeft">
+                            <div class="background-right-arrow"></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="pure-u-1">
+                        <span class="linkout pull-right">
+                            see more calligraphy at <a href="http://melissaesplin.com">MELISSAESPLIN.COM</a>
+                        </span>
+                    </div>
+
+                    <div class="pure-u-1 pure-visible-desktop">
+                        <div class="background-make-paper-sing centered text-centered"></div>
+                    </div>
+                    <div class="pure-u-1 pure-hidden-desktop"><br><br></div>
+
+
+
+                    <div class="pure-u-1-3 triple border-right">
+                        <div class="background-beginner centered"></div>
+                        <p class="centered text-centered text-x-medium">
+                            Beginner? No problem! the course starts with ABCs and 123s. Personalized coaching, printables and assignments do the rest.
+                        </p>
+                    </div>
+
+                    <div class="pure-u-1-3 triple border-right">
+                        <div class="background-personal-feedback centered"></div>
+                        <p class="centered text-centered text-x-medium">
+                            Develop your penmanship with help from a professional calligrapher. A combination of written and video instruction are supplemented with Melissa's personal comments on your work.
+                        </p>
+                    </div>
+
+                    <div class="pure-u-1-3 triple">
+                        <div class="background-learn-your-way centered"></div>
+                        <p class="centered text-centered">
+                            Personalized coaching, videos, practice printables and step-by-step walk-throughs to address all learning styles
+                        </p>
+                    </div>
+
+                    <div class="pure-u-1">
+                        <button class="button-cta centered" ng-click="convert('online-calligraphy-course')" qv-disable=".button-cta">get started now</button>
+                    </div>
+
+                    <div class="pure-u-1 background-gray1 single student-work">
+                        <div class="background-student-work centered visible-desktop"></div>
+                        <div class="hidden-desktop">
+                            <h1 class="text-centered">student work</h1>
+                            <br>
+                        </div>
+
+                        <div class="pure-u-1 ng-isolate-scope ng-scope" qv-slider="images.studentWork"><div class="qv-slider">
+                            <div class="qv-slider-button qv-slider-left-button" ng-click="slide(380)" ng-hide="hideRight" style="display: none;">
+                                <div class="background-left-arrow"></div>
+                            </div>
+                            <ul class="qv-slider-list">
+                                <!-- ngRepeat: image in images --><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|2.jpeg" alt="jennifer lioy" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|2.jpeg">
+                                <a class="qv-slider-link ng-binding" ng-href="http://sincerelyserendipity.com" ng-show="image.href" target="_blank" href="http://sincerelyserendipity.com">jennifer lioy</a>
+                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|1.jpeg" alt="jennifer lioy" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|1.jpeg">
+                                <a class="qv-slider-link ng-binding" ng-href="http://sincerelyserendipity.com" ng-show="image.href" target="_blank" href="http://sincerelyserendipity.com">jennifer lioy</a>
+                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/kaelasoohoo.com|kaela_soohoo|2.jpg" alt="kaela soohoo" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/kaelasoohoo.com|kaela_soohoo|2.jpg">
+                                <a class="qv-slider-link ng-binding" ng-href="http://kaelasoohoo.com" ng-show="image.href" target="_blank" href="http://kaelasoohoo.com">kaela soohoo</a>
+                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/kaelasoohoo.com|kaela_soohoo|1.jpg" alt="kaela soohoo" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/kaelasoohoo.com|kaela_soohoo|1.jpg">
+                                <a class="qv-slider-link ng-binding" ng-href="http://kaelasoohoo.com" ng-show="image.href" target="_blank" href="http://kaelasoohoo.com">kaela soohoo</a>
+                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilyecavanagh.com|emily_cavanagh.JPG" alt="emily cavanagh" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilyecavanagh.com|emily_cavanagh.JPG">
+                                <a class="qv-slider-link ng-binding" ng-href="http://emilyecavanagh.com" ng-show="image.href" target="_blank" href="http://emilyecavanagh.com">emily cavanagh</a>
+                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.com|emilee_stucky|2.jpg" alt="emilee stucky" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.com|emilee_stucky|2.jpg">
+                                <a class="qv-slider-link ng-binding" ng-href="http://emilimedesigns.com" ng-show="image.href" target="_blank" href="http://emilimedesigns.com">emilee stucky</a>
+                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.com|emilee_stucky|1.jpg" alt="emilee stucky" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.com|emilee_stucky|1.jpg">
+                                <a class="qv-slider-link ng-binding" ng-href="http://emilimedesigns.com" ng-show="image.href" target="_blank" href="http://emilimedesigns.com">emilee stucky</a>
+                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/chickpea-studios.com|juliette_lanvers|2.png" alt="juliette lanvers" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/chickpea-studios.com|juliette_lanvers|2.png">
+                                <a class="qv-slider-link ng-binding" ng-href="http://chickpea-studios.com" ng-show="image.href" target="_blank" href="http://chickpea-studios.com">juliette lanvers</a>
+                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
+                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/chickpea-studios.com|juliette_lanvers|1.png" alt="juliette lanvers" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/chickpea-studios.com|juliette_lanvers|1.png">
+                                <a class="qv-slider-link ng-binding" ng-href="http://chickpea-studios.com" ng-show="image.href" target="_blank" href="http://chickpea-studios.com">juliette lanvers</a>
+                            </li>
+                            </ul>
+                            <div class="qv-slider-button qv-slider-right-button" ng-click="slide(-380)" ng-hide="hideLeft">
+                                <div class="background-right-arrow"></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-2-5 how-does-it-work-wrapper centered-tablet centered-phone">
+                        <div class="background-how-does-it-work pull-right-desktop"></div>
+                    </div>
+
+                    <div class="pure-u-3-5 centered-tablet centered-phone">
+                        <div class="bordered">
+                            <ul class="aligned-list no-margin text-x-medium">
+                                <li>4 Videos</li>
+                                <li>9 Lessons</li>
+                                <li>3 Practice Guides</li>
+                                <li>8 Assignments</li>
+                                <li>Personal Coaching</li>
+                                <li>Private student/teacher gallery for troubleshooting and critiques</li>
+                                <li>Mobile/tablet compatible</li>
+                            </ul>
+                            <p class="text-x-medium">
+                                Hundreds of students have learned the pointed pen with Melissa's step-by-step process.
+                                Melissa's students have incorporated their calligraphy techniques into freelance wedding invitations, sign painting and graphic art.
+                            </p>
+                            <button class="button-cta centered" ng-click="convert('online-calligraphy-course')" qv-disable=".button-cta">click to start</button>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-1 pure-g-r email-footer">
+                        <div class="pure-u-2-5 email-footer-item">
+                            <p class="text-medium pull-right-desktop centered-tablet no-margin align-right">
+                                Sign up for our newsletter to receive deals and course announcements in your inbox
+                            </p>
+                        </div>
+                        <div class="pure-u-1-5 email-footer-item">
+                            <form action="" class="ng-pristine ng-valid">
+                                <input class="centered" type="email" placeholder="email address">
+                            </form>
+                        </div>
+                        <div class="pure-u-2-5 email-footer-item">
+                            <button class="button-secondary centered-tablet">subscribe</button>
+                        </div>
+                    </div>
+
+                </div>
+            </noscript>
 
 
             <!--END OF STATIC CONTENT-->
@@ -66,6 +311,7 @@
         <script src="lib/showdown/compressed/showdown.js"></script>
         <script src="lib/angular-markdown/angular.markdown.js"></script>
         <script src="lib/angular-google-analytics/src/angular-google-analytics.js"></script>
+        <script src="lib/angular-seo/angular-seo.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('ProductCtrl', function ($scope, $rootScope, $stateParams, products, cartService, productService, notificationService) {
+  .controller('ProductCtrl', function ($scope, $rootScope, $stateParams, products, cartService, productService, notificationService, $timeout) {
     $scope.category = $stateParams.category;
 
     if ($stateParams.id) {

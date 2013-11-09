@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state, $rootScope, $q, _, cartService, productService, notificationService, user, cart, subscriptions) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, $q, $timeout, _, cartService, productService, notificationService, user, cart, subscriptions) {
     //Basic route security... you wouldn't want users to get hung up if they hit the wrong page
     var secureRoutes = ['gallery', 'content', 'subscriptions', 'account'];
     if (!user) {
@@ -29,6 +29,7 @@ angular.module('islcAngularApp')
 
 
 
+    $timeout($scope.htmlReady()); //Call htmlReady on first load for PhantomJS renderer's sake
     $rootScope.$on('$stateChangeSuccess', function(event, to, toParams, from, fromParams) {
       $rootScope.$previousState = from;
     });
