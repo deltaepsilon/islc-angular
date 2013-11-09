@@ -8,3 +8,4 @@ mocks
 .dev
 .DS_Store
 .idea
+app/gallery/*
