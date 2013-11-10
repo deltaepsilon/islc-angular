@@ -1,0 +1,93 @@
+#loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, .8);
+  cursor: pointer;
+  z-index: 1000;
+
+  &:before {
+    @include absolute(5px, initial, initial, 5px);
+    @extend .text-x-small;
+    
+    color: white;
+    content: "Click to hide";
+    text-transform: uppercase;
+  }
+
+}
+
+// Found: http://codepen.io/collection/HtAne
+// See http://codepen.io/Abderrahmane-TJ/pen/mnvue
+
+@keyframes spin {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+
+
+@-o-keyframes spin {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+
+
+.c{
+  @include absolute(50%, 0, 0, 50%);
+}
+.r{
+  background-color: white;
+  width: 300px;
+  height: 10px;
+  opacity: .75;
+  @include background-origin(border-box);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.animation{
+  .r{
+    animation: spin 30s infinite linear;
+    -webkit-animation: spin 30s infinite linear;
+    -moz-animation: spin 30s infinite linear;
+    -o-animation: spin 30s infinite linear;
+  }
+  >.r{
+    left: -150px;
+  }
+}
+.highlight{
+  background-color: getColor(green2) !important;
+}
+.black{
+  background-color: getColor(gray) !important;
+}

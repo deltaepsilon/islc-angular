@@ -2,7 +2,7 @@
 
 angular.module('islcAngularApp')
   .controller('AccountCtrl', function ($scope, notificationService, userService, addressService, transactionService, address, transactions) {
-    if (!address.error) {
+    if (address && !address.error) {
       $scope.address = address;
     }
 

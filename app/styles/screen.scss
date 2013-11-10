@@ -2,6 +2,7 @@
 @import "compass";
 @import "compass/css3/box-shadow";
 @import "compass/css3/opacity";
+@import "compass/css3/transform";
 @import "compass/utilities/general/clearfix";
 //@import "compass/reset";
 
@@ -39,6 +40,7 @@
 @import "modules/gallery";
 @import "modules/modal";
 @import "modules/content";
+@import "modules/loading";
 
 // Directives
 @import "directives/qv-slider";

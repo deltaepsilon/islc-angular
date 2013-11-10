@@ -1106,7 +1106,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-small, h6, .remove-button, [action="login_check"] label[for="remember_me"] {
+.text-x-small, h6, .remove-button, [action="login_check"] label[for="remember_me"], #loading:before {
   font-size: 12px;
 }
 
@@ -3136,6 +3136,156 @@ textarea {
 /* line 108, modules/_content.scss */
 .page-body .exercise .link-list-item:after {
   top: 4px;
+}
+
+/* line 1, modules/_loading.scss */
+#loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 1000;
+}
+/* line 12, modules/_loading.scss */
+#loading:before {
+  position: absolute;
+  top: 5px;
+  right: initial;
+  bottom: initial;
+  left: 5px;
+  color: white;
+  content: "Click to hide";
+  text-transform: uppercase;
+}
+
+@keyframes spin {
+  /* line 27, modules/_loading.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 30, modules/_loading.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 36, modules/_loading.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 39, modules/_loading.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  /* line 45, modules/_loading.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 48, modules/_loading.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 55, modules/_loading.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 58, modules/_loading.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* line 64, modules/_loading.scss */
+.c {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+/* line 67, modules/_loading.scss */
+.r {
+  background-color: white;
+  width: 300px;
+  height: 10px;
+  opacity: .75;
+  -webkit-background-origin: border;
+  -moz-background-origin: border;
+  -ms-background-origin: border-box;
+  -o-background-origin: border-box;
+  background-origin: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 78, modules/_loading.scss */
+.animation .r {
+  animation: spin 30s infinite linear;
+  -webkit-animation: spin 30s infinite linear;
+  -moz-animation: spin 30s infinite linear;
+  -o-animation: spin 30s infinite linear;
+}
+/* line 84, modules/_loading.scss */
+.animation > .r {
+  left: -150px;
+}
+
+/* line 88, modules/_loading.scss */
+.highlight {
+  background-color: #177f62 !important;
+}
+
+/* line 91, modules/_loading.scss */
+.black {
+  background-color: #333333 !important;
 }
 
 /* line 1, directives/_qv-slider.scss */
