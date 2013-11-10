@@ -3145,11 +3145,11 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
   z-index: 1000;
 }
-/* line 12, modules/_loading.scss */
+/* line 13, modules/_loading.scss */
 #loading:before {
   position: absolute;
   top: 5px;
@@ -3162,7 +3162,7 @@ textarea {
 }
 
 @keyframes spin {
-  /* line 27, modules/_loading.scss */
+  /* line 28, modules/_loading.scss */
   from {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -3171,7 +3171,7 @@ textarea {
     transform: rotate(0deg);
   }
 
-  /* line 30, modules/_loading.scss */
+  /* line 31, modules/_loading.scss */
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -3182,7 +3182,7 @@ textarea {
 }
 
 @-webkit-keyframes spin {
-  /* line 36, modules/_loading.scss */
+  /* line 37, modules/_loading.scss */
   from {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -3191,7 +3191,7 @@ textarea {
     transform: rotate(0deg);
   }
 
-  /* line 39, modules/_loading.scss */
+  /* line 40, modules/_loading.scss */
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -3202,7 +3202,7 @@ textarea {
 }
 
 @-moz-keyframes spin {
-  /* line 45, modules/_loading.scss */
+  /* line 46, modules/_loading.scss */
   from {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -3211,7 +3211,7 @@ textarea {
     transform: rotate(0deg);
   }
 
-  /* line 48, modules/_loading.scss */
+  /* line 49, modules/_loading.scss */
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -3222,7 +3222,7 @@ textarea {
 }
 
 @-o-keyframes spin {
-  /* line 55, modules/_loading.scss */
+  /* line 56, modules/_loading.scss */
   from {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -3231,7 +3231,7 @@ textarea {
     transform: rotate(0deg);
   }
 
-  /* line 58, modules/_loading.scss */
+  /* line 59, modules/_loading.scss */
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -3241,7 +3241,7 @@ textarea {
   }
 }
 
-/* line 64, modules/_loading.scss */
+/* line 65, modules/_loading.scss */
 .c {
   position: absolute;
   top: 50%;
@@ -3250,7 +3250,7 @@ textarea {
   left: 50%;
 }
 
-/* line 67, modules/_loading.scss */
+/* line 68, modules/_loading.scss */
 .r {
   background-color: white;
   width: 300px;
@@ -3266,24 +3266,24 @@ textarea {
   left: 0px;
 }
 
-/* line 78, modules/_loading.scss */
+/* line 79, modules/_loading.scss */
 .animation .r {
   animation: spin 30s infinite linear;
   -webkit-animation: spin 30s infinite linear;
   -moz-animation: spin 30s infinite linear;
   -o-animation: spin 30s infinite linear;
 }
-/* line 84, modules/_loading.scss */
+/* line 85, modules/_loading.scss */
 .animation > .r {
   left: -150px;
 }
 
-/* line 88, modules/_loading.scss */
+/* line 89, modules/_loading.scss */
 .highlight {
   background-color: #177f62 !important;
 }
 
-/* line 91, modules/_loading.scss */
+/* line 92, modules/_loading.scss */
 .black {
   background-color: #333333 !important;
 }

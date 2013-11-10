@@ -14,7 +14,7 @@ angular.module('islcAngularApp')
 
     $rootScope.$on('$stateChangeStart', function() {
       $timeout.cancel(timer);
-      timer = $timeout($rootScope.showLoader, 1500);
+      timer = $timeout($rootScope.showLoader, 1000);
     });
     $rootScope.$on('$stateChangeSuccess', function() {
       $timeout.cancel(timer);
