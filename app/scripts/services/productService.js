@@ -5,9 +5,9 @@ angular.module('islcAngularApp')
     Restangular.setBaseUrl('/angular');
 
     return {
-      get: function (id, force) {
-        if (id) {
-          return Restangular.one('product', id).get();
+      get: function (slug, force) {
+        if (slug) {
+          return Restangular.one('product', slug).get();
         } else if (!force && $rootScope.products) {
           var deferred = $q.defer()
           deferred.resolve($rootScope.products);

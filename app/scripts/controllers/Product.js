@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('ProductCtrl', function ($scope, $rootScope, $stateParams, products, cartService, productService, notificationService, $timeout) {
+  .controller('ProductCtrl', function ($scope, $rootScope, $stateParams, products, cartService, productService, notificationService) {
     $scope.category = $stateParams.category;
 
-    if ($stateParams.id) {
+    if ($stateParams.slug) {
       $scope.product = products;
       console.log('product', products);
       if ($scope.product.available === undefined) {
@@ -50,11 +50,11 @@ angular.module('islcAngularApp')
           $rootScope.cart = cart;
 
           //Force update the products list. This is critical to capture any changes resulting from the cart transaction.
-          productService.get($stateParams.id, true).then(function (res) {
+          productService.get($stateParams.slug, true).then(function (res) {
             if (res.error) {
               notificationService.error('Products', res.error);
             } else {
-              if ($stateParams.id) {
+              if ($stateParams.slug) {
                 $scope.product = res;
               } else {
                 $scope.products = res;

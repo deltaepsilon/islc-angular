@@ -154,7 +154,7 @@ angular.module('islcAngularApp', [
         }
       })
       .state('product', {
-        url: '/product/:id',
+        url: '/product/:slug',
         views: {
           nav: nav,
           body: {
@@ -162,7 +162,7 @@ angular.module('islcAngularApp', [
             controller: 'ProductCtrl',
             resolve: {
               products: function ($stateParams, productService) {
-                return productService.get($stateParams.id);
+                return productService.get($stateParams.slug);
               }
             }
           }
