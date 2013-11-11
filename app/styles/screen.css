@@ -1813,6 +1813,11 @@ h2 {
   width: 100%;
 }
 
+/* line 226, imports/_global.scss */
+.max-700 {
+  max-width: 700px;
+}
+
 @media (min-width: 980px) {
   /* line 3, imports/_media-queries.scss */
   .centered-desktop {
