@@ -2818,15 +2818,16 @@ textarea {
   left: inherit;
   background: rgba(0, 0, 0, 0.6);
   font-size: 13px;
+  max-width: 300px;
   padding: 13px 79px 11px;
   visibility: hidden;
   white-space: nowrap;
 }
-/* line 95, modules/_product.scss */
+/* line 96, modules/_product.scss */
 .products-wrapper .product-image-wrapper:hover .product-hidden-button {
   visibility: visible;
 }
-/* line 101, modules/_product.scss */
+/* line 102, modules/_product.scss */
 .products-wrapper .product-image {
   font-weight: 200;
   letter-spacing: 2px;
@@ -2835,7 +2836,7 @@ textarea {
   width: 300px;
   height: 300px;
 }
-/* line 112, modules/_product.scss */
+/* line 113, modules/_product.scss */
 .products-wrapper .product-title {
   display: inline-block;
   font-weight: 200;
@@ -2846,7 +2847,7 @@ textarea {
   max-width: 245px;
   text-transform: uppercase;
 }
-/* line 125, modules/_product.scss */
+/* line 126, modules/_product.scss */
 .products-wrapper .product-price {
   display: inline-block;
   float: right;
@@ -2854,26 +2855,26 @@ textarea {
   margin-top: 9px;
 }
 
-/* line 133, modules/_product.scss */
+/* line 134, modules/_product.scss */
 .product-wrapper {
   max-width: 990px;
 }
-/* line 136, modules/_product.scss */
+/* line 137, modules/_product.scss */
 .product-wrapper .product-images {
   float: right;
   max-width: 580px;
 }
-/* line 141, modules/_product.scss */
+/* line 142, modules/_product.scss */
 .product-wrapper .product-details {
   padding: 0 15px;
 }
-/* line 145, modules/_product.scss */
+/* line 146, modules/_product.scss */
 .product-wrapper .product-image {
   cursor: pointer;
   width: 163px;
   margin: 0 15px 25px;
 }
-/* line 150, modules/_product.scss */
+/* line 151, modules/_product.scss */
 .product-wrapper .product-image:first-of-type {
   cursor: default;
   width: 100%;
@@ -2881,31 +2882,31 @@ textarea {
   padding-left: 1px;
 }
 
-/* line 163, modules/_product.scss */
+/* line 164, modules/_product.scss */
 .product-details .product-meta {
   margin: auto;
   max-width: 300px;
 }
-/* line 169, modules/_product.scss */
+/* line 170, modules/_product.scss */
 .product-details .product-title {
   font-weight: 200;
   max-width: 250px;
   text-transform: uppercase;
 }
-/* line 176, modules/_product.scss */
+/* line 177, modules/_product.scss */
 .product-details .product-price {
   font-weight: 700;
 }
-/* line 180, modules/_product.scss */
+/* line 181, modules/_product.scss */
 .product-details .button-highlight {
   margin: 27px auto 28px;
   position: relative;
 }
-/* line 186, modules/_product.scss */
+/* line 187, modules/_product.scss */
 .product-details .product-description {
   line-height: 19px;
 }
-/* line 190, modules/_product.scss */
+/* line 191, modules/_product.scss */
 .product-details li {
   text-indent: -14px;
   padding-left: 14px;

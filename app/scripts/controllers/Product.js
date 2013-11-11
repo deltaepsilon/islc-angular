@@ -67,4 +67,13 @@ angular.module('islcAngularApp')
       });
     }
 
+    $scope.isOutOfStock = function (product) {
+      if (product.available === undefined) {
+        return false;
+      } else if (product.available === 0) {
+        return true;
+      }
+      return false;
+    }
+
   });

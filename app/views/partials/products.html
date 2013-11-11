@@ -20,8 +20,10 @@
                     qv-flash="cart"
                     flash-message="adding..."
                     flash-duration="1000"
+                    ng-disabled="isOutOfStock(product)"
                 >
-                    Add To Cart
+                    <span ng-show="isOutOfStock(product)">Out Of Stock</span>
+                    <span ng-hide="isOutOfStock(product)">Add To Cart</span>
                 </button>
             </div>
 
