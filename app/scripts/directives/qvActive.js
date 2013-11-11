@@ -7,7 +7,7 @@ angular.module('islcAngularApp')
       link: function postLink(scope, element, attrs) {
         $timeout(function () {
           var sref = attrs.uiSref,
-            condition = attrs.csActive || '',
+            condition = attrs.qvActive || '',
             parts = condition.split('|'),
             key = parts[0],
             value = parts[1],
