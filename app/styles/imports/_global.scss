@@ -108,6 +108,10 @@ h6 {
   text-align: left;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .disabled {
   @include opacity(0.2);
 
