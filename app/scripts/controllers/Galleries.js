@@ -26,6 +26,8 @@ angular.module('islcAngularApp')
         if (galleries && galleries.length) {
           $scope.newGallery = {};
           $state.go('gallery.view', {id: galleries[0].id});
+        } else {
+          $rootScope.cancelLoader();
         }
 
       });

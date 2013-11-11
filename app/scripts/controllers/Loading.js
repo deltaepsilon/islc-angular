@@ -12,17 +12,18 @@ angular.module('islcAngularApp')
       $scope.hide = true;
     };
 
-    $rootScope.$on('$stateChangeStart', function() {
+    $rootScope.startLoader = function () {
       $timeout.cancel(timer);
       timer = $timeout($rootScope.showLoader, 1000);
-    });
-    $rootScope.$on('$stateChangeSuccess', function() {
+    };
+
+    $rootScope.cancelLoader = function () {
       $timeout.cancel(timer);
       $timeout($rootScope.hideLoader, 500);
-    });
-    $rootScope.$on('$viewContentLoaded', function () {
-      $timeout.cancel(timer);
-      $timeout($rootScope.hideLoader, 500);
-    });
+    };
+
+    $rootScope.$on('$stateChangeStart', $rootScope.startLoader);
+    $rootScope.$on('$stateChangeSuccess', $rootScope.startLoader);
+    $rootScope.$on('$viewContentLoaded', $rootScope.cancelLoader);
 
   });

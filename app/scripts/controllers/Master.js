@@ -22,7 +22,7 @@ angular.module('islcAngularApp')
           $scope.title = 'ISLC: Frequently Asked Question';
           break;
         default:
-          title = parts.join(': ');
+          title = parts.join(' → ');
           $scope.title = 'ISLC: ' + $filter('deSlug')(title);
           break;
       }
