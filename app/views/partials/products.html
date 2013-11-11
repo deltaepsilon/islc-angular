@@ -11,7 +11,7 @@
 
         <div class="pure-u-1-3 product product-{{ product.category || product.type }}" ng-repeat="product in products | filter:category">
             <div class="product-image-wrapper">
-                <a ui-sref="product({slug: product.slug})">
+                <a style="cursor: pointer;" ui-sref="product({slug: product.slug})">
                     <img class="product-image" ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
                 </a>
                 <button
