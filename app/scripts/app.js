@@ -25,7 +25,7 @@ angular.module('islcAngularApp', [
         templateUrl: 'views/partials/nav.html',
         controller: 'NavCtrl',
         resolve: {
-          user: function (userService, $state, $stateParams) {
+          user: function (userService) {
             return userService.get();
           },
           cart: function (cartService) {
