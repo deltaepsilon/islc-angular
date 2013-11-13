@@ -1,19 +1,18 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('subscriptionService', function subscriptionService($rootScope, Restangular) {
+  .service('subscriptionService', function subscriptionService($rootScope, Restangular, cacheService) {
+    var cache = cacheService.get();
+
     Restangular.setBaseUrl('/angular');
 
+
     return {
-      get: function (id, force) {
+      get: function (id) {
         if (id) {
           return Restangular.one('subscription', id).get();
         } else {
-          if (!force && $rootScope.subscriptions) {
-            return $rootScope.subscriptions;
-          } else {
-            return Restangular.all('subscription').getList();
-          }
+          return Restangular.all('subscription').getList();
 
         }
 
@@ -21,6 +20,10 @@ angular.module('islcAngularApp')
 
       reset: function (id) {
         return Restangular.one('subscription', id).get('reset');
+      },
+
+      clearCache: function () {
+        cache.remove('/angular/subscription');
       }
     }
   });

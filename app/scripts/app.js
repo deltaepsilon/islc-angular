@@ -1,5 +1,7 @@
 'use strict';
 
+var restangularProvider;
+
 angular.module('islcAngularApp', [
     'restangular',
     'notifications',
@@ -7,9 +9,16 @@ angular.module('islcAngularApp', [
     'angular-markdown',
     'ngSanitize',
     'angular-google-analytics',
-    'seo'
+    'seo',
+    'jmdobry.angular-cache'
   ])
-  .config(function ($locationProvider, $stateProvider, $urlRouterProvider, AnalyticsProvider) {
+  .run(function (cacheService) {
+    cacheService.config(restangularProvider);
+
+  })
+  .config(function ($locationProvider, $stateProvider, $urlRouterProvider, AnalyticsProvider, RestangularProvider) {
+
+    restangularProvider = RestangularProvider
 
     $locationProvider.hashPrefix('!');
 

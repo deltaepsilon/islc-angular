@@ -50,7 +50,8 @@ angular.module('islcAngularApp')
           $rootScope.cart = cart;
 
           //Force update the products list. This is critical to capture any changes resulting from the cart transaction.
-          productService.get($stateParams.slug, true).then(function (res) {
+          productService.clearCache($stateParams.slug);
+          productService.get($stateParams.slug).then(function (res) {
             if (res.error) {
               notificationService.error('Products', res.error);
             } else {

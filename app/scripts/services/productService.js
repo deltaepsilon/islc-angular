@@ -1,22 +1,30 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('productService', function productService($rootScope, $filter, Restangular, mockService, $q, _) {
+  .service('productService', function productService($rootScope, $filter, Restangular, mockService, _, cacheService) {
+    var cache = cacheService.get();
+
     Restangular.setBaseUrl('/angular');
 
     return {
-      get: function (slug, force) {
+      get: function (slug) {
         if (slug) {
           return Restangular.one('product', slug).get();
-        } else if (!force && $rootScope.products) {
-          var deferred = $q.defer()
-          deferred.resolve($rootScope.products);
-          return deferred.promise;
         } else {
           return Restangular.one('product').get();
         }
 
       },
+
+      clearCache: function (slug) {
+        if (!slug) {
+          cache.remove('/angular/product');
+        } else {
+          cache.remove('/angular/product/' + slug);
+        }
+
+      },
+
       getTable: function (products) {
         var table = mockService.getProductsTable(),
           link;

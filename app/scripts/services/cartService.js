@@ -1,17 +1,14 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('cartService', function cartService(Restangular, $rootScope, Analytics, $state) {
+  .service('cartService', function cartService(Restangular, $rootScope, Analytics, $state, cacheService) {
+    var cache = cacheService.get();
 
     Restangular.setBaseUrl('/angular');
 
     return {
-      get: function (force) {
-        if (!force && $rootScope.cart) {
-          return $rootScope.cart;
-        } else {
-          return Restangular.one('cart').get();
-        }
+      get: function () {
+        return Restangular.one('cart').get();
 
       },
 
@@ -32,6 +29,10 @@ angular.module('islcAngularApp')
           quantity: quantity
         }
         return Restangular.all('cart/update').post(query);
+      },
+
+      clearCache: function () {
+        cache.remove('/angular/cart');
       },
 
       setDiscount: function (code) {

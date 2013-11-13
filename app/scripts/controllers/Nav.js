@@ -13,10 +13,6 @@ angular.module('islcAngularApp')
     $rootScope.user = user;
     $rootScope.cart = cart;
 
-    if (!subscriptions.error) {
-      $rootScope.subscriptions = subscriptions;
-    }
-
     var error = location.href.match(/error=([^&]+)/);
     if (error && error.length >= 2 ) {
       notificationService.error('Error', decodeURIComponent(error[1]));
@@ -114,7 +110,8 @@ angular.module('islcAngularApp')
           deferred.resolve($rootScope.cart);
 
           //Force update the products list. This is critical to capture any changes resulting from the cart transaction.
-          productService.get(undefined, true).then(function (products) {
+          productService.clearCache();
+          productService.get().then(function (products) {
             if (products.error) {
               notificationService.error('Products', products.error);
             } else {

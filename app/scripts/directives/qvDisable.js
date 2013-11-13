@@ -13,14 +13,14 @@ angular.module('islcAngularApp')
             body.find(selector).addClass('disabled').attr('disabled', true);
             element.attr('disabled', true);
 
-            if (attrs.stopPropagation || attrs.preventDefault) {
-              element.on('click', function (e) {
-                e.preventDefault();
-                e.target.stopPropagation();
-              });
-            }
-
           });
+
+          if (attrs.stopPropagation || attrs.preventDefault) {
+            element.on('click', function (e) {
+              e.preventDefault();
+              e.target.stopPropagation();
+            });
+          }
 
         });
 

@@ -5,11 +5,9 @@ angular.module('islcAngularApp')
     Restangular.setBaseUrl('/angular');
 
     return {
-      get: function (id, force) {
+      get: function (id) {
         if (id) {
           return Restangular.one('gallery', id).get();
-        } else if (!force && $rootScope.galleries) {
-          return $rootScope.galleries;
         } else {
           return Restangular.one('gallery').get();
         }

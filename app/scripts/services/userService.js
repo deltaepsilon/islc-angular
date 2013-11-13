@@ -1,21 +1,25 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('userService', function userService($rootScope, Restangular) {
+  .service('userService', function userService($rootScope, Restangular, cacheService) {
+    var cache = cacheService.get();
+
     Restangular.setBaseUrl('/angular');
 
     return {
-      get: function (force) {
-        if (!force && $rootScope.user) {
-          return $rootScope.user;
-        } else {
-          return Restangular.one('user').get();
-        }
+      get: function () {
+        return Restangular.one('user').get();
 
       },
 
       update: function (user) {
-        return Restangular.all('user').post(user);
+        var promise = Restangular.all('user').post(user);
+
+        promise.then(function (user) {
+          cache.remove('/angular/user');
+        });
+
+        return promise;
       }
     }
   });

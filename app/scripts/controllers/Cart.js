@@ -96,8 +96,8 @@ angular.module('islcAngularApp')
         if (transaction.error) {
           notificationService.error('Checkout', transaction.error);
         } else {
-          subscriptionService.get(null, true).then(function (subscriptions) {
-            $rootScope.subscriptions = subscriptions;
+          subscriptionService.clearCache();
+          subscriptionService.get().then(function (subscriptions) {
             $state.go('transaction', {id: transaction.id});
           });
 
@@ -105,7 +105,8 @@ angular.module('islcAngularApp')
 
         //Force reload the cart. We wouldn't want stuff to show up in the cart without reason.
         $timeout(function () {
-          cartService.get(true).then(function (cart) {
+          cartService.clearCache();
+          cartService.get().then(function (cart) {
             $rootScope.cart = cart;
           });
         });

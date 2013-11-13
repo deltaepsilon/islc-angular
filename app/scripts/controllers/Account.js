@@ -29,7 +29,7 @@ angular.module('islcAngularApp')
           $scope.user = res;
           notificationService.success('User Saved');
         }
-        console.log('res', res);
+
       });
     }
 
