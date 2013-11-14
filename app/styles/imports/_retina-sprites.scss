@@ -13,7 +13,7 @@
 
 //first we'll define the folders where the sprites are and their layouts
 $icons: sprite-map("icons/*.png", $layout: smart);
-$icons-2x: sprite-map("icons-2x/*.png", $layout: smart);
+//$icons-2x: sprite-map("icons-2x/*.png", $layout: smart);
 
 //Sprite mixin, works perfectly with standard defines
 @mixin use-sprite($sprite, $x: 0, $y: 0) {
@@ -25,11 +25,11 @@ $icons-2x: sprite-map("icons-2x/*.png", $layout: smart);
   height: image-height(sprite-file($icons, $sprite));
   width: image-width(sprite-file($icons, $sprite));
 
-  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
-    background-image: sprite-url($icons-2x);
-    background-size: (image-width(sprite-path($icons-2x)) / 2) (image-height(sprite-path($icons-2x)) / 2);
-    background-position: round(nth(sprite-position($icons-2x, $sprite), 1) / 2 + $x) round(nth(sprite-position($icons-2x, $sprite), 2) / 2 + $y);
-    height: image-height(sprite-file($icons-2x, $sprite)) / 2;
-    width: image-width(sprite-file($icons-2x, $sprite)) / 2;
-  }
+  //@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+  //  background-image: sprite-url($icons-2x);
+  //  background-size: (image-width(sprite-path($icons-2x)) / 2) (image-height(sprite-path($icons-2x)) / 2);
+  //  background-position: round(nth(sprite-position($icons-2x, $sprite), 1) / 2 + $x) round(nth(sprite-position($icons-2x, $sprite), 2) / 2 + $y);
+  //  height: image-height(sprite-file($icons-2x, $sprite)) / 2;
+  //  width: image-width(sprite-file($icons-2x, $sprite)) / 2;
+  //}
 }

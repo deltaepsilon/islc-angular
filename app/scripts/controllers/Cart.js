@@ -67,6 +67,7 @@ angular.module('islcAngularApp')
     };
 
     $scope.saveCard = function (card) {
+      stripeService.clearCache();
       stripeService.createToken(card).then(function (res) {
         stripeService.saveToken(res.response).then(function (token) {
           $scope.token = token;

@@ -6,7 +6,7 @@
 
   .single {
     margin: 40px 0;
-    padding: 25px 0;
+    padding: 25px 15px;
 
     .button-cta {
       margin-top: 26px;
@@ -71,7 +71,7 @@
 
     .button-cta {
       @include absolute(inherit, inherit, -30px, 50%);
-      margin-left: -117px;
+      margin-left: -156px;
 
     }
   }

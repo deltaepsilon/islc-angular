@@ -1,5 +1,13 @@
 #cart {
 
+  .table-width {
+    td {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+
+  }
+
   .product-image {
     padding-right: 20px;
     width: 185px;
@@ -47,6 +55,10 @@
     text-transform: uppercase;
   }
 
+  .margin-left {
+    margin-left: 15px;
+  }
+
 }
 
 .login-prompt {
@@ -76,3 +88,43 @@
   }
 }
 
+// Phone
+@media (max-width: 767px) {
+  #cart {
+
+    .table-width {
+      td {
+        padding-right: 5px;
+      }
+    }
+
+    .product-image {
+      padding: 0px;
+    }
+
+    .product-price {
+      margin-right: 5px;
+    }
+
+    .product-quantity {
+      width: 45px;
+      margin: 0;
+    }
+
+    .remove-button {
+      margin-left: 0px;
+    }
+
+    .form-error {
+      padding: 10px 0;
+    }
+    
+    .button-secondary {
+      width: 100% !important;
+    }
+  }
+
+  #cvc {
+    width: 100% !important;
+  }
+}

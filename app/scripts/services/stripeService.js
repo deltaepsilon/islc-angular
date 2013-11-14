@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('stripeService', function stripeService($rootScope, $q, Stripe, paramsService, Restangular) {
+  .service('stripeService', function stripeService($rootScope, $q, Stripe, paramsService, Restangular, cacheService) {
+    var cache = cacheService.get();
+
     Restangular.setBaseUrl('/angular');
 
     var setPK = function () {
@@ -14,6 +16,9 @@ angular.module('islcAngularApp')
       };
 
     return {
+      clearCache: function () {
+        cache.remove('/angular/token');
+      },
       createToken: function (card) {
         var deferred = $q.defer();
         setPK().then(function () {

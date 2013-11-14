@@ -1,6 +1,4 @@
 $sprites:
-  background,
-  background-gray,
   beginner,
   how-does-it-work,
   islc-logo,
@@ -17,4 +15,14 @@ $sprites:
   .background-#{$sprite} {
     @include use-sprite($sprite);
   }
+}
+
+$background-url: url('../images/backgrounds/background3.png');
+.background-background {
+  background-image: $background-url;
+}
+
+$background-gray-url: url('../images/backgrounds/background-gray.png');
+.background-background-gray {
+  background-image: $background-gray-url;
 }

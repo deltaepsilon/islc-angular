@@ -33,6 +33,10 @@
     margin-right: auto;
   }
 
+  .centered-text-phone, .centered-text-tablet {
+    text-align: center;
+  }
+
   .pull-right-phone, .pull-right-tablet {
     float: right;
   }
@@ -47,6 +51,14 @@
 
   .visible-desktop {
     display: none;
+  }
+
+  .visible-tablet {
+    display: none;
+  }
+
+  .padded-wrapper {
+    padding: 5px 10px;
   }
 }
 

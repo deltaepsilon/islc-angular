@@ -154,14 +154,12 @@ h6 {
   text-transform: lowercase;
 }
 
-$background-url: url('../images/icons-2x/background.png');
 .background-repeating {
   background-image: $background-url;
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-$background-gray-url: url('../images/icons-2x/background-gray.png');
 .background-repeating-gray {
   background-image: $background-gray-url;
   background-position: -50px -30px;

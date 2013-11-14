@@ -6,7 +6,7 @@ angular.module('islcAngularApp')
 
     return {
       get: function () {
-          Restangular.one('params').get();
+          return Restangular.one('params').get();
         }
 
     };

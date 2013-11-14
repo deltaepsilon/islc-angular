@@ -2,10 +2,11 @@
   $qv-slider-image-width: 350px;
 
   position: relative;
+  left: 10px;
   height: $qv-slider-image-width;
   
   &:before {
-    @include absolute(0, inherit, 0, 0);
+    @include absolute(0, initial, 0, 0);
 
     content: '';
     width: 50px;
@@ -13,7 +14,7 @@
   }
 
   &:after {
-    @include absolute(0, 0, 0, inherit);
+    @include absolute(0, 0, 0, initial);
 
     content: '';
     width: 50px;
@@ -21,7 +22,7 @@
   }
   
   .qv-slider-list {
-    @include absolute(0, inherit, inherit, 0);
+    @include absolute(0, initial, initial, 0);
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -45,7 +46,7 @@
   }
 
   .qv-slider-link {
-    @include absolute(inherit, 4px, 4px, 0);
+    @include absolute(initial, 4px, 4px, 0);
     @extend .text-medium;
 
     background: rgba(0, 0, 0, .7);
@@ -67,15 +68,14 @@
     z-index: 2;
   }
 
-  $qv-slider-offset: 20px;
   .qv-slider-left-button {
-    @include absolute(50%, inherit, inherit, $qv-slider-offset);
+    @include absolute(50%, initial, initial, 1px);
 
     padding: 7px 11px 7px 9px;
   }
 
   .qv-slider-right-button {
-    @include absolute(50%, $qv-slider-offset, inherit, inherit);
+    @include absolute(50%, 20px, initial, initial);
 
     padding: 7px 9px 7px 11px;
   }
