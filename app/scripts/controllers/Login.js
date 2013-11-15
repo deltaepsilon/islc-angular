@@ -2,8 +2,26 @@
 
 angular.module('islcAngularApp')
   .controller('LoginCtrl', function ($scope, $state, $stateParams, $timeout) {
+    var SLUG_REGEX = /:(\w+)/g,
+      getUrl = function (url, params) {
+        var matches = url.match(SLUG_REGEX),
+          i = matches.length,
+          TEMP_REGEX;
+
+        while (i--) {
+          TEMP_REGEX = new RegExp(matches[i]);
+          url = url.replace(TEMP_REGEX, params[matches[i].substring(1)]);
+        }
+        return url;
+      };
+
     $timeout(function () {
-      $scope.redirect = '#!' + ($scope.$previousState ? $scope.$previousState.url : '/');
+      var url = '/';
+
+      if ($scope.$previousState.url && $scope.$previousStateParams) {
+        url = getUrl($scope.$previousState.url, $scope.$previousStateParams);
+      }
+      $scope.redirect = '#!' + url;
       $scope.origin = '#!' + ($state.current.url || '/');
       $scope.token = $stateParams.token;
     });

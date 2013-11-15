@@ -31,6 +31,7 @@ angular.module('islcAngularApp')
 
     $rootScope.$on('$stateChangeSuccess', function(event, to, toParams, from, fromParams) {
       $rootScope.$previousState = from;
+      $rootScope.$previousStateParams = fromParams;
     });
 
     $rootScope.$watch('cart', function () {

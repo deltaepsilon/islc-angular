@@ -5,7 +5,7 @@
     <ul class="qv-slider-list">
         <li class="qv-slider-list-item" ng-repeat="image in images">
             <img class="qv-slider-image" ng-src="{{ image.src }}" alt="{{ image.text }}"/>
-            <a class="qv-slider-link" ng-href="{{ image.href }}" ng-show="image.href" target="_blank">{{ image.text }}</a>
+            <a class="qv-slider-link" ng-href="{{ image.href }}" ng-show="image.href" rel="nofollow" target="_blank">{{ image.text }}</a>
         </li>
     </ul>
     <div class="qv-slider-button qv-slider-right-button" ng-click="slide(-389)" ng-hide="hideLeft">
