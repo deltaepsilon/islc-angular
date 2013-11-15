@@ -14,6 +14,7 @@ angular.module('islcAngularApp')
           images = [],
           FILENAME_REGEX = /[^\/]+\.\w+$/,
           TEXT_REGEX = /(_|\.\w+$)/g,
+          SLASH_REGEX = /\:/g,
           filename,
           parts;
 
@@ -24,7 +25,7 @@ angular.module('islcAngularApp')
           if (parts.length >= 2) {
             images.push({
               src: list[i],
-              href: 'http://' + parts[0],
+              href: 'http://' + parts[0].replace(SLASH_REGEX, '/'),
               text: parts[1].replace(TEXT_REGEX, ' ').trim()
             });
           } else {
