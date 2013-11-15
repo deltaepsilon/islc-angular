@@ -58,7 +58,7 @@ angular.module('islcAngularApp')
 
             while (i--) {
               product = transaction.products[i];
-              Analytics.addItem(transaction.id, product.id, product.title, product.category || product.type, product.price, product.quantity);
+              Analytics.addItem(transaction.id, product.slug, product.title, product.category || product.type, product.price, product.quantity);
             }
 
             Analytics.trackTrans();
