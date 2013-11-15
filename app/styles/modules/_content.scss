@@ -80,6 +80,12 @@
     @extend .text-green2;
 
     text-decoration: underline;
+
+    &.button-cta {
+      @extend .text-white;
+
+      text-decoration: none;
+    }
   }
 
   img, video {

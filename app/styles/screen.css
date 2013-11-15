@@ -1715,7 +1715,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 }
 
 /* line 24, imports/_colors.scss */
-.text-white, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .button-cta, .page-body h1 {
+.text-white, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .button-cta, .page-body h1, .page-body a.button-cta {
   color: white;
 }
 
@@ -1989,96 +1989,101 @@ h2 {
   }
 
   /* line 8, imports/_media-queries.scss */
+  .right-text-desktop {
+    text-align: right;
+  }
+
+  /* line 12, imports/_media-queries.scss */
   .pull-right-desktop {
     float: right;
   }
 
-  /* line 12, imports/_media-queries.scss */
+  /* line 16, imports/_media-queries.scss */
   .pull-left-desktop {
     float: left;
   }
 
-  /* line 16, imports/_media-queries.scss */
+  /* line 20, imports/_media-queries.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media (max-width: 480px) {
-  /* line 24, imports/_media-queries.scss */
+  /* line 28, imports/_media-queries.scss */
   .visible-desktop {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  /* line 31, imports/_media-queries.scss */
+  /* line 35, imports/_media-queries.scss */
   .centered-phone, .centered-tablet {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 36, imports/_media-queries.scss */
+  /* line 40, imports/_media-queries.scss */
   .centered-text-phone, .centered-text-tablet {
     text-align: center;
   }
 
-  /* line 40, imports/_media-queries.scss */
+  /* line 44, imports/_media-queries.scss */
   .pull-right-phone, .pull-right-tablet {
     float: right;
   }
 
-  /* line 44, imports/_media-queries.scss */
+  /* line 48, imports/_media-queries.scss */
   .pull-left-phone, .pull-left-tablet {
     float: left;
   }
 
-  /* line 48, imports/_media-queries.scss */
+  /* line 52, imports/_media-queries.scss */
   .no-padding-phone, .no-padding-tablet {
     padding: 0 !important;
   }
 
-  /* line 52, imports/_media-queries.scss */
+  /* line 56, imports/_media-queries.scss */
   .visible-desktop {
     display: none;
   }
 
-  /* line 56, imports/_media-queries.scss */
+  /* line 60, imports/_media-queries.scss */
   .visible-tablet {
     display: none;
   }
 
-  /* line 60, imports/_media-queries.scss */
+  /* line 64, imports/_media-queries.scss */
   .padded-wrapper {
     padding: 5px 10px;
   }
 
-  /* line 64, imports/_media-queries.scss */
+  /* line 68, imports/_media-queries.scss */
   .bordered-tablet {
     border: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 71, imports/_media-queries.scss */
+  /* line 75, imports/_media-queries.scss */
   .centered-tablet {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 76, imports/_media-queries.scss */
+  /* line 80, imports/_media-queries.scss */
   .pull-right-tablet {
     float: right;
   }
 
-  /* line 80, imports/_media-queries.scss */
+  /* line 84, imports/_media-queries.scss */
   .pull-left-tablet {
     float: left;
   }
 
-  /* line 84, imports/_media-queries.scss */
+  /* line 88, imports/_media-queries.scss */
   .no-padding-tablet {
     padding: 0 !important;
   }
 
-  /* line 88, imports/_media-queries.scss */
+  /* line 92, imports/_media-queries.scss */
   .visible-desktop {
     display: none;
   }
@@ -2229,7 +2234,7 @@ button[disabled] {
   padding: 20px 65px 15px;
   position: relative;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 5px;
 }
 /* line 74, modules/_buttons.scss */
@@ -2252,7 +2257,7 @@ button[disabled] {
   padding: 20px 65px 15px;
   position: relative;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 5px;
 }
 /* line 98, modules/_buttons.scss */
@@ -2459,7 +2464,7 @@ button[disabled] {
   -webkit-box-shadow: 0 0 15px 3px #999999;
   box-shadow: 0 0 15px 3px #999999;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: 2px;
   min-width: 0px;
 }
@@ -2501,31 +2506,35 @@ button[disabled] {
   margin-bottom: 25px;
 }
 /* line 72, modules/_landing-page.scss */
+.landing-page .testimonials-wrapper .testimonials-columns-wrapper {
+  max-width: 700px;
+}
+/* line 76, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper .border-right {
   border-right: 2px solid #e7e8e9;
 }
-/* line 76, modules/_landing-page.scss */
+/* line 80, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper p {
   padding: 0;
 }
-/* line 80, modules/_landing-page.scss */
+/* line 84, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper a {
   color: #177f62;
 }
-/* line 84, modules/_landing-page.scss */
+/* line 88, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper hr {
   border: 1px solid #e7e8e9;
   margin: 15px 0;
 }
-/* line 90, modules/_landing-page.scss */
+/* line 94, modules/_landing-page.scss */
 .landing-page .how-does-it-work-wrapper {
   min-width: 400px;
 }
-/* line 94, modules/_landing-page.scss */
+/* line 98, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 98, modules/_landing-page.scss */
+/* line 102, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -2534,7 +2543,7 @@ button[disabled] {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 106, modules/_landing-page.scss */
+/* line 110, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -2543,45 +2552,49 @@ button[disabled] {
   left: 50%;
   margin-left: -156px;
 }
-/* line 113, modules/_landing-page.scss */
+/* line 117, modules/_landing-page.scss */
 .landing-page .about-wrapper {
   margin-top: 60px;
 }
-/* line 116, modules/_landing-page.scss */
+/* line 120, modules/_landing-page.scss */
+.landing-page .about-wrapper .about-image-wrapper {
+  min-width: 202px;
+}
+/* line 124, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-me {
   margin: 15px 30px;
 }
-/* line 120, modules/_landing-page.scss */
+/* line 128, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-about {
   margin: 0 30px 1px;
 }
-/* line 124, modules/_landing-page.scss */
+/* line 132, modules/_landing-page.scss */
 .landing-page .about-wrapper h3 {
   letter-spacing: 5px;
   font-size: 20px;
   margin: 0 30px 30px;
 }
-/* line 130, modules/_landing-page.scss */
+/* line 138, modules/_landing-page.scss */
 .landing-page .about-wrapper a {
   text-decoration: underline;
 }
-/* line 135, modules/_landing-page.scss */
+/* line 143, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 30px 0 36px;
 }
-/* line 138, modules/_landing-page.scss */
+/* line 146, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
 }
-/* line 142, modules/_landing-page.scss */
+/* line 150, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 146, modules/_landing-page.scss */
+/* line 154, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 150, modules/_landing-page.scss */
+/* line 158, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2603,11 +2616,17 @@ button[disabled] {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 164, modules/_landing-page.scss */
+/* line 172, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px;
+}
+/* line 179, modules/_landing-page.scss */
+.landing-page .max-paragraph {
+  display: block;
+  margin: 15px auto;
+  max-width: 395px;
 }
 
 /* line 1, modules/_form.scss */
@@ -3307,17 +3326,21 @@ textarea {
 .page-body a {
   text-decoration: underline;
 }
-/* line 85, modules/_content.scss */
+/* line 84, modules/_content.scss */
+.page-body a.button-cta {
+  text-decoration: none;
+}
+/* line 91, modules/_content.scss */
 .page-body img, .page-body video {
   display: table-cell;
   margin: 30px auto;
 }
-/* line 90, modules/_content.scss */
+/* line 96, modules/_content.scss */
 .page-body .exercise {
   padding: 45px 30px 30px;
   position: relative;
 }
-/* line 96, modules/_content.scss */
+/* line 102, modules/_content.scss */
 .page-body .exercise:before {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: 0 -159px;
@@ -3335,7 +3358,7 @@ textarea {
   content: "";
   display: block;
 }
-/* line 108, modules/_content.scss */
+/* line 114, modules/_content.scss */
 .page-body .exercise .link-list-item:after {
   top: 4px;
 }
