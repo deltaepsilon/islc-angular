@@ -101,7 +101,6 @@ angular.module('islcAngularApp')
     $rootScope.addToCart = function (id, quantity) {
       var deferred = $q.defer();
 
-      cartService.clearCache();
       cartService.add(id, quantity).then(function (cart) {
         if (cart.error) {
           notificationService.error('Cart', cart.error);

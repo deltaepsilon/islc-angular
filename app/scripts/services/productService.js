@@ -2,7 +2,14 @@
 
 angular.module('islcAngularApp')
   .service('productService', function productService($rootScope, $filter, Restangular, mockService, _, cacheService) {
-    var cache = cacheService.get();
+    var cache = cacheService.get(),
+      clearCache = function (slug) {
+        if (!slug) {
+          cache.remove('/angular/product');
+        } else {
+          cache.remove('/angular/product/' + slug);
+        }
+      };
 
     Restangular.setBaseUrl('/angular');
 
@@ -16,14 +23,7 @@ angular.module('islcAngularApp')
 
       },
 
-      clearCache: function (slug) {
-        if (!slug) {
-          cache.remove('/angular/product');
-        } else {
-          cache.remove('/angular/product/' + slug);
-        }
-
-      },
+      clearCache: clearCache,
 
       getTable: function (products) {
         var table = mockService.getProductsTable(),

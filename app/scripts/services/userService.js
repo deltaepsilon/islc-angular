@@ -2,7 +2,10 @@
 
 angular.module('islcAngularApp')
   .service('userService', function userService($rootScope, Restangular, cacheService) {
-    var cache = cacheService.get();
+    var cache = cacheService.get(),
+      clearCache = function () {
+        cache.remove('/angular/user');
+      };
 
     Restangular.setBaseUrl('/angular');
 
@@ -13,13 +16,9 @@ angular.module('islcAngularApp')
       },
 
       update: function (user) {
-        var promise = Restangular.all('user').post(user);
+        clearCache();
+        return Restangular.all('user').post(user);
 
-        promise.then(function (user) {
-          cache.remove('/angular/user');
-        });
-
-        return promise;
       }
     }
   });

@@ -43,7 +43,6 @@ angular.module('islcAngularApp')
     }
 
     $rootScope.addToCart = function (id, quantity) {
-      cartService.clearCache();
       cartService.add(id, quantity).then(function (cart) {
         if (cart.error) {
           notificationService.error('Cart', cart.error);
@@ -61,7 +60,7 @@ angular.module('islcAngularApp')
               } else {
                 $scope.products = res;
               }
-
+O
             }
           });
         }

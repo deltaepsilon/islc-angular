@@ -2,7 +2,10 @@
 
 angular.module('islcAngularApp')
   .service('cartService', function cartService(Restangular, $rootScope, Analytics, $state, cacheService) {
-    var cache = cacheService.get();
+    var cache = cacheService.get(),
+      clearCache = function () {
+        cache.remove('/angular/cart');
+      };
 
     Restangular.setBaseUrl('/angular');
 
@@ -13,6 +16,7 @@ angular.module('islcAngularApp')
       },
 
       add: function (productId, quantity) {
+        clearCache();
         var query = {
           product_id: productId,
           quantity: quantity || 1
@@ -24,6 +28,7 @@ angular.module('islcAngularApp')
       },
 
       update: function (productId, quantity) {
+        clearCache();
         var query = {
           product_id: productId,
           quantity: quantity
@@ -31,15 +36,15 @@ angular.module('islcAngularApp')
         return Restangular.all('cart/update').post(query);
       },
 
-      clearCache: function () {
-        cache.remove('/angular/cart');
-      },
+      clearCache: clearCache,
 
       setDiscount: function (code) {
+        clearCache();
         return Restangular.all('discount').post({code: code});
       },
 
       checkout: function () {
+        clearCache();
         var promise = Restangular.one('stripe/checkout').get();
 
         promise.then(function (transaction) {

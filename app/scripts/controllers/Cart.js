@@ -39,7 +39,6 @@ angular.module('islcAngularApp')
     setDefaults();
 
     $scope.updateCart = function (id, quantity) {
-      cartService.clearCache();
       cartService.update(id, quantity || 0).then(function (cart) {
         if (cart.error) {
           notificationService.error('Cart', cart.error);
@@ -50,7 +49,6 @@ angular.module('islcAngularApp')
     };
 
     $scope.updateCartProduct = function (product) {
-      cartService.clearCache();
       if (product.id && product.quantity) {
         $scope.updateCart(product.id, product.quantity);
       } else if (product.quantity && product.quantity < 1) {

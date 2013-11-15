@@ -22,7 +22,7 @@
                 <tr ng-repeat="subscription in subscriptions">
                     <td>
                         <a ng-show="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">
-                            <img class="key-image" ng-src="{{ subscription.product.key_image }}" alt="{{ subscription.slug }}"/>
+                            <img class="key-image visible-tablet" ng-src="{{ subscription.product.key_image }}" alt="{{ subscription.slug }}"/>
                         </a>
 
                     </td>
