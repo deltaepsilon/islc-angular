@@ -24,10 +24,25 @@
 
   $button-cta-min-width: 0px;
   .button-cta {
+    @include border-radius(4px);
+    @include boxShadow(0, 0, 15px, 3px, getColor(gray4));
+
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 2px;
     min-width: $button-cta-min-width;
+
+    &:after {
+      visibility: hidden;
+    }
+
+    &:hover {
+      @include boxShadow(0, 0, 20px, 3px, getColor(gray4));
+
+      &:after {
+        visibility: visible;
+      }
+    }
   }
 
   .background-make-paper-sing {
@@ -53,6 +68,25 @@
     margin-bottom: 25px;
   }
 
+  .testimonials-wrapper {
+    .border-right {
+      border-right: 2px solid getColor(gray0);
+    }
+
+    p {
+      padding: 0;
+    }
+
+    a {
+      color: getColor(green2);
+    }
+
+    hr {
+      border: 1px solid getColor(gray0);
+      margin: 15px 0;
+    }
+  }
+
   .how-does-it-work-wrapper {
     min-width: 400px;
   }
@@ -76,8 +110,30 @@
     }
   }
 
+  .about-wrapper {
+    margin-top: 60px;
+
+    .background-me {
+      margin: 15px 30px;
+    }
+
+    .background-about {
+      margin: 0 30px 1px;
+    }
+
+    h3 {
+      letter-spacing: 5px;
+      font-size: 20px;
+      margin: 0 30px 30px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
   .email-footer {
-    margin: 200px 0 36px;
+    margin: 30px 0 36px;
 
     .email-footer-item {
      margin-bottom: 15px;

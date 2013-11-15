@@ -957,6 +957,176 @@ this the same font stack that Normalize.css sets for the `body`.
     display: none;
   }
 }
+/*!
+Pure v0.3.0
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yui/pure/blob/master/LICENSE.md
+*/
+/*csslint adjoining-classes:false, outline-none:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+/* line 10, pure/_menus.scss */
+.pure-menu ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* line 15, pure/_menus.scss */
+.pure-menu.pure-menu-open {
+  visibility: visible;
+  z-index: 2;
+  width: 100%;
+}
+
+/* line 21, pure/_menus.scss */
+.pure-menu ul {
+  left: -10000px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: -10000px;
+  z-index: 1;
+}
+
+/* line 30, pure/_menus.scss */
+.pure-menu > ul {
+  position: relative;
+}
+
+/* line 32, pure/_menus.scss */
+.pure-menu-open > ul {
+  left: 0;
+  top: 0;
+  visibility: visible;
+}
+
+/* line 38, pure/_menus.scss */
+.pure-menu-open > ul:focus {
+  outline: 0;
+}
+
+/* line 42, pure/_menus.scss */
+.pure-menu li {
+  position: relative;
+}
+
+/* line 45, pure/_menus.scss */
+.pure-menu a,
+.pure-menu .pure-menu-heading {
+  display: block;
+  color: inherit;
+  line-height: 1.5em;
+  padding: 5px 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* line 54, pure/_menus.scss */
+.pure-menu.pure-menu-horizontal > .pure-menu-heading {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* line 61, pure/_menus.scss */
+.pure-menu.pure-menu-horizontal > ul {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  height: 2.4em;
+}
+
+/* line 69, pure/_menus.scss */
+.pure-menu li a {
+  padding: 5px 20px;
+}
+
+/* line 71, pure/_menus.scss */
+.pure-menu-can-have-children > .pure-menu-label:after {
+  content: '\25B8';
+  float: right;
+  /* These specific fonts have the Unicode char we need. */
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+  margin-right: -20px;
+  margin-top: -1px;
+}
+
+/* line 80, pure/_menus.scss */
+.pure-menu-can-have-children > .pure-menu-label {
+  padding-right: 30px;
+}
+
+/* line 84, pure/_menus.scss */
+.pure-menu-separator {
+  background-color: #dfdfdf;
+  display: block;
+  height: 1px;
+  font-size: 0;
+  margin: 7px 2px;
+  overflow: hidden;
+}
+
+/* line 93, pure/_menus.scss */
+.pure-menu-hidden {
+  display: none;
+}
+
+/* FIXED MENU */
+/* line 98, pure/_menus.scss */
+.pure-menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* HORIZONTAL MENU CODE */
+/* Initial menus should be inline-block so that they are horizontal */
+/* line 109, pure/_menus.scss */
+.pure-menu-horizontal li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+/* Submenus should still be display: block; */
+/* line 117, pure/_menus.scss */
+.pure-menu-horizontal li li {
+  display: block;
+}
+
+/* Content after should be down arrow */
+/* line 122, pure/_menus.scss */
+.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label:after {
+  content: "\25BE";
+}
+
+/*Add extra padding to elements that have the arrow so that the hover looks nice */
+/* line 126, pure/_menus.scss */
+.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label {
+  padding-right: 30px;
+}
+
+/* Adjusting separator for vertical menus */
+/* line 131, pure/_menus.scss */
+.pure-menu-horizontal li.pure-menu-separator {
+  height: 50%;
+  width: 1px;
+  margin: 0 7px;
+}
+
+/* Submenus should be horizontal separator again */
+/* line 138, pure/_menus.scss */
+.pure-menu-horizontal li li.pure-menu-separator {
+  height: 1px;
+  width: auto;
+  margin: 7px 2px;
+}
+
 @font-face {
   font-family: 'Museo Sans';
   src: url("../fonts/exljbris_-_museosans-100-webfont.eot");
@@ -1229,7 +1399,7 @@ this the same font stack that Normalize.css sets for the `body`.
  * 2. create background image for pixel ratio 2 screens and put it somewhere in your images folder.
  * 3. include the background-image property in your Sass/Scss using: '@include background-retina(<ratio-1-imagefile>, <ratio-2-imagefile>)'
  */
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-beginner {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: -576px -80px;
@@ -1240,7 +1410,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 121px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-how-does-it-work {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: 0 -543px;
@@ -1251,7 +1421,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 334px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-islc-logo {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: -328px -159px;
@@ -1262,7 +1432,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 311px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-learn-your-way {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: -387px -80px;
@@ -1273,7 +1443,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 189px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-left-arrow {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: -48px -80px;
@@ -1284,7 +1454,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 16px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-make-paper-sing {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: 0 -385px;
@@ -1295,7 +1465,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 763px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-personal-feedback {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: -177px -80px;
@@ -1306,7 +1476,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 210px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-right-arrow {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: -64px -80px;
@@ -1317,7 +1487,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 16px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-student-work {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: 0 -109px;
@@ -1328,7 +1498,7 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 524px;
 }
 
-/* line 15, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
 .background-thankyou {
   background-image: url('../images/icons-s9013f289c6.png');
   background-position: 0 -264px;
@@ -1339,102 +1509,217 @@ this the same font stack that Normalize.css sets for the `body`.
   width: 451px;
 }
 
-/* line 21, imports/_sprites.scss */
-.background-background {
-  background-image: url("../images/backgrounds/background3.png");
+/* line 23, imports/_sprites.scss */
+.background-testimonials {
+  background-image: url('../images/icons-s9013f289c6.png');
+  background-position: -334px -543px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 52px;
+  width: 335px;
 }
 
-/* line 26, imports/_sprites.scss */
+/* line 23, imports/_sprites.scss */
+.background-about {
+  background-image: url('../images/icons-s9013f289c6.png');
+  background-position: -203px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 44px;
+  width: 170px;
+}
+
+/* line 23, imports/_sprites.scss */
+.background-twitter {
+  background-image: url('../images/icons-s9013f289c6.png');
+  background-position: -83px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 23, imports/_sprites.scss */
+.background-facebook {
+  background-image: url('../images/icons-s9013f289c6.png');
+  background-position: -113px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 23, imports/_sprites.scss */
+.background-shop {
+  background-image: url('../images/icons-s9013f289c6.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 23, imports/_sprites.scss */
+.background-pinterest {
+  background-image: url('../images/icons-s9013f289c6.png');
+  background-position: -173px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 23, imports/_sprites.scss */
+.background-instagram {
+  background-image: url('../images/icons-s9013f289c6.png');
+  background-position: -30px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 23, imports/_sprites.scss */
+.background-youtube {
+  background-image: url('../images/icons-s9013f289c6.png');
+  background-position: -143px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 29, imports/_sprites.scss */
+.background-background {
+  background-image: url("../images/backgrounds/background1.png");
+}
+
+/* line 34, imports/_sprites.scss */
 .background-background-gray {
   background-image: url("../images/backgrounds/background-gray.png");
 }
 
-/* line 15, imports/_colors.scss */
+/* line 39, imports/_sprites.scss */
+.background-me {
+  background-image: url("../images/photos/me.png");
+  height: 172px;
+  width: 172px;
+}
+
+/* line 17, imports/_colors.scss */
 .background-green1, .qv-table th {
   background-color: #98ccb6;
 }
 
-/* line 15, imports/_colors.scss */
+/* line 17, imports/_colors.scss */
 .background-green2 {
   background-color: #177f62;
 }
 
-/* line 15, imports/_colors.scss */
+/* line 17, imports/_colors.scss */
+.background-gray0 {
+  background-color: #e7e8e9;
+}
+
+/* line 17, imports/_colors.scss */
 .background-gray1, .qv-form [required], .table-width .thead-bar:before, #cart .sub-total, .card-form, .products-wrapper .product-image, #gallery .comment, .page-body .exercise {
   background-color: #f2f2f2;
 }
 
-/* line 15, imports/_colors.scss */
+/* line 17, imports/_colors.scss */
 .background-gray2 {
   background-color: #dddddd;
 }
 
-/* line 15, imports/_colors.scss */
+/* line 17, imports/_colors.scss */
 .background-gray3 {
   background-color: #414141;
 }
 
-/* line 15, imports/_colors.scss */
+/* line 17, imports/_colors.scss */
+.background-gray4 {
+  background-color: #999999;
+}
+
+/* line 17, imports/_colors.scss */
 .background-red1 {
   background-color: #bd3f42;
 }
 
-/* line 15, imports/_colors.scss */
+/* line 17, imports/_colors.scss */
 .background-gray, .modal-backdrop {
   background-color: #333333;
 }
 
-/* line 15, imports/_colors.scss */
+/* line 17, imports/_colors.scss */
 .background-white, #gallery .image-wrapper:after, #gallery .comment:nth-child(2n), .qv-slider .qv-slider-image, .qv-slider .qv-slider-button {
   background-color: white;
 }
 
-/* line 15, imports/_colors.scss */
+/* line 17, imports/_colors.scss */
 .background-black, .products-wrapper .product-image-wrapper .product-hidden-button:hover {
   background-color: black;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
 .text-green1 {
   color: #98ccb6;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
 .text-green2, .page-body h2, .page-body h3, .page-body a {
   color: #177f62;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
+.text-gray0 {
+  color: #e7e8e9;
+}
+
+/* line 24, imports/_colors.scss */
 .text-gray1 {
   color: #f2f2f2;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
 .text-gray2 {
   color: #dddddd;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
 .text-gray3, html, button, a {
   color: #414141;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
+.text-gray4 {
+  color: #999999;
+}
+
+/* line 24, imports/_colors.scss */
 .text-red1 {
   color: #bd3f42;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
 .text-gray {
   color: #333333;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
 .text-white, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .button-cta, .page-body h1 {
   color: white;
 }
 
-/* line 22, imports/_colors.scss */
+/* line 24, imports/_colors.scss */
 .text-black {
   color: black;
 }
@@ -1599,7 +1884,7 @@ h2 {
 
 /* line 157, imports/_global.scss */
 .background-repeating, .button-cta {
-  background-image: url("../images/backgrounds/background3.png");
+  background-image: url("../images/backgrounds/background1.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
@@ -1632,61 +1917,66 @@ h2 {
 }
 
 /* line 185, imports/_global.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 189, imports/_global.scss */
 .clear-both {
   clear: both;
 }
 
-/* line 189, imports/_global.scss */
+/* line 193, imports/_global.scss */
 .span-1 {
   width: 10%;
 }
 
-/* line 193, imports/_global.scss */
+/* line 197, imports/_global.scss */
 .span-2 {
   width: 20%;
 }
 
-/* line 197, imports/_global.scss */
+/* line 201, imports/_global.scss */
 .span-3 {
   width: 30%;
 }
 
-/* line 201, imports/_global.scss */
+/* line 205, imports/_global.scss */
 .span-4 {
   width: 40%;
 }
 
-/* line 205, imports/_global.scss */
+/* line 209, imports/_global.scss */
 .span-5 {
   width: 50%;
 }
 
-/* line 209, imports/_global.scss */
+/* line 213, imports/_global.scss */
 .span-6 {
   width: 60%;
 }
 
-/* line 213, imports/_global.scss */
+/* line 217, imports/_global.scss */
 .span-7 {
   width: 70%;
 }
 
-/* line 217, imports/_global.scss */
+/* line 221, imports/_global.scss */
 .span-8 {
   width: 80%;
 }
 
-/* line 220, imports/_global.scss */
+/* line 224, imports/_global.scss */
 .span-9 {
   width: 90%;
 }
 
-/* line 224, imports/_global.scss */
+/* line 228, imports/_global.scss */
 .span-10 {
   width: 100%;
 }
 
-/* line 228, imports/_global.scss */
+/* line 232, imports/_global.scss */
 .max-700 {
   max-width: 700px;
 }
@@ -1760,30 +2050,35 @@ h2 {
   .padded-wrapper {
     padding: 5px 10px;
   }
+
+  /* line 64, imports/_media-queries.scss */
+  .bordered-tablet {
+    border: none !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 67, imports/_media-queries.scss */
+  /* line 71, imports/_media-queries.scss */
   .centered-tablet {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 72, imports/_media-queries.scss */
+  /* line 76, imports/_media-queries.scss */
   .pull-right-tablet {
     float: right;
   }
 
-  /* line 76, imports/_media-queries.scss */
+  /* line 80, imports/_media-queries.scss */
   .pull-left-tablet {
     float: left;
   }
 
-  /* line 80, imports/_media-queries.scss */
+  /* line 84, imports/_media-queries.scss */
   .no-padding-tablet {
     padding: 0 !important;
   }
 
-  /* line 84, imports/_media-queries.scss */
+  /* line 88, imports/_media-queries.scss */
   .visible-desktop {
     display: none;
   }
@@ -2088,6 +2383,15 @@ button[disabled] {
   padding: 15px 0 45px;
   text-align: center;
 }
+/* line 9, modules/_footer.scss */
+#copyright-footer .pure-menu-horizontal {
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 14, modules/_footer.scss */
+#copyright-footer .social-button {
+  display: block;
+}
 
 /* line 9, modules/_login.scss */
 [action="login_check"] div {
@@ -2148,43 +2452,80 @@ button[disabled] {
 }
 /* line 26, modules/_landing-page.scss */
 .landing-page .button-cta {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 15px 3px #999999;
+  -webkit-box-shadow: 0 0 15px 3px #999999;
+  box-shadow: 0 0 15px 3px #999999;
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   min-width: 0px;
 }
-/* line 33, modules/_landing-page.scss */
+/* line 35, modules/_landing-page.scss */
+.landing-page .button-cta:after {
+  visibility: hidden;
+}
+/* line 39, modules/_landing-page.scss */
+.landing-page .button-cta:hover {
+  -moz-box-shadow: 0 0 20px 3px #999999;
+  -webkit-box-shadow: 0 0 20px 3px #999999;
+  box-shadow: 0 0 20px 3px #999999;
+}
+/* line 42, modules/_landing-page.scss */
+.landing-page .button-cta:hover:after {
+  visibility: visible;
+}
+/* line 48, modules/_landing-page.scss */
 .landing-page .background-make-paper-sing {
   margin: 50px auto;
 }
-/* line 37, modules/_landing-page.scss */
+/* line 52, modules/_landing-page.scss */
 .landing-page .triple {
   border-width: 2px;
   margin-bottom: 47px;
   padding: 18px;
 }
-/* line 42, modules/_landing-page.scss */
+/* line 57, modules/_landing-page.scss */
 .landing-page .triple p {
   margin: 17px;
   line-height: 24px;
 }
-/* line 48, modules/_landing-page.scss */
+/* line 63, modules/_landing-page.scss */
 .landing-page .student-work {
   margin-bottom: 50px;
 }
-/* line 52, modules/_landing-page.scss */
+/* line 67, modules/_landing-page.scss */
 .landing-page .background-student-work {
   margin-bottom: 25px;
 }
-/* line 56, modules/_landing-page.scss */
+/* line 72, modules/_landing-page.scss */
+.landing-page .testimonials-wrapper .border-right {
+  border-right: 2px solid #e7e8e9;
+}
+/* line 76, modules/_landing-page.scss */
+.landing-page .testimonials-wrapper p {
+  padding: 0;
+}
+/* line 80, modules/_landing-page.scss */
+.landing-page .testimonials-wrapper a {
+  color: #177f62;
+}
+/* line 84, modules/_landing-page.scss */
+.landing-page .testimonials-wrapper hr {
+  border: 1px solid #e7e8e9;
+  margin: 15px 0;
+}
+/* line 90, modules/_landing-page.scss */
 .landing-page .how-does-it-work-wrapper {
   min-width: 400px;
 }
-/* line 60, modules/_landing-page.scss */
+/* line 94, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 64, modules/_landing-page.scss */
+/* line 98, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -2193,7 +2534,7 @@ button[disabled] {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 72, modules/_landing-page.scss */
+/* line 106, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -2202,23 +2543,45 @@ button[disabled] {
   left: 50%;
   margin-left: -156px;
 }
-/* line 79, modules/_landing-page.scss */
-.landing-page .email-footer {
-  margin: 200px 0 36px;
+/* line 113, modules/_landing-page.scss */
+.landing-page .about-wrapper {
+  margin-top: 60px;
 }
-/* line 82, modules/_landing-page.scss */
+/* line 116, modules/_landing-page.scss */
+.landing-page .about-wrapper .background-me {
+  margin: 15px 30px;
+}
+/* line 120, modules/_landing-page.scss */
+.landing-page .about-wrapper .background-about {
+  margin: 0 30px 1px;
+}
+/* line 124, modules/_landing-page.scss */
+.landing-page .about-wrapper h3 {
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin: 0 30px 30px;
+}
+/* line 130, modules/_landing-page.scss */
+.landing-page .about-wrapper a {
+  text-decoration: underline;
+}
+/* line 135, modules/_landing-page.scss */
+.landing-page .email-footer {
+  margin: 30px 0 36px;
+}
+/* line 138, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
 }
-/* line 86, modules/_landing-page.scss */
+/* line 142, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 90, modules/_landing-page.scss */
+/* line 146, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 94, modules/_landing-page.scss */
+/* line 150, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2240,7 +2603,7 @@ button[disabled] {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 108, modules/_landing-page.scss */
+/* line 164, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;

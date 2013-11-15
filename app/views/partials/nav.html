@@ -12,19 +12,19 @@
     <div class="pure-u-3-5 relative">
         <ul id="nav-links" class="pure-menu-horizontal">
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('logout')" href="/logout">log out</a>
+                <a class="nav-link" ng-show="showLink('logout')" href="/logout" rel="nofollow">log out</a>
             </li>
 
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('account')" ui-sref="account" qv-active>account</a>
+                <a class="nav-link" ng-show="showLink('account')" ui-sref="account" rel="nofollow" qv-active>account</a>
             </li>
 
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('login')" ui-sref="login" qv-active>log in</a>
+                <a class="nav-link" ng-show="showLink('login')" ui-sref="login" rel="nofollow" qv-active>log in</a>
             </li>
 
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('register')" ui-sref="register" qv-active>register</a>
+                <a class="nav-link" ng-show="showLink('register')" ui-sref="register" rel="nofollow" qv-active>register</a>
             </li>
 
             <li class="nav-link-item">
@@ -40,15 +40,15 @@
             </li>
 
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('gallery')" ui-sref="gallery" qv-active>gallery</a>
+                <a class="nav-link" ng-show="showLink('gallery')" ui-sref="gallery" rel="nofollow" qv-active>gallery</a>
             </li>
 
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('subscriptions')" ui-sref="subscriptions" qv-active>subscriptions</a>
+                <a class="nav-link" ng-show="showLink('subscriptions')" ui-sref="subscriptions" rel="nofollow" qv-active>subscriptions</a>
             </li>
 
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="cart.products" ui-sref="cart" qv-active>
+                <a class="nav-link" ng-show="cart.products" ui-sref="cart" rel="nofollow" qv-active>
                     cart
                     <span ng-show="cart.count">({{ cart.count }})</span>
                 </a>

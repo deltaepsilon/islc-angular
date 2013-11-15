@@ -8,7 +8,15 @@ $sprites:
   personal-feedback,
   right-arrow,
   student-work,
-  thankyou;
+  thankyou,
+  testimonials,
+  about,
+  twitter,
+  facebook,
+  shop,
+  pinterest,
+  instagram,
+  youtube;
 
 // Sprites
 @each $sprite in $sprites {
@@ -17,7 +25,7 @@ $sprites:
   }
 }
 
-$background-url: url('../images/backgrounds/background3.png');
+$background-url: url('../images/backgrounds/background1.png');
 .background-background {
   background-image: $background-url;
 }
@@ -25,4 +33,11 @@ $background-url: url('../images/backgrounds/background3.png');
 $background-gray-url: url('../images/backgrounds/background-gray.png');
 .background-background-gray {
   background-image: $background-gray-url;
+}
+
+$me-url: url('../images/photos/me.png');
+.background-me {
+  background-image: $me-url;
+  height: 172px;
+  width: 172px;
 }
