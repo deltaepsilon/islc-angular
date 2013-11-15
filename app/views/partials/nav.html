@@ -12,23 +12,7 @@
     <div class="pure-u-3-5 relative">
         <ul id="nav-links" class="pure-menu-horizontal">
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('logout')" href="/logout" rel="nofollow">log out</a>
-            </li>
-
-            <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('account')" ui-sref="account" rel="nofollow" qv-active>account</a>
-            </li>
-
-            <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('login')" ui-sref="login" rel="nofollow" qv-active>log in</a>
-            </li>
-
-            <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('register')" ui-sref="register" rel="nofollow" qv-active>register</a>
-            </li>
-
-            <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('faq')" ui-sref="faq" qv-active>faq</a>
+                <a class="nav-link" ng-show="showLink('products')" ui-sref="products" qv-active>products</a>
             </li>
 
             <li class="nav-link-item">
@@ -36,15 +20,15 @@
             </li>
 
             <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('products')" ui-sref="products" qv-active>products</a>
-            </li>
-
-            <li class="nav-link-item">
-                <a class="nav-link" ng-show="showLink('gallery')" ui-sref="gallery" rel="nofollow" qv-active>gallery</a>
+                <a class="nav-link" ng-show="showLink('faq')" ui-sref="faq" qv-active>faq</a>
             </li>
 
             <li class="nav-link-item">
                 <a class="nav-link" ng-show="showLink('subscriptions')" ui-sref="subscriptions" rel="nofollow" qv-active>subscriptions</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('gallery')" ui-sref="gallery" rel="nofollow" qv-active>gallery</a>
             </li>
 
             <li class="nav-link-item">
@@ -54,14 +38,25 @@
                 </a>
             </li>
 
-            <!--<li class="nav-link-item" ng-repeat="link in links">-->
-                <!--<a class="nav-link" ng-href="{{ link.href }}" ng-show="showLink(link.state)">{{ link.text }}</a>-->
-            <!--</li>-->
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('account')" ui-sref="account" rel="nofollow" qv-active>account</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('register')" ui-sref="register" rel="nofollow" qv-active>register</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('login')" ui-sref="login" rel="nofollow" qv-active>log in</a>
+            </li>
+
+            <li class="nav-link-item">
+                <a class="nav-link" ng-show="showLink('logout')" href="/logout" rel="nofollow">log out</a>
+            </li>
+
         </ul>
 
     </div>
-
-    <!--<div id="nav-stretch" class="pure-u-1-5 pure-visible-desktop"></div>-->
 
 
 </div>
