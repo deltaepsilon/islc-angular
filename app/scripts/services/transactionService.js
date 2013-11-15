@@ -1,7 +1,11 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('transactionService', function transactionService(Restangular, mockService, _, $filter) {
+  .service('transactionService', function transactionService(Restangular, mockService, _, $filter, cacheService) {
+    var cache = cacheService.get(),
+      clearCache = function () {
+        cache.remove('/angular/transaction');
+      };
     Restangular.setBaseUrl('/angular');
 
     return {
@@ -9,6 +13,8 @@ angular.module('islcAngularApp')
         return Restangular.one('transaction', id).get();
 
       },
+
+      clearCache: clearCache,
 
       getTable: function (transactions) {
         var table = mockService.getTransactionTable();

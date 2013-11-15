@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('CartCtrl', function ($scope, $rootScope, $state, cartService, notificationService, stripeService, _, moment, cart, token, $timeout, subscriptionService) {
+  .controller('CartCtrl', function ($scope, $rootScope, $state, cartService, notificationService, stripeService, _, moment, cart, token, $timeout, subscriptionService, transactionService) {
     if (!$rootScope.cart) {
       $rootScope.cart = cart;
     }
@@ -98,6 +98,7 @@ angular.module('islcAngularApp')
           notificationService.error('Checkout', transaction.error);
         } else {
           subscriptionService.clearCache();
+          transactionService.clearCache();
           subscriptionService.get().then(function (subscriptions) {
             $state.go('transaction', {id: transaction.id});
           });
