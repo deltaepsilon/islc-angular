@@ -60,7 +60,7 @@ angular.module('islcAngularApp')
               } else {
                 $scope.products = res;
               }
-O
+
             }
           });
         }
