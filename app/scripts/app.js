@@ -26,9 +26,13 @@ angular.module('islcAngularApp', [
 
     AnalyticsProvider.setAccount('UA-6859198-11');
     AnalyticsProvider.trackPages(true);
-    AnalyticsProvider.useAnalytics(true);
-    AnalyticsProvider.useECommerce(true);
+    AnalyticsProvider.setDomainName(location.hostname);
     AnalyticsProvider.setPageEvent('$stateChangeSuccess');
+
+    // Use analytics.js
+//    AnalyticsProvider.useAnalytics(true);
+//    AnalyticsProvider.useECommerce(true);
+
 
 
     var secureRoutes = ['gallery', 'content', 'subscriptions', 'account'],
