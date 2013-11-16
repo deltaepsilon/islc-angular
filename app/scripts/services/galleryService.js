@@ -1,7 +1,11 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('galleryService', function galleryService($rootScope, Restangular) {
+  .service('galleryService', function galleryService($rootScope, Restangular, cacheService) {
+    var cache = cacheService.get(),
+      cacheClear = function () {
+        cache.remove('/angular/gallery')
+      };
     Restangular.setBaseUrl('/angular');
 
     return {
@@ -18,6 +22,7 @@ angular.module('islcAngularApp')
       },
 
       addComment: function (id, comment) {
+        cache.remove('/angular/gallery/' + id);
         return Restangular.one('gallery', id).all('comment').post({comment: comment});
       }
     }

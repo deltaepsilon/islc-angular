@@ -12,7 +12,6 @@ angular.module('islcAngularApp')
 
     });
     $scope.gallery = gallery;
-    console.log('gallery', gallery);
 
     $scope.addComment = function (newComment) {
       galleryService.addComment($scope.gallery.id, $sanitize(newComment)).then(function (res) {

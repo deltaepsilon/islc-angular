@@ -20,6 +20,7 @@ angular.module('islcAngularApp')
     });
 
     $rootScope.$on('iFrameLoad', function (e, value) {
+      gallerService.cacheClear();
       galleryService.get(null, true).then(function (galleries) {
         $rootScope.galleries = galleries;
 
