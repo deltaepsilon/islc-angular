@@ -34,12 +34,12 @@
                     <tbody>
                         <tr ng-class="'product-row-' + $index" ng-repeat="product in cart.products">
                             <td class="product-image">
-                                <a class="visible-tablet" ui-sref="product({id: product.id})">
+                                <a class="visible-tablet" ui-sref="product({slug: product.slug})">
                                     <img ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
                                 </a>
                             </td>
                             <td class="product-title-and-description">
-                                <a class="product-title button-link" ui-sref="product({id: product.id})">{{ product.title }}</a>
+                                <a class="product-title button-link" ui-sref="product({slug: product.slug})">{{ product.title }}</a>
                                 <div class="product-description">
                                     <markdown class="visible-tablet" ng-model="product.description" line-breaks="true" strip="true" qv-truncate="195"></markdown>
                                 </div>

@@ -10,7 +10,6 @@ $sprites:
   student-work,
   thankyou,
   testimonials,
-  about,
   twitter,
   facebook,
   shop,
@@ -23,6 +22,10 @@ $sprites:
   .background-#{$sprite} {
     @include use-sprite($sprite);
   }
+}
+
+.background-about {
+  @include use-sprite(about, -2px);
 }
 
 $background-url: url('../images/backgrounds/background1.png');
@@ -38,6 +41,7 @@ $background-gray-url: url('../images/backgrounds/background-gray.png');
 $me-url: url('../images/photos/me.png');
 .background-me {
   background-image: $me-url;
+  background-size: 172px;
   height: 172px;
   width: 172px;
 }

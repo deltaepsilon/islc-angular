@@ -33,8 +33,7 @@
 
             <li class="nav-link-item">
                 <a class="nav-link" ng-show="cart.products" ui-sref="cart" rel="nofollow" qv-active>
-                    cart
-                    <span ng-show="cart.count">({{ cart.count }})</span>
+                    <span ng-show="cart.count" style="white-space: nowrap;">cart (<span ng-bind="cart.count"></span>)</span>
                 </a>
             </li>
 
