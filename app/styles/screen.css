@@ -2343,21 +2343,22 @@ button[disabled] {
   background-position: -328px -132px;
   height: 111.33333px;
   width: 318.66667px;
-  left: -2px;
+  left: -5px;
+  top: -4px;
   margin: 3px auto 0px;
   position: relative;
 }
-/* line 30, modules/_nav.scss */
+/* line 31, modules/_nav.scss */
 #top-nav #nav-links {
   text-align: center;
   padding-left: 0;
 }
-/* line 35, modules/_nav.scss */
+/* line 36, modules/_nav.scss */
 #top-nav .nav-link-item {
   cursor: pointer;
   float: left;
 }
-/* line 40, modules/_nav.scss */
+/* line 41, modules/_nav.scss */
 #top-nav .nav-link {
   display: inline-block;
   font-size: 14px;
@@ -2365,17 +2366,17 @@ button[disabled] {
   padding: 10px 20px;
   text-transform: uppercase;
 }
-/* line 47, modules/_nav.scss */
+/* line 48, modules/_nav.scss */
 #top-nav .nav-link:hover, #top-nav .nav-link.active {
   text-decoration: underline;
 }
-/* line 51, modules/_nav.scss */
+/* line 52, modules/_nav.scss */
 #top-nav .nav-link.active {
   cursor: default;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 60, modules/_nav.scss */
+  /* line 61, modules/_nav.scss */
   #top-nav .islc-logo {
     overflow: hidden;
     display: block;
@@ -2390,13 +2391,13 @@ button[disabled] {
   }
 }
 @media (max-width: 767px) {
-  /* line 75, modules/_nav.scss */
+  /* line 76, modules/_nav.scss */
   .nav-link-item {
     float: none !important;
   }
 }
 @media (min-width: 1100px) {
-  /* line 81, modules/_nav.scss */
+  /* line 82, modules/_nav.scss */
   #nav-links {
     float: left;
   }
