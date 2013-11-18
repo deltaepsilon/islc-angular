@@ -2,7 +2,6 @@
 
 angular.module('islcAngularApp')
   .service('addressService', function addressService(Restangular) {
-    Restangular.setBaseUrl('/angular');
 
     return {
       get: function () {

@@ -7,8 +7,6 @@ angular.module('islcAngularApp')
         cache.remove('/angular/user');
       };
 
-    Restangular.setBaseUrl('/angular');
-
     return {
       get: function () {
         return Restangular.one('user').get();

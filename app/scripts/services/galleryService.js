@@ -6,7 +6,6 @@ angular.module('islcAngularApp')
       cacheClear = function () {
         cache.remove('/angular/gallery')
       };
-    Restangular.setBaseUrl('/angular');
 
     return {
       get: function (id) {

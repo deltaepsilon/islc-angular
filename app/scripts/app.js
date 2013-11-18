@@ -19,6 +19,7 @@ angular.module('islcAngularApp', [
   .config(function ($locationProvider, $stateProvider, $urlRouterProvider, AnalyticsProvider, RestangularProvider) {
 
     restangularProvider = RestangularProvider
+    RestangularProvider.setBaseUrl('/angular');
 
     $locationProvider.hashPrefix('!');
 

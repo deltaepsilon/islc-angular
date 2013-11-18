@@ -7,8 +7,6 @@ angular.module('islcAngularApp')
         cache.remove('/angular/cart');
       };
 
-    Restangular.setBaseUrl('/angular');
-
     return {
       get: function () {
         return Restangular.one('cart').get();

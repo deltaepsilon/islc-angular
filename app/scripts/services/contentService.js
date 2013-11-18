@@ -6,7 +6,6 @@ angular.module('islcAngularApp')
       cacheClear = function (slug) {
         cache.remove('/angular/content/' + slug);
       };
-    Restangular.setBaseUrl('/angular');
 
     return {
       get: function (slug) {

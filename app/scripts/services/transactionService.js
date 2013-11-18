@@ -6,7 +6,6 @@ angular.module('islcAngularApp')
       clearCache = function () {
         cache.remove('/angular/transaction');
       };
-    Restangular.setBaseUrl('/angular');
 
     return {
       get: function (id) {

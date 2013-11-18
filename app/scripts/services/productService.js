@@ -11,8 +11,6 @@ angular.module('islcAngularApp')
         }
       };
 
-    Restangular.setBaseUrl('/angular');
-
     return {
       get: function (slug) {
         if (slug) {

@@ -4,8 +4,6 @@ angular.module('islcAngularApp')
   .service('stripeService', function stripeService($rootScope, $q, Stripe, paramsService, Restangular, cacheService) {
     var cache = cacheService.get();
 
-    Restangular.setBaseUrl('/angular');
-
     var setPK = function () {
         var deferred = $q.defer();
         paramsService.get().then(function (params) {
