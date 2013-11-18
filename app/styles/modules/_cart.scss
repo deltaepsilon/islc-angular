@@ -70,6 +70,20 @@
   }
 }
 
+.address-form {
+  input, textarea {
+    margin-bottom: 15px;
+  }
+
+  input {
+    @extend .background-white;
+  }
+
+  input[required] {
+    @extend .background-white;
+  }
+}
+
 .card-form {
   @extend .background-gray1;
 

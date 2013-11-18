@@ -1,12 +1,13 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('CartCtrl', function ($scope, $rootScope, $state, cartService, notificationService, stripeService, _, moment, cart, token, $timeout, subscriptionService, transactionService) {
+  .controller('CartCtrl', function ($scope, $rootScope, $state, cartService, notificationService, stripeService, _, moment, cart, token, address, $timeout, subscriptionService, transactionService, addressService) {
     if (!$rootScope.cart) {
       $rootScope.cart = cart;
     }
 
-    $scope.token = token
+    $scope.token = token;
+    $scope.address = address;
 
 
     var i =  10,
@@ -27,6 +28,19 @@ angular.module('islcAngularApp')
           $scope.checkoutForm.cvc.$dirty = false;
         }
 
+      },
+      setShipped = function () {
+        var products = $rootScope.cart.products,
+          j = products.length,
+          shipped = false;
+
+        while (j--) {
+          if (products[j].shipped) {
+            shipped = true;
+            break;
+          }
+        }
+        $scope.shipped = shipped;
 
       };
     $scope.years = [];
@@ -37,6 +51,9 @@ angular.module('islcAngularApp')
 
     $scope.months = ['Expiration Month', 'January (1)', 'February (2)', 'March (3)', 'April (4)', 'May (5)', 'June (6)', 'July (7)', 'August (8)', 'September (9)', 'October (10)', 'November (11)', 'December (12)'];
     setDefaults();
+    setShipped();
+
+    $rootScope.$watch('cart', setShipped);
 
     $scope.updateCart = function (id, quantity) {
       cartService.update(id, quantity || 0).then(function (cart) {
@@ -117,6 +134,16 @@ angular.module('islcAngularApp')
 
       });
 
+    };
+
+    $scope.updateAddress = function (address) {
+      addressService.update(address).then(function (res) {
+        if (res.error) {
+          notificationService.error('Address', res.error);
+        } else {
+          $scope.address = res;
+        }
+      });
     };
 
   });

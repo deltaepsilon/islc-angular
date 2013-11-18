@@ -224,6 +224,9 @@ angular.module('islcAngularApp', [
               },
               token: function (stripeService) {
                 return stripeService.getToken();
+              },
+              address: function (addressService) {
+                return addressService.get();
               }
             }
           }
