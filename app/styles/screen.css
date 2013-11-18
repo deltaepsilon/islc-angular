@@ -1996,6 +1996,21 @@ h2 {
 }
 
 /* line 232, imports/_global.scss */
+.min-500 {
+  min-width: 500px;
+}
+
+/* line 236, imports/_global.scss */
+.min-700 {
+  min-width: 700px;
+}
+
+/* line 240, imports/_global.scss */
+.max-500 {
+  max-width: 500px !important;
+}
+
+/* line 244, imports/_global.scss */
 .max-700 {
   max-width: 700px;
 }
@@ -2253,7 +2268,7 @@ button[disabled] {
   padding: 20px 65px 15px;
   position: relative;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 5px;
 }
 /* line 74, modules/_buttons.scss */
@@ -2781,7 +2796,7 @@ textarea {
   position: relative;
   min-height: 30px;
   height: 100%;
-  padding: 6px 0;
+  padding: 6px 10px 6px 0;
 }
 /* line 42, modules/_table.scss */
 .table-width .thead-bar:before {
@@ -2798,14 +2813,19 @@ textarea {
 .table-width th {
   font-weight: 300;
   padding-right: 10px;
+  padding-left: 10px;
   text-align: left;
   text-transform: uppercase;
 }
-/* line 59, modules/_table.scss */
+/* line 60, modules/_table.scss */
 .table-width td {
-  padding-right: 10px;
-  padding-top: 28px;
+  padding: 14px 10px;
   vertical-align: top;
+}
+
+/* line 69, modules/_table.scss */
+.color-interval tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 /* line 4, modules/_cart.scss */
@@ -3541,6 +3561,18 @@ textarea {
 /* line 92, modules/_loading.scss */
 .black {
   background-color: #333333 !important;
+}
+
+/* line 2, modules/_dashboard.scss */
+.dashboard .comment-text {
+  max-width: 250px;
+}
+/* line 5, modules/_dashboard.scss */
+.dashboard .comment-text p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* line 1, directives/_qv-slider.scss */

@@ -134,6 +134,16 @@
             </div>
             <div class="clearfix pure-g-r">
                 <input
+                    id="address-phone"
+                    class="pure-u-2-5 pull-left"
+                    name="phone"
+                    type="text"
+                    placeholder="Phone number..."
+                    ng-model="address.phone"
+                />
+            </div>
+            <div class="clearfix pure-g-r">
+                <input
                     id="address-line1"
                     class="pure-u-2-5 pull-left"
                     name="line1"
@@ -207,7 +217,7 @@
                     id="address-instructions"
                     class="pure-u-2-5 pull-left"
                     name="instructions"
-                    placeholder="Instructions..."
+                    placeholder="Shipping instructions..."
                     ng-model="address.instructions"
                 /></textarea>
             </div>

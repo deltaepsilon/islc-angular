@@ -1,0 +1,12 @@
+.dashboard {
+  .comment-text {
+    max-width: 250px;
+
+    p {
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -1,7 +1,11 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('addressService', function addressService(Restangular) {
+  .service('addressService', function addressService(Restangular, cacheService) {
+    var cache = cacheService.get(),
+      clearCache = function () {
+        cache.remove('/angular/address');
+      };
 
     return {
       get: function () {
@@ -10,8 +14,11 @@ angular.module('islcAngularApp')
       },
 
       update: function (address) {
+        clearCache();
         return Restangular.all('address').post(address);
-      }
+      },
+
+      clearCache: clearCache
     }
 
   });

@@ -36,7 +36,7 @@ angular.module('islcAngularApp', [
 
 
 
-    var secureRoutes = ['gallery', 'content', 'subscriptions', 'account'],
+    var secureRoutes = ['gallery', 'content', 'subscriptions', 'account', 'transaction'],
       nav = {
         templateUrl: 'views/partials/nav.html',
         controller: 'NavCtrl',
@@ -74,6 +74,33 @@ angular.module('islcAngularApp', [
         views: {
           nav: nav,
           body: body
+        }
+      })
+      .state('dashboard', {
+        url: '/dashboard',
+        views: {
+          nav: nav,
+          body: {
+            controller: 'DashboardCtrl',
+            templateUrl: 'views/partials/dashboard.html',
+            resolve: {
+              subscriptions: function (subscriptionService) {
+                return subscriptionService.get();
+              },
+              comments: function (commentService) {
+                return commentService.get();
+              },
+              galleries: function (galleryService) {
+                return galleryService.get();
+              },
+              address: function (addressService) {
+                return addressService.get();
+              },
+              transactions: function (transactionService) {
+                return transactionService.get();
+              }
+            }
+          }
         }
       })
       .state('faq', {

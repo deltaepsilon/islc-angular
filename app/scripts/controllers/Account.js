@@ -43,7 +43,7 @@ angular.module('islcAngularApp')
           $scope.address = res;
           notificationService.success('Address Saved');
         }
-        console.log('res', res);
+
       });
     }
 
