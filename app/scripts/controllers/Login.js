@@ -18,7 +18,7 @@ angular.module('islcAngularApp')
     $timeout(function () {
       var url = '/';
 
-      if ($scope.$previousState.url && $scope.$previousStateParams) {
+      if ($scope.$previousState && $scope.$previousState.url && $scope.$previousStateParams) {
         url = getUrl($scope.$previousState.url, $scope.$previousStateParams);
       }
       $scope.redirect = '#!' + url;

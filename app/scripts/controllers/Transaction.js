@@ -5,15 +5,19 @@ angular.module('islcAngularApp')
     $scope.transaction = transaction;
 //    $scope.productsTable = productService.getTable($scope.transaction.products);
 
-    var i = $scope.transaction.products.length,
-      product;
+    if ($scope.transaction && $scope.transaction.products) {
+      var i = $scope.transaction.products.length,
+        product;
 
-    while (i--) {
-      product = $scope.transaction.products[i];
-      if (product.type === 'subscription') {
-        $scope.productSlug = product.slug;
-        break;
+      while (i--) {
+        product = $scope.transaction.products[i];
+        if (product.type === 'subscription') {
+          $scope.productSlug = product.slug;
+          break;
+        }
       }
+
     }
+
 
   });
