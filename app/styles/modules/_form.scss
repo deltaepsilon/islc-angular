@@ -84,14 +84,8 @@ textarea {
   }
 }
 
-.input-wrapper {
+.password-placeholder {
   @extend .pure-u-1;
-  @extend .pure-g-r;
 
-  position: relative;
-
-
-  label {
-    @include absolute(10px, initial, initial, 10px);
-  }
+  padding: 5px 0;
 }
