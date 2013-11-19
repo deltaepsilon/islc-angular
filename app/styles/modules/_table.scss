@@ -32,12 +32,14 @@
 
 .table-width {
   max-width: 960px;
+  position: relative;
 
   .thead-bar {
     position: relative;
     min-height: 30px;
     height: 100%;
-    padding: 6px 10px 6px 0;
+    padding: 17px 10px 6px 0;
+    box-sizing: content-box;
 
     &:before {
       @extend .background-gray1;

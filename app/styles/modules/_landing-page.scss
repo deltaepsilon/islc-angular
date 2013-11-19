@@ -69,7 +69,11 @@
   }
 
   .testimonials-wrapper {
+    @extend .text-centered;
+
     .testimonials-columns-wrapper {
+      @extend .text-left;
+
       max-width: 700px;
     }
 

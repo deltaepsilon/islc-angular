@@ -5,6 +5,15 @@
   }
 }
 
+@media (min-width: 980px) and (max-width: 1030px) {
+  //.products-wrapper {
+  //  .product {
+  //    min-width: 303px !important;
+  //  }
+  //}
+
+}
+
 @media (max-width: 704px) {
   .products-wrapper {
     max-width: 330px !important;
@@ -20,7 +29,7 @@
     min-height: 358px;
     padding: 0 15px 12px;
     position: relative;
-    width: 330px;
+    min-width: 330px;
 
 
 
@@ -57,6 +66,8 @@
 
   .product-image-wrapper {
     position: relative;
+    width: 300px;
+    height: 300px;
 
     &:before {
       @include absolute(9px, 12px, inherit, inherit);
@@ -68,7 +79,7 @@
 
     &:after {
       @include use-sprite(corner);
-      @include absolute(-1px, 0px, inherit, inherit);
+      @include absolute(0px, 0px, inherit, inherit);
 
       content: "";
       display: block;
@@ -76,7 +87,7 @@
     }
 
     .product-hidden-button {
-      @include absolute(inherit, inherit, 4px, inherit);
+      @include absolute(inherit, inherit, 0px, inherit);
 
 
       background: rgba(0, 0, 0, 0.6);
@@ -108,6 +119,12 @@
 
     width: 300px;
     height: 300px;
+  }
+
+  .product-details { // This whole class is just to make Firefox happy. Their box model sucks.
+    display: block;
+    overflow: hidden;
+    width: 300px;
   }
 
   .product-title {

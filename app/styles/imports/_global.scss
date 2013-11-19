@@ -9,6 +9,10 @@ html, button {
   font-weight: 200;
 }
 
+video {
+  //max-width: 100%;
+}
+
 a {
   @extend .text-gray3;
   text-decoration: none;
@@ -73,6 +77,13 @@ h6 {
 
 .relative {
   position: relative;
+}
+
+.firefox-centered {
+  text-align: center;
+  > * {
+    text-align: initial;
+  }
 }
 
 .centered {
