@@ -1142,6 +1142,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   /* line 15, pure/_grid-hacks.scss */
   #copyright-footer .pure-u-1-3 {
     width: 28%;
+    margin: auto;
   }
 }
 @font-face {
@@ -3409,15 +3410,22 @@ textarea {
 }
 /* line 91, modules/_content.scss */
 .page-body img, .page-body video {
-  display: table-cell;
   margin: 30px auto;
 }
-/* line 96, modules/_content.scss */
+/* line 95, modules/_content.scss */
+.page-body img {
+  display: table-cell;
+}
+/* line 99, modules/_content.scss */
+.page-body video {
+  display: block;
+}
+/* line 103, modules/_content.scss */
 .page-body .exercise {
   padding: 45px 30px 30px;
   position: relative;
 }
-/* line 102, modules/_content.scss */
+/* line 109, modules/_content.scss */
 .page-body .exercise:before {
   overflow: hidden;
   display: block;
@@ -3436,7 +3444,7 @@ textarea {
   content: "";
   display: block;
 }
-/* line 114, modules/_content.scss */
+/* line 121, modules/_content.scss */
 .page-body .exercise .link-list-item:after {
   top: 4px;
 }
