@@ -83,3 +83,15 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+.input-wrapper {
+  @extend .pure-u-1;
+  @extend .pure-g-r;
+
+  position: relative;
+
+
+  label {
+    @include absolute(10px, initial, initial, 10px);
+  }
+}
