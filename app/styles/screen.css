@@ -1294,7 +1294,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-small, h6, .remove-button, [action="login_check"] label[for="remember_me"], #loading:before {
+.text-x-small, h6, .remove-button, [action="login_check"] label[for="remember_me"], #loading:before, .dr-notification-container .dr-notification-close-btn:before {
   font-size: 12px;
 }
 
@@ -1304,7 +1304,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 }
 
 /* line 27, imports/_font-size.scss */
-.text-medium, html, button, p, ul, ol, h4, .button-primary, [action="login_check"] input, [action="login_check"] label, [action="login_check"] a, .landing-page .linkout, .qv-form input, .qv-form textarea, .product-details .product-title, .qv-slider .qv-slider-link {
+.text-medium, html, button, p, ul, ol, h4, .button-primary, [action="login_check"] input, [action="login_check"] label, [action="login_check"] a, .landing-page .linkout, .qv-form input, .qv-form textarea, .product-details .product-title, .dr-notification-container .dr-notification-title, .qv-slider .qv-slider-link {
   font-size: 16px;
 }
 
@@ -1697,7 +1697,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 }
 
 /* line 17, imports/_colors.scss */
-.background-white, .address-form input, .address-form input[required], #gallery .image-wrapper:after, #gallery .comment:nth-child(2n), .qv-slider .qv-slider-image, .qv-slider .qv-slider-button {
+.background-white, .address-form input, .address-form input[required], #gallery .image-wrapper:after, #gallery .comment:nth-child(2n), .dr-notification-container .dr-notification-wrapper, .qv-slider .qv-slider-image, .qv-slider .qv-slider-button {
   background-color: white;
 }
 
@@ -1732,7 +1732,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 }
 
 /* line 24, imports/_colors.scss */
-.text-gray3, html, button, a {
+.text-gray3, html, button, a, .dr-notification-container .dr-notification-close-btn:before {
   color: #414141;
 }
 
@@ -2373,7 +2373,7 @@ button[disabled] {
   height: 2px;
 }
 /* line 11, modules/_nav.scss */
-#top-nav .background-white, #top-nav .address-form input, .address-form #top-nav input, #top-nav #gallery .image-wrapper:after, #gallery #top-nav .image-wrapper:after, #top-nav #gallery .comment:nth-child(2n), #gallery #top-nav .comment:nth-child(2n), #top-nav .qv-slider .qv-slider-image, .qv-slider #top-nav .qv-slider-image, #top-nav .qv-slider .qv-slider-button, .qv-slider #top-nav .qv-slider-button {
+#top-nav .background-white, #top-nav .address-form input, .address-form #top-nav input, #top-nav #gallery .image-wrapper:after, #gallery #top-nav .image-wrapper:after, #top-nav #gallery .comment:nth-child(2n), #gallery #top-nav .comment:nth-child(2n), #top-nav .dr-notification-container .dr-notification-wrapper, .dr-notification-container #top-nav .dr-notification-wrapper, #top-nav .qv-slider .qv-slider-image, .qv-slider #top-nav .qv-slider-image, #top-nav .qv-slider .qv-slider-button, .qv-slider #top-nav .qv-slider-button {
   border: 1px solid white;
   color: white;
   outline: 1px solid white;
@@ -3614,6 +3614,82 @@ textarea {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* line 1, modules/_notifications.scss */
+.dr-notification-container {
+  position: fixed;
+  top: initial;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+/* line 10, modules/_notifications.scss */
+.dr-notification-container .dr-notification-wrapper {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 5px 0 0;
+  display: table-cell;
+  margin: 0 30px;
+  padding: 0px 25px 5px;
+  position: relative;
+  text-align: left;
+}
+/* line 26, modules/_notifications.scss */
+.dr-notification-container .dr-notification-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  cursor: pointer;
+}
+/* line 31, modules/_notifications.scss */
+.dr-notification-container .dr-notification-close-btn:before {
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  content: 'x';
+  font-weight: 500;
+}
+/* line 45, modules/_notifications.scss */
+.dr-notification-container .dr-notification-text {
+  margin: 5px 0 10px;
+}
+/* line 57, modules/_notifications.scss */
+.dr-notification-container .notify {
+  border-color: #dddddd;
+}
+/* line 52, modules/_notifications.scss */
+.dr-notification-container .notify .dr-notification-title {
+  color: #dddddd;
+}
+/* line 60, modules/_notifications.scss */
+.dr-notification-container .error {
+  border-color: #bd3f42;
+}
+/* line 52, modules/_notifications.scss */
+.dr-notification-container .error .dr-notification-title {
+  color: #bd3f42;
+}
+/* line 63, modules/_notifications.scss */
+.dr-notification-container .warning {
+  border-color: #98ccb6;
+}
+/* line 52, modules/_notifications.scss */
+.dr-notification-container .warning .dr-notification-title {
+  color: #98ccb6;
+}
+/* line 66, modules/_notifications.scss */
+.dr-notification-container .success {
+  border-color: #177f62;
+}
+/* line 52, modules/_notifications.scss */
+.dr-notification-container .success .dr-notification-title {
+  color: #177f62;
 }
 
 /* line 1, directives/_qv-slider.scss */
