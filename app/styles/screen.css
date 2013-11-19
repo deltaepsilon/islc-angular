@@ -1622,7 +1622,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 
 /* line 37, imports/_sprites.scss */
 .background-background-gray {
-  background-image: url("../images/backgrounds/background-gray.png");
+  background-image: url("../images/backgrounds/background-gray-1point5.png");
 }
 
 /* line 42, imports/_sprites.scss */
@@ -1910,7 +1910,7 @@ h2 {
 
 /* line 163, imports/_global.scss */
 .background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .page-body h1 {
-  background-image: url("../images/backgrounds/background-gray.png");
+  background-image: url("../images/backgrounds/background-gray-1point5.png");
   background-position: -50px -30px;
 }
 
@@ -2343,12 +2343,13 @@ button[disabled] {
 /* line 11, modules/_nav.scss */
 #top-nav .background-white, #top-nav .address-form input, .address-form #top-nav input, #top-nav #gallery .image-wrapper:after, #gallery #top-nav .image-wrapper:after, #top-nav #gallery .comment:nth-child(2n), #gallery #top-nav .comment:nth-child(2n), #top-nav .qv-slider .qv-slider-image, .qv-slider #top-nav .qv-slider-image, #top-nav .qv-slider .qv-slider-button, .qv-slider #top-nav .qv-slider-button {
   border: 1px solid white;
+  color: white;
   outline: 1px solid white;
   position: relative;
   width: 310px;
   z-index: 1;
 }
-/* line 21, modules/_nav.scss */
+/* line 22, modules/_nav.scss */
 #top-nav .islc-logo {
   overflow: hidden;
   display: block;
@@ -2363,17 +2364,17 @@ button[disabled] {
   margin: 3px auto 0px;
   position: relative;
 }
-/* line 31, modules/_nav.scss */
+/* line 32, modules/_nav.scss */
 #top-nav #nav-links {
   text-align: center;
   padding-left: 0;
 }
-/* line 36, modules/_nav.scss */
+/* line 37, modules/_nav.scss */
 #top-nav .nav-link-item {
   cursor: pointer;
   float: left;
 }
-/* line 41, modules/_nav.scss */
+/* line 42, modules/_nav.scss */
 #top-nav .nav-link {
   display: inline-block;
   font-size: 14px;
@@ -2381,38 +2382,23 @@ button[disabled] {
   padding: 10px 20px;
   text-transform: uppercase;
 }
-/* line 48, modules/_nav.scss */
+/* line 49, modules/_nav.scss */
 #top-nav .nav-link:hover, #top-nav .nav-link.active {
   text-decoration: underline;
 }
-/* line 52, modules/_nav.scss */
+/* line 53, modules/_nav.scss */
 #top-nav .nav-link.active {
   cursor: default;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 61, modules/_nav.scss */
-  #top-nav .islc-logo {
-    overflow: hidden;
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url('../images/icons-1point5x-s3dac9d55a9.png');
-    background-size: 771.33333px 779.33333px;
-    background-position: -328px -132px;
-    height: 111.33333px;
-    width: 318.66667px;
-    width: 311px;
-    height: 107px;
-  }
-}
 @media (max-width: 767px) {
-  /* line 76, modules/_nav.scss */
+  /* line 73, modules/_nav.scss */
   .nav-link-item {
     float: none !important;
   }
 }
 @media (min-width: 1100px) {
-  /* line 82, modules/_nav.scss */
+  /* line 79, modules/_nav.scss */
   #nav-links {
     float: left;
   }

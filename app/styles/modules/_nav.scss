@@ -10,6 +10,7 @@
 
   .background-white {
     border: 1px solid white;
+    color: white;
     outline: 1px solid white;
     position: relative;
     width: 310px;
@@ -56,17 +57,13 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  #top-nav {
-    .islc-logo {
-      @include use-sprite(islc-logo);
-
-
-      width: 311px;
-      height: 107px;
-    }
-  }
-}
+//@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+//  #top-nav {
+//    .islc-logo {
+//      @include use-sprite(islc-logo);
+//    }
+//  }
+//}
 
 @media (min-width: 768px) and (max-width: 1100px) {
 
