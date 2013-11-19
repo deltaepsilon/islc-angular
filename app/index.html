@@ -527,6 +527,12 @@
                 scope.iFrameLoad(target);
             }
         }
+        var iFrameOnSubmit = function (target) {
+            var scope = angular.element(target).scope();
+            if (scope && scope.iFrameSubmit) {
+                scope.iFrameSubmit(target);
+            }
+        }
     </script>
     <div ng-controller="IFrameCtrl">
         <iframe id="uploadTarget" name="uploadTarget" height="0" width="0" frameborder="0" qv-file="iFrameLoad" onload="iFrameOnLoad(this);"></iframe>

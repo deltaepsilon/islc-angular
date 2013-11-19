@@ -17,15 +17,17 @@ angular.module('islcAngularApp')
       },
 
       remove: function (id) {
-        clearCache();
+        cacheClear();
         commentService.clearCache();
         return Restangular.one('gallery', id).remove();
       },
 
       addComment: function (id, comment) {
-        clearCache();
+        cacheClear();
         commentService.clearCache();
         return Restangular.one('gallery', id).all('comment').post({comment: comment});
-      }
+      },
+
+      cacheClear: cacheClear
     }
   });

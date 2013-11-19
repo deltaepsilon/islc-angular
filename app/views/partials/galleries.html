@@ -46,7 +46,7 @@
     <div class="pure-u-1" ui-view="galleryView"></div>
 
     <div class="pure-u-1 background-gray1">
-        <form class="qv-form full-width-form centered" name="galleryForm" action="/angular/gallery" target="uploadTarget" method="POST" enctype="multipart/form-data" qv-start-loader="submit">
+        <form class="qv-form full-width-form centered" name="galleryForm" action="/angular/gallery" target="uploadTarget" method="POST" enctype="multipart/form-data" qv-start-loader="submit" onsubmit="iFrameOnSubmit(this);">
             <br>
             <h2 class="text-centered">upload a gallery image</h2>
             <br>
@@ -93,9 +93,7 @@
                 <button
                     class="button button-secondary"
                     ng-disabled="!newGallery.file"
-                >
-                    Upload
-                </button>
+                >upload</button>
             </div>
 
         </form>
