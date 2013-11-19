@@ -26,6 +26,10 @@ angular.module('islcAngularApp')
     if (notification && notification.length >= 2 ) {
       notificationService.info('Notification', decodeURIComponent(notification[1]));
     }
+    notificationService.info('Notification', 'This is an info message');
+    notificationService.warning('Notification', 'This is an warning message');
+    notificationService.error('Notification', 'This is an error message');
+    notificationService.success('Notification', 'This is an success message');
 
 
 

@@ -1772,6 +1772,11 @@ html, button {
   font-weight: 200;
 }
 
+/* line 12, imports/_global.scss */
+video {
+  max-width: 100%;
+}
+
 /* line 16, imports/_global.scss */
 a {
   text-decoration: none;
