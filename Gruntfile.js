@@ -275,7 +275,11 @@ module.exports = function (grunt) {
             'fonts/**/*',
             'gallery',
             'views/**/*',
-            'images/**/*'
+            'images/**/*', //Legacy Symfony2 folders
+            'bundles/**/*',
+            'css/**/*',
+            'img/**/*',
+            'js/**/*'
           ]
         }]
       },
