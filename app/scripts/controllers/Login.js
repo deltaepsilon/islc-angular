@@ -5,7 +5,7 @@ angular.module('islcAngularApp')
     var SLUG_REGEX = /:(\w+)/g,
       getUrl = function (url, params) {
         var matches = url.match(SLUG_REGEX),
-          i = matches.length,
+          i = matches ? matches.length : 0,
           TEMP_REGEX;
 
         while (i--) {

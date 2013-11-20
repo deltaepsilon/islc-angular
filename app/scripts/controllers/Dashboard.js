@@ -8,5 +8,4 @@ angular.module('islcAngularApp')
     $scope.address = address;
     $scope.transactions = transactions;
 
-    console.log(address);
   });
