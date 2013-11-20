@@ -12,7 +12,7 @@
     "angular-ui-router": "https://github.com/deltaepsilon/ui-router.git#~0.2.0",
     "pure": "~0.3.0",
     "restangular": "~1.1.3",
-    "angular-notifications": "git@github.com:deltaepsilon/angular-notifications.git",
+    "angular-notifications": "git@github.com:deltaepsilon/angular-notifications.git#master",
     "animate.css": "~2.1.0",
     "momentjs": "~2.3.1",
     "angular-markdown": "~0.0.1",
