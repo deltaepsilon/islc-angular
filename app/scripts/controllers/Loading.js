@@ -24,7 +24,7 @@ angular.module('islcAngularApp')
       $timeout($rootScope.hideLoader, 500);
     };
 
-    if (!matches || matches[0] !== 'escaped_fragment') {
+    if (!matches) {
       $rootScope.$on('$stateChangeStart', $rootScope.startLoader);
       $rootScope.$on('$stateChangeSuccess', $rootScope.startLoader);
       $rootScope.$on('$viewContentLoaded', $rootScope.cancelLoader);
