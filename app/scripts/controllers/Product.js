@@ -47,6 +47,7 @@ angular.module('islcAngularApp')
         if (cart.error) {
           notificationService.error('Cart', cart.error);
         } else if (cart.products) {
+          notificationService.error('Cart', 'Product added to cart');
           $rootScope.cart = cart;
 
           //Force update the products list. This is critical to capture any changes resulting from the cart transaction.

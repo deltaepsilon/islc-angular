@@ -34,7 +34,11 @@
         <h2 class="text-centered text-green2">feedback</h2>
         <br>
 
-        <table class="table-width min-500 max-500 centered color-interval">
+        <h2 class="text-centered" ng-hide="comments.length">
+           No feedback yet. Upload some images to the <a class="button-link" ui-sref="gallery">gallery</a>.
+        </h2>
+
+        <table class="table-width min-500 max-500 centered color-interval" ng-show="comments.length">
             <thead>
                 <th>id</th>
                 <th>user</th>
@@ -57,7 +61,7 @@
                     </td>
                     <td>
                         <a class="button-link" ui-sref="gallery.view({id: comment.gallery.id})">
-                            {{ comment.title || 'Untitled' }}
+                            {{ comment.gallery.title || 'Untitled' }}
                         </a>
                     </td>
                     <td class="comment-text">
@@ -74,7 +78,11 @@
         <h2 class="text-centered text-green2">gallery</h2>
         <br>
 
-        <table class="table-width min-500 max-500 centered color-interval">
+        <h2 class="text-centered" ng-hide="galleries.length">
+            No gallery images quite yet. Try uploading some work to the <a class="button-link" ui-sref="gallery">gallery</a>.
+        </h2>
+
+        <table class="table-width min-500 max-500 centered color-interval" ng-show="galleries.length">
             <thead>
                 <th>id</th>
                 <th>date</th>
