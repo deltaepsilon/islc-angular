@@ -21,7 +21,7 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
         EXERCISE 4
     </h2>
     <p>
-      Once you’ve mastered the basic strokes with your pencil or paintbrush, it’s time to move on to the pointed pen! Slide your alphabet worksheet underneath a new sheet of tracing paper and practice each letter. Don’t worry about any shaking that might occur. The goal of this exercise is to get you comfortable with pressing and releasing with your pen and comfortable with the order of each stroke. As you work your way down the alphabet, you’ll find that each letter looks better than the next. Upload your work to the <a href="#/gallery">gallery</a> for critique.
+      Once you’ve mastered the basic strokes with your pencil or paintbrush, it’s time to move on to the pointed pen! Slide your alphabet worksheet underneath a new sheet of tracing paper and practice each letter. Don’t worry about any shaking that might occur. The goal of this exercise is to get you comfortable with pressing and releasing with your pen and comfortable with the order of each stroke. As you work your way down the alphabet, you’ll find that each letter looks better than the next. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
@@ -44,7 +44,7 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
         EXERCISE 5
     </h2>
     <p>
-      After you feel comfortable with tracing the alphabet, grab a piece of calligraphy paper and while looking (no tracing!) at the alphabet as a guide, practice each letter at least 5 times. You may want to graph out lines to make your practice look neat. Upload your work to the <a href="#/gallery">gallery</a> for critique.
+      After you feel comfortable with tracing the alphabet, grab a piece of calligraphy paper and while looking (no tracing!) at the alphabet as a guide, practice each letter at least 5 times. You may want to graph out lines to make your practice look neat. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">

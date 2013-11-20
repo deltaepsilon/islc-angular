@@ -49,14 +49,14 @@ Ornamentation goes back to the flourish section. Adding flourishes quickly forma
 </div>
 
 
-The biggest thing I can stress to making it yours is to create rules for yourself and STAY CONSISTENT. Consistency is key. Making calligraphy yours is something to work on once you get comfortable with the pointed pen. Don’t forget that getting good takes time and lots of practice. I love to see your progress! Upload your practice work to the <a href="#/gallery">gallery</a>. Once you’re finished with the course, don’t stop practicing!
+The biggest thing I can stress to making it yours is to create rules for yourself and STAY CONSISTENT. Consistency is key. Making calligraphy yours is something to work on once you get comfortable with the pointed pen. Don’t forget that getting good takes time and lots of practice. I love to see your progress! Upload your practice work to the [gallery](#!/gallery). Once you’re finished with the course, don’t stop practicing!
 
 <section class="exercise">
     <h2>
         EXERCISE 8
     </h2>
     <p>
-      Answer the above questions and figure out a style that you’d like to work with. Write out a word or phrase. The phrase, “The quick brown fox jumps over a lazy dog” uses all of the letters in the alphabet. Practice to make your angles, baseline, kerning, descenders, ascenders and strokes consistent. Upload your work to the <a href="#/gallery">gallery</a> for critique.
+      Answer the above questions and figure out a style that you’d like to work with. Write out a word or phrase. The phrase, “The quick brown fox jumps over a lazy dog” uses all of the letters in the alphabet. Practice to make your angles, baseline, kerning, descenders, ascenders and strokes consistent. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">

@@ -161,9 +161,27 @@ module.exports = function (grunt) {
     },
     // not used since Uglify task does concat,
     // but still available if needed
-    /*concat: {
-      dist: {}
-    },*/
+    concat: {
+      options: {
+        separator: "\n\n"
+      },
+      coursework: {
+        src: [
+          'content/markdown/introduction.md',
+          'content/markdown/supplies-and-environment.md',
+          'content/markdown/basic-strokes.md',
+          'content/markdown/learning-the-pointed-pen.md',
+          'content/markdown/forming-the-letters.md',
+          'content/markdown/forming-the-words.md',
+          'content/markdown/flourishes.md',
+          'content/markdown/making-it-yours.md',
+          'content/markdown/addressing-letters.md',
+          'content/markdown/odds-and-ends.md',
+
+        ],
+        dest: 'content/markdown/all-text.md'
+      }
+    },
     rev: {
       dist: {
         files: {

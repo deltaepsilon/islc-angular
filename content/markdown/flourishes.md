@@ -42,7 +42,7 @@ Above are some examples of how to incorporate the basic flourish strokes with on
         EXERCISE 7
     </h2>
     <p>
-      Practice the three basic flourish strokes and try combining them in as many ways as you can. Upload your work to the <a href="#/gallery">gallery</a> for critique.
+      Practice the three basic flourish strokes and try combining them in as many ways as you can. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">

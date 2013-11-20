@@ -46,7 +46,7 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
 <section class="exercise">
     <h2>EXERCISE 2</h2>
     <p>
-      Slide your basic strokes worksheet underneath your tracing paper. With a pencil or a paintbrush, practice the basic miniscule and majuscule forms. Refer back to the basic anatomy of the stroke in the previous lesson for your guide to press and release when making the thicks and thins of your letterforms. Upload your work to the <a href="#/gallery">gallery</a> for critique.
+      Slide your basic strokes worksheet underneath your tracing paper. With a pencil or a paintbrush, practice the basic miniscule and majuscule forms. Refer back to the basic anatomy of the stroke in the previous lesson for your guide to press and release when making the thicks and thins of your letterforms. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
@@ -67,7 +67,7 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
 <section class="exercise">
     <h2>EXERCISE 3</h2>
     <p>
-      Once you’ve mastered the basic strokes with your pencil or paintbrush, it’s time to move on to the pointed pen! Slide your basic strokes worksheet underneath a new sheet of tracing paper and practice each miniscule and majuscule stroke. Don’t worry about any shaking that might occur. The goal of this exercise is to get you comfortable with pressing and releasing with your pen. Upload your work to the <a href="#/gallery">gallery</a> for critique.
+      Once you’ve mastered the basic strokes with your pencil or paintbrush, it’s time to move on to the pointed pen! Slide your basic strokes worksheet underneath a new sheet of tracing paper and practice each miniscule and majuscule stroke. Don’t worry about any shaking that might occur. The goal of this exercise is to get you comfortable with pressing and releasing with your pen. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
@@ -83,4 +83,4 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
     </ul>
 </section>
 
-Practice your miniscules as many times as it takes to get familiar with the pen. If you’re having a hard time getting it right, upload your project to the assignment <a href="#/gallery">gallery</a>. I’ll help you troubleshoot.
+Practice your miniscules as many times as it takes to get familiar with the pen. If you’re having a hard time getting it right, upload your project to the assignment [gallery](/#!/gallery). I’ll help you troubleshoot.

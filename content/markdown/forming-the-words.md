@@ -28,7 +28,7 @@ As you start a project, you’ll want to pencil out your letters very lightly. F
         EXERCISE 6
     </h2>
     <p>
-      Write out the word “hello” several times while paying attention to the pattern of how the letters connect. Once you feel comfortable, write out a word or phrase. The phrase, “The quick brown fox jumps over a lazy dog” uses all of the letters in the alphabet. It will help you practice each letter and how to connect them together. Upload your work to the <a href="#/gallery">gallery</a> for critique.
+      Write out the word “hello” several times while paying attention to the pattern of how the letters connect. Once you feel comfortable, write out a word or phrase. The phrase, “The quick brown fox jumps over a lazy dog” uses all of the letters in the alphabet. It will help you practice each letter and how to connect them together. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
