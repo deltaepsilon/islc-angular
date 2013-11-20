@@ -3,7 +3,7 @@
 angular.module('islcAngularApp')
   .controller('LoadingCtrl', function ($scope, $rootScope, $timeout, $location) {
     var timer,
-      FRAGMENT_REGEX = /escaped_fragment/,
+      FRAGMENT_REGEX = /phantomjs/,
       matches = location.search.match(FRAGMENT_REGEX);
 
     $rootScope.showLoader = function () {
