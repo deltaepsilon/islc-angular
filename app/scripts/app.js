@@ -31,8 +31,8 @@ angular.module('islcAngularApp', [
     AnalyticsProvider.setPageEvent('$stateChangeSuccess');
 
     // Use analytics.js
-//    AnalyticsProvider.useAnalytics(true);
-//    AnalyticsProvider.useECommerce(true);
+    AnalyticsProvider.useAnalytics(true);
+    AnalyticsProvider.useECommerce(true);
 
 
 
