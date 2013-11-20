@@ -9,7 +9,7 @@ angular.module('islcAngularApp')
       link: function postLink(scope, element, attrs) {
         var type = element.attr('type');
         if (Modernizr.input.placeholder) {
-//          return false;
+          return false;
         }
         if (type === 'number' || type === 'integer') {
           return false;
