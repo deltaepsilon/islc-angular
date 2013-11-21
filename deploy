@@ -1,0 +1,6 @@
+ #!/bin/sh
+tar -zxvf new.dist.tar.gz
+tar -zcvf old.dist.tar.gz dist
+mv new.dist dist
+
+sudo chown -R www-data:www-data dist/gallery

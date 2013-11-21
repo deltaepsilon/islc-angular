@@ -272,7 +272,6 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
-            'lib/**/*',
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*'
           ]
@@ -369,6 +368,20 @@ module.exports = function (grunt) {
           httpGeneratedImagesPath : '../<%= appConfig.app.assets.images %>'
         }
       }
+    },
+    shell: {
+      tarDist: {
+        options: {
+          stdout: true
+        },
+        command: 'tar -zcvf dist.tar.gz dist'
+      },
+      copyDist: {
+        options: {
+          stdout: true
+        },
+        command: 'scp dist.tar.gz admin:/var/www/islc-angular/new.dist.tar.gz'
+      }
     }
   });
 
@@ -408,6 +421,12 @@ module.exports = function (grunt) {
     //'uglify',
     'rev',
     'usemin'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'build',
+    'shell:tartDist',
+    'shell:copyDist'
   ]);
 
   grunt.registerTask('default', [

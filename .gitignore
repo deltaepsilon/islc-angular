@@ -9,3 +9,4 @@ mocks
 .DS_Store
 .idea
 app/gallery/*
+*.gz
