@@ -25,7 +25,7 @@ angular.module('islcAngularApp', [
 
     $urlRouterProvider.otherwise('/');
 
-    AnalyticsProvider.setAccount('UA-6859198-11');
+    AnalyticsProvider.setAccount('UA-6859272-12');
     AnalyticsProvider.trackPages(true);
     AnalyticsProvider.setDomainName(location.hostname);
     AnalyticsProvider.setPageEvent('$stateChangeSuccess');
