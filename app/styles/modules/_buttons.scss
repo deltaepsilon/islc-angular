@@ -1,4 +1,4 @@
-button {
+.button {
   &[disabled] {
     @include opacity(.3);
   }  

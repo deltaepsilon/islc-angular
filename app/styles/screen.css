@@ -2256,7 +2256,7 @@ body {
 }
 
 /* line 2, modules/_buttons.scss */
-button[disabled] {
+.button[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
@@ -2339,12 +2339,12 @@ button[disabled] {
 }
 
 /* line 109, modules/_buttons.scss */
-.button-link {
+.button-link, .product-details .product-description a {
   cursor: pointer;
   text-decoration: underline;
 }
 /* line 113, modules/_buttons.scss */
-.button-link.active {
+.button-link.active, .product-details .product-description a.active {
   font-weight: 500;
 }
 
@@ -3237,7 +3237,7 @@ textarea {
 .product-details .product-description {
   line-height: 19px;
 }
-/* line 208, modules/_product.scss */
+/* line 212, modules/_product.scss */
 .product-details li {
   text-indent: -14px;
   padding-left: 14px;

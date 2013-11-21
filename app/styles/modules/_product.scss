@@ -203,6 +203,10 @@
 
   .product-description {
     line-height: 19px;
+
+    a {
+      @extend .button-link;
+    }
   }
 
   li {
