@@ -2,9 +2,7 @@
 
 angular.module('islcAngularApp')
   .controller('CartCtrl', function ($scope, $rootScope, $state, cartService, notificationService, stripeService, _, moment, cart, token, address, $timeout, subscriptionService, transactionService, addressService) {
-    if (!$rootScope.cart) {
-      $rootScope.cart = cart;
-    }
+    $rootScope.cart = cart;
 
     $scope.token = token;
     $scope.address = address;
