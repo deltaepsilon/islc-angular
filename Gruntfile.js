@@ -425,7 +425,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('deploy', [
     'build',
-    'shell:tartDist',
+    'shell:tarDist',
     'shell:copyDist'
   ]);
 
