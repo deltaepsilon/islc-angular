@@ -91,28 +91,27 @@
                         <tr>
                             <td colspan="6" style="padding-right: 0;">
 
-                                <div class="table-cell">
-                                    <button
-                                        class="button-tertiary pull-right margin-left"
-                                        ng-click="setCode(cart.code)"
-                                        ng-disabled="!cartForm.discountCode.$modelValue"
-                                        qv-flash="cart"
-                                        flash-duration="3000"
-                                    >Add</button>
+                                <div ng-show="user">
+                                    <div class="table-cell">
+                                        <button
+                                            class="button-tertiary pull-right margin-left"
+                                            ng-click="setCode(cart.code)"
+                                            ng-disabled="!cartForm.discountCode.$modelValue"
+                                            qv-flash="cart"
+                                            flash-duration="3000"
+                                        >Add</button>
+                                    </div>
+
+                                    <div class="table-cell span-10">
+                                        <input
+                                            class="pull-right"
+                                            name="discountCode"
+                                            type="text"
+                                            ng-model="cart.code"
+                                            placeholder="Discount code..."
+                                        />
+                                    </div>
                                 </div>
-
-                                <div class="table-cell span-10">
-                                    <input
-                                        class="pull-right"
-                                        name="discountCode"
-                                        type="text"
-                                        ng-model="cart.code"
-                                        placeholder="Discount code..."
-                                    />
-                                </div>
-
-
-
 
                             </td>
                         </tr>
