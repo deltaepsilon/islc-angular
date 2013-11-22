@@ -56,7 +56,7 @@
     @include product-image-wrapper(product);
   }
 
-  .product-digital {
+  .product-digital, .product-download {
     @include product-image-wrapper(download);
   }
 

@@ -3078,7 +3078,7 @@ textarea {
   width: 30px;
 }
 /* line 45, modules/_product.scss */
-.products-wrapper .product-digital .product-image-wrapper:before {
+.products-wrapper .product-digital .product-image-wrapper:before, .products-wrapper .product-download .product-image-wrapper:before {
   overflow: hidden;
   display: block;
   background-repeat: no-repeat;
