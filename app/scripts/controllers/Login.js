@@ -13,12 +13,13 @@ angular.module('islcAngularApp')
           url = url.replace(TEMP_REGEX, params[matches[i].substring(1)]);
         }
         return url;
-      };
+      },
+      exclusions = ['login', 'register', 'reset', 'resetForm'];
 
     $timeout(function () {
       var url = '/';
 
-      if ($scope.$previousState && $scope.$previousState.url && $scope.$previousStateParams) {
+      if ($scope.$previousState && $scope.$previousState.url && $scope.$previousStateParams && !~exclusions.indexOf($scope.$previousState.name)) {
         url = getUrl($scope.$previousState.url, $scope.$previousStateParams);
       }
       $scope.redirect = '#!' + url;
