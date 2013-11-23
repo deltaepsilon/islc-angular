@@ -29,6 +29,7 @@ angular.module('islcAngularApp', [
     AnalyticsProvider.trackPages(true);
     AnalyticsProvider.setDomainName(location.hostname);
     AnalyticsProvider.setPageEvent('$stateChangeSuccess');
+    AnalyticsProvider.trackPrefix('#!');
 
     // Use analytics.js
     AnalyticsProvider.useAnalytics(true);
