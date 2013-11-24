@@ -25,15 +25,20 @@ angular.module('islcAngularApp', [
 
     $urlRouterProvider.otherwise('/');
 
-    AnalyticsProvider.setAccount('UA-6859272-12');
-    AnalyticsProvider.trackPages(true);
-    AnalyticsProvider.setDomainName(location.hostname);
-    AnalyticsProvider.setPageEvent('$stateChangeSuccess');
-    AnalyticsProvider.trackPrefix('#!');
+    if (location.host === 'istilllovecalligraphy.com') {
+      AnalyticsProvider.setAccount('UA-6859272-12');
+      AnalyticsProvider.trackPages(true);
+      AnalyticsProvider.setDomainName(location.hostname);
+      AnalyticsProvider.setPageEvent('$stateChangeSuccess');
+      AnalyticsProvider.trackPrefix('#!');
 
-    // Use analytics.js
-    AnalyticsProvider.useAnalytics(true);
-    AnalyticsProvider.useECommerce(true);
+      // Use analytics.js
+      AnalyticsProvider.useAnalytics(true);
+      AnalyticsProvider.useECommerce(true);
+    }
+
+
+
 
 
 
