@@ -7,9 +7,9 @@
     </ul>
 </div>
 <div class="products padded-wrapper">
-    <div class="pure-g-r products-wrapper centered firefox-centered">
+    <div class="products-wrapper centered firefox-centered">
 
-        <div class="pure-u-1-3 product product-{{ product.category || product.type }}" ng-repeat="product in products | filter:category">
+        <div class="product product-{{ product.category || product.type }}" ng-repeat="product in products | filter:category">
             <div class="product-image-wrapper centered">
                 <a style="cursor: pointer;" ui-sref="product({slug: product.slug})">
                     <img class="product-image" ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
