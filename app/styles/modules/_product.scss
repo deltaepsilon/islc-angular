@@ -30,6 +30,8 @@
     padding: 0 15px 12px;
     position: relative;
     min-width: 330px;
+    max-height: 346px;
+    overflow: hidden;
 
 
 
@@ -187,7 +189,7 @@
   .product-title {
     @extend .text-medium;
     font-weight: 200;
-    max-width: 250px;
+    max-width: 272px;
     text-transform: uppercase;
   }
   
