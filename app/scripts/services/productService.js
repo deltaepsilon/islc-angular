@@ -9,6 +9,16 @@ angular.module('islcAngularApp')
         } else {
           cache.remove('/angular/product/' + slug);
         }
+      },
+      clearCacheAll = function () {
+        var REGEX = /product/,
+          keys = cache.keys(),
+          i = keys.length;
+        while (i--) {
+          if (keys[i].match(REGEX)) {
+            cache.remove(keys[i]);
+          }
+        }
       };
 
     return {
@@ -22,6 +32,7 @@ angular.module('islcAngularApp')
       },
 
       clearCache: clearCache,
+      clearCacheAll: clearCacheAll,
 
       getTable: function (products) {
         var table = mockService.getProductsTable(),
