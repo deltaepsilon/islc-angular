@@ -1963,81 +1963,86 @@ h2 {
 }
 
 /* line 196, imports/_global.scss */
+.display-none {
+  display: none;
+}
+
+/* line 200, imports/_global.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 200, imports/_global.scss */
+/* line 204, imports/_global.scss */
 .clear-both {
   clear: both;
 }
 
-/* line 204, imports/_global.scss */
+/* line 208, imports/_global.scss */
 .span-1 {
   width: 10%;
 }
 
-/* line 208, imports/_global.scss */
+/* line 212, imports/_global.scss */
 .span-2 {
   width: 20%;
 }
 
-/* line 212, imports/_global.scss */
+/* line 216, imports/_global.scss */
 .span-3 {
   width: 30%;
 }
 
-/* line 216, imports/_global.scss */
+/* line 220, imports/_global.scss */
 .span-4 {
   width: 40%;
 }
 
-/* line 220, imports/_global.scss */
+/* line 224, imports/_global.scss */
 .span-5 {
   width: 50%;
 }
 
-/* line 224, imports/_global.scss */
+/* line 228, imports/_global.scss */
 .span-6 {
   width: 60%;
 }
 
-/* line 228, imports/_global.scss */
+/* line 232, imports/_global.scss */
 .span-7 {
   width: 70%;
 }
 
-/* line 232, imports/_global.scss */
+/* line 236, imports/_global.scss */
 .span-8 {
   width: 80%;
 }
 
-/* line 235, imports/_global.scss */
+/* line 239, imports/_global.scss */
 .span-9 {
   width: 90%;
 }
 
-/* line 239, imports/_global.scss */
+/* line 243, imports/_global.scss */
 .span-10 {
   width: 100%;
 }
 
-/* line 243, imports/_global.scss */
+/* line 247, imports/_global.scss */
 .min-500 {
   min-width: 500px;
 }
 
-/* line 247, imports/_global.scss */
+/* line 251, imports/_global.scss */
 .min-700 {
   min-width: 700px;
 }
 
-/* line 251, imports/_global.scss */
+/* line 255, imports/_global.scss */
 .max-500 {
   max-width: 500px !important;
 }
 
-/* line 255, imports/_global.scss */
+/* line 259, imports/_global.scss */
 .max-700 {
   max-width: 700px;
 }

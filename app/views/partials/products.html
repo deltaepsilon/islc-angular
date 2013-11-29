@@ -10,9 +10,9 @@
     <div class="products-wrapper centered firefox-centered">
 
         <div class="product product-{{ product.category || product.type }}" ng-repeat="product in products | filter:category">
-            <div class="product-image-wrapper centered">
-                <a style="cursor: pointer;" ui-sref="product({slug: product.slug})">
-                    <img class="product-image" ng-src="{{ product.key_image }}" alt="{{ product.title }}"/>
+            <div class="product-image-wrapper centered" itemscope itemtype="http://schema.org/Offer">
+                <a style="cursor: pointer;" ui-sref="product({slug: product.slug})" itemprop="url">
+                    <img class="product-image" ng-src="{{ product.key_image }}" alt="{{ product.title }}" itemprop="image"/>
                 </a>
                 <button
                     class="product-hidden-button button-highlight"
@@ -28,8 +28,9 @@
             </div>
 
             <a class="product-details centered" ui-sref="product({slug: product.slug})">
-                <div class="product-title">{{ product.title }}</div>
-                <div class="product-price">{{ product.price | currency | trimDecimal }}</div>
+                <span class="display-none" itemprop="sky">{{ product.id }}</span>
+                <div class="product-title" itemprop="name">{{ product.title }}</div>
+                <div class="product-price" itemprop="price">{{ product.price | currency | trimDecimal }}</div>
             </a>
 
         </div>
