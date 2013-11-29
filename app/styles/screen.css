@@ -2636,16 +2636,17 @@ body {
 /* line 150, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
+  padding-left: 15px;
 }
-/* line 154, modules/_landing-page.scss */
+/* line 155, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 158, modules/_landing-page.scss */
+/* line 159, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 162, modules/_landing-page.scss */
+/* line 163, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2667,13 +2668,13 @@ body {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 176, modules/_landing-page.scss */
+/* line 177, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px;
 }
-/* line 183, modules/_landing-page.scss */
+/* line 184, modules/_landing-page.scss */
 .landing-page .max-paragraph {
   display: block;
   margin: 15px auto;
@@ -3389,50 +3390,55 @@ textarea {
   top: 3px;
 }
 
-/* line 51, modules/_content.scss */
+/* line 49, modules/_content.scss */
+.page-body {
+  max-width: 750px;
+  margin: auto;
+}
+/* line 53, modules/_content.scss */
 .page-body h1 {
   padding: 15px;
   margin-top: 30px;
   text-align: center;
 }
-/* line 61, modules/_content.scss */
+/* line 63, modules/_content.scss */
 .page-body h2 {
   font-weight: 500;
   letter-spacing: 2px;
   margin: 30px 0 15px;
 }
-/* line 70, modules/_content.scss */
+/* line 72, modules/_content.scss */
 .page-body h3 {
   font-weight: 500;
   font-style: italic;
   line-height: 18px;
 }
-/* line 79, modules/_content.scss */
+/* line 81, modules/_content.scss */
 .page-body a {
   text-decoration: underline;
 }
-/* line 84, modules/_content.scss */
+/* line 86, modules/_content.scss */
 .page-body a.button-cta {
   text-decoration: none;
 }
-/* line 91, modules/_content.scss */
+/* line 93, modules/_content.scss */
 .page-body img, .page-body video {
   margin: 30px auto;
 }
-/* line 95, modules/_content.scss */
+/* line 97, modules/_content.scss */
 .page-body img {
   display: table-cell;
 }
-/* line 99, modules/_content.scss */
+/* line 101, modules/_content.scss */
 .page-body video {
   display: block;
 }
-/* line 103, modules/_content.scss */
+/* line 105, modules/_content.scss */
 .page-body .exercise {
   padding: 45px 30px 30px;
   position: relative;
 }
-/* line 109, modules/_content.scss */
+/* line 111, modules/_content.scss */
 .page-body .exercise:before {
   overflow: hidden;
   display: block;
@@ -3451,7 +3457,7 @@ textarea {
   content: "";
   display: block;
 }
-/* line 121, modules/_content.scss */
+/* line 123, modules/_content.scss */
 .page-body .exercise .link-list-item:after {
   top: 4px;
 }

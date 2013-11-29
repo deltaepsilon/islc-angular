@@ -47,6 +47,8 @@
 }
 
 .page-body {
+  max-width: 750px;
+  margin: auto;
 
   h1 {
     @extend .text-white;
