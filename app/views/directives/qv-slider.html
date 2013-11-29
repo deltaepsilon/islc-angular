@@ -2,10 +2,10 @@
     <div class="qv-slider-button qv-slider-left-button" ng-click="slide(389)" ng-hide="hideRight">
         <div class="background-left-arrow"></div>
     </div>
-    <ul class="qv-slider-list">
+    <ul class="qv-slider-list" itemscope itemtype="http://schema.org/CreativeWork">
         <li class="qv-slider-list-item" ng-repeat="image in images">
-            <img class="qv-slider-image" ng-src="{{ image.src }}" alt="{{ image.text }}"/>
-            <a class="qv-slider-link" ng-href="{{ image.href }}" ng-show="image.href" rel="nofollow" target="_blank">{{ image.text }}</a>
+            <img class="qv-slider-image" ng-src="{{ image.src }}" alt="{{ image.text }}" itemprop="image"/>
+            <a class="qv-slider-link" ng-href="{{ image.href }}" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author">{{ image.text }}</a>
         </li>
     </ul>
     <div class="qv-slider-button qv-slider-right-button" ng-click="slide(-389)" ng-hide="hideLeft">

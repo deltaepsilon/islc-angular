@@ -28,7 +28,7 @@
             </div>
 
             <a class="product-details centered" ui-sref="product({slug: product.slug})">
-                <span class="display-none" itemprop="sky">{{ product.id }}</span>
+                <meta itemprop="sku" content="{{ product.id }}"/>
                 <div class="product-title" itemprop="name">{{ product.title }}</div>
                 <div class="product-price" itemprop="price">{{ product.price | currency | trimDecimal }}</div>
             </a>

@@ -16,7 +16,7 @@
         </div>
         <div class="pure-u-2-5 product-details">
             <div class="product-meta clearfix">
-                <span class="display-none" itemprop="sku">{{ product.id }}</span>
+                <meta itemprop="sku" content="{{ product.id }}"/>
                 <div class="product-title pull-left" itemprop="name">{{ product.title }}</div>
                 <div class="product-price pull-right" itemprop="price">{{ product.price | currency | trimDecimal }}</div>
             </div>
