@@ -50,6 +50,8 @@ angular.module('islcAngularApp', [
       // Use analytics.js
       AnalyticsProvider.useAnalytics(true);
       AnalyticsProvider.useECommerce(true);
+      //Enable eCommerce module for analytics.js
+      AnalyticsProvider.useEnhancedLinkAttribution(true);
     }
 
 
