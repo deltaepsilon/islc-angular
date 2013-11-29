@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state, $rootScope, $q, $timeout, _, cartService, productService, notificationService, user, cart, subscriptions) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, $q, $timeout, _, cartService, productService, notificationService, user, cart, subscriptions, Analytics) {
     //Basic route security... you wouldn't want users to get hung up if they hit the wrong page
     var secureRoutes = ['gallery', 'content', 'subscriptions', 'account', 'transaction', 'dashboard'];
     if (!user) { // Secured routes redirect
@@ -17,15 +17,7 @@ angular.module('islcAngularApp')
     $rootScope.user = user;
     $rootScope.cart = cart;
 
-    var error = location.href.match(/error=([^&]+)/);
-    if (error && error.length >= 2 ) {
-      notificationService.error('Error', decodeURIComponent(error[1]));
-    }
 
-    var notification = location.href.match(/notification=([^&]+)/);
-    if (notification && notification.length >= 2 ) {
-      notificationService.info('Notification', decodeURIComponent(notification[1]));
-    }
 
 
 
