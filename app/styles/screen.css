@@ -3056,7 +3056,7 @@ textarea {
 }
 /* line 39, modules/_product.scss */
 .products-wrapper .product:hover .product-title {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 /* line 47, modules/_product.scss */
 .products-wrapper .product-workshop .product-image-wrapper:before, .products-wrapper .product-subscription .product-image-wrapper:before {
@@ -3224,7 +3224,7 @@ textarea {
 /* line 189, modules/_product.scss */
 .product-details .product-title {
   font-weight: 200;
-  max-width: 265px;
+  max-width: 266px;
   text-transform: uppercase;
 }
 /* line 196, modules/_product.scss */

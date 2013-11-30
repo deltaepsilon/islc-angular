@@ -37,7 +37,7 @@
 
     &:hover {
       .product-title {
-        font-weight: 700 !important;
+        font-weight: 500 !important;
       }
     }
   }
@@ -189,7 +189,7 @@
   .product-title {
     @extend .text-medium;
     font-weight: 200;
-    max-width: 265px;
+    max-width: 266px;
     text-transform: uppercase;
   }
   
