@@ -46,6 +46,7 @@ angular.module('islcAngularApp', [
       AnalyticsProvider.setDomainName(location.hostname);
       AnalyticsProvider.setPageEvent('$stateChangeSuccess');
       AnalyticsProvider.trackPrefix('#!');
+      AnalyticsProvider.setRemoveRegExp(new RegExp(/\/\d+?$/));
 
       // Use analytics.js
       AnalyticsProvider.useAnalytics(true);
