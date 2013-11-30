@@ -82,9 +82,11 @@ angular.module('islcAngularApp')
     };
 
     $scope.saveCard = function (card) {
+      $rootScope.startLoader();
       stripeService.clearCache();
       stripeService.createToken(card).then(function (res) {
         stripeService.saveToken(res.response).then(function (token) {
+          $rootScope.cancelLoader();
           $scope.token = token;
         });
         setDefaults();
