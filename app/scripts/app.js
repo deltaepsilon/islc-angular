@@ -32,6 +32,7 @@ angular.module('islcAngularApp', [
 
   })
   .config(function ($locationProvider, $stateProvider, $urlRouterProvider, AnalyticsProvider, RestangularProvider) {
+    var enableAnalytics = location.host === 'istilllovecalligraphy.com';
 
     restangularProvider = RestangularProvider
     RestangularProvider.setBaseUrl('/angular');
@@ -40,7 +41,7 @@ angular.module('islcAngularApp', [
 
     $urlRouterProvider.otherwise('/');
 
-    if (location.host === 'istilllovecalligraphy.com') {
+    if (enableAnalytics) {
       AnalyticsProvider.setAccount('UA-6859272-12');
       AnalyticsProvider.trackPages(true);
       AnalyticsProvider.setDomainName(location.hostname);
@@ -53,9 +54,9 @@ angular.module('islcAngularApp', [
       AnalyticsProvider.useECommerce(true);
       //Enable eCommerce module for analytics.js
       AnalyticsProvider.useEnhancedLinkAttribution(true);
+      //Enable analytics.js experiments
+//      AnalyticsProvider.setExperimentId('QxfXFS8_TTOsCBG9mQlsIQ');
     }
-
-
 
 
 
@@ -77,7 +78,19 @@ angular.module('islcAngularApp', [
         }
       },
       body = {
-        templateUrl: 'views/partials/root.html',
+        templateUrl: function () {
+          var variations = [
+           'views/partials/rootA.html',
+            'views/partials/rootB.html'
+          ],
+          variation = 0;
+
+          if (enableAnalytics && window.cxApi) {
+            variation = window.cxApi.chooseVariation();
+          }
+          return variations[variation];
+
+        },
         controller: 'RootCtrl',
         resolve: {
           melissa: function (assetService) {
