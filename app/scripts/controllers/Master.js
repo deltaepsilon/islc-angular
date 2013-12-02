@@ -4,7 +4,7 @@ angular.module('islcAngularApp')
   .controller('MasterCtrl', function ($scope, $rootScope, $filter){
 
     var SLASH_REGEX = /(^#!\/|\/$|\/:\w+|content\/)/g,
-      defaultTitle = 'I Still Love Calligraphy - Join The Class Today!';
+      defaultTitle = 'I Still Love Calligraphy - Learn The Art of Calligraphy Online!';
 
     $scope.title = defaultTitle;
 
