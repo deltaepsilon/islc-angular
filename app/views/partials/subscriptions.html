@@ -27,8 +27,14 @@
 
                     </td>
                     <td>
-                        <a class="button-link" ng-show="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">{{ subscription.product.title }}</a>
-                        <span ng-hide="subscription.reset">{{ subscription.product.title }}</span>
+                        <div ng-hide="expired(subscription)">
+                            <a class="button-link" ng-show="subscription.reset" ui-sref="content.subscription({productSlug: subscription.product.slug})">{{ subscription.product.title }}</a>
+                            <span ng-hide="subscription.reset">{{ subscription.product.title }}</span>
+                        </div>
+                        <div ng-show="expired(subscription)">
+                            {{ subscription.product.title }}
+                        </div>
+
                     </td>
                     <td>
                         <span ng-show="subscription.reset">{{ subscription.expires | date }}</span>

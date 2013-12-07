@@ -1,8 +1,13 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .service('subscriptionService', function subscriptionService($rootScope, Restangular, cacheService) {
-    var cache = cacheService.get();
+  .service('subscriptionService', function subscriptionService($rootScope, Restangular, cacheService, moment) {
+    var cache = cacheService.get(),
+      expired = function (subscription) {
+        var now = moment(),
+          expiration = moment(subscription.expires);
+        return expiration.diff(now) < 0;
+      };
 
     return {
       get: function (id) {
@@ -21,6 +26,18 @@ angular.module('islcAngularApp')
 
       clearCache: function () {
         cache.remove('/angular/subscription');
+      },
+
+      expired: expired,
+
+      galleryAccess: function (subscriptions) {
+        var i = subscriptions.length;
+        while (i--) {
+          if (!expired(subscriptions[i])) {
+            return true;
+          }
+        }
+        return false;
       }
     }
   });

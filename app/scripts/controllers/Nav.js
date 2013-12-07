@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('NavCtrl', function ($scope, $state, $rootScope, $q, $timeout, _, cartService, productService, notificationService, user, cart, subscriptions, Analytics) {
+  .controller('NavCtrl', function ($scope, $state, $rootScope, $q, $timeout, _, cartService, productService, notificationService, subscriptionService, user, cart, subscriptions, Analytics) {
     //Basic route security... you wouldn't want users to get hung up if they hit the wrong page
     var secureRoutes = ['gallery', 'content', 'subscriptions', 'account', 'transaction', 'dashboard'];
     if (!user) { // Secured routes redirect
@@ -16,9 +16,6 @@ angular.module('islcAngularApp')
 
     $rootScope.user = user;
     $rootScope.cart = cart;
-
-
-
 
 
     if (typeof window.callPhantom === 'function') {
@@ -58,6 +55,7 @@ angular.module('islcAngularApp')
 
     });
 
+    var galleryAccess = subscriptionService.galleryAccess(subscriptions);
     $scope.showLink = function (state) {
       var user = !!$rootScope.user,
         currentState = $state.current.name,
@@ -84,7 +82,7 @@ angular.module('islcAngularApp')
           return user;
           break;
         case 'subscriptions':
-          return user && subscriptions.length;
+          return user && galleryAccess;
           break;
         case 'gallery':
           return user && subscriptions.length;

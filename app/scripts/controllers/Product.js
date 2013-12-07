@@ -6,7 +6,7 @@ angular.module('islcAngularApp')
 
     if ($stateParams.slug) {
       $scope.product = products;
-      console.log('product', products);
+
       if ($scope.product.available === undefined) {
         $scope.infiniteAvailable = true;
       } else if ($scope.product.available === 0) {

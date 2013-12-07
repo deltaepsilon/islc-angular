@@ -12,7 +12,7 @@
 
 
         <div class="pure-u-1" ng-repeat="subscription in subscriptions">
-            <div class="span-10 min-500 max-500 centered">
+            <div class="span-10 min-500 max-500 centered" ng-hide="expired(subscription)">
                 <a class="button button-highlight text-centered" ui-sref="content.subscription({productSlug: subscription.product.slug})">go to {{ subscription.product.title }}</a>
                 <br>
 
@@ -21,6 +21,10 @@
                     <span class="pull-left" ng-hide="subscription.reset">Course Not Started</span>
                     <span class="pull-right" ng-show="subscription.reset">Expires: {{ subscription.expires | date }}</span>
                 </div>
+            </div>
+
+            <div class="span-10 min-500 max-500 centered text-centered" ng-show="expired(subscription)">
+                Expired: <a class="button-link" ui-sref="product({slug: subscription.product.slug})">{{ subscription.product.title }}</a>
             </div>
 
             <br>

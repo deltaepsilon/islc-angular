@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('GalleriesCtrl', function ($rootScope, $scope, galleries, galleryService, $timeout, $state, notificationService) {
+  .controller('GalleriesCtrl', function ($rootScope, $scope, galleries, galleryService, $timeout, $state, notificationService, subscriptionService, subscriptions) {
 
     if (galleries.error) {
       notificationService.error('Gallery', galleries.error);
@@ -10,6 +10,8 @@ angular.module('islcAngularApp')
     }
 
     $rootScope.newGallery = {};
+
+    $scope.galleryAccess = subscriptionService.galleryAccess(subscriptions);
 
     $scope.$on('fileChange', function (e, value) {
       $timeout(function () {

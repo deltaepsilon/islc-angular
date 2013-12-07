@@ -346,6 +346,9 @@ angular.module('islcAngularApp', [
             resolve: {
               galleries: function (galleryService) {
                 return galleryService.get();
+              },
+              subscriptions: function (subscriptionService) {
+                return subscriptionService.get();
               }
             }
           }
