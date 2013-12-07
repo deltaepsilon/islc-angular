@@ -113,6 +113,44 @@ angular.module('islcAngularApp', [
           body: body
         }
       })
+      .state('rootA', {
+        url: '/root-a',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/rootA.html',
+            controller: 'RootCtrl',
+            resolve: {
+              melissa: function (assetService) {
+                return assetService.getImages('calligraphy/assets/melissa');
+              },
+              studentWork: function (assetService) {
+                return assetService.getImages('calligraphy/assets/student-work');
+              }
+            }
+          }
+        }
+
+      })
+      .state('rootB', {
+        url: '/root-b',
+        views: {
+          nav: nav,
+          body: {
+            templateUrl: 'views/partials/rootB.html',
+            controller: 'RootCtrl',
+            resolve: {
+              melissa: function (assetService) {
+                return assetService.getImages('calligraphy/assets/melissa');
+              },
+              studentWork: function (assetService) {
+                return assetService.getImages('calligraphy/assets/student-work');
+              }
+            }
+          }
+        }
+
+      })
       .state('dashboard', {
         url: '/dashboard',
         views: {

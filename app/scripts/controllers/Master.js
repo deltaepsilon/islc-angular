@@ -4,7 +4,7 @@ angular.module('islcAngularApp')
   .controller('MasterCtrl', function ($scope, $rootScope, $filter){
 
     var SLASH_REGEX = /(^#!\/|\/$|\/:\w+|content\/)/g,
-      defaultTitle = 'I Still Love Calligraphy - Learn The Art of Calligraphy Online!';
+      defaultTitle = 'I Still Love Calligraphy - Learn The Art of Modern Calligraphy Online!';
 
     $scope.title = defaultTitle;
 
@@ -19,11 +19,11 @@ angular.module('islcAngularApp')
           $scope.title = defaultTitle;
           break;
         case 'faq':
-          $scope.title = 'ISLC: Frequently Asked Question';
+          $scope.title = 'FAQ - I Still Love Calligraphy';
           break;
         default:
           title = parts.join(' → ');
-          $scope.title = 'ISLC: ' + $filter('deSlug')(title);
+          $scope.title = $filter('deSlug')(title) + ' - I Still Love Calligraphy';
           break;
       }
 
