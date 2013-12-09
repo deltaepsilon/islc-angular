@@ -3,8 +3,11 @@
 angular.module('islcAngularApp')
   .service('galleryService', function galleryService($rootScope, Restangular, cacheService, commentService) {
     var cache = cacheService.get(),
-      cacheClear = function () {
-        cache.remove('/angular/gallery')
+      cacheClear = function (id) {
+        if (id) {
+          cache.remove('/angular/gallery/' + id);
+        }
+        cache.remove('/angular/gallery');
       };
 
     return {
@@ -17,13 +20,13 @@ angular.module('islcAngularApp')
       },
 
       remove: function (id) {
-        cacheClear();
+        cacheClear(id);
         commentService.clearCache();
         return Restangular.one('gallery', id).remove();
       },
 
       addComment: function (id, comment) {
-        cacheClear();
+        cacheClear(id);
         commentService.clearCache();
         return Restangular.one('gallery', id).all('comment').post({comment: comment});
       },
