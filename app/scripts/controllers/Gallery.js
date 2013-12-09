@@ -1,16 +1,10 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('GalleryCtrl', function ($rootScope, $scope, gallery, galleryService, notificationService, $sanitize) {
-    var LINEFEED_REGEX = /&#10;/g;
-
+  .controller('GalleryCtrl', function ($rootScope, $scope, $sanitize, gallery, galleryService, notificationService, commentService) {
     $scope.$watch('gallery', function () {
       if ($scope.gallery && $scope.gallery.comments) {
-        var i = $scope.gallery.comments.length;
-        while (i--) {
-          $scope.gallery.comments[i].comment = $sanitize($scope.gallery.comments[i].comment);
-          $scope.gallery.comments[i].comment = $scope.gallery.comments[i].comment.replace(LINEFEED_REGEX, "\n");
-        }
+        $scope.gallery.comments = commentService.sanitize($scope.gallery.comments);
       }
 
     });
