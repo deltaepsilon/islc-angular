@@ -43,6 +43,7 @@ angular.module('islcAngularApp', [
 
     if (enableAnalytics) {
       AnalyticsProvider.setAccount('UA-6859272-12');
+      AnalyticsProvider.ignoreFirstPageLoad(true);
       AnalyticsProvider.trackPages(true);
       AnalyticsProvider.setDomainName(location.hostname);
       AnalyticsProvider.setPageEvent('$stateChangeSuccess');
