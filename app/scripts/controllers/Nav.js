@@ -3,13 +3,14 @@
 angular.module('islcAngularApp')
   .controller('NavCtrl', function ($scope, $state, $rootScope, $q, $timeout, _, cartService, productService, notificationService, subscriptionService, user, cart, subscriptions, Analytics) {
     //Basic route security... you wouldn't want users to get hung up if they hit the wrong page
-    var secureRoutes = ['gallery', 'gallery.view', 'content', 'subscriptions', 'account', 'transaction', 'dashboard'];
+    var secureRoutes = ['gallery', 'gallery.view', 'content', 'subscriptions', 'account', 'transaction', 'dashboard'],
+      dashboardRoutes = ['root', 'login']
     if (!user) { // Secured routes redirect
       if (~_.indexOf(secureRoutes, $state.current.name)) {
         $state.go('root');
       }
     } else { // Dashboard redirect
-      if ($state.current.name === 'root') {
+      if (~_.indexOf(dashboardRoutes, $state.current.name)) {
         $state.go('dashboard');
       }
     }
