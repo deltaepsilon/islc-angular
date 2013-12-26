@@ -12,23 +12,37 @@ angular.module('islcAngularApp', [
     'seo',
     'jmdobry.angular-cache'
   ])
-  .run(function (cacheService, notificationService, Analytics) {
+  .run(function (cacheService, $location, notificationService, Analytics, $timeout) {
+    var search = $location.search();
+
     cacheService.config(restangularProvider);
 
-    var error = location.href.match(/error=([^&#]+)/);
-    if (error && error.length >= 2 ) {
-      notificationService.error('Error', decodeURIComponent(error[1]));
+    if (search.tracking) {
+      Analytics.trackEvent('tracking', 'pageview', search.tracking, search.tracking);
     }
 
-    var notification = location.href.match(/notification=([^&#]+)/);
-    if (notification && notification.length >= 2 ) {
-      notificationService.info('Notification', decodeURIComponent(notification[1]));
-    }
+    $timeout(function () {
+      if (search.info ) {
+        notificationService.info('Info', search.info);
+      }
 
-    var tracking = location.href.match(/tracking=([^&#]+)/);
-    if (tracking && tracking.length >= 2 ) {
-      Analytics.trackEvent('tracking', 'pageview', tracking[1], tracking[1]);
-    }
+      if (search.error ) {
+        notificationService.error('Error', search.error);
+      }
+
+      if (search.success ) {
+        notificationService.success('Success', search.success);
+      }
+
+      if (search.warning) {
+        notificationService.warning('Warning', search.warning);
+      }
+
+      if (search.notification ) {
+        notificationService.info('Notification', search.notification);
+      }
+
+    }, 1000);
 
   })
   .config(function ($locationProvider, $stateProvider, $urlRouterProvider, AnalyticsProvider, RestangularProvider) {

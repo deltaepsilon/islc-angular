@@ -3,7 +3,7 @@
 angular.module('islcAngularApp')
   .controller('MasterCtrl', function ($scope, $rootScope, $filter){
 
-    var SLASH_REGEX = /(^#!\/|\/$|\/:\w+|content\/)/g,
+    var SLASH_REGEX = /(^#!\/|\/$|\/:\w+|content\/|\?.+)/g,
       defaultTitle = 'I Still Love Calligraphy - Learn The Art of Modern Calligraphy Online!',
       defaultDescription = 'I Still Love Calligraphy is an online calligraphy workshop created and taught by Melissa Esplin. I Still Love Calligraphy focuses on modern calligraphy through a serious of online classes and additional downloadable content.';
 
@@ -29,6 +29,7 @@ angular.module('islcAngularApp')
           break;
       }
 
+      //Manage Descriptions
       switch (first) {
         case 'products':
           $rootScope.description = 'Take our signature Online Calligraphy Course, gift the course to a loved one, or download one of our printables.';

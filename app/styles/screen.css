@@ -3649,8 +3649,9 @@ textarea {
   bottom: 0;
   left: 0;
   text-align: center;
+  z-index: 10000;
 }
-/* line 10, modules/_notifications.scss */
+/* line 11, modules/_notifications.scss */
 .dr-notification-container .dr-notification-wrapper {
   border-color: transparent;
   border-style: solid;
@@ -3661,7 +3662,7 @@ textarea {
   position: relative;
   text-align: left;
 }
-/* line 26, modules/_notifications.scss */
+/* line 27, modules/_notifications.scss */
 .dr-notification-container .dr-notification-close-btn {
   position: absolute;
   top: 0;
@@ -3670,7 +3671,7 @@ textarea {
   left: 10px;
   cursor: pointer;
 }
-/* line 31, modules/_notifications.scss */
+/* line 32, modules/_notifications.scss */
 .dr-notification-container .dr-notification-close-btn:before {
   position: absolute;
   top: 0;
@@ -3680,39 +3681,39 @@ textarea {
   content: 'x';
   font-weight: 500;
 }
-/* line 45, modules/_notifications.scss */
+/* line 46, modules/_notifications.scss */
 .dr-notification-container .dr-notification-text {
   margin: 5px 0 10px;
 }
-/* line 57, modules/_notifications.scss */
+/* line 58, modules/_notifications.scss */
 .dr-notification-container .notify {
   border-color: #dddddd;
 }
-/* line 52, modules/_notifications.scss */
+/* line 53, modules/_notifications.scss */
 .dr-notification-container .notify .dr-notification-title {
   color: #dddddd;
 }
-/* line 60, modules/_notifications.scss */
+/* line 61, modules/_notifications.scss */
 .dr-notification-container .error {
   border-color: #bd3f42;
 }
-/* line 52, modules/_notifications.scss */
+/* line 53, modules/_notifications.scss */
 .dr-notification-container .error .dr-notification-title {
   color: #bd3f42;
 }
-/* line 63, modules/_notifications.scss */
+/* line 64, modules/_notifications.scss */
 .dr-notification-container .warning {
   border-color: #98ccb6;
 }
-/* line 52, modules/_notifications.scss */
+/* line 53, modules/_notifications.scss */
 .dr-notification-container .warning .dr-notification-title {
   color: #98ccb6;
 }
-/* line 66, modules/_notifications.scss */
+/* line 67, modules/_notifications.scss */
 .dr-notification-container .success {
   border-color: #177f62;
 }
-/* line 52, modules/_notifications.scss */
+/* line 53, modules/_notifications.scss */
 .dr-notification-container .success .dr-notification-title {
   color: #177f62;
 }

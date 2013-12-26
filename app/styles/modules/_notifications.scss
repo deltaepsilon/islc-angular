@@ -6,6 +6,7 @@
   left: 0;
 
   text-align: center;
+  z-index: 10000;
 
   .dr-notification-wrapper {
     @extend .background-white;
