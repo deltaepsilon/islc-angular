@@ -28,6 +28,10 @@ $sprites:
   @include use-sprite(about, -2px);
 }
 
+.background-powered-by-stripe {
+  @include use-sprite(powered-by-stripe, -1px);
+}
+
 $background-url: url('../images/backgrounds/background1.png');
 .background-background {
   background-image: $background-url;
