@@ -16,6 +16,10 @@ angular.module('islcAngularApp')
       $rootScope.products = products;
     }
 
+    if ($scope.product && $scope.product.description && typeof $scope.product.description === 'string') {
+      $rootScope.description = $scope.product.description.match(/.+/)[0];
+    }
+
     $scope.isActive = function (category) {
       return $scope.category === category;
     }
