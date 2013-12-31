@@ -2385,6 +2385,19 @@ body {
   height: 2px;
 }
 /* line 11, modules/_nav.scss */
+#top-nav #top-nav-logo {
+  position: relative;
+}
+/* line 15, modules/_nav.scss */
+#top-nav #byline {
+  position: absolute;
+  top: initial;
+  right: 112px;
+  bottom: -5px;
+  left: initial;
+  z-index: 2;
+}
+/* line 21, modules/_nav.scss */
 #top-nav .background-white, #top-nav .address-form input, .address-form #top-nav input, #top-nav #gallery .image-wrapper:after, #gallery #top-nav .image-wrapper:after, #top-nav #gallery .comment:nth-child(2n), #gallery #top-nav .comment:nth-child(2n), #top-nav .dr-notification-container .dr-notification-wrapper, .dr-notification-container #top-nav .dr-notification-wrapper, #top-nav .qv-slider .qv-slider-image, .qv-slider #top-nav .qv-slider-image, #top-nav .qv-slider .qv-slider-button, .qv-slider #top-nav .qv-slider-button {
   border: 1px solid white;
   color: white;
@@ -2393,7 +2406,7 @@ body {
   width: 310px;
   z-index: 1;
 }
-/* line 22, modules/_nav.scss */
+/* line 32, modules/_nav.scss */
 #top-nav .islc-logo {
   overflow: hidden;
   display: block;
@@ -2408,17 +2421,17 @@ body {
   margin: 3px auto 0px;
   position: relative;
 }
-/* line 32, modules/_nav.scss */
+/* line 42, modules/_nav.scss */
 #top-nav #nav-links {
   text-align: center;
   padding-left: 0;
 }
-/* line 37, modules/_nav.scss */
+/* line 47, modules/_nav.scss */
 #top-nav .nav-link-item {
   cursor: pointer;
   float: left;
 }
-/* line 42, modules/_nav.scss */
+/* line 52, modules/_nav.scss */
 #top-nav .nav-link {
   display: inline-block;
   font-size: 14px;
@@ -2426,25 +2439,32 @@ body {
   padding: 10px 20px;
   text-transform: uppercase;
 }
-/* line 49, modules/_nav.scss */
+/* line 59, modules/_nav.scss */
 #top-nav .nav-link:hover, #top-nav .nav-link.active {
   text-decoration: underline;
 }
-/* line 53, modules/_nav.scss */
+/* line 63, modules/_nav.scss */
 #top-nav .nav-link.active {
   cursor: default;
 }
 
 @media (max-width: 767px) {
-  /* line 73, modules/_nav.scss */
+  /* line 83, modules/_nav.scss */
   .nav-link-item {
     float: none !important;
   }
 }
 @media (min-width: 1100px) {
-  /* line 79, modules/_nav.scss */
+  /* line 90, modules/_nav.scss */
   #nav-links {
     float: left;
+  }
+}
+@media (max-width: 980px) {
+  /* line 96, modules/_nav.scss */
+  #byline {
+    right: 50% !important;
+    margin-right: -43px;
   }
 }
 /* line 1, modules/_footer.scss */
