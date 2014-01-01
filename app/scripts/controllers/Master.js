@@ -1,8 +1,19 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('MasterCtrl', function ($scope, $rootScope, $filter){
+  .controller('MasterCtrl', function ($scope, $rootScope, $filter, $timeout){
 
+    if (typeof window.callPhantom === 'function') {
+      $timeout($scope.htmlReady()); //Call htmlReady on first load for PhantomJS renderer's sake
+    }
+
+    $rootScope.$on('$stateChangeSuccess', function(event, to, toParams, from, fromParams) {
+      $rootScope.$previousState = from;
+      $rootScope.$previousStateParams = fromParams;
+    });
+
+
+    // Meta stuff
     var SLASH_REGEX = /(^#!\/|\/$|\/:\w+|content\/|\?.+)/g,
       defaultTitle = 'I Still Love Calligraphy - Learn The Art of Modern Calligraphy Online!',
       defaultDescription = 'I Still Love Calligraphy is an online calligraphy workshop created and taught by Melissa Esplin. I Still Love Calligraphy focuses on modern calligraphy through a serious of online classes and additional downloadable content.';
