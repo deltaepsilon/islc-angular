@@ -16,7 +16,7 @@ angular.module('islcAngularApp')
     // Meta stuff
     var SLASH_REGEX = /(^#!\/|\/$|\/:\w+|content\/|\?.+)/g,
       defaultTitle = 'I Still Love Calligraphy - Learn The Art of Modern Calligraphy Online!',
-      defaultDescription = 'I Still Love Calligraphy is an online calligraphy workshop created and taught by Melissa Esplin. I Still Love Calligraphy focuses on modern calligraphy through a serious of online classes and additional downloadable content.';
+      defaultDescription = 'I Still Love Calligraphy is an online calligraphy workshop created and taught by Melissa Esplin. I Still Love Calligraphy focuses on modern calligraphy through a series of online classes and additional downloadable content.';
 
     $scope.title = defaultTitle;
     $rootScope.description = defaultDescription;
