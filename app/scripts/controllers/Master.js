@@ -46,7 +46,7 @@ angular.module('islcAngularApp')
           $rootScope.description = 'Take our signature Online Calligraphy Course, gift the course to a loved one, or download one of our printables.';
           break;
         case 'supplies':
-          $rootScope.description = "These are the supplies that you'll need to start learning calligraphy. Buy from our preferred online store or source them locally. ";
+          $rootScope.description = "These are the supplies that you'll need to start learning calligraphy. Buy from our preferred online store or source them locally.";
           break;
         case 'faq':
           $rootScope.description = "Is the workshop for beginners? Yes! We specialize in beginner and intermediate calligraphy instruction.";
