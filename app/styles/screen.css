@@ -1780,7 +1780,7 @@ html, button {
 }
 
 /* line 12, imports/_global.scss */
-video {
+video, iframe {
   max-width: 100%;
 }
 
