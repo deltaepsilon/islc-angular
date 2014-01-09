@@ -295,10 +295,16 @@
         <div class="pure-u-1 checkout" ng-show="user && token || !cart.total">
             <br>
             <br>
+
+            <form action class="qv-form centered text-centered">
+                <span>If you don't mind us asking... how did you find I Still Love Calligraphy? <input type="text" placeholder="I searched Google..." ng-model="survey.attribution"/></span>
+            </form>
+
+            <br>
             <button
                 id="checkout-button"
                 class="button-highlight centered"
-                ng-click="checkout()"
+                ng-click="checkout(survey)"
                 ng-disabled="cart.total && (!cart || !token || cartForm.$invalid)"
                 qv-flash="cart"
                 flash-message="checking out..."

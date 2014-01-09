@@ -109,9 +109,9 @@ angular.module('islcAngularApp')
 
     };
 
-    $scope.checkout = function () {
+    $scope.checkout = function (survey) {
       $rootScope.startLoader();
-      cartService.checkout().then(function (transaction) {
+      cartService.checkout(survey).then(function (transaction) {
         if (transaction.error) {
           $rootScope.cancelLoader();
           notificationService.error('Checkout', transaction.error);

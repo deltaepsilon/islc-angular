@@ -69,9 +69,9 @@ angular.module('islcAngularApp')
         return Restangular.all('discount').post({code: code});
       },
 
-      checkout: function () {
+      checkout: function (survey) {
         clearCache();
-        var promise = Restangular.one('stripe/checkout').get();
+        var promise = Restangular.one('stripe/checkout').get(survey);
         promise.then(trackTransaction);
 
         return promise
