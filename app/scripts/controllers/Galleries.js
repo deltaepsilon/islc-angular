@@ -29,14 +29,18 @@ angular.module('islcAngularApp')
     $rootScope.$on('iFrameLoad', function (e, value) {
       galleryService.cacheClear();
       galleryService.get(null, true).then(function (galleries) {
+        if ($rootScope.galleries && $rootScope.galleries.length === galleries.length) {
+          notificationService.error('Gallery Upload', 'Sorry! Your upload failed. Try a smaller file. Under 5MB is ideal.');
+        }
+
         $rootScope.galleries = galleries;
 
         if (galleries && galleries.length) {
           $scope.newGallery = {};
           $state.go('gallery.view', {id: galleries[0].id});
-        } else {
-          $rootScope.cancelLoader();
         }
+
+        $rootScope.cancelLoader();
 
       });
 
