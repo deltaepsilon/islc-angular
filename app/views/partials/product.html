@@ -8,6 +8,7 @@
 </div>
 <div class="product padded-wrapper">
     <div class="pure-g-r product-wrapper product-{{ product.category || product.type }} centered" itemscope itemtype="http://schema.org/Offer">
+        <meta itemprop="availability" content="{{ inStock(product) }}" />
 
         <div class="pure-u-3-5 product-images centered-tablet">
 
@@ -35,7 +36,7 @@
 
             <h4>
                 <span ng-show="outOfStock">out of stock</span>
-                <span ng-hide="outOfStock || infiniteAvailable" itemprop="availability">in stock: {{ product.available }}</span>
+                <span ng-hide="outOfStock || infiniteAvailable">in stock: {{ product.available }}</span>
             </h4>
 
             <div class="product-description">

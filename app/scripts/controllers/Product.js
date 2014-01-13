@@ -82,4 +82,12 @@ angular.module('islcAngularApp')
       return false;
     }
 
+    $scope.inStock = function (product) {
+      if ($scope.isOutOfStock(product)) {
+        return "OutOfStock";
+      } else {
+        return "InStock";
+      }
+    }
+
   });
