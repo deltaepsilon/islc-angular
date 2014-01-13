@@ -48,7 +48,7 @@
                             <div class="islc-logo"></div>
                         </div>
                     </a>
-                    <a ui-sref="dashboard" ng-show="user" href="#!/dashboard" style="display: none;">
+                    <a ui-sref="dashboard" ng-show="user" rel="nofollow" href="#!/dashboard" style="display: none;">
                         <div class="background-white pull-right-desktop centered-tablet">
                             <div class="islc-logo"></div>
                         </div>
@@ -116,8 +116,7 @@
             <div class="pure-g-r landing-page" itemscope itemtype="http://schema.org/CreativeWork">
 
                 <!--BEGINNING OF STATIC CONTENT-->
-                <meta itemprop="name" content="Online Calligraphy Course"/>
-
+                <meta itemprop="name" content="Online Calligraphy Course">
 
                 <div class="pure-u-1">
                     <h1 class="header centered text-centered">learn modern calligraphy</h1>
@@ -134,48 +133,67 @@
                     </div>
                 </div>
 
-                <div class="pure-u-1 ng-isolate-scope ng-scope" qv-slider="images.melissa">
-                    <div class="qv-slider">
-                        <div class="qv-slider-button qv-slider-left-button" ng-click="slide(389)" ng-hide="hideRight" style="display: none;">
-                            <div class="background-left-arrow"></div>
-                        </div>
-                        <ul class="qv-slider-list">
-                            <!-- ngRepeat: image in images --><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-8.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-8.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-7.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-7.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-6.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-6.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-5.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-5.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-2.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-2.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-megans-prayer-2.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-megans-prayer-2.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-friendship-cs-lewis-quote-2.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-friendship-cs-lewis-quote-2.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-lettered-cards-1.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-lettered-cards-1.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-everyday-im-hustlin.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-everyday-im-hustlin.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istilllovecalligraphy-custom-calligraphy-notecards2.jpg" alt="" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istilllovecalligraphy-custom-calligraphy-notecards2.jpg">
-                            <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" style="display: none;"></a>
-                        </li>
-                        </ul>
-                        <div class="qv-slider-button qv-slider-right-button" ng-click="slide(-389)" ng-hide="hideLeft">
-                            <div class="background-right-arrow"></div>
-                        </div>
+                <div class="pure-u-1 ng-isolate-scope ng-scope" qv-slider="images.melissa"><div class="qv-slider">
+                    <div class="qv-slider-button qv-slider-left-button" ng-click="slide(389)" ng-hide="hideRight" style="display: none;">
+                        <div class="background-left-arrow"></div>
                     </div>
+                    <ul class="qv-slider-list">
+                        <!-- ngRepeat: image in images --><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-8.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-8.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-7.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-7.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-6.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-6.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-5.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-5.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-2.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/melissaesplin-mothersday-card-pack-giveaway-2.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-megans-prayer-2.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-megans-prayer-2.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-friendship-cs-lewis-quote-2.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-friendship-cs-lewis-quote-2.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-lettered-cards-1.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-lettered-cards-1.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-everyday-im-hustlin.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istillloveyou-calligraphy-custom-everyday-im-hustlin.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <meta itemprop="name" content="Melissa Esplin Calligraphy">
+
+                        <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istilllovecalligraphy-custom-calligraphy-notecards2.jpg" alt="" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/melissa/istilllovecalligraphy-custom-calligraphy-notecards2.jpg">
+                        <a class="qv-slider-link ng-binding" ng-href="" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" style="display: none;"></a>
+                    </li>
+                    </ul>
+                    <div class="qv-slider-button qv-slider-right-button" ng-click="slide(-389)" ng-hide="hideLeft">
+                        <div class="background-right-arrow"></div>
+                    </div>
+                </div>
                 </div>
                 <div class="pure-u-1">
                     <span class="linkout pull-right">
@@ -222,45 +240,62 @@
                         <br>
                     </div>
 
-                    <div class="pure-u-1 ng-isolate-scope ng-scope" qv-slider="images.studentWork">
-                        <div class="qv-slider">
-                            <div class="qv-slider-button qv-slider-left-button" ng-click="slide(389)" ng-hide="hideRight" style="display: none;">
-                                <div class="background-left-arrow"></div>
-                            </div>
-                            <ul class="qv-slider-list">
-                                <!-- ngRepeat: image in images --><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.chickpeastudio.typepad.com|juliette_lanvers|2.jpg" alt="juliette lanvers" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.chickpeastudio.typepad.com|juliette_lanvers|2.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://www.chickpeastudio.typepad.com" ng-show="image.href" rel="nofollow" target="_blank" href="http://www.chickpeastudio.typepad.com">juliette lanvers</a>
-                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.chickpeastudio.typepad.com|juliette_lanvers|1.jpg" alt="juliette lanvers" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.chickpeastudio.typepad.com|juliette_lanvers|1.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://www.chickpeastudio.typepad.com" ng-show="image.href" rel="nofollow" target="_blank" href="http://www.chickpeastudio.typepad.com">juliette lanvers</a>
-                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.behance.net:kaelasoohoo|kaela_soohoo|2.jpg" alt="kaela soohoo" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.behance.net:kaelasoohoo|kaela_soohoo|2.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://www.behance.net/kaelasoohoo" ng-show="image.href" rel="nofollow" target="_blank" href="http://www.behance.net/kaelasoohoo">kaela soohoo</a>
-                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.behance.net:kaelasoohoo|kaela_soohoo|1.jpg" alt="kaela soohoo" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.behance.net:kaelasoohoo|kaela_soohoo|1.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://www.behance.net/kaelasoohoo" ng-show="image.href" rel="nofollow" target="_blank" href="http://www.behance.net/kaelasoohoo">kaela soohoo</a>
-                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|2.jpg" alt="jennifer lioy" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|2.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://sincerelyserendipity.com" ng-show="image.href" rel="nofollow" target="_blank" href="http://sincerelyserendipity.com">jennifer lioy</a>
-                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|1.jpg" alt="jennifer lioy" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|1.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://sincerelyserendipity.com" ng-show="image.href" rel="nofollow" target="_blank" href="http://sincerelyserendipity.com">jennifer lioy</a>
-                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilyecavanagh.com|emily_cavanagh|1.jpg" alt="emily cavanagh" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilyecavanagh.com|emily_cavanagh|1.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://emilyecavanagh.com" ng-show="image.href" rel="nofollow" target="_blank" href="http://emilyecavanagh.com">emily cavanagh</a>
-                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.wordpress.com|emilee_stucky|2.jpg" alt="emilee stucky" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.wordpress.com|emilee_stucky|2.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://emilimedesigns.wordpress.com" ng-show="image.href" rel="nofollow" target="_blank" href="http://emilimedesigns.wordpress.com">emilee stucky</a>
-                            </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images">
-                                <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.wordpress.com|emilee_stucky|1.jpg" alt="emilee stucky" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.wordpress.com|emilee_stucky|1.jpg">
-                                <a class="qv-slider-link ng-binding" ng-href="http://emilimedesigns.wordpress.com" ng-show="image.href" rel="nofollow" target="_blank" href="http://emilimedesigns.wordpress.com">emilee stucky</a>
-                            </li>
-                            </ul>
-                            <div class="qv-slider-button qv-slider-right-button" ng-click="slide(-389)" ng-hide="hideLeft">
-                                <div class="background-right-arrow"></div>
-                            </div>
+                    <div class="pure-u-1 ng-isolate-scope ng-scope" qv-slider="images.studentWork"><div class="qv-slider">
+                        <div class="qv-slider-button qv-slider-left-button" ng-click="slide(389)" ng-hide="hideRight" style="display: none;">
+                            <div class="background-left-arrow"></div>
                         </div>
+                        <ul class="qv-slider-list">
+                            <!-- ngRepeat: image in images --><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="juliette lanvers">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.chickpeastudio.typepad.com|juliette_lanvers|2.jpg" alt="juliette lanvers" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.chickpeastudio.typepad.com|juliette_lanvers|2.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://www.chickpeastudio.typepad.com" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://www.chickpeastudio.typepad.com">juliette lanvers</a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="juliette lanvers">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.chickpeastudio.typepad.com|juliette_lanvers|1.jpg" alt="juliette lanvers" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.chickpeastudio.typepad.com|juliette_lanvers|1.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://www.chickpeastudio.typepad.com" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://www.chickpeastudio.typepad.com">juliette lanvers</a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="kaela soohoo">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.behance.net:kaelasoohoo|kaela_soohoo|2.jpg" alt="kaela soohoo" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.behance.net:kaelasoohoo|kaela_soohoo|2.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://www.behance.net/kaelasoohoo" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://www.behance.net/kaelasoohoo">kaela soohoo</a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="kaela soohoo">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.behance.net:kaelasoohoo|kaela_soohoo|1.jpg" alt="kaela soohoo" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/www.behance.net:kaelasoohoo|kaela_soohoo|1.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://www.behance.net/kaelasoohoo" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://www.behance.net/kaelasoohoo">kaela soohoo</a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="jennifer lioy">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|2.jpg" alt="jennifer lioy" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|2.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://sincerelyserendipity.com" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://sincerelyserendipity.com">jennifer lioy</a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="jennifer lioy">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|1.jpg" alt="jennifer lioy" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/sincerelyserendipity.com|jennifer_lioy|1.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://sincerelyserendipity.com" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://sincerelyserendipity.com">jennifer lioy</a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="emily cavanagh">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilyecavanagh.com|emily_cavanagh|1.jpg" alt="emily cavanagh" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilyecavanagh.com|emily_cavanagh|1.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://emilyecavanagh.com" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://emilyecavanagh.com">emily cavanagh</a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="emilee stucky">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.wordpress.com|emilee_stucky|2.jpg" alt="emilee stucky" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.wordpress.com|emilee_stucky|2.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://emilimedesigns.wordpress.com" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://emilimedesigns.wordpress.com">emilee stucky</a>
+                        </li><li class="qv-slider-list-item ng-scope" ng-repeat="image in images" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <meta itemprop="name" content="emilee stucky">
+
+                            <img class="qv-slider-image" ng-src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.wordpress.com|emilee_stucky|1.jpg" alt="emilee stucky" itemprop="image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/assets/student-work/emilimedesigns.wordpress.com|emilee_stucky|1.jpg">
+                            <a class="qv-slider-link ng-binding" ng-href="http://emilimedesigns.wordpress.com" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author" href="http://emilimedesigns.wordpress.com">emilee stucky</a>
+                        </li>
+                        </ul>
+                        <div class="qv-slider-button qv-slider-right-button" ng-click="slide(-389)" ng-hide="hideLeft">
+                            <div class="background-right-arrow"></div>
+                        </div>
+                    </div>
                     </div>
                 </div>
 
