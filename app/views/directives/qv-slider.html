@@ -5,8 +5,7 @@
     <ul class="qv-slider-list">
         <li class="qv-slider-list-item" ng-repeat="image in images" itemscope itemtype="http://schema.org/CreativeWork">
             <meta itemprop="name" content="{{ image.text }}"/>
-            <meta itemprop="price" content="0"/>
-            <meta itemprop="priceCurrency" content="USD"/>
+
             <img class="qv-slider-image" ng-src="{{ image.src }}" alt="{{ image.text }}" itemprop="image"/>
             <a class="qv-slider-link" ng-href="{{ image.href }}" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author">{{ image.text }}</a>
         </li>
