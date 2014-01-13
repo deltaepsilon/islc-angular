@@ -17,6 +17,7 @@
         <div class="pure-u-2-5 product-details">
             <div class="product-meta clearfix">
                 <meta itemprop="sku" content="{{ product.id }}"/>
+                <meta itemprop="priceCurrency" content="USD">
                 <div class="product-title pull-left" itemprop="name">{{ product.title }}</div>
                 <div class="product-price pull-right" itemprop="price">{{ product.price | currency | trimDecimal }}</div>
             </div>

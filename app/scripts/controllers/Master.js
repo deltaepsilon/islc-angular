@@ -35,6 +35,10 @@ angular.module('islcAngularApp')
           $scope.title = 'FAQ - I Still Love Calligraphy';
           break;
         default:
+          if (parts.length > 1 && parts[0] === 'product') {
+            parts.shift();
+          }
+
           title = parts.join(' → ');
           $scope.title = $filter('deSlug')(title) + ' - I Still Love Calligraphy';
           break;
