@@ -2524,26 +2524,34 @@ body {
 
 /* line 3, modules/_landing-page.scss */
 .landing-page .header, .landing-page h1, .landing-page h2, .landing-page h3, .landing-page h4, .landing-page h5, .landing-page h6, .landing-page #content-wrapper .page-link, #content-wrapper .landing-page .page-link {
-  margin: 0;
+  margin: auto;
+  letter-spacing: 0;
+  line-height: 46px;
+  text-transform: none;
+  max-width: 700px;
 }
-/* line 7, modules/_landing-page.scss */
+/* line 10, modules/_landing-page.scss */
+.landing-page .header strong, .landing-page h1 strong, .landing-page h2 strong, .landing-page h3 strong, .landing-page h4 strong, .landing-page h5 strong, .landing-page h6 strong, .landing-page #content-wrapper .page-link strong, #content-wrapper .landing-page .page-link strong {
+  text-transform: uppercase;
+}
+/* line 15, modules/_landing-page.scss */
 .landing-page .single {
   margin: 40px 0;
   padding: 25px 15px;
 }
-/* line 11, modules/_landing-page.scss */
+/* line 19, modules/_landing-page.scss */
 .landing-page .single .button-cta {
   margin-top: 26px;
   margin_bottom: 26px;
 }
-/* line 16, modules/_landing-page.scss */
+/* line 24, modules/_landing-page.scss */
 .landing-page .single p {
   line-height: 28px;
   max-width: 395px;
   padding-left: 10px;
   padding-right: 50px;
 }
-/* line 26, modules/_landing-page.scss */
+/* line 34, modules/_landing-page.scss */
 .landing-page .button-cta {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2556,73 +2564,73 @@ body {
   letter-spacing: 2px;
   min-width: 0px;
 }
-/* line 35, modules/_landing-page.scss */
+/* line 43, modules/_landing-page.scss */
 .landing-page .button-cta:after {
   visibility: hidden;
 }
-/* line 39, modules/_landing-page.scss */
+/* line 47, modules/_landing-page.scss */
 .landing-page .button-cta:hover {
   -moz-box-shadow: 0 0 20px 3px #999999;
   -webkit-box-shadow: 0 0 20px 3px #999999;
   box-shadow: 0 0 20px 3px #999999;
 }
-/* line 42, modules/_landing-page.scss */
+/* line 50, modules/_landing-page.scss */
 .landing-page .button-cta:hover:after {
   visibility: visible;
 }
-/* line 48, modules/_landing-page.scss */
+/* line 56, modules/_landing-page.scss */
 .landing-page .background-make-paper-sing {
   margin: 50px auto;
 }
-/* line 52, modules/_landing-page.scss */
+/* line 60, modules/_landing-page.scss */
 .landing-page .triple {
   border-width: 2px;
   margin-bottom: 47px;
   padding: 18px;
 }
-/* line 57, modules/_landing-page.scss */
+/* line 65, modules/_landing-page.scss */
 .landing-page .triple p {
   margin: 17px;
   line-height: 24px;
 }
-/* line 63, modules/_landing-page.scss */
+/* line 71, modules/_landing-page.scss */
 .landing-page .student-work {
   margin-bottom: 50px;
 }
-/* line 67, modules/_landing-page.scss */
+/* line 75, modules/_landing-page.scss */
 .landing-page .background-student-work {
   margin-bottom: 25px;
 }
-/* line 74, modules/_landing-page.scss */
+/* line 82, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper .testimonials-columns-wrapper {
   max-width: 700px;
 }
-/* line 80, modules/_landing-page.scss */
+/* line 88, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper .border-right {
   border-right: 2px solid #e7e8e9;
 }
-/* line 84, modules/_landing-page.scss */
+/* line 92, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper p {
   padding: 0;
 }
-/* line 88, modules/_landing-page.scss */
+/* line 96, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper a {
   color: #177f62;
 }
-/* line 92, modules/_landing-page.scss */
+/* line 100, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper hr {
   border: 1px solid #e7e8e9;
   margin: 15px 0;
 }
-/* line 98, modules/_landing-page.scss */
+/* line 106, modules/_landing-page.scss */
 .landing-page .how-does-it-work-wrapper {
   min-width: 400px;
 }
-/* line 102, modules/_landing-page.scss */
+/* line 110, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 106, modules/_landing-page.scss */
+/* line 114, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -2631,7 +2639,7 @@ body {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 114, modules/_landing-page.scss */
+/* line 122, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -2640,50 +2648,50 @@ body {
   left: 50%;
   margin-left: -156px;
 }
-/* line 121, modules/_landing-page.scss */
+/* line 129, modules/_landing-page.scss */
 .landing-page .about-wrapper {
   margin-top: 60px;
 }
-/* line 124, modules/_landing-page.scss */
+/* line 132, modules/_landing-page.scss */
 .landing-page .about-wrapper .about-image-wrapper {
   min-width: 202px;
 }
-/* line 128, modules/_landing-page.scss */
+/* line 136, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-me {
   margin: 15px 30px 0px;
 }
-/* line 132, modules/_landing-page.scss */
+/* line 140, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-about {
   margin: 0 30px 1px;
 }
-/* line 136, modules/_landing-page.scss */
+/* line 144, modules/_landing-page.scss */
 .landing-page .about-wrapper h3 {
   letter-spacing: 5px;
   font-size: 20px;
   margin: 0 30px 30px;
 }
-/* line 142, modules/_landing-page.scss */
+/* line 150, modules/_landing-page.scss */
 .landing-page .about-wrapper a {
   text-decoration: underline;
 }
-/* line 147, modules/_landing-page.scss */
+/* line 155, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 30px 0 36px;
 }
-/* line 150, modules/_landing-page.scss */
+/* line 158, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-/* line 155, modules/_landing-page.scss */
+/* line 163, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 159, modules/_landing-page.scss */
+/* line 167, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 163, modules/_landing-page.scss */
+/* line 171, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2705,13 +2713,13 @@ body {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 177, modules/_landing-page.scss */
+/* line 185, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px;
 }
-/* line 184, modules/_landing-page.scss */
+/* line 192, modules/_landing-page.scss */
 .landing-page .max-paragraph {
   display: block;
   margin: 15px auto;

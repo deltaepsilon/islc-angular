@@ -6,7 +6,7 @@
         <li class="qv-slider-list-item" ng-repeat="image in images" itemscope itemtype="http://schema.org/CreativeWork">
             <meta itemprop="name" content="{{ image.text || 'Melissa Esplin Calligraphy' }}"/>
 
-            <img class="qv-slider-image" ng-src="{{ image.src }}" alt="{{ image.text }}" itemprop="image"/>
+            <img class="qv-slider-image" ng-src="{{ image.src }}" alt="{{ image.text || Calligraphy Class Work Sample }}" itemprop="image"/>
             <a class="qv-slider-link" ng-href="{{ image.href }}" ng-show="image.href" rel="nofollow" target="_blank" itemprop="author">{{ image.text }}</a>
         </li>
     </ul>

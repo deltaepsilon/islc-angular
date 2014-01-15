@@ -1,7 +1,15 @@
 .landing-page {
 
   .header {
-    margin: 0;
+    margin: auto;
+    letter-spacing: 0;
+    line-height: 46px;
+    text-transform: none;
+    max-width: 700px;
+
+    strong {
+      text-transform: uppercase;
+    }
   }
 
   .single {

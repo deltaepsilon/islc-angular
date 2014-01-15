@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('MasterCtrl', function ($scope, $rootScope, $filter, $timeout){
+  .controller('MasterCtrl', function ($scope, $rootScope, $filter, $timeout, $location){
 
     if (typeof window.callPhantom === 'function') {
       $timeout($scope.htmlReady()); //Call htmlReady on first load for PhantomJS renderer's sake
@@ -15,7 +15,7 @@ angular.module('islcAngularApp')
 
     // Meta stuff
     var SLASH_REGEX = /(^#!\/|\/$|\/:\w+|content\/|\?.+)/g,
-      defaultTitle = 'I Still Love Calligraphy - Learn The Art of Modern Calligraphy Online!',
+      defaultTitle = 'Online Calligraphy Class - The Art of Modern Calligraphy',
       defaultDescription = "I Still Love Calligraphy is an online calligraphy class taught by Melissa Esplin. Melissa's lessons focus on modern calligraphy in the copperplate style.";
 
     $scope.title = defaultTitle;
@@ -27,6 +27,7 @@ angular.module('islcAngularApp')
         first = parts[0],
         title;
 
+      // Manage titles
       switch (first) {
         case '':
           $scope.title = defaultTitle;
@@ -44,7 +45,7 @@ angular.module('islcAngularApp')
           break;
       }
 
-      //Manage Descriptions
+      // Manage Descriptions
       switch (first) {
         case 'products':
           $rootScope.description = 'Take our signature Online Calligraphy Course, gift the course to a loved one, or download one of our printables.';
@@ -68,6 +69,9 @@ angular.module('islcAngularApp')
           $rootScope.description = defaultDescription;
           break;
       }
+
+      // Manage Canonical Href
+      $scope.canonical = $location.absUrl();
 
     });
   });
