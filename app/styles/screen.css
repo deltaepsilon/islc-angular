@@ -1314,8 +1314,8 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-large, h1 {
-  font-size: 40px;
+.text-x-large, h1, .landing-page .landing-page-headline strong {
+  font-size: 35px;
 }
 
 /* line 33, imports/_font-size.scss */
@@ -1412,19 +1412,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
  * 2. create background image for pixel ratio 2 screens and put it somewhere in your images folder.
  * 3. include the background-image property in your Sass/Scss using: '@include background-retina(<ratio-1-imagefile>, <ratio-2-imagefile>)'
  */
-/* line 22, imports/_sprites.scss */
-.background-beginner {
-  overflow: hidden;
-  display: block;
-  background-repeat: no-repeat;
-  background-image: url('../images/icons-1point5x-sb406c0fd04.png');
-  background-size: 771.33333px 809.33333px;
-  background-position: -133px 0;
-  height: 31.33333px;
-  width: 128px;
-}
-
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-how-does-it-work {
   overflow: hidden;
   display: block;
@@ -1436,7 +1424,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 343.33333px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-islc-logo {
   overflow: hidden;
   display: block;
@@ -1448,7 +1436,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 318.66667px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-learn-your-way {
   overflow: hidden;
   display: block;
@@ -1460,7 +1448,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 198px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-left-arrow {
   overflow: hidden;
   display: block;
@@ -1472,7 +1460,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 18px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-make-paper-sing {
   overflow: hidden;
   display: block;
@@ -1484,7 +1472,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 771.33333px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-personal-feedback {
   overflow: hidden;
   display: block;
@@ -1496,7 +1484,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 217.33333px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-right-arrow {
   overflow: hidden;
   display: block;
@@ -1508,7 +1496,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 17.33333px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-student-work {
   overflow: hidden;
   display: block;
@@ -1520,7 +1508,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 276px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-thankyou {
   overflow: hidden;
   display: block;
@@ -1532,7 +1520,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 458px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-testimonials {
   overflow: hidden;
   display: block;
@@ -1544,7 +1532,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 335.33333px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-twitter {
   overflow: hidden;
   display: block;
@@ -1556,7 +1544,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 30px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-facebook {
   overflow: hidden;
   display: block;
@@ -1568,7 +1556,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 30px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-shop {
   overflow: hidden;
   display: block;
@@ -1580,7 +1568,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 30px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-pinterest {
   overflow: hidden;
   display: block;
@@ -1592,7 +1580,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 30px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-instagram {
   overflow: hidden;
   display: block;
@@ -1604,7 +1592,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 30px;
 }
 
-/* line 22, imports/_sprites.scss */
+/* line 21, imports/_sprites.scss */
 .background-youtube {
   overflow: hidden;
   display: block;
@@ -1616,7 +1604,19 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 30px;
 }
 
-/* line 27, imports/_sprites.scss */
+/* line 26, imports/_sprites.scss */
+.background-beginner {
+  overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url('../images/icons-1point5x-sb406c0fd04.png');
+  background-size: 771.33333px 809.33333px;
+  background-position: -134px 0;
+  height: 31.33333px;
+  width: 128px;
+}
+
+/* line 30, imports/_sprites.scss */
 .background-about {
   overflow: hidden;
   display: block;
@@ -1628,7 +1628,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 170px;
 }
 
-/* line 31, imports/_sprites.scss */
+/* line 34, imports/_sprites.scss */
 .background-powered-by-stripe {
   overflow: hidden;
   display: block;
@@ -1640,17 +1640,17 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   width: 119.33333px;
 }
 
-/* line 36, imports/_sprites.scss */
+/* line 39, imports/_sprites.scss */
 .background-background {
   background-image: url("../images/backgrounds/background1.png");
 }
 
-/* line 41, imports/_sprites.scss */
+/* line 44, imports/_sprites.scss */
 .background-background-gray {
   background-image: url("../images/backgrounds/background-gray-1point5.png");
 }
 
-/* line 46, imports/_sprites.scss */
+/* line 49, imports/_sprites.scss */
 .background-me {
   background-image: url("../images/photos/me.png");
   background-size: 172px;
@@ -1801,260 +1801,269 @@ p, ul, ol {
 }
 
 /* line 31, imports/_global.scss */
+.legible {
+  font-weight: 300;
+  line-height: 20px;
+  max-width: 700px;
+  margin: 10px auto;
+  word-spacing: 1px;
+}
+
+/* line 39, imports/_global.scss */
 .thick {
   font-weight: 300;
 }
 
-/* line 35, imports/_global.scss */
+/* line 43, imports/_global.scss */
 .padded {
   padding: 15px;
 }
 
-/* line 39, imports/_global.scss */
+/* line 47, imports/_global.scss */
 h1 {
   letter-spacing: 8px;
   font-weight: 300;
 }
 
-/* line 46, imports/_global.scss */
+/* line 54, imports/_global.scss */
 h2 {
   letter-spacing: 2px;
   font-weight: 200;
 }
 
-/* line 74, imports/_global.scss */
+/* line 82, imports/_global.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 78, imports/_global.scss */
+/* line 86, imports/_global.scss */
 .relative {
   position: relative;
 }
 
-/* line 82, imports/_global.scss */
+/* line 90, imports/_global.scss */
 .firefox-centered {
   text-align: center;
 }
-/* line 84, imports/_global.scss */
+/* line 92, imports/_global.scss */
 .firefox-centered > * {
   text-align: initial;
 }
 
-/* line 89, imports/_global.scss */
+/* line 97, imports/_global.scss */
 .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 94, imports/_global.scss */
+/* line 102, imports/_global.scss */
 .text-centered, .landing-page .testimonials-wrapper {
   text-align: center;
 }
 
-/* line 98, imports/_global.scss */
+/* line 106, imports/_global.scss */
 .text-left, .landing-page .testimonials-wrapper .testimonials-columns-wrapper {
   text-align: left;
 }
 
-/* line 102, imports/_global.scss */
+/* line 110, imports/_global.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 106, imports/_global.scss */
+/* line 114, imports/_global.scss */
 .pull-right {
   float: right;
 }
 
-/* line 110, imports/_global.scss */
+/* line 118, imports/_global.scss */
 .pull-left {
   float: left;
 }
 
-/* line 114, imports/_global.scss */
+/* line 122, imports/_global.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 118, imports/_global.scss */
+/* line 126, imports/_global.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 122, imports/_global.scss */
+/* line 130, imports/_global.scss */
 .hidden {
   overflow: hidden;
 }
 
-/* line 126, imports/_global.scss */
+/* line 134, imports/_global.scss */
 .disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 132, imports/_global.scss */
+/* line 140, imports/_global.scss */
 .bordered {
   border: 1px solid #f2f2f2;
 }
 
-/* line 136, imports/_global.scss */
+/* line 144, imports/_global.scss */
 .border-right {
   border-right: 1px solid #f2f2f2;
 }
 
-/* line 140, imports/_global.scss */
+/* line 148, imports/_global.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 144, imports/_global.scss */
+/* line 152, imports/_global.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 148, imports/_global.scss */
+/* line 156, imports/_global.scss */
 .full-width, .full-width-form, .qv-table {
   width: 100%;
 }
 
-/* line 152, imports/_global.scss */
+/* line 160, imports/_global.scss */
 .aligned-list {
   padding-left: 1em;
 }
 
-/* line 156, imports/_global.scss */
+/* line 164, imports/_global.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 160, imports/_global.scss */
+/* line 168, imports/_global.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 164, imports/_global.scss */
+/* line 172, imports/_global.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 168, imports/_global.scss */
+/* line 176, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/backgrounds/background1.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 174, imports/_global.scss */
+/* line 182, imports/_global.scss */
 .background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .page-body h1 {
   background-image: url("../images/backgrounds/background-gray-1point5.png");
   background-position: -50px -30px;
 }
 
-/* line 179, imports/_global.scss */
+/* line 187, imports/_global.scss */
 .padded-wrapper {
   padding: 10px 20px;
 }
 
-/* line 183, imports/_global.scss */
+/* line 191, imports/_global.scss */
 .justify {
   text-align: justify;
 }
 
-/* line 187, imports/_global.scss */
+/* line 195, imports/_global.scss */
 .justified {
   display: inline;
 }
 
-/* line 191, imports/_global.scss */
+/* line 199, imports/_global.scss */
 .stretch {
   display: inline-block;
   width: 100%;
 }
 
-/* line 196, imports/_global.scss */
+/* line 204, imports/_global.scss */
 .display-none {
   display: none;
 }
 
-/* line 200, imports/_global.scss */
+/* line 208, imports/_global.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 204, imports/_global.scss */
+/* line 212, imports/_global.scss */
 .clear-both {
   clear: both;
 }
 
-/* line 208, imports/_global.scss */
+/* line 216, imports/_global.scss */
 .span-1 {
   width: 10%;
 }
 
-/* line 212, imports/_global.scss */
+/* line 220, imports/_global.scss */
 .span-2 {
   width: 20%;
 }
 
-/* line 216, imports/_global.scss */
+/* line 224, imports/_global.scss */
 .span-3 {
   width: 30%;
 }
 
-/* line 220, imports/_global.scss */
+/* line 228, imports/_global.scss */
 .span-4 {
   width: 40%;
 }
 
-/* line 224, imports/_global.scss */
+/* line 232, imports/_global.scss */
 .span-5 {
   width: 50%;
 }
 
-/* line 228, imports/_global.scss */
+/* line 236, imports/_global.scss */
 .span-6 {
   width: 60%;
 }
 
-/* line 232, imports/_global.scss */
+/* line 240, imports/_global.scss */
 .span-7 {
   width: 70%;
 }
 
-/* line 236, imports/_global.scss */
+/* line 244, imports/_global.scss */
 .span-8 {
   width: 80%;
 }
 
-/* line 239, imports/_global.scss */
+/* line 247, imports/_global.scss */
 .span-9 {
   width: 90%;
 }
 
-/* line 243, imports/_global.scss */
+/* line 251, imports/_global.scss */
 .span-10 {
   width: 100%;
 }
 
-/* line 247, imports/_global.scss */
+/* line 255, imports/_global.scss */
 .min-500 {
   min-width: 500px;
 }
 
-/* line 251, imports/_global.scss */
+/* line 259, imports/_global.scss */
 .min-700 {
   min-width: 700px;
 }
 
-/* line 255, imports/_global.scss */
+/* line 263, imports/_global.scss */
 .max-500 {
   max-width: 500px !important;
 }
 
-/* line 259, imports/_global.scss */
+/* line 267, imports/_global.scss */
 .max-700 {
   max-width: 700px;
 }
@@ -2524,34 +2533,50 @@ body {
 
 /* line 3, modules/_landing-page.scss */
 .landing-page .header, .landing-page h1, .landing-page h2, .landing-page h3, .landing-page h4, .landing-page h5, .landing-page h6, .landing-page #content-wrapper .page-link, #content-wrapper .landing-page .page-link {
+  margin: 0;
+}
+/* line 7, modules/_landing-page.scss */
+.landing-page .landing-page-headline {
   margin: auto;
   letter-spacing: 0;
   line-height: 46px;
   text-transform: none;
   max-width: 700px;
-}
-/* line 10, modules/_landing-page.scss */
-.landing-page .header strong, .landing-page h1 strong, .landing-page h2 strong, .landing-page h3 strong, .landing-page h4 strong, .landing-page h5 strong, .landing-page h6 strong, .landing-page #content-wrapper .page-link strong, #content-wrapper .landing-page .page-link strong {
-  text-transform: uppercase;
+  font-size: 30px;
 }
 /* line 15, modules/_landing-page.scss */
-.landing-page .single {
-  margin: 40px 0;
-  padding: 25px 15px;
+.landing-page .landing-page-headline strong {
+  text-transform: uppercase;
 }
-/* line 19, modules/_landing-page.scss */
-.landing-page .single .button-cta {
-  margin-top: 26px;
-  margin_bottom: 26px;
-}
-/* line 24, modules/_landing-page.scss */
-.landing-page .single p {
+/* line 21, modules/_landing-page.scss */
+.landing-page .landing-page-headline p {
   line-height: 28px;
   max-width: 395px;
   padding-left: 10px;
   padding-right: 50px;
 }
+/* line 30, modules/_landing-page.scss */
+.landing-page .single {
+  margin: 40px 0;
+  padding: 25px 15px;
+}
 /* line 34, modules/_landing-page.scss */
+.landing-page .single h2 {
+  text-align: center;
+  letter-spacing: 0px;
+  font-size: 30px;
+  font-weight: 300;
+  max-width: 700px;
+  margin: auto;
+  text-transform: none;
+  width: 100%;
+}
+/* line 45, modules/_landing-page.scss */
+.landing-page .single .button-cta {
+  margin-top: 26px;
+  margin_bottom: 26px;
+}
+/* line 53, modules/_landing-page.scss */
 .landing-page .button-cta {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2564,73 +2589,73 @@ body {
   letter-spacing: 2px;
   min-width: 0px;
 }
-/* line 43, modules/_landing-page.scss */
+/* line 62, modules/_landing-page.scss */
 .landing-page .button-cta:after {
   visibility: hidden;
 }
-/* line 47, modules/_landing-page.scss */
+/* line 66, modules/_landing-page.scss */
 .landing-page .button-cta:hover {
   -moz-box-shadow: 0 0 20px 3px #999999;
   -webkit-box-shadow: 0 0 20px 3px #999999;
   box-shadow: 0 0 20px 3px #999999;
 }
-/* line 50, modules/_landing-page.scss */
+/* line 69, modules/_landing-page.scss */
 .landing-page .button-cta:hover:after {
   visibility: visible;
 }
-/* line 56, modules/_landing-page.scss */
+/* line 75, modules/_landing-page.scss */
 .landing-page .background-make-paper-sing {
   margin: 50px auto;
 }
-/* line 60, modules/_landing-page.scss */
+/* line 79, modules/_landing-page.scss */
 .landing-page .triple {
   border-width: 2px;
   margin-bottom: 47px;
   padding: 18px;
 }
-/* line 65, modules/_landing-page.scss */
+/* line 84, modules/_landing-page.scss */
 .landing-page .triple p {
   margin: 17px;
   line-height: 24px;
 }
-/* line 71, modules/_landing-page.scss */
+/* line 90, modules/_landing-page.scss */
 .landing-page .student-work {
   margin-bottom: 50px;
 }
-/* line 75, modules/_landing-page.scss */
+/* line 94, modules/_landing-page.scss */
 .landing-page .background-student-work {
   margin-bottom: 25px;
 }
-/* line 82, modules/_landing-page.scss */
+/* line 101, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper .testimonials-columns-wrapper {
   max-width: 700px;
 }
-/* line 88, modules/_landing-page.scss */
+/* line 107, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper .border-right {
   border-right: 2px solid #e7e8e9;
 }
-/* line 92, modules/_landing-page.scss */
+/* line 111, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper p {
   padding: 0;
 }
-/* line 96, modules/_landing-page.scss */
+/* line 115, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper a {
   color: #177f62;
 }
-/* line 100, modules/_landing-page.scss */
+/* line 119, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper hr {
   border: 1px solid #e7e8e9;
   margin: 15px 0;
 }
-/* line 106, modules/_landing-page.scss */
+/* line 125, modules/_landing-page.scss */
 .landing-page .how-does-it-work-wrapper {
   min-width: 400px;
 }
-/* line 110, modules/_landing-page.scss */
+/* line 129, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 114, modules/_landing-page.scss */
+/* line 133, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -2639,7 +2664,7 @@ body {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 122, modules/_landing-page.scss */
+/* line 141, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -2648,50 +2673,50 @@ body {
   left: 50%;
   margin-left: -156px;
 }
-/* line 129, modules/_landing-page.scss */
+/* line 148, modules/_landing-page.scss */
 .landing-page .about-wrapper {
   margin-top: 60px;
 }
-/* line 132, modules/_landing-page.scss */
+/* line 151, modules/_landing-page.scss */
 .landing-page .about-wrapper .about-image-wrapper {
   min-width: 202px;
 }
-/* line 136, modules/_landing-page.scss */
+/* line 155, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-me {
   margin: 15px 30px 0px;
 }
-/* line 140, modules/_landing-page.scss */
+/* line 159, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-about {
   margin: 0 30px 1px;
 }
-/* line 144, modules/_landing-page.scss */
+/* line 163, modules/_landing-page.scss */
 .landing-page .about-wrapper h3 {
   letter-spacing: 5px;
   font-size: 20px;
   margin: 0 30px 30px;
 }
-/* line 150, modules/_landing-page.scss */
+/* line 169, modules/_landing-page.scss */
 .landing-page .about-wrapper a {
   text-decoration: underline;
 }
-/* line 155, modules/_landing-page.scss */
+/* line 174, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 30px 0 36px;
 }
-/* line 158, modules/_landing-page.scss */
+/* line 177, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-/* line 163, modules/_landing-page.scss */
+/* line 182, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 167, modules/_landing-page.scss */
+/* line 186, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 171, modules/_landing-page.scss */
+/* line 190, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2713,13 +2738,13 @@ body {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 185, modules/_landing-page.scss */
+/* line 204, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px;
 }
-/* line 192, modules/_landing-page.scss */
+/* line 211, modules/_landing-page.scss */
 .landing-page .max-paragraph {
   display: block;
   margin: 15px auto;

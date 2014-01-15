@@ -1,5 +1,4 @@
 $sprites:
-  beginner,
   how-does-it-work,
   islc-logo,
   learn-your-way,
@@ -22,6 +21,10 @@ $sprites:
   .background-#{$sprite} {
     @include use-sprite($sprite);
   }
+}
+
+.background-beginner {
+  @include use-sprite(beginner, -1px);
 }
 
 .background-about {

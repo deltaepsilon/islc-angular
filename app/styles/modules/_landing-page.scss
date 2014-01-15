@@ -1,24 +1,21 @@
 .landing-page {
 
   .header {
+    margin: 0;
+  }
+
+  .landing-page-headline {
     margin: auto;
     letter-spacing: 0;
     line-height: 46px;
     text-transform: none;
     max-width: 700px;
+    font-size: 30px;
 
     strong {
+      @extend .text-x-large;
+
       text-transform: uppercase;
-    }
-  }
-
-  .single {
-    margin: 40px 0;
-    padding: 25px 15px;
-
-    .button-cta {
-      margin-top: 26px;
-      margin_bottom: 26px;
     }
 
     p {
@@ -28,6 +25,28 @@
       padding-right: 50px;
 
     }
+  }
+
+  .single {
+    margin: 40px 0;
+    padding: 25px 15px;
+
+    h2 {
+      text-align: center;
+      letter-spacing: 0px;
+      font-size: 30px;
+      font-weight: 300;
+      max-width: 700px;
+      margin: auto;
+      text-transform: none;
+      width: 100%;
+    }
+
+    .button-cta {
+      margin-top: 26px;
+      margin_bottom: 26px;
+    }
+
   }
 
   $button-cta-min-width: 0px;

@@ -21,7 +21,7 @@ $font-sizes        :
   medium   16px,
   x-medium 18px,
   large    20px,
-  x-large  40px;
+  x-large  35px;
 
 @each $size in $font-sizes {
   .text-#{nth($size, 1)} {

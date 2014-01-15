@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('MasterCtrl', function ($scope, $rootScope, $filter, $timeout, $location){
+  .controller('MasterCtrl', function ($scope, $rootScope, $filter, $timeout, $location, $state, $window){
 
     if (typeof window.callPhantom === 'function') {
       $timeout($scope.htmlReady()); //Call htmlReady on first load for PhantomJS renderer's sake
@@ -71,7 +71,13 @@ angular.module('islcAngularApp')
       }
 
       // Manage Canonical Href
-      $scope.canonical = $location.absUrl();
+      var rootStates = ['root', 'rootA', 'rootB'];
+      if (~_.indexOf(rootStates, $state.current.name)) {
+        $scope.canonical = $window.location.origin + "/#!/";
+      } else {
+        $scope.canonical = $location.absUrl();
+      }
+
 
     });
   });
