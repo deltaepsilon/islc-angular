@@ -2576,7 +2576,14 @@ body {
   margin-top: 26px;
   margin_bottom: 26px;
 }
-/* line 53, modules/_landing-page.scss */
+/* line 50, modules/_landing-page.scss */
+.landing-page .single .original-paragraph {
+  line-height: 28px;
+  max-width: 395px;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+/* line 60, modules/_landing-page.scss */
 .landing-page .button-cta {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2589,73 +2596,73 @@ body {
   letter-spacing: 2px;
   min-width: 0px;
 }
-/* line 62, modules/_landing-page.scss */
+/* line 69, modules/_landing-page.scss */
 .landing-page .button-cta:after {
   visibility: hidden;
 }
-/* line 66, modules/_landing-page.scss */
+/* line 73, modules/_landing-page.scss */
 .landing-page .button-cta:hover {
   -moz-box-shadow: 0 0 20px 3px #999999;
   -webkit-box-shadow: 0 0 20px 3px #999999;
   box-shadow: 0 0 20px 3px #999999;
 }
-/* line 69, modules/_landing-page.scss */
+/* line 76, modules/_landing-page.scss */
 .landing-page .button-cta:hover:after {
   visibility: visible;
 }
-/* line 75, modules/_landing-page.scss */
+/* line 82, modules/_landing-page.scss */
 .landing-page .background-make-paper-sing {
   margin: 50px auto;
 }
-/* line 79, modules/_landing-page.scss */
+/* line 86, modules/_landing-page.scss */
 .landing-page .triple {
   border-width: 2px;
   margin-bottom: 47px;
   padding: 18px;
 }
-/* line 84, modules/_landing-page.scss */
+/* line 91, modules/_landing-page.scss */
 .landing-page .triple p {
   margin: 17px;
   line-height: 24px;
 }
-/* line 90, modules/_landing-page.scss */
+/* line 97, modules/_landing-page.scss */
 .landing-page .student-work {
   margin-bottom: 50px;
 }
-/* line 94, modules/_landing-page.scss */
+/* line 101, modules/_landing-page.scss */
 .landing-page .background-student-work {
   margin-bottom: 25px;
 }
-/* line 101, modules/_landing-page.scss */
+/* line 108, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper .testimonials-columns-wrapper {
   max-width: 700px;
 }
-/* line 107, modules/_landing-page.scss */
+/* line 114, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper .border-right {
   border-right: 2px solid #e7e8e9;
 }
-/* line 111, modules/_landing-page.scss */
+/* line 118, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper p {
   padding: 0;
 }
-/* line 115, modules/_landing-page.scss */
+/* line 122, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper a {
   color: #177f62;
 }
-/* line 119, modules/_landing-page.scss */
+/* line 126, modules/_landing-page.scss */
 .landing-page .testimonials-wrapper hr {
   border: 1px solid #e7e8e9;
   margin: 15px 0;
 }
-/* line 125, modules/_landing-page.scss */
+/* line 132, modules/_landing-page.scss */
 .landing-page .how-does-it-work-wrapper {
   min-width: 400px;
 }
-/* line 129, modules/_landing-page.scss */
+/* line 136, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 133, modules/_landing-page.scss */
+/* line 140, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -2664,7 +2671,7 @@ body {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 141, modules/_landing-page.scss */
+/* line 148, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -2673,50 +2680,50 @@ body {
   left: 50%;
   margin-left: -156px;
 }
-/* line 148, modules/_landing-page.scss */
+/* line 155, modules/_landing-page.scss */
 .landing-page .about-wrapper {
   margin-top: 60px;
 }
-/* line 151, modules/_landing-page.scss */
+/* line 158, modules/_landing-page.scss */
 .landing-page .about-wrapper .about-image-wrapper {
   min-width: 202px;
 }
-/* line 155, modules/_landing-page.scss */
+/* line 162, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-me {
   margin: 15px 30px 0px;
 }
-/* line 159, modules/_landing-page.scss */
+/* line 166, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-about {
   margin: 0 30px 1px;
 }
-/* line 163, modules/_landing-page.scss */
+/* line 170, modules/_landing-page.scss */
 .landing-page .about-wrapper h3 {
   letter-spacing: 5px;
   font-size: 20px;
   margin: 0 30px 30px;
 }
-/* line 169, modules/_landing-page.scss */
+/* line 176, modules/_landing-page.scss */
 .landing-page .about-wrapper a {
   text-decoration: underline;
 }
-/* line 174, modules/_landing-page.scss */
+/* line 181, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 30px 0 36px;
 }
-/* line 177, modules/_landing-page.scss */
+/* line 184, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-/* line 182, modules/_landing-page.scss */
+/* line 189, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 186, modules/_landing-page.scss */
+/* line 193, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 190, modules/_landing-page.scss */
+/* line 197, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2738,13 +2745,13 @@ body {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 204, modules/_landing-page.scss */
+/* line 211, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px;
 }
-/* line 211, modules/_landing-page.scss */
+/* line 218, modules/_landing-page.scss */
 .landing-page .max-paragraph {
   display: block;
   margin: 15px auto;
