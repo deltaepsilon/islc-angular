@@ -23,6 +23,23 @@ p, ul, ol {
   font-weight: 100;
 }
 
+blockquote {
+  @extend .text-x-medium;
+
+  font-weight: 700 !important;
+  margin: 16px auto 0px !important;
+
+  &:before {
+    content: '"';
+    margin-right: -5px;
+  }
+
+  &:after {
+    content: '"';
+    margin-left: -5px;
+  }
+}
+
 .header {
   margin: 0;
   text-transform: uppercase;
@@ -77,6 +94,18 @@ h5 {
 h6 {
   @extend .header;
   @extend .text-x-small;
+}
+
+.sub-head {
+  text-align: center;
+  letter-spacing: 0px;
+  font-size: 30px;
+  font-weight: 300;
+  max-width: 700px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-transform: none;
+  width: 100%;
 }
 
 .clearfix {

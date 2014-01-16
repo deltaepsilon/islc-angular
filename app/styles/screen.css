@@ -1304,7 +1304,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 }
 
 /* line 27, imports/_font-size.scss */
-.text-x-medium, h3, .button-primary, .button-secondary, [action="login_check"] #_submit, .landing-page .email-footer input, .qv-table th, .qv-table td, .page-body h1, .page-body h2 {
+.text-x-medium, blockquote, h3, .button-primary, .button-secondary, [action="login_check"] #_submit, .landing-page .email-footer input, .qv-table th, .qv-table td, .page-body h1, .page-body h2 {
   font-size: 18px;
 }
 
@@ -1795,12 +1795,28 @@ p, ul, ol {
 }
 
 /* line 26, imports/_global.scss */
+blockquote {
+  font-weight: 700 !important;
+  margin: 16px auto 0px !important;
+}
+/* line 32, imports/_global.scss */
+blockquote:before {
+  content: '"';
+  margin-right: -5px;
+}
+/* line 37, imports/_global.scss */
+blockquote:after {
+  content: '"';
+  margin-left: -5px;
+}
+
+/* line 43, imports/_global.scss */
 .header, h1, h2, h3, h4, h5, h6, #content-wrapper .page-link {
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 31, imports/_global.scss */
+/* line 48, imports/_global.scss */
 .legible {
   font-weight: 300;
   line-height: 20px;
@@ -1809,261 +1825,274 @@ p, ul, ol {
   word-spacing: 1px;
 }
 
-/* line 39, imports/_global.scss */
+/* line 56, imports/_global.scss */
 .thick {
   font-weight: 300;
 }
 
-/* line 43, imports/_global.scss */
+/* line 60, imports/_global.scss */
 .padded {
   padding: 15px;
 }
 
-/* line 47, imports/_global.scss */
+/* line 64, imports/_global.scss */
 h1 {
   letter-spacing: 8px;
   font-weight: 300;
 }
 
-/* line 54, imports/_global.scss */
+/* line 71, imports/_global.scss */
 h2 {
   letter-spacing: 2px;
   font-weight: 200;
 }
 
-/* line 82, imports/_global.scss */
+/* line 99, imports/_global.scss */
+.sub-head {
+  text-align: center;
+  letter-spacing: 0px;
+  font-size: 30px;
+  font-weight: 300;
+  max-width: 700px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-transform: none;
+  width: 100%;
+}
+
+/* line 111, imports/_global.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 86, imports/_global.scss */
+/* line 115, imports/_global.scss */
 .relative {
   position: relative;
 }
 
-/* line 90, imports/_global.scss */
+/* line 119, imports/_global.scss */
 .firefox-centered {
   text-align: center;
 }
-/* line 92, imports/_global.scss */
+/* line 121, imports/_global.scss */
 .firefox-centered > * {
   text-align: initial;
 }
 
-/* line 97, imports/_global.scss */
+/* line 126, imports/_global.scss */
 .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 102, imports/_global.scss */
-.text-centered, .landing-page .testimonials-wrapper {
+/* line 131, imports/_global.scss */
+.text-centered, .root-b .testimonials-wrapper {
   text-align: center;
 }
 
-/* line 106, imports/_global.scss */
-.text-left, .landing-page .testimonials-wrapper .testimonials-columns-wrapper {
+/* line 135, imports/_global.scss */
+.text-left, .root-b .testimonials-wrapper .testimonials-columns-wrapper {
   text-align: left;
 }
 
-/* line 110, imports/_global.scss */
+/* line 139, imports/_global.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 114, imports/_global.scss */
+/* line 143, imports/_global.scss */
 .pull-right {
   float: right;
 }
 
-/* line 118, imports/_global.scss */
+/* line 147, imports/_global.scss */
 .pull-left {
   float: left;
 }
 
-/* line 122, imports/_global.scss */
+/* line 151, imports/_global.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 126, imports/_global.scss */
+/* line 155, imports/_global.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 130, imports/_global.scss */
+/* line 159, imports/_global.scss */
 .hidden {
   overflow: hidden;
 }
 
-/* line 134, imports/_global.scss */
+/* line 163, imports/_global.scss */
 .disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 140, imports/_global.scss */
+/* line 169, imports/_global.scss */
 .bordered {
   border: 1px solid #f2f2f2;
 }
 
-/* line 144, imports/_global.scss */
+/* line 173, imports/_global.scss */
 .border-right {
   border-right: 1px solid #f2f2f2;
 }
 
-/* line 148, imports/_global.scss */
+/* line 177, imports/_global.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 152, imports/_global.scss */
+/* line 181, imports/_global.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 156, imports/_global.scss */
+/* line 185, imports/_global.scss */
 .full-width, .full-width-form, .qv-table {
   width: 100%;
 }
 
-/* line 160, imports/_global.scss */
+/* line 189, imports/_global.scss */
 .aligned-list {
   padding-left: 1em;
 }
 
-/* line 164, imports/_global.scss */
+/* line 193, imports/_global.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 168, imports/_global.scss */
+/* line 197, imports/_global.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 172, imports/_global.scss */
+/* line 201, imports/_global.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 176, imports/_global.scss */
+/* line 205, imports/_global.scss */
 .background-repeating, .button-cta {
   background-image: url("../images/backgrounds/background1.png");
   background-size: 765px 665px;
   background-position: 0 -50px;
 }
 
-/* line 182, imports/_global.scss */
+/* line 211, imports/_global.scss */
 .background-repeating-gray, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .page-body h1 {
   background-image: url("../images/backgrounds/background-gray-1point5.png");
   background-position: -50px -30px;
 }
 
-/* line 187, imports/_global.scss */
+/* line 216, imports/_global.scss */
 .padded-wrapper {
   padding: 10px 20px;
 }
 
-/* line 191, imports/_global.scss */
+/* line 220, imports/_global.scss */
 .justify {
   text-align: justify;
 }
 
-/* line 195, imports/_global.scss */
+/* line 224, imports/_global.scss */
 .justified {
   display: inline;
 }
 
-/* line 199, imports/_global.scss */
+/* line 228, imports/_global.scss */
 .stretch {
   display: inline-block;
   width: 100%;
 }
 
-/* line 204, imports/_global.scss */
+/* line 233, imports/_global.scss */
 .display-none {
   display: none;
 }
 
-/* line 208, imports/_global.scss */
+/* line 237, imports/_global.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 212, imports/_global.scss */
+/* line 241, imports/_global.scss */
 .clear-both {
   clear: both;
 }
 
-/* line 216, imports/_global.scss */
+/* line 245, imports/_global.scss */
 .span-1 {
   width: 10%;
 }
 
-/* line 220, imports/_global.scss */
+/* line 249, imports/_global.scss */
 .span-2 {
   width: 20%;
 }
 
-/* line 224, imports/_global.scss */
+/* line 253, imports/_global.scss */
 .span-3 {
   width: 30%;
 }
 
-/* line 228, imports/_global.scss */
+/* line 257, imports/_global.scss */
 .span-4 {
   width: 40%;
 }
 
-/* line 232, imports/_global.scss */
+/* line 261, imports/_global.scss */
 .span-5 {
   width: 50%;
 }
 
-/* line 236, imports/_global.scss */
+/* line 265, imports/_global.scss */
 .span-6 {
   width: 60%;
 }
 
-/* line 240, imports/_global.scss */
+/* line 269, imports/_global.scss */
 .span-7 {
   width: 70%;
 }
 
-/* line 244, imports/_global.scss */
+/* line 273, imports/_global.scss */
 .span-8 {
   width: 80%;
 }
 
-/* line 247, imports/_global.scss */
+/* line 276, imports/_global.scss */
 .span-9 {
   width: 90%;
 }
 
-/* line 251, imports/_global.scss */
+/* line 280, imports/_global.scss */
 .span-10 {
   width: 100%;
 }
 
-/* line 255, imports/_global.scss */
+/* line 284, imports/_global.scss */
 .min-500 {
   min-width: 500px;
 }
 
-/* line 259, imports/_global.scss */
+/* line 288, imports/_global.scss */
 .min-700 {
   min-width: 700px;
 }
 
-/* line 263, imports/_global.scss */
+/* line 292, imports/_global.scss */
 .max-500 {
   max-width: 500px !important;
 }
 
-/* line 267, imports/_global.scss */
+/* line 296, imports/_global.scss */
 .max-700 {
   max-width: 700px;
 }
@@ -2561,29 +2590,11 @@ body {
   padding: 25px 15px;
 }
 /* line 34, modules/_landing-page.scss */
-.landing-page .single h2 {
-  text-align: center;
-  letter-spacing: 0px;
-  font-size: 30px;
-  font-weight: 300;
-  max-width: 700px;
-  margin: auto;
-  text-transform: none;
-  width: 100%;
-}
-/* line 45, modules/_landing-page.scss */
 .landing-page .single .button-cta {
   margin-top: 26px;
   margin_bottom: 26px;
 }
-/* line 50, modules/_landing-page.scss */
-.landing-page .single .original-paragraph {
-  line-height: 28px;
-  max-width: 395px;
-  padding-left: 10px;
-  padding-right: 50px;
-}
-/* line 60, modules/_landing-page.scss */
+/* line 42, modules/_landing-page.scss */
 .landing-page .button-cta {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2596,73 +2607,57 @@ body {
   letter-spacing: 2px;
   min-width: 0px;
 }
-/* line 69, modules/_landing-page.scss */
+/* line 51, modules/_landing-page.scss */
 .landing-page .button-cta:after {
   visibility: hidden;
 }
-/* line 73, modules/_landing-page.scss */
+/* line 55, modules/_landing-page.scss */
 .landing-page .button-cta:hover {
   -moz-box-shadow: 0 0 20px 3px #999999;
   -webkit-box-shadow: 0 0 20px 3px #999999;
   box-shadow: 0 0 20px 3px #999999;
 }
-/* line 76, modules/_landing-page.scss */
+/* line 58, modules/_landing-page.scss */
 .landing-page .button-cta:hover:after {
   visibility: visible;
 }
-/* line 82, modules/_landing-page.scss */
+/* line 64, modules/_landing-page.scss */
 .landing-page .background-make-paper-sing {
   margin: 50px auto;
 }
-/* line 86, modules/_landing-page.scss */
+/* line 68, modules/_landing-page.scss */
 .landing-page .triple {
   border-width: 2px;
   margin-bottom: 47px;
   padding: 18px;
 }
-/* line 91, modules/_landing-page.scss */
+/* line 73, modules/_landing-page.scss */
 .landing-page .triple p {
   margin: 17px;
   line-height: 24px;
 }
-/* line 97, modules/_landing-page.scss */
+/* line 79, modules/_landing-page.scss */
 .landing-page .student-work {
   margin-bottom: 50px;
 }
-/* line 101, modules/_landing-page.scss */
+/* line 83, modules/_landing-page.scss */
 .landing-page .background-student-work {
   margin-bottom: 25px;
 }
-/* line 108, modules/_landing-page.scss */
-.landing-page .testimonials-wrapper .testimonials-columns-wrapper {
-  max-width: 700px;
-}
-/* line 114, modules/_landing-page.scss */
-.landing-page .testimonials-wrapper .border-right {
-  border-right: 2px solid #e7e8e9;
-}
-/* line 118, modules/_landing-page.scss */
-.landing-page .testimonials-wrapper p {
-  padding: 0;
-}
-/* line 122, modules/_landing-page.scss */
-.landing-page .testimonials-wrapper a {
-  color: #177f62;
-}
-/* line 126, modules/_landing-page.scss */
-.landing-page .testimonials-wrapper hr {
+/* line 87, modules/_landing-page.scss */
+.landing-page hr {
   border: 1px solid #e7e8e9;
-  margin: 15px 0;
+  margin: 15px auto;
 }
-/* line 132, modules/_landing-page.scss */
+/* line 92, modules/_landing-page.scss */
 .landing-page .how-does-it-work-wrapper {
   min-width: 400px;
 }
-/* line 136, modules/_landing-page.scss */
+/* line 96, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 140, modules/_landing-page.scss */
+/* line 100, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -2671,7 +2666,7 @@ body {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 148, modules/_landing-page.scss */
+/* line 108, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -2680,50 +2675,50 @@ body {
   left: 50%;
   margin-left: -156px;
 }
-/* line 155, modules/_landing-page.scss */
+/* line 115, modules/_landing-page.scss */
 .landing-page .about-wrapper {
   margin-top: 60px;
 }
-/* line 158, modules/_landing-page.scss */
+/* line 118, modules/_landing-page.scss */
 .landing-page .about-wrapper .about-image-wrapper {
   min-width: 202px;
 }
-/* line 162, modules/_landing-page.scss */
+/* line 122, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-me {
   margin: 15px 30px 0px;
 }
-/* line 166, modules/_landing-page.scss */
+/* line 126, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-about {
   margin: 0 30px 1px;
 }
-/* line 170, modules/_landing-page.scss */
+/* line 130, modules/_landing-page.scss */
 .landing-page .about-wrapper h3 {
   letter-spacing: 5px;
   font-size: 20px;
   margin: 0 30px 30px;
 }
-/* line 176, modules/_landing-page.scss */
+/* line 136, modules/_landing-page.scss */
 .landing-page .about-wrapper a {
   text-decoration: underline;
 }
-/* line 181, modules/_landing-page.scss */
+/* line 141, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 30px 0 36px;
 }
-/* line 184, modules/_landing-page.scss */
+/* line 144, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-/* line 189, modules/_landing-page.scss */
+/* line 149, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 193, modules/_landing-page.scss */
+/* line 153, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 197, modules/_landing-page.scss */
+/* line 157, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2745,17 +2740,41 @@ body {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 211, modules/_landing-page.scss */
+/* line 171, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px;
 }
-/* line 218, modules/_landing-page.scss */
+/* line 178, modules/_landing-page.scss */
 .landing-page .max-paragraph {
   display: block;
   margin: 15px auto;
   max-width: 395px;
+}
+
+/* line 192, modules/_landing-page.scss */
+.root-b .single .original-paragraph {
+  line-height: 28px;
+  max-width: 395px;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+/* line 204, modules/_landing-page.scss */
+.root-b .testimonials-wrapper .testimonials-columns-wrapper {
+  max-width: 700px;
+}
+/* line 210, modules/_landing-page.scss */
+.root-b .testimonials-wrapper .border-right {
+  border-right: 2px solid #e7e8e9;
+}
+/* line 214, modules/_landing-page.scss */
+.root-b .testimonials-wrapper p {
+  padding: 0;
+}
+/* line 218, modules/_landing-page.scss */
+.root-b .testimonials-wrapper a {
+  color: #177f62;
 }
 
 /* line 1, modules/_form.scss */
