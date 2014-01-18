@@ -2650,14 +2650,18 @@ body {
   margin: 15px auto;
 }
 /* line 92, modules/_landing-page.scss */
+.landing-page .video-wrapper {
+  margin-top: 0 !important;
+}
+/* line 96, modules/_landing-page.scss */
 .landing-page .how-does-it-work-wrapper {
   min-width: 400px;
 }
-/* line 96, modules/_landing-page.scss */
+/* line 100, modules/_landing-page.scss */
 .landing-page .background-how-does-it-work {
   margin: 50px;
 }
-/* line 100, modules/_landing-page.scss */
+/* line 104, modules/_landing-page.scss */
 .landing-page .bordered {
   border-width: 2px;
   margin: 0px;
@@ -2666,7 +2670,7 @@ body {
   max-width: 700px;
   line-height: 24px;
 }
-/* line 108, modules/_landing-page.scss */
+/* line 112, modules/_landing-page.scss */
 .landing-page .bordered .button-cta {
   position: absolute;
   top: inherit;
@@ -2675,50 +2679,50 @@ body {
   left: 50%;
   margin-left: -156px;
 }
-/* line 115, modules/_landing-page.scss */
+/* line 119, modules/_landing-page.scss */
 .landing-page .about-wrapper {
   margin-top: 60px;
 }
-/* line 118, modules/_landing-page.scss */
+/* line 122, modules/_landing-page.scss */
 .landing-page .about-wrapper .about-image-wrapper {
   min-width: 202px;
 }
-/* line 122, modules/_landing-page.scss */
+/* line 126, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-me {
   margin: 15px 30px 0px;
 }
-/* line 126, modules/_landing-page.scss */
+/* line 130, modules/_landing-page.scss */
 .landing-page .about-wrapper .background-about {
   margin: 0 30px 1px;
 }
-/* line 130, modules/_landing-page.scss */
+/* line 134, modules/_landing-page.scss */
 .landing-page .about-wrapper h3 {
   letter-spacing: 5px;
   font-size: 20px;
   margin: 0 30px 30px;
 }
-/* line 136, modules/_landing-page.scss */
+/* line 140, modules/_landing-page.scss */
 .landing-page .about-wrapper a {
   text-decoration: underline;
 }
-/* line 141, modules/_landing-page.scss */
+/* line 145, modules/_landing-page.scss */
 .landing-page .email-footer {
   margin: 30px 0 36px;
 }
-/* line 144, modules/_landing-page.scss */
+/* line 148, modules/_landing-page.scss */
 .landing-page .email-footer .email-footer-item {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-/* line 149, modules/_landing-page.scss */
+/* line 153, modules/_landing-page.scss */
 .landing-page .email-footer p {
   max-width: 400px;
 }
-/* line 153, modules/_landing-page.scss */
+/* line 157, modules/_landing-page.scss */
 .landing-page .email-footer .centered {
   display: block;
 }
-/* line 157, modules/_landing-page.scss */
+/* line 161, modules/_landing-page.scss */
 .landing-page .email-footer input {
   width: 85%;
   text-transform: uppercase;
@@ -2740,39 +2744,39 @@ body {
 .landing-page .email-footer input:-ms-input-placeholder {
   color: #dddddd;
 }
-/* line 171, modules/_landing-page.scss */
+/* line 175, modules/_landing-page.scss */
 .landing-page .linkout {
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px;
 }
-/* line 178, modules/_landing-page.scss */
+/* line 182, modules/_landing-page.scss */
 .landing-page .max-paragraph {
   display: block;
   margin: 15px auto;
   max-width: 395px;
 }
 
-/* line 192, modules/_landing-page.scss */
+/* line 196, modules/_landing-page.scss */
 .root-b .single .original-paragraph {
   line-height: 28px;
   max-width: 395px;
   padding-left: 10px;
   padding-right: 50px;
 }
-/* line 204, modules/_landing-page.scss */
+/* line 208, modules/_landing-page.scss */
 .root-b .testimonials-wrapper .testimonials-columns-wrapper {
   max-width: 700px;
 }
-/* line 210, modules/_landing-page.scss */
+/* line 214, modules/_landing-page.scss */
 .root-b .testimonials-wrapper .border-right {
   border-right: 2px solid #e7e8e9;
 }
-/* line 214, modules/_landing-page.scss */
+/* line 218, modules/_landing-page.scss */
 .root-b .testimonials-wrapper p {
   padding: 0;
 }
-/* line 218, modules/_landing-page.scss */
+/* line 222, modules/_landing-page.scss */
 .root-b .testimonials-wrapper a {
   color: #177f62;
 }
