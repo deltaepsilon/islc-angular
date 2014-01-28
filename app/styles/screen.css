@@ -2646,7 +2646,7 @@ body {
 }
 /* line 87, modules/_landing-page.scss */
 .landing-page .headshot {
-  float: left;
+  float: right;
   margin-right: 15px;
   max-width: 150px;
 }
