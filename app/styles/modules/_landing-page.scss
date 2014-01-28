@@ -84,6 +84,23 @@
     margin-bottom: 25px;
   }
 
+  .headshot {
+    float: left;
+    margin-right: 15px;
+    max-width: 150px;
+  }
+
+  .testimonial-images {
+    img:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  .testimonial-image {
+    width: 333px;
+    margin: 15px auto;
+  }
+
   hr {
     border: 1px solid getColor(gray0);
     margin: 15px auto;
@@ -223,5 +240,12 @@
       color: getColor(green2);
     }
 
+  }
+}
+
+@media (max-width: 730px) {
+  .testimonial-image {
+    display: block;
+    margin: 15px auto !important;
   }
 }
