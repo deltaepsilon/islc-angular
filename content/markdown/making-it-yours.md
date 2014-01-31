@@ -1,4 +1,3 @@
-
 Modern calligraphy is whatever you want it to be. With the basics of Copperplate, you have the tools to infuse your own personal style and writing into something fantastic. Depending upon the kind of person you are (do you change handwriting “fonts” every day?), this can be surprisingly easy or extremely challenging.
 
 To get going on your on personal style, ask yourself a few questions and write out your rules in the form of practice phrases.
@@ -45,11 +44,24 @@ The more upright  my letters are, the more casual they appear. Letters leaning t
 Ornamentation goes back to the flourish section. Adding flourishes quickly formalizes your style. When working on the flourishes, make sure that you take into consideration the spacing, angling and thickness of your letters.
 
 <div class="image-wrapper" qv-image-expand=".gallery-image">
-  <img class="gallery-image" src="http://images.melissaesplin.com/calligraphy/gallery-key-image.png">
+  <img class="gallery-image" src="https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/gallery-key-image.png">
 </div>
 
 
 The biggest thing I can stress to making it yours is to create rules for yourself and STAY CONSISTENT. Consistency is key. Making calligraphy yours is something to work on once you get comfortable with the pointed pen. Don’t forget that getting good takes time and lots of practice. I love to see your progress! Upload your practice work to the [gallery](#!/gallery). Once you’re finished with the course, don’t stop practicing!
+
+
+As you upload your work to the gallery, please use the following guidelines for the best feedback:
+
+- Scans are okay, but to save me time from downloading and opening with a third party app, please snap a photo or **save as a JPG**. 
+
+- Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+
+- Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more feedback.
+
+- Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
+
+
 
 <section class="exercise">
     <h2>

@@ -56,6 +56,7 @@ angular.module('islcAngularApp')
         galleryService.get(null, true).then(function (galleries) {
           $rootScope.galleries = galleries;
           $state.go('gallery');
+          $timeout($rootScope.cancelLoader);
         });
       });
     };
