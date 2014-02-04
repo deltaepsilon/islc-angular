@@ -59,6 +59,9 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
       <li class="link-list-item">
         <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
       </li>
+      <li class="link-list-item">
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+      </li>
     </ul>
 </section>
 
@@ -79,6 +82,9 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
       </li>
       <li class="link-list-item">
         <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
+      </li>
+      <li class="link-list-item">
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
       </li>
     </ul>
 </section>

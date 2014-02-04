@@ -64,5 +64,8 @@ I approach combining each basic stroke much like a choreographer would combine b
       <li class="link-list-item">
         <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
       </li>
+      <li class="link-list-item">
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+      </li>
     </ul>
 </section>

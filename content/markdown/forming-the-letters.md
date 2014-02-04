@@ -34,6 +34,9 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
       <li class="link-list-item">
         <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
       </li>
+      <li class="link-list-item">
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+      </li>
     </ul>
 </section>
 
@@ -56,6 +59,9 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
       </li>
       <li class="link-list-item">
         <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
+      </li>
+      <li class="link-list-item">
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
       </li>
     </ul>
 </section>
