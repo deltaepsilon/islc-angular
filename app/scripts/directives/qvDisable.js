@@ -7,6 +7,7 @@ angular.module('islcAngularApp')
       link: function postLink(scope, element, attrs) {
         $timeout(function () {
           var selector = attrs.qvDisable,
+            reactivate = attrs.qvDisableReactivate,
             body = angular.element(document.body);
 
           element.on('click', function () {
@@ -14,6 +15,15 @@ angular.module('islcAngularApp')
             element.attr('disabled', true);
 
           });
+
+          if (reactivate) {
+            scope.$on(reactivate, function () {
+              body.find(selector).removeClass('disabled').removeAttr('disabled');
+              element.removeAttr('disabled');
+            });
+          }
+
+
 
           if (attrs.stopPropagation || attrs.preventDefault) {
             element.on('click', function (e) {

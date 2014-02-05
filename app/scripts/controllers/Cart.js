@@ -90,6 +90,7 @@ angular.module('islcAngularApp')
           $scope.token = token;
         });
         setDefaults();
+        $scope.$broadcast('reactivate-checkout');
       }, function (res) {
         notificationService.error('Cart', res.response.error.message);
       });
