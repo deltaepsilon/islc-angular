@@ -280,16 +280,7 @@ I approach combining each basic stroke much like a choreographer would combine b
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -347,16 +338,7 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -371,16 +353,7 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -415,16 +388,7 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -441,16 +405,7 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -490,16 +445,7 @@ As you start a project, you’ll want to pencil out your letters very lightly. F
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -553,16 +499,7 @@ Above are some examples of how to incorporate the basic flourish strokes with on
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -642,16 +579,7 @@ As you upload your work to the gallery, please use the following guidelines for 
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -862,16 +790,7 @@ As you upload your work to the gallery, please use the following guidelines for 
     </p>
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>

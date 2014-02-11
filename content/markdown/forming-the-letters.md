@@ -26,16 +26,7 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
@@ -52,16 +43,7 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
 
     <ul class="link-list">
       <li class="link-list-item">
-        <a href="{{ calligraphy-guides-practice-sheet.pdf }}" target="_blank">Guides</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-strokes-practice-sheet.pdf }}" target="_blank">Basic Strokes</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ calligraphy-alphabet-practice-sheet.pdf }}" target="_blank">Alphabet</a>
-      </li>
-      <li class="link-list-item">
-        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">New! - Combined Practice Guides</a>
+        <a href="{{ istilllovecalligraphy-practice-guides.pdf }}" target="_blank">Practice Guides</a>
       </li>
     </ul>
 </section>
