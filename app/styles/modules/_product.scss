@@ -206,6 +206,10 @@
   .product-description {
     line-height: 19px;
 
+    h2 {
+      font-weight: 500;
+    }
+
     a {
       @extend .button-link;
     }

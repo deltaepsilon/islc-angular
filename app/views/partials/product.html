@@ -10,12 +10,12 @@
     <div class="pure-g-r product-wrapper product-{{ product.category || product.type }} centered" itemscope itemtype="http://schema.org/Offer">
         <meta itemprop="availability" content="{{ inStock(product) }}" />
 
-        <div class="pure-u-3-5 product-images centered-tablet">
+        <div class="pure-u-2-5 product-images centered-tablet">
 
             <img class="product-image" ng-src="{{ uri }}" alt="{{ product.title }}" ng-repeat="uri in product.images" ng-click="selectImage($index)" itemprop="image"/>
             <div class="stretch"></div>
         </div>
-        <div class="pure-u-2-5 product-details">
+        <div class="pure-u-3-5 product-details">
             <div class="product-meta clearfix">
                 <meta itemprop="sku" content="{{ product.id }}"/>
                 <meta itemprop="priceCurrency" content="USD">

@@ -3357,7 +3357,11 @@ textarea {
 .product-details .product-description {
   line-height: 19px;
 }
-/* line 214, modules/_product.scss */
+/* line 209, modules/_product.scss */
+.product-details .product-description h2 {
+  font-weight: 500;
+}
+/* line 218, modules/_product.scss */
 .product-details li {
   text-indent: -14px;
   padding-left: 14px;
