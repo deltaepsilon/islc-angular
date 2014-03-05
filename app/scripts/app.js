@@ -10,7 +10,8 @@ angular.module('islcAngularApp', [
     'ngSanitize',
     'angular-google-analytics',
     'seo',
-    'jmdobry.angular-cache'
+    'jmdobry.angular-cache',
+    'firebase'
   ])
   .run(function (cacheService, $location, notificationService, Analytics, $timeout) {
     var search = $location.search();
@@ -188,6 +189,9 @@ angular.module('islcAngularApp', [
               },
               transactions: function (transactionService) {
                 return transactionService.get();
+              },
+              announcements: function (announcementService) {
+                return announcementService.get();
               }
             }
           }

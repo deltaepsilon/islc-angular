@@ -33,6 +33,52 @@
         </div>
     </div>
 
+    <div class="pure-u-1 pure-g-r" ng-show="getActiveAnnouncements(announcements).length">
+        <div class="pure-u-1">
+            <br>
+            <h2 class="text-centered text-green2">announcements</h2>
+            <br>
+        </div>
+
+        <table class="table-width min-500 max-500 centered color-interval">
+            <thead>
+                <th>
+                    <div class="thead-bar">
+                        Date
+                    </div>
+                </th>
+                <th>
+                    Text
+                </th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="announcement in getActiveAnnouncements(announcements)">
+                    <td>
+                        <p>
+                            {{ announcement.date | date }}
+                        </p>
+                    </td>
+                    <td>
+                        <markdown ng-model="announcement.text" line-breaks="true" strip="true"></markdown>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--<br>-->
+
+        <!--<div class="pure-u-1" ng-repeat="announcement in announcements">-->
+            <!--<div class="span-10 min-500 max-500 centered">-->
+                <!--<strong>{{ announcement.date | date }}</strong>-->
+                <!--<markdown ng-model="announcement.text" line-breaks="true" strip="true"></markdown>-->
+            <!--</div>-->
+
+
+
+
+        <!--</div>-->
+    </div>
+
     <div class="pure-u-1">
         <br>
         <h2 class="text-centered text-green2">feedback</h2>
