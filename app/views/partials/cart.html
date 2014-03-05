@@ -45,7 +45,7 @@
                                 </div>
                             </td>
                             <td class="product-price">
-                                {{ product.price | currency }}
+                                {{ product.price | currency:"" }}
                             </td>
                             <td class="product-quantity">
                                 <input
@@ -60,7 +60,7 @@
                                         />
                             </td>
                             <td class="product-total">
-                                {{ product.quantity * product.price | currency}}
+                                {{ product.quantity * product.price | currency:""}}
                             </td>
                             <td class="product-actions">
                                 <a class="remove-button" ng-click="updateCart(product.id, 0)" qv-disable=".product-row-{{ $index }}">X</a>
@@ -74,18 +74,18 @@
                                 Discount Code: {{ cart.discount.code }}
                             </td>
                             <td class="sub-total text-centered" colspan="2">
-                                <span ng-show="cart.discount.value">{{ cart.discount.value | currency }} Discount</span>
+                                <!--<span ng-show="cart.discount.value">{{ cart.discount.value | currency:"" }} Discount</span>-->
                                 <span ng-show="cart.discount.percent">{{ cart.discount.percent | percentage }} Discount</span>
                             </td>
                             <td class="sub-total" colspan="2">
-                                {{ cart.discountDollars | currency}}
+                                {{ cart.discountDollars | currency:""}}
                             </td>
                         </tr>
 
                         <tr>
                             <td colspan="2"></td>
                             <td class="sub-total text-centered" colspan="2">Total:</td>
-                            <td class="sub-total" colspan="2">{{ cart.total | currency }}</td>
+                            <td class="sub-total" colspan="2">{{ cart.total | currency:"USD " }}</td>
                         </tr>
 
                         <tr>
