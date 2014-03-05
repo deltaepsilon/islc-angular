@@ -1663,9 +1663,19 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   background-color: #98ccb6;
 }
 
+/* line 20, imports/_colors.scss */
+.border-green1 {
+  border: 1px solid #98ccb6;
+}
+
 /* line 17, imports/_colors.scss */
 .background-green2 {
   background-color: #177f62;
+}
+
+/* line 20, imports/_colors.scss */
+.border-green2 {
+  border: 1px solid #177f62;
 }
 
 /* line 17, imports/_colors.scss */
@@ -1673,9 +1683,19 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   background-color: #e7e8e9;
 }
 
+/* line 20, imports/_colors.scss */
+.border-gray0 {
+  border: 1px solid #e7e8e9;
+}
+
 /* line 17, imports/_colors.scss */
 .background-gray1, .qv-form [required], .table-width .thead-bar:before, #cart .sub-total, .card-form, .products-wrapper .product-image, #gallery .comment, .page-body .exercise {
   background-color: #f2f2f2;
+}
+
+/* line 20, imports/_colors.scss */
+.border-gray1 {
+  border: 1px solid #f2f2f2;
 }
 
 /* line 17, imports/_colors.scss */
@@ -1683,9 +1703,19 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   background-color: #dddddd;
 }
 
+/* line 20, imports/_colors.scss */
+.border-gray2 {
+  border: 1px solid #dddddd;
+}
+
 /* line 17, imports/_colors.scss */
 .background-gray3 {
   background-color: #414141;
+}
+
+/* line 20, imports/_colors.scss */
+.border-gray3 {
+  border: 1px solid #414141;
 }
 
 /* line 17, imports/_colors.scss */
@@ -1693,9 +1723,19 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   background-color: #999999;
 }
 
+/* line 20, imports/_colors.scss */
+.border-gray4 {
+  border: 1px solid #999999;
+}
+
 /* line 17, imports/_colors.scss */
 .background-red1 {
   background-color: #bd3f42;
+}
+
+/* line 20, imports/_colors.scss */
+.border-red1 {
+  border: 1px solid #bd3f42;
 }
 
 /* line 17, imports/_colors.scss */
@@ -1703,9 +1743,19 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   background-color: #333333;
 }
 
+/* line 20, imports/_colors.scss */
+.border-gray {
+  border: 1px solid #333333;
+}
+
 /* line 17, imports/_colors.scss */
 .background-white, .address-form input, .address-form input[required], #gallery .image-wrapper:after, #gallery .comment:nth-child(2n), .dr-notification-container .dr-notification-wrapper, .qv-slider .qv-slider-image, .qv-slider .qv-slider-button {
   background-color: white;
+}
+
+/* line 20, imports/_colors.scss */
+.border-white {
+  border: 1px solid white;
 }
 
 /* line 17, imports/_colors.scss */
@@ -1713,57 +1763,62 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   background-color: black;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 20, imports/_colors.scss */
+.border-black {
+  border: 1px solid black;
+}
+
+/* line 27, imports/_colors.scss */
 .text-green1 {
   color: #98ccb6;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-green2, .page-body h2, .page-body h3, .page-body a {
   color: #177f62;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-gray0 {
   color: #e7e8e9;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-gray1 {
   color: #f2f2f2;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-gray2 {
   color: #dddddd;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-gray3, html, button, a, .dr-notification-container .dr-notification-close-btn:before {
   color: #414141;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-gray4 {
   color: #999999;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-red1 {
   color: #bd3f42;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-gray {
   color: #333333;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-white, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .button-cta, .page-body h1, .page-body a.button-cta {
   color: white;
 }
 
-/* line 24, imports/_colors.scss */
+/* line 27, imports/_colors.scss */
 .text-black {
   color: black;
 }

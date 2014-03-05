@@ -15,14 +15,17 @@ $colors:
 // Background colors class names.
 @each $color in $colors {
   .background-#{nth($color, 1)} {
-    background-color : nth($color, 2);
+    background-color: nth($color, 2);
+  }
+  .border-#{nth($color, 1)} {
+    border: 1px solid nth($color, 2);
   }
 }
 
 // Text colors.
 @each $color in $colors {
   .text-#{nth($color, 1)} {
-    color : nth($color, 2);
+    color: nth($color, 2);
   }
 }
 
