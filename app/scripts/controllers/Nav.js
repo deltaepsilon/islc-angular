@@ -111,18 +111,31 @@ angular.module('islcAngularApp')
       return deferred.promise;
     }
 
-    $rootScope.convert = function (slug, quantity) {
+    $rootScope.convert = function (preferredSlug, backupSlug, quantity) {
       productService.get().then(function (products) {
-        var i = products.length;
+        var i = products.length,
+          preferredProduct,
+          backupProduct,
+          id;
         while (i--) {
-          if (products[i].slug === slug) {
-            $rootScope.addToCart(products[i].id, quantity || 1).then(function (cart) {
-              $state.go('cart');
-            });
-            break;
-
+          if (products[i].slug === preferredSlug) {
+            preferredProduct = products[i];
+          } else if (products[i].slug === backupSlug) {
+            backupProduct = products[i];
           }
+
         }
+
+        if (preferredProduct && preferredProduct.available !== 0) {
+          id = preferredProduct.id;
+        } else {
+          id = backupProduct.id;
+        }
+
+        $rootScope.addToCart(id, quantity || 1).then(function (cart) {
+          $state.go('cart');
+        });
+
       });
 
 
