@@ -3051,22 +3051,26 @@ textarea {
   margin-bottom: 51px;
   text-transform: uppercase;
 }
-/* line 30, modules/_cart.scss */
+/* line 31, modules/_cart.scss */
+#cart .product-description a {
+  text-decoration: underline;
+}
+/* line 36, modules/_cart.scss */
 #cart .product-price {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 35, modules/_cart.scss */
+/* line 41, modules/_cart.scss */
 #cart .product-quantity {
   width: 75px;
   margin-right: 20px;
 }
-/* line 40, modules/_cart.scss */
+/* line 46, modules/_cart.scss */
 #cart .remove-button {
   padding: 8px 12px;
   margin-left: 20px;
 }
-/* line 48, modules/_cart.scss */
+/* line 54, modules/_cart.scss */
 #cart .sub-total {
   font-weight: 300;
   letter-spacing: 5px !important;
@@ -3074,75 +3078,75 @@ textarea {
   padding: 22px 0;
   text-transform: uppercase;
 }
-/* line 58, modules/_cart.scss */
+/* line 64, modules/_cart.scss */
 #cart .margin-left {
   margin-left: 15px;
 }
 
-/* line 64, modules/_cart.scss */
+/* line 70, modules/_cart.scss */
 .login-prompt {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 68, modules/_cart.scss */
+/* line 74, modules/_cart.scss */
 .login-prompt a {
   text-decoration: underline;
 }
 
-/* line 74, modules/_cart.scss */
+/* line 80, modules/_cart.scss */
 .address-form input, .address-form textarea {
   margin-bottom: 15px;
 }
 
-/* line 87, modules/_cart.scss */
+/* line 93, modules/_cart.scss */
 .card-form {
   padding: 30px;
 }
-/* line 92, modules/_cart.scss */
+/* line 98, modules/_cart.scss */
 .card-form .title {
   margin-bottom: 26px;
 }
-/* line 96, modules/_cart.scss */
+/* line 102, modules/_cart.scss */
 .card-form .form-error {
   padding: 0;
 }
-/* line 100, modules/_cart.scss */
+/* line 106, modules/_cart.scss */
 .card-form input {
   background-color: white !important;
 }
 
 @media (max-width: 767px) {
-  /* line 110, modules/_cart.scss */
+  /* line 116, modules/_cart.scss */
   #cart .table-width td {
     padding-right: 5px;
   }
-  /* line 115, modules/_cart.scss */
+  /* line 121, modules/_cart.scss */
   #cart .product-image {
     padding: 0px;
   }
-  /* line 119, modules/_cart.scss */
+  /* line 125, modules/_cart.scss */
   #cart .product-price {
     margin-right: 5px;
   }
-  /* line 123, modules/_cart.scss */
+  /* line 129, modules/_cart.scss */
   #cart .product-quantity {
     width: 45px;
     margin: 0;
   }
-  /* line 128, modules/_cart.scss */
+  /* line 134, modules/_cart.scss */
   #cart .remove-button {
     margin-left: 0px;
   }
-  /* line 132, modules/_cart.scss */
+  /* line 138, modules/_cart.scss */
   #cart .form-error {
     padding: 10px 0;
   }
-  /* line 136, modules/_cart.scss */
+  /* line 142, modules/_cart.scss */
   #cart .button-secondary, #cart [action="login_check"] #_submit, [action="login_check"] #cart #_submit {
     width: 100% !important;
   }
 
-  /* line 141, modules/_cart.scss */
+  /* line 147, modules/_cart.scss */
   #cvc {
     width: 100% !important;
   }

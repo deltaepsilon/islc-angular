@@ -27,6 +27,12 @@
     text-transform: uppercase;
   }
 
+  .product-description {
+    a {
+      text-decoration: underline;
+    }
+  }
+
   .product-price {
     display: inline-block;
     margin-right: 20px;
