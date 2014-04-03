@@ -48,7 +48,8 @@ angular.module('islcAngularApp')
           quantity: quantity || 1
         }
 
-        Analytics.trackEvent('cart', $state.current.name, productId, quantity);
+        Analytics.trackEvent('cart by page', $state.current.name, productId, quantity);
+        Analytics.trackEvent('cart by product', productId, $state.current.name, quantity);
 
         return Restangular.all('cart').post(query);
       },
