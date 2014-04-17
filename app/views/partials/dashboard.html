@@ -1,17 +1,17 @@
-<div id="dashboard" class="pure-g-r dashboard">
-    <div class="pure-u-1">
+<div id="dashboard" class="dashboard">
+    <div class="column small-12 full-bleed">
         <h2 class="thick padded text-centered background-gray1">dashboard</h2>
     </div>
 
-    <div class="pure-u-1 pure-g-r" ng-show="subscriptions.length">
-        <div class="pure-u-1">
+    <div ng-show="subscriptions.length">
+        <div class="column small-12">
             <br>
             <h2 class="text-centered text-green2">subscriptions</h2>
             <br>
         </div>
 
 
-        <div class="pure-u-1" ng-repeat="subscription in subscriptions">
+        <div class="column small-12" ng-repeat="subscription in subscriptions">
             <div class="span-10 min-500 max-500 centered" ng-hide="expired(subscription)">
                 <a class="button button-highlight text-centered" ui-sref="content.subscription({productSlug: subscription.product.slug})">go to {{ subscription.product.title }}</a>
                 <br>
@@ -33,9 +33,9 @@
         </div>
     </div>
 
-    <div class="pure-u-1  max-500 centered" ng-show="getActiveAnnouncements(announcements).length">
-        <div class="pure-g-r" ng-repeat="announcement in getActiveAnnouncements(announcements)">
-            <div class="pure-u-1 border-green2 padded">
+    <div class="column small-12 small-centered clearfix  max-500 centered" ng-show="getActiveAnnouncements(announcements).length">
+        <div ng-repeat="announcement in getActiveAnnouncements(announcements)">
+            <div class="column small-12 small-centered clearfix border-green2 padded">
                 <br>
                 <h2 class="text-centered text-green2">announcement</h2>
                 <br>
@@ -46,15 +46,11 @@
                 <markdown ng-model="announcement.text" line-breaks="true" strip="true"></markdown>
             </div>
 
-            <div class="pure-u-1">
-                <br>
-            </div>
-
         </div>
 
     </div>
 
-    <div class="pure-u-1">
+    <div class="column small-12 hidden">
         <br>
         <h2 class="text-centered text-green2">feedback</h2>
         <br>
@@ -97,7 +93,7 @@
         </table>
     </div>
 
-    <div class="pure-u-1">
+    <div class="column small-12 hidden">
         <br>
         <br>
         <h2 class="text-centered text-green2">gallery</h2>
@@ -136,14 +132,14 @@
         </table>
     </div>
 
-    <div class="pure-u-1">
+    <div class="column small-12">
         <br>
         <br>
         <h2 class="text-centered text-green2">account</h2>
         <br>
 
-        <div class="pure-g-r padded-wrapper firefox-centered">
-            <div class="pure-u-3-5 max-500 centered">
+        <div class="padded-wrapper firefox-centered">
+            <div class="column small-12 small-centered clearfix max-500 centered">
 
                 <p>{{user.email }}</p>
                 <p ng-hide="address">
@@ -183,7 +179,7 @@
 
     </div>
 
-    <div class="pure-u-1">
+    <div class="column small-12 hidden">
         <br>
         <br>
         <h2 class="text-centered text-green2">transactions</h2>

@@ -1,6 +1,6 @@
-<div class="pure-g-r subscription padded-wrapper">
+<div class=" subscription padded-wrapper">
 
-    <div class="pure-u-1-5">
+    <div class="column small-12 medium-2">
         <ol class="subscription-list">
             <li ng-repeat="page in pages">
                 <a class="text-green2" ui-sref="content.subscription.page({pageSlug: page.slug})" qv-active="pageSlug|{{ page.slug }}">{{ page.title }}</a>
@@ -10,6 +10,6 @@
     </div>
 
 
-    <div class="pure-u-4-5" ui-view="page"></div>
+    <div class="column small-12 medium-10" ui-view="page"></div>
 
 </div>

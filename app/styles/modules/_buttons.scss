@@ -1,3 +1,9 @@
+button, .button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .button {
   &[disabled] {
     @include opacity(.3);
@@ -41,6 +47,10 @@
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 5px;
+
+  &:hover, &:visited {
+    color: getColor(white);
+  }
 }
 
 .button-tertiary {

@@ -13,6 +13,10 @@ video, iframe {
   max-width: 100%;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 a {
   @extend .text-gray3;
   text-decoration: none;
@@ -110,6 +114,7 @@ h6 {
 
 .clearfix {
   @include clearfix();
+  clear: both;
 }
 
 .relative {
@@ -235,7 +240,7 @@ h6 {
 }
 
 .inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .clear-both {
@@ -295,4 +300,9 @@ h6 {
 
 .max-700 {
   max-width: 700px;
+}
+
+.full-bleed {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }

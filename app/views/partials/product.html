@@ -1,4 +1,4 @@
-<div class="background-gray1">
+<div class="column background-gray1">
     <ul class="link-list">
         <a class="link-list-item" ui-sref="products">all</a>
         <a class="link-list-item" ui-sref="products({category: 'workshop'})">workshops</a>
@@ -6,16 +6,17 @@
         <a class="link-list-item" ui-sref="products({category: 'physical'})">goodies</a>
     </ul>
 </div>
-<div class="product padded-wrapper">
-    <div class="pure-g-r product-wrapper product-{{ product.category || product.type }} centered" itemscope itemtype="http://schema.org/Offer">
+<div class="column product padded-wrapper">
+    <br><br>
+    <div class="product-wrapper product-{{ product.category || product.type }} centered" itemscope itemtype="http://schema.org/Offer">
         <meta itemprop="availability" content="{{ inStock(product) }}" />
 
-        <div class="pure-u-2-5 product-images centered-tablet">
+        <div class="column medium-12 large-6 product-images centered-tablet">
 
             <img class="product-image" ng-src="{{ uri }}" alt="{{ product.title }}" ng-repeat="uri in product.images" ng-click="selectImage($index)" itemprop="image"/>
             <div class="stretch"></div>
         </div>
-        <div class="pure-u-3-5 product-details">
+        <div class="column medium-12 large-6 product-details">
             <div class="product-meta clearfix">
                 <meta itemprop="sku" content="{{ product.id }}"/>
                 <meta itemprop="priceCurrency" content="USD">

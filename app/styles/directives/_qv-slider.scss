@@ -36,6 +36,7 @@
     display: inline;
     margin: 0 17px;
     position: relative;
+    padding: 166px 0 163px;
   }
 
 
@@ -46,7 +47,7 @@
   }
 
   .qv-slider-link {
-    @include absolute(initial, 4px, 4px, 0);
+    @include absolute(initial, 4px, -4px, 0);
     @extend .text-medium;
 
     background: rgba(0, 0, 0, .7);

@@ -1,4 +1,4 @@
-'<div class="background-gray1">
+'<div class="column small-12 background-gray1">
     <ul class="link-list">
         <li class="link-list-item" ng-click="filterProducts('')" ng-class="{active: isActive('')}">all</li>
         <li class="link-list-item" ng-click="filterProducts('workshop')" ng-class="{active: isActive('workshop')}">workshops</li>
@@ -6,7 +6,9 @@
         <li class="link-list-item" ng-click="filterProducts('physical')" ng-class="{active: isActive('physical')}">goodies</li>
     </ul>
 </div>
-<div class="products padded-wrapper">
+<div class="column small-12 products padded-wrapper">
+    <br>
+
     <div class="products-wrapper centered firefox-centered">
 
         <div class="product product-{{ product.category || product.type }}" ng-repeat="product in products | filter:category">

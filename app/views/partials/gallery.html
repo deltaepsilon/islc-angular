@@ -1,12 +1,12 @@
-<div id="gallery" class="pure-g-r gallery" ng-show="gallery.id">
+<div id="gallery" class="gallery" ng-show="gallery.id">
 
-    <div class="pure-u-2-5 padded-wrapper">
+    <div class="column small-12 medium-4 padded-wrapper">
         <div class="image-wrapper" qv-image-expand=".gallery-image">
             <img class="gallery-image" ng-src="{{ gallery.signed_uri }}" alt="{{ gallery.title }}"/>
         </div>
         <h4 class="gallery-title">{{ gallery.title }}</h4>
     </div>
-    <div class="pure-u-3-5 padded-wrapper">
+    <div class="column small-12 medium-8 padded-wrapper">
         <p class="gallery-description">
             {{ gallery.description }}
         </p>

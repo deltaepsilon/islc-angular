@@ -20,6 +20,7 @@ textarea {
     padding: 8px;
     letter-spacing: 1px;
     font-weight: 100;
+    font-family: "Museo sans";
     @include placeholder(getColor(gray2));
   }
 
