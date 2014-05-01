@@ -6,7 +6,7 @@ angular.module('islcAngularApp')
       expired = function (subscription) {
         var now = moment(),
           expiration = moment(subscription.expires);
-        return expiration.diff(now) < 0;
+        return expiration.diff(now) < 0 && subscription.reset;
       };
 
     return {

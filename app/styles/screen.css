@@ -673,7 +673,7 @@
 }
 
 /* line 27, imports/_colors.scss */
-.text-white, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .button-cta, .page-body h1, .page-body a.button-cta {
+.text-white, .button-primary, .button-secondary, [action="login_check"] #_submit, .button-tertiary, .button-highlight, .button-highlight:hover, .button-highlight:visited, .button-cta, .page-body h1, .page-body a.button-cta {
   color: white;
 }
 
@@ -3962,7 +3962,7 @@ button:hover, .button:hover {
   font-weight: 300;
   letter-spacing: 5px;
 }
-/* line 84, modules/_buttons.scss */
+/* line 88, modules/_buttons.scss */
 .button-highlight:after {
   position: absolute;
   top: 8px;
@@ -3974,7 +3974,7 @@ button:hover, .button:hover {
   display: block;
 }
 
-/* line 94, modules/_buttons.scss */
+/* line 98, modules/_buttons.scss */
 .button-cta {
   font-size: 17px;
   display: block;
@@ -3985,7 +3985,7 @@ button:hover, .button:hover {
   font-weight: 500;
   letter-spacing: 5px;
 }
-/* line 108, modules/_buttons.scss */
+/* line 112, modules/_buttons.scss */
 .button-cta:after {
   position: absolute;
   top: 8px;
@@ -3997,17 +3997,17 @@ button:hover, .button:hover {
   display: block;
 }
 
-/* line 119, modules/_buttons.scss */
+/* line 123, modules/_buttons.scss */
 .button-link, .product-details .product-description a {
   cursor: pointer;
   text-decoration: underline;
 }
-/* line 123, modules/_buttons.scss */
+/* line 127, modules/_buttons.scss */
 .button-link.active, .product-details .product-description a.active {
   font-weight: 500;
 }
 
-/* line 128, modules/_buttons.scss */
+/* line 132, modules/_buttons.scss */
 .remove-button {
   border: 1px solid #414141;
   cursor: pointer;

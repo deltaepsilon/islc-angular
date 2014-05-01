@@ -80,6 +80,10 @@ button, .button {
   font-weight: 300;
   letter-spacing: 5px;
 
+  &:hover, &:visited {
+    @extend .text-white;
+  }
+
 
   &:after {
     @include absolute(8px, 8px, 8px, 8px);
