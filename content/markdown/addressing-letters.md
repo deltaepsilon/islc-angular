@@ -1,3 +1,60 @@
+# Supplies
+
+Through years of trial and error, I’ve found the following to be ideal when addressing envelopes: 
+
+**A high-quality envelope**
+
+*  [LCI Paper](http://www.lcipaper.com/)
+*  [Paper Presentation](http://paperpresentation.com/)
+*  [Paper Source](http://www.paper-source.com/cgi-bin/paper/envelopes/envelopes.html) 
+*  [American Crafts](http://www.americancrafts.com/default.aspx?PageID=49&CategoryID=16)
+
+I’m not familiar with all brands of envelopes, but I've had fabulous luck with all envelopes I've ordered from the above sources.
+
+Mowhawk, Cougar and Moab are fine paper companies that make high-quality papers that will work with ink. 
+
+I’ve also found that some coated metallic envelopes are typically awesome with ink and quite forgiving (to the point where you can literally wipe off mistakes if you catch them early enough!). 
+
+**Brilliant Inks**
+
+[Windsor & Newton Gouache](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+wnser1.html+) - mix any color under the sun with some water, gouache and a little gum arabic (the gum arabic helps consistency and lengthens drying time). Watercolor could be used as well, but gouache’s opacity and thickness do well on just about any paper type.
+
+[Dr Martin’s Pen White](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+penwht.html+) - this white ink is thick and brilliant. You will need to thin it out with several drops of water, but it’ll shine brightly on any dark surface. 
+
+[Ziller North Wind White](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+zilwhi.html+) - I've started to prefer this white over Dr. Martin's Pen white recently. It's already the right consistency out of the jar and still gives brilliant, fine opaque hairlines. 
+
+[Dr. Martin’s Iridescent Copperplate Gold](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+irides---gld.html) - FW and Windsor & Newton golds don’t compare to Dr. Martin’s copperplate gold. It’s bright on any surface and it doesn’t gunk up your fine nibs quite like other brands do. The gold flecks settle quickly so lots of shaking is required. 
+
+[Finetec Arabic Gold](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+arabic.html) - you can get a whole gold pallete, but if you’re not sure how you’re going to like it, you can get refill pots for about $4 each. Add water with a small brush and apply to the underside of the nib. It’s a bright, bright metallic that needs no shaking.
+
+**Drying Rack**
+
+Simply placing the envelope on a flat surface until it’s dry is totally fine. However, if you’re addressing more than 10 envelopes at a time, you may want to get some help to keep that precious desk space clear. 
+
+![drying rack]({{ 9-addressingenvelopes-15-drying-rack.jpg }})
+
+I found this mail sorter at my local thrift store for next to nothing. The rack makes all the difference when I’m doing multiple lettering projects at once. 
+
+Beware, however. If you’re using really thin ink that tends to drip, you may want to find a more horizontal solution for drying organization. Make a test piece to find out if the above applies to any project. 
+
+**Rulers**
+
+You’ll want a clear gridded ruler for making marks on dark envelopes. I’ve found quilting rulers to do the trick, but it's what I had on-hand. You’ll want something with a clear grid for making easy parallel lines like [this one](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+cthrul.html).
+
+**Light Table**
+
+If you’re lettering a lot on plain papers or envelopes and you don’t want to mess with penciling out your guides, use a [light table](http://www.amazon.com/gp/product/B000KNHRH6/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000KNHRH6&linkCode=as2&tag=il0c6-20). I don’t use mine often, but when I do, it’s such a huge time saver. If you're in a pinch and you need a light table asap, try using the bright screen of an iPad or tablet! It works like a charm.
+
+![/phantom-liner-2.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/phantom-liner-2.jpg)
+
+**Phantom Liner**
+
+If you're lettering on a lot of opaque paper, light or dark, a [phantom liner](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+phn100.html+) comes in handy! It's available in two sizes: small and large. I have both, but tend to use the small liner the most. It just fits so nicely on my desk when I want perfect precision and consistency with my spacing. 
+
+For dark papers or sub-ideal lighting, get a small lamp to light the paper *underneath* the phantom liner. This will create less fatigue on the eyes while working. I tend to use my phone in flashlight mode. 
+
+#  My Rules
+
 Addressing envelopes is so much fun, but there are a few rules that you might want to know to help make addressing letters (and in bulk) easy, look beautiful and get through the postal system. 
 
 Most postal services are automated, so by hand-writing your address you’re automatically put into the “manually sort” pile. [The USPS](http://pe.usps.com/businessmail101/addressing/deliveryAddress.htm) has some great suggestions, but most don’t apply to hand-lettered addresses. Here are my guidelines: 
@@ -20,9 +77,9 @@ Below are guidelines (with some opinions from me) based on this article by the [
 *   It’s recommended that the ZIP remain on the same line as the City and State. I tend to keep it on there, but if it’s going to fit better on the next line, I’ll move it to the next line. 
 *   Never forget to put Country information on there (even sender info) if sending an envelope to another country. I don’t tend to mess with what goes on what lines when sending an envelope to another country.
 
-Deviations from these may not necessarily denote a letter as undeliverable, but may create delivery delays. 
+Deviations from these may not necessarily denote a letter as undeliverable, but may create delivery delays. Often times it's not required to write the return address on the front of the envelope, but if you're unsure if the address will be decipherable, you may want to include that on the front. 
 
-I’ve found personally, that Chicago mail is a LOT less forgiving than other cities for fancy addresses. Mail times are doubled, sometimes tripled or returned for that area. 
+I’ve found personally, that Chicago mail is a LOT less forgiving than other cities for fancy addresses. Mail times are doubled, tripled or returned for that area. 
 
  _If you have any experience good or bad with certain cities or states, let me know in the comments so I can add as much info here about mail times as possible, thanks!_
 
@@ -101,51 +158,7 @@ If you’re a little obsessed with collecting - and using - colorful inks, you�
 
 The more contrast you can provide with the envelope and ink, the easier it’s going to be to read and the faster it’s going to reach the recipient. 
 
-# Supplies
-
-Through years of trial and error, I’ve found the following to be must haves when addressing envelopes: 
-
-**A good high-quality envelope**
-
-*  [Paper Source](http://www.paper-source.com/cgi-bin/paper/envelopes/envelopes.html) 
-*  [American Crafts](http://www.americancrafts.com/default.aspx?PageID=49&CategoryID=16)
-*  [Envelopes.com](http://www.envelopes.com/)
-
-I’m not familiar with all brands of envelopes, but Paper Source and American Crafts make great envelopes that can handle ink. I’ve found that GreenGrocer Kraft envelopes do well with ink (not all kraft envelopes are good with ink). 
-
-Mowhawk, Cougar and Moab are fine paper companies that make high-quality papers that will work with ink. 
-
-I’ve also found that coated metallic envelopes are typically awesome with ink and quite forgiving (to the point where you can literally wipe off mistakes if you catch them early enough!). 
-
-**Brilliant Inks**
-
-[Windsor & Newton Gouache](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+wnser1.html) - mix any color under the sun with some water, gouache and a little gum arabic (the gum arabic helps consistency and lengthens drying time). Watercolor could be used as well, but gouache’s opacity and thickness do well on just about any paper type.
-
-[Dr Martin’s Pen White](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+penwht.html) - this white ink is thick and brilliant. You may need to thin it out with a few drops of water, but it’ll shine brightly on any dark surface. 
-
-[Dr. Martin’s Iridescent Copperplate Gold](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+irides---gld.html) - FW and Windsor & Newton golds don’t compare to Dr. Martin’s copperplate gold. It’s bright on any surface and it doesn’t gunk up your fine nibs quite like other brands do. The gold flecks settle quickly so lots of shaking is required. 
-
-[Finetec Arabic Gold](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+arabic.html) - you can get a whole gold pallete, but if you’re not sure how you’re going to like it, you can get refill pots for about $4 each. Add water with a small brush and apply to the underside of the nib. It’s a bright, bright metallic that needs no shaking.
-
-**Drying Rack**
-
-Simply placing the envelope on a flat surface until it’s dry is totally fine. However, if you’re addressing more than 10 envelopes at a time, you may want to get some help to keep that precious desk space clear. 
-
-![drying rack]({{ 9-addressingenvelopes-15-drying-rack.jpg }})
-
-I found this mail sorter coil at my local thrift store for next to nothing. The rack makes all the difference when I’m doing multiple lettering projects at once. 
-
-Beware, however. If you’re using really thin ink that tends to drip, you may want to find a more horizontal solution for drying organization. Make a test piece to find out if the above applies to any project. 
-
-**Rulers**
-
-You’ll want a clear gridded ruler for making marks on dark envelopes. I’ve found quilting rulers to do the trick, but that’s because it’s what I had on-hand. You’ll want something with a clear grid for making easy parallel lines like [this one](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+cthrul.html).
-
-**Light Table**
-
-If you’re lettering a lot on plain papers or envelopes and you don’t want to mess with penciling out your guides, use a [light table](http://www.amazon.com/gp/product/B000KNHRH6/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000KNHRH6&linkCode=as2&tag=il0c6-20). I don’t use mine often, but when I do, it’s such a huge time saver. 
-
-# Guidelines
+# Using Guides
 
 Most of my letters are addressed by hand without guides. I’m usually deploying an organic style that lends itself towards organic baselines and spacing or I’m in a hurry. Or both. But when I want my lines to come out the same every time, I have a method for that. 
 
@@ -183,21 +196,25 @@ Letter your piece and allow ink to dry completely before erasing. If you’re us
 
 Erase those little lines and BAM, the recipient won’t have a clue the awesomeness that’s about to head their way.
 
+![/phantom-liner-3.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/phantom-liner-3.jpg)
 
-As you upload your work to the gallery, please use the following guidelines for the best feedback:
+If you have a phantom liner, you don't have to write out guidelines at all. Simply adjust the liner (directions in the box) for the thickness of your writing material, and letter away! 
 
-- Scans are okay, but to save me time from downloading and opening with a third party app, please snap a photo or **save as a JPG**. 
+![/phantom-liner-1.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/phantom-liner-1.jpg)
 
-- Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+The liner comes with printed guides you can use, but you can make your own if you so desire! If you're including angle lines, imagery or text, be sure to reverse it. 
 
-- Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more feedback.
+# Upload Guidelines
 
-- Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
+*  Scans are okay, but to save me time from downloading and opening with a third party app, please snap a photo or **save as a JPG**. 
+*  Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+*  Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more feedback.
+*  Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
 
 
 <section class="exercise">
     <h2>
-        EXERCISE 6.5
+        EXERCISE 9
     </h2>
     <p>
         I’d love to see you practice some snail mail! Either on gridded paper or on an actual envelope practice writing addresses. Upload to the <a href="#!/gallery">gallery</a> for critique.

@@ -14,14 +14,21 @@ Much like pronouncing a word with the right emphasis on each syllable, thick str
 
 Notice how changes in emphasis affect the letterform. Keep this in mind as you learn to deconstruct each letter and look for clues on where to start each stroke.
 
-<img src="{{ 5-letterforms-3-exercise-example.jpg }}"/>
+# Upload Guidelines
+
+*  Scans are okay, but to save me time from downloading and opening with a third party app, please snap a photo or **save as a JPG**. 
+*  Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+*  Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more feedback.
+*  Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
+
+![/islc-assignment-4.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/islc-assignment-4.jpg)
 
 <section class="exercise">
     <h2>
         EXERCISE 4
     </h2>
     <p>
-      Once you’ve mastered the basic strokes with your pencil or paintbrush, it’s time to move on to the pointed pen! Slide your alphabet worksheet underneath a new sheet of tracing paper and practice each letter. Don’t worry about any shaking that might occur. The goal of this exercise is to get you comfortable with pressing and releasing with your pen and comfortable with the order of each stroke. As you work your way down the alphabet, you’ll find that each letter looks better than the next. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      Once you’ve mastered the basic strokes, it's time to move onto the alphabet! Trace or free-hand the alphabet in pencil. The goal of this exercise is to get you comfortable with structure, stroke order and pressure. As you work your way down the alphabet, you’ll find that each letter looks better than the next. <b>Circle letters you may be struggling with.</b> Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
@@ -31,14 +38,14 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
     </ul>
 </section>
 
-<img src="{{ 5-letterforms-4-exercise-example.jpg }}"/>
+![/-assignment-5-a.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/-assignment-5-a.jpg)
 
 <section class="exercise">
     <h2>
         EXERCISE 5
     </h2>
     <p>
-      After you feel comfortable with tracing the alphabet, grab a piece of calligraphy paper and while looking (no tracing!) at the alphabet as a guide, practice each letter at least 5 times. You may want to graph out lines to make your practice look neat. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      After you feel comfortable with penciling the alphabet, grab a piece of calligraphy paper and while looking (no tracing!) at the alphabet as a guide, practice each letter a few times. You may want to draw out angle lines to make your practice look neat. <b>Circle letters you may be struggling with.</b> Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">

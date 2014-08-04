@@ -1,44 +1,43 @@
-## MY HISTORY
+## MY HISTORY 
 
 Hello there! It’s Melissa Esplin, of I Still Love You and I’m so excited to share with you my love for calligraphy. This e-course is a long time coming and I’m just thrilled that it’s finally here.
 
 <img src="{{ 1-introduction-1.jpeg }}"/>
+ 
+My love for lettering and calligraphy goes way, way back; back to the beginning. I’ve never been much for writing, but I love to draw letters. I had the best handwriting in my classes in grade school. I was so eager to learn cursive as a beginning second-grader that I would sneak into the third grade classroom after school and copy down the cursive letters before heading home for the day. I’ve always felt like cursive letterforms are oh so graceful.  
 
-My love for lettering and calligraphy goes way, way back; back to the beginning. I’ve never been much for writing, but I love to draw letters. I had the best handwriting in my classes in grade school. I was so eager to learn cursive as a beginning second-grader that I would sneak into the third grade classroom after school and copy down the cursive letters before heading home for the day. I’ve always felt like cursive letterforms are oh so graceful.
+Fast forward to 7th grade where I finally took my first art class. We learned about Old English lettering. I immediately found it fascinating, stole my brother’s calligraphy set and wrote out as many words as I could. Typically it was just my name. 
 
-Fast forward to 7th grade where I finally took my first art class. We learned about Old English lettering. I immediately found it fascinating, stole my brother’s calligraphy set and wrote out as many words as I could. Typically it was just my name.
+Junior high was when the scrapbooking scene hit my house full force. My mom started making layouts and cards and I would make cards along side her. I was never super satisfied with the folksy stamps, so I started hand lettering and illustrating my cards. This was when my dad bought me a copyright and I started making card sets for other people. My little ‘business’ didn’t go anywhere, but I sure did think I was cool. 
 
-Junior high was when the scrapbooking scene hit my house full force. My mom started making layouts and cards and I would make cards along side her. I was never super satisfied with the folksy stamps, so I started hand lettering and illustrating my cards. This was when my dad bought me a copyright and I started making card sets for other people. My little ‘business’ didn’t go anywhere, but I sure did think I was cool.
+<img src="{{ 1-introduction-2.jpeg }}"/> 
 
-<img src="{{ 1-introduction-2.jpeg }}"/>
+In junior high and high school I got incredibly involved in the art-making scene. In addition to my growing love for the fine arts, I was constantly hand-lettering posters and flyers for friends, school and church events. 
 
-In junior high and high school I got incredibly involved in the art-making scene. In addition to my growing love for the fine arts, I was constantly hand-lettering posters and flyers for friends, school and church events.
-
-As I embarked on my first year of college, I started work at a graphic design firm on campus as an office secretary. It was then that I learned how to actually turn on a computer (how was that in 2003?), send attachments and eventually teach myself the ins and outs of Illustrator, Photoshop and InDesign. I made the transition to graphic designer within the office and quickly became immersed in the digital world. I completely forgot about my hand lettering.
+As I embarked on my first year of college, I started work at a graphic design firm on campus as an office secretary. It was then that I learned how to actually turn on a computer (how was that in 2003?), send attachments and eventually teach myself the ins and outs of Illustrator, Photoshop and InDesign. I made the transition to graphic designer within the office and quickly became immersed in the digital world. I completely forgot about my hand lettering. 
 
 It wasn’t until 2009, when my friend Jenn posted a gorgeous printable card with her hand lettering that I even thought about how much I loved hand lettering. I saw her gorgeous handwriting and something clicked. I knew I needed to get back to my analog lettering and incorporate that into my design work. How had I let this lay dormant for so long?
 
 ## CALLIGRAPHY HISTORY
 
-You have all had exposure to calligraphy in its various forms. Now, if you’re like me, trying to look up videos and books to increase your knowledge on calligraphy. You’ll realize that by just searching “Calligraphy”, you don’t come up with the results that you’re after.
+You have all had exposure to calligraphy in its various forms. Now, if you’re like me, trying to look up videos and books to increase your knowledge on calligraphy. You’ll realize that by just searching “Calligraphy”, you don’t come up with the results that you’re after. 
 
 Probably the most common forms of calligraphy include Old English Calligraphy (a lettering style achieved by an angled pen nib) and Chinese Calligraphy (brush lettering in the Chinese language). Now these different styles are really fun to sink your teeth into, but these styles don’t lend themselves to modern interpretation as much as Copperplate Calligraphy does. Copperplate is written with a pointed nib like the calligraphy pens you’ll find at the art store.
 
-“Copperplate” is the umbrella term for using both pointed pen and pressure to create the dramatic thicks and thins that are so iconic in calligraphy. Within the pointed-pen calligraphy umbrella, you have 3 popular styles: Copperplate, Spencerian and Roundhand.
+“Copperplate” is the umbrella term for using both pointed pen and pressure to create the dramatic thicks and thins that are so iconic in calligraphy. Within the pointed-pen calligraphy umbrella, you have 3 popular styles: Copperplate, Spencerian and Roundhand. 
 
-The Copperplate style was birthed sometime in the 16th century as printers used pointed pens to etch letters into copper plates for mass production of books. Spencerian, Roundhand and even our modern cursive alphabet are modern offshoots of the original Copperplate style.
-
+The Copperplate style was birthed sometime in the 16th century as printers used pointed pens to etch letters into copper plates for mass production of books. Spencerian, Roundhand and even our modern cursive alphabet are modern offshoots of the original Copperplate style. 
 ## GETTING STARTED
 
-I’m excited to help you learn more about traditional copperplate calligraphy as you develop your own personal style. The objectives within this course are:
+I’m excited to help you learn more about traditional copperplate calligraphy as you develop your own personal style. The objectives within this course are: 
 
 1. Learn and become comfortable with the pointed pen
-2. Learn the basics of Copperplate Calligraphy
-3. Learn the basic anatomy of the letterforms
-4. Apply your knowledge of the above to create your own unique lettering
-5. Encourage creativity within your new hobby
-
-This course is not your grandma’s calligraphy class. I take a more post-modern approach to the traditional techniques and practices within calligraphy.
+2. Learn the basics of Copperplate Calligraphy 
+3. Learn the basic anatomy of the letterforms        
+4. Apply your knowledge of the above to create your own unique lettering        
+5. Encourage creativity within your new hobby        
+    
+This course is not your grandma’s calligraphy class. I take a more post-modern approach to the traditional techniques and practices within calligraphy. 
 
 In art school, one of the biggest things we talked about was how, living in a post-modern era, everything has been done before. As a starry-eyed freshman, there was nothing more depressing than hearing those words come from my professors. As I’ve matured and ventured into the online world, I’ve come to realize that while everything has been done before, no two people are the same. By leveraging the traditional practices of art and calligraphy and inserting your own unique perspective, you will make something that is entirely individual to you. And that is where the true art of lettering lies—in your own personality.
 
@@ -46,146 +45,200 @@ Let’s get going!
 
 ### In this lesson, you’ll learn the whats and whys of outfitting yourself with the correct tools and the perfect lettering environment.
 
-You should have your supplies in front of you. If not, head over to [Paper and Ink Arts](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+index.html+) to purchase your supplies for the I Still Love Calligraphy class (under the conferences and classes link). One of the fantastic parts of this hobby is that it can easily fit inside a small lunch box and it costs as little as $30 to get completely outfitted!
-
-Paper & Ink Arts is definitely my preferred place for calligraphy supplies, but I've found a lot of local shops have just what I need when I'm in a pinch. You won't find what you need at craft and hobby stores. Hobby Lobby has some inks, but Michael's and JoAnn have nothing. Nothing that I would recommend, at least. Hit up art supply stores, university bookstores or specialty stationery shops.
+You should have your supplies in front of you. If not, head over to [Paper and Ink Arts](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+istilllovecalligraphy.html+) to purchase your supplies for the I Still Love Calligraphy class. One of the fantastic parts of this hobby is that it can easily fit inside a small lunch box! 
+ 
+Paper & Ink Arts is definitely my preferred place for calligraphy supplies, but I've found a lot of local shops have just what I need when I'm in a pinch. You won't find what you need at craft and hobby stores. Hobby Lobby has some inks, but Michael's and JoAnn have nothing. Not much that I would recommend, at least. Hit up art supply stores, university bookstores, vintage stores or specialty stationery shops. 
 
 Let’s break down the materials and why I recommend them.
 
 <img src="{{ 2a-supplies-1-container-pencils.jpg }}"/>
-
+ 
 ## CONTAINER
 
-One of my favorite things about the hobby/practice of calligraphy is that it takes up very little space. I have a rolling flat storage unit (Ikea's ALEX), but when I have to take my work on the road it all fits snugly in a small shoe box.
+One of my favorite things about the hobby/practice of calligraphy is that it takes up very little space. I have a rolling flat storage unit ([Ikea's ALEX](http://www.ikea.com/us/en/catalog/products/50167158/#/40196241)), but when I have to take my work on the road it all fits snugly in a small shoe box. 
+
 <img src="{{ 2a-supplies-3-pencil.jpg }}"/>
 
 ## PENCIL + ERASER
 
-You’ll definitely need a pencil. Any old #2 will work, though I do love drafting lead holders. You can purchase the range of soft to hard leads 6H – 6B and everything in between.
+You’ll definitely need a pencil. Any kind of pencil will work, though I do love [drafting lead holders](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+leadho.html+). You have to purchase leads separately for these kinds of pencils, but you can find a range of soft to hard leads 6H – 6B and everything in between. I personally prefer B and softer leads for my practice work. 
 
-You’ll need a non-marking eraser for drafting your projects (especially when you first start out). I can’t recommend the Pentel white click eraser enough. It cleanly removes pencil markings and the eraser rubber lasts forever.
+You’ll need a non-marking eraser for drafting your projects (especially when you first start out). I can’t recommend the [Pentel click eraser](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+clic.html+) enough. It cleanly removes pencil markings and the eraser rubber lasts forever. If you have large fields of pencil to erase, a large vinyl eraser works well.
+
+A simple mechanical pencil will do just fine for the purposes of our class, but if you’re like me and get excited about new writing instruments, you’ll like these. 
 
 <img src="{{ 2a-supplies-2-ink.jpg }}"/>
-
+ 
 ## INK
 
-I’ve not tried every single brand of ink out there, but of the brands that I have tried; FW, Windsor & Newton, Sumi and DR. PH Martin's are top on my list.
+I’ve not tried every single brand of ink out there, but of the brands that I have tried, here are my thoughts on them: 
 
-**FW** is an acrylic ink, it's basically like thinned out paint. This works remarkably well on dark and rough surfaces.
+**FW Acrylic Ink** is basically like thinned out paint. This works remarkably well on dark and rough surfaces. Since it’s like a loose paint, the bottles need to be shaken before use for even consistency. This ink works best with nibs with larger vents. The thickness of the ink doesn’t lend itself towards fine hairlines. It’s great for larger scale letters. 
 
-**Windsor & Newton** is similar to FW with its thick consistency, but needs to be stirred more frequently. The black is the best of all the colors offered.
+**Koh-I-Noor India Ink** is an india ink with a loose consistency. It’s perfect for fine points. It dries quickly with a satin charcoal sheen. It’s great for scan and photo work as the hairlines are pronounced even with the finest points. The loose ink works well on most papers, but not Kraft paper (from my experience). 
 
-**Sumi** is hands down my favorite. It's the most expensive of the inks above, but lasts forever. The mouth of the jar is wide enough for dipping the oblique pen and it glides over any surface smoothly. This particular ink leaves a shiny raised texture, not ideal for scanning.
+**Speedball India Ink** should not be confused for Speedball Acrylic ink. The acrylic ink is too gloopy. I’m not a fan. The India ink, however, is a great loose ink for practice and final work. It dries quickly with a completely flat finish with slightly raised texture. Great for both large and small nibs. It has a very readable hairline for photo and scan work. 
 
-**Speedry** is semi-transparent but runny. You can find it in a wide variety of colors, but it's not as flexible with media like FW and Sumi.
+**Sumi 60 Ink** is deliciously smooth. It’s a completely opaque ink with the perfect consistency for very delicate hairlines. It doesn’t bleed on loose-weave papers, but it dries with a slight sheen making it difficult for scanning. It has a longer drying time than most inks, so you want to wait at least an hour before touching. It’s the best truly waterproof ink, perfect for mixed media work. 
 
-**Dr. PH Martin's** India ink is semi-transparent and lovely for creating ombre effects. It's a waterproof ink that can gum up your nib if you're not careful to clean your nib during each break. The waterproof nature is ideal for mixed media art projects, though. **Dr. PH Martin's pen white is a must buy!** Best white I've used. It's very thick, so shake thoroughly before using. Add a few drops of water if it's too thick. Doesn't mix well with other brands.
+**Pelikan Brilliant Black** are ideal for fountain pens, but work fabulously for the dip pens. Like Sumi ink, it has super fine hairlines and is completely opaque, but it dries much quicker with a completely flat appearance. Perfect for scanning. 
 
-Stay far, far away from Higgin's inks. Color isn't vibrant and the thin ink tends to bleed and feather on just about every medium.
+**Higgins Eternal** is quite thin. Apparently it used to have a more viscous consistency about 15-20 years ago. It’s still the most common practice ink among calligraphers. It’s also most common in art supply stores and one of the most inexpensive inks available. It works well on the Rhodia pad and has nice thin consistency. It’s hit or miss on other papers, though. 
 
-The price difference between the cheap stuff and the nice stuff is negligible. Get the nice ink from the get-go.
+**Iron Gall ink** is a highly corrosive ink that dates back to 70 A.D. The ink is thin and semi-opaque with a bluish black tint to it, but over time turns more opaque and warm. It can be handmade ([recipe](http://irongallink.org/igi_index78f9.html)), but because of its acidic nature, the nib should be cleaned thoroughly during and after use. This is my go-to ink when working with less-than-ideal paper. It doesn’t bleed or feather. It gives very fine hairlines, but not ideal for scanning or photo work.
 
-<img src="{{ 2a-supplies-2-inkaccessories.jpg }}"/>
+**McCaffrey’s Penman’s ink** has a very similar feel and composition to the Iron Gall ink and get’s more opaque with time. Very corrosive to nibs if proper care isn’t taken. It’s even lighter than Iron Gall ink. You get very delicate hairlines, perfect for whimsical and romantic work. Over time mold spores may grow (as it is made from organic material) making it mold. It doesn’t go bad, simply pick out the skin and continue use. 
 
-Sometimes inks and nibs give you trouble. You may want to consider investing in these accessories to help.
+**Walnut Ink** is a very common calligraphy ink used by master penmen and women. It’s a handmade ink that’s lightfast and sepia colored. It can come in liquid or powder form so you can dilute and thicken as you see fit. It’s semi-opaque with very fine hairlines. Dries quickly.
 
-**Gum Arabic** is a great medium for regulating ink consistency. If the ink is bleeding or it's just too thick, add a few drops and mix right in.
+**Windsor & Newton** is similar to FW with its thick consistency, but needs to be stirred more frequently. The black is the best of all the colors offered. 
 
-**Gouache** is an opaque water-based paint ideal for mixing up just the right pigment for the job. Mix with water and gum arabic with a junk brush until you get a smooth cream-like consistency.
+Windsor & Newton and FW both come in pearlescent colors. Be wary that most of these pearlescents are very thick and can be unruly at times. You may need to water some down or use a larger nib. These shouldn’t be used as you first start out. 
 
-**Ink wells and containers** are ideal for inking up your oblique pen. Glass dappen dishes are traditional for ink mixing, but don't seal. If you plan on traveling with your ink or you have curious children, you'll want something you can close. [Small glass vials](http://www.specialtybottle.com/58dramclearshortieglassvialwblkcap.aspx) are perfect.
+**Pebeo Encre de Chine** is just a delicious ink. Not that I’ve eaten it, but it’s smooth like butter. And I LOVE butter. It’s about the same consistency as the Sumi ink, but has a satin shine. Not ideal for scans or slippery materials, but it leaves a shiny embossed texture on the paper. 
 
-The jars above are wider than small viles, so I find I'm constantly tipping the jars to get enough ink on my nib. I use a piece of polymer clay to keep the jar at the perfect angle. I snatched this idea from fellow calligrapher, [Fozzy](http://thefozzybook.com/).
+**Ziller Ink** is a smooth paint-like ink that can be pretty thick. It works well on alternate surfaces and dries relatively quickly considering the thickness and type of ink. 
+
+Cool side note: Rich and Vivian (of Ziller Inks) tested their ink to see how well it did in freezing conditions, for those ordering inks online during the winter. These inks did very well with no discernible difference between the quality of ink before or after freezing.
+
+**Manuscript Ink** is a fountain pen ink that comes in the most gorgeous bright blue. It’s stunning when it dries! The thin, semi-opaque ink is easy to work with and dries quickly.
+
+**Private Reserve Ink** has a similar consistency and opacity to Higgins Eternal, but with much better quality. It can feather on some loose-weave papers, but it’s very smooth. Drying times can be slow. 
+
+**Dr. PH Martin's** India ink is semi-transparent and lovely for creating ombre effects. It's a waterproof ink that can gum up your nib if you're not careful to clean your nib during each break. The waterproof nature is ideal for mixed media art projects, though. 
+
+**Dr. PH Martin's pen white is a must buy!** Best white I've used. It's very thick, so shake thoroughly before using. Add a few drops of water if it's still too thick. Doesn't mix well with other brands or colors. 
+
+
+
+
+
+The price difference between the cheap stuff and the nice stuff is negligible. Get the best ink for the job. 
+
+<img src="{{ 2a-supplies-2-inkaccessories.jpg }}"/> 
+
+Sometimes inks and nibs give you trouble. You may want to consider investing in these accessories to help. 
+
+**Gum Arabic** can be a great medium for fixing ink consistency. It can delay drying times and improve consistency. It can mold and yellow with time, so using it on archival projects may not be a great idea. 
+
+**Gouache** is an opaque water-based paint ideal for mixing up just the right pigment for the job. Mix with water and a junk brush until you get a smooth milk-like consistency. Apply the pigment to the underside of the nib with a small brush. See the video for the full how-to.
+
+**Ink wells and containers** are ideal for inking up your oblique pen or seeing how much ink you have on your nib. [Glass dappen](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+daplid.html+) dishes are traditional for ink mixing, but the lids don’t seal. If you plan on traveling with your ink or you have curious children, you'll want something you can close. [Small glass vials](http://www.specialtybottle.com/58dramclearshortieglassvialwblkcap.aspx) are perfect.  
+
+The jars above are wider than small vials, so I find I'm constantly tipping the jars to get enough ink on my nib. I use a piece of sticky tack to keep the jar tilted at the perfect angle. I snatched this idea from fellow calligrapher, [Fozzy](http://thefozzybook.com/). 
 
 ## PEN NIB
 
 The pen nib is probably the scariest thing about all of your new supplies. What the heck is this? Let’s go over the anatomy to get you better acquainted.
 
-# anatomy of a pen nib
-<img src="{{ 2-supplies-3-anatomy-nib.png }}"/>
+# Anatomy of a Pen Nib
+<img src="{{ 2-supplies-3-anatomy-nib.png }}"/> 
 
 - Tip/point: the small point allows for hairline strokes
 - Slit: it allows the ink to flow down towards the point
 - Tines: they separate based on pressure, creating the iconic thicks and thins
 - Shoulder: where the pen transitions from the shank to the tip
 - Vent: this allows the ink to flow evenly downward towards the point
-- Shank: It serves two purposes, to hold the nib in the pen and to house the ink.
-- Tail/base: this is what goes into the nib holder. When purchasing new nibs/holders, make sure that they’re compatible with one another. Some nib holders are made for bigger/smaller nibs.
+- Shank: It serves two purposes, to hold the nib in the pen and to house the ink. 
+- Tail/base: this is what goes into the nib holder. When purchasing new nibs/holders, make sure that they’re compatible with one another. Some nib holders are made for bigger/smaller nibs. 
 
 <img src="{{ 2a-supplies-4-nibsataglance.jpg }}"/>
 
-I recommend that you purchase a few nibs as you start out. Pictured above are a few of my favorite nibs ranging from the super fine to the bold and sturdy. Each nib has a vastly different personality that yields different results.
+I recommend that you purchase a few nibs as you start out. Pictured above are a few of my favorite nibs ranging from the super fine to the bold and sturdy. Each nib has a vastly different personality that yields different results. 
 
-You basically need to “date” your nibs to see if your personalities blend well together. I definitely have my favorites, but I switch out depending on the style I’m after. You’ll want to head over to your local art supply store or Paper & Ink Arts to explore your options. Since each nib is typically under $2, it’s nice to purchase an assortment.
+You basically need to “date” your nibs to see if your personalities blend well together. I definitely have my favorites, but I switch out depending on the style I’m after or what surface I’m writing on. You’ll want to head over to your local art supply store or Paper & Ink Arts to explore your options. Since each nib is typically under $2, it’s nice to purchase a large assortment when starting out.
 
-Here’s the breakdown of recommended nibs and their strengths:
+Here’s the breakdown of recommended nibs and their strengths: 
 
 <img src="{{ 2a-supplies-5-huntnibs.jpg }}"/>
 
 Hunt nibs are among the most common around and a great brand to start with.
 
 - **Hunt 22** – fine hairline with medium-bold drama on the downstrokes. A great nib for heavy hands.
+
 - **Hunt 56** – medium hairline with medium drama on the downstrokes. A great nib for heavy hands and for rough surfaces. Best with thicker inks.
+
 - **Hunt 101** – fine hairline with bold drama on the downstrokes. Great for heavy hands. I find this my go-to for Spencerian styling.
--  **Hunt 100** – superfine hairline with medium drama from the downstrokes. Ideal for light hands and smooth surfaces. These nibs are fun, but expire quickly.
-- **Hunt 103** – superfine hairline with medium-bld drama on the downstrokes. Ideal for light hands and smooth surfaces. Expires quickly. Retains enough ink for about 1-2 letters.
-- **Hunt 108** – superfine hairline with bold drama on the downstrokes. Ideal for light hands and smooth surfaces. Expires quickly. Requires a crowquill holder. Fun for flourishwork.
+
+-  **Hunt 100** – superfine hairline with medium drama from the downstrokes. Ideal for light hands and smooth surfaces. These nibs are fun, but expire quickly. 
+
+- **Hunt 103** – superfine hairline with medium-bld drama on the downstrokes. Ideal for light hands and smooth surfaces. Expires quickly. Retains enough ink for about 1-2 letters. 
+
+- **Hunt 108** – superfine hairline with bold drama on the downstrokes. Ideal for light hands and smooth surfaces. Expires quickly. Requires a crowquill holder. Fun for flourishwork. 
 
 <img src="{{ 2a-supplies-6-esterbrooknibs.jpg }}"/>
 
 Esterbrook is not quite as common, but they're a lot of fun to mess around with. All ideal on a smaller scale.
 
 - **Esterbrook 355** – fine hairline with light drama on the downstrokes. Ideal for light hands. This holds more ink than the Hunt 101 or 103, I tend to use this for writing out long thank you letters.
+
 - **Esterbrook 354** – fine hairline with medium drama on the downstrokes. Ideal for light hands and smooth surfaces. Holds more ink than other small nibs, but still gives a lot of detail on a small scale.
 
 <img src="{{ 2a-supplies-7-gillotnibs.jpg }}"/>
 
-If you go to an art store with any selection of calligraphy supplies, you'll find these nibs. Gillot, much like Hunt, offers a lot of variety within their line of nibs.
+If you go to an art store with any selection of calligraphy supplies, you'll find these nibs. Gillott, much like Hunt, offers a lot of variety within their line of nibs.
 
-- **Gillot 1068a** – medium hairline with light drama on the downstrokes. Ideal for heavy hands, unpredictable surfaces and large scales. The nib is very rigid, perfect for print work (i.e. addressing envelopes).
-- **Gillot 303** – superfine hairline with bold drama on the downstrokes. Perfect for both light and heavy hands. Not recommended for rough surfaces.
-- **Gillot 404** – medium hairline with light drama on the downstrokes. It's ideal for thick inks and heavy hands.
+- **Gillott 1068a** – medium hairline with light drama on the downstrokes. Ideal for heavy hands, unpredictable surfaces and large scales. The nib is very rigid, perfect for print work (i.e. addressing envelopes).
+
+- **Gillott 303** – superfine hairline with bold drama on the downstrokes. Perfect for both light and heavy hands. Not ideal for rough surfaces.
+
+- **Gillott 404** – medium hairline with light drama on the downstrokes. It's ideal for thick inks and heavy hands.
 
 <img src="{{ 2a-supplies-8-brausenibs.jpg }}"/>
 
 Most Brause nibs are for broad pen calligraphy like Italic and Gothic, but they have a few pointed pens that I love. These are my current go-to nibs for just about any  project.
 
-- **Brause ef66** – fine hairline with bold drama on the downstrokes. Ideal for heavy and light hands, larger scales, rough surfaces and runnier ink.
+- **Brause ef66** – fine hairline with bold drama on the downstrokes. Ideal for heavy and light hands, larger scales, rough surfaces and runnier ink. 
+
 - **Brause 511** – fine hairline with medium drama on the downstrokes. Perfect for both light and heavy hands. Great with runnier inks and hairline flourishes.
-- **Brause 513** – fine hairline with light-medium drama on the downstrokes. Great for light hands, heavy hands, large and small scales.
+
+- **Brause 513** – fine hairline with light-medium drama on the downstrokes. Great for light hands, heavy hands, large and small scales. 
 
 <img src="{{ 2a-supplies-9-hirozebragnibs.jpg }}"/>
 
 These two brands are a little bit harder to find, but they're equally fun to test out. They're not in tight rotation, but they're still great.
 
 - **Hiro 40** – medium hairline with bold drama on the downstrokes. Ideal for heavy hands, huge scales, thick ink and rough surfaces.
-- **Zebra G** – fine hairline with medium drama on the downstrokes. This is a favorite among a lot of calligraphers, but it's not my go-to. It's got a lot of flexibility and durability, perfect for heavy hands. Great with large scale pieces.
+
+- **Zebra G** – fine hairline with medium drama on the downstrokes. This is a favorite among a lot of calligraphers, but it's not my go-to. It's got some flexibility and a lot of durability, perfect for heavy hands or beginners. Great with large scale pieces. 
+
+If you have access to antique shops or estate sales, try looking for vintage nibs! Often times you can find a grab bag of nibs for very little and they're so fun to experiment with. 
 
 You’ll want to be sure to protect your nibs and store them in a small, protective container. Baby food jars, Altoid tins and tic tac boxes are all great options for housing your nibs.
 
 <img src="{{ 2a-supplies-10-nibholder.jpg }}"/>
-
+ 
 ## NIB HOLDER
 
-There are various types of holders: large plastic, large wood, oblique and small plastic.
+There are various types of holders: large plastic, large wood, oblique and small plastic. 
 
-Small plastic holders (far left) are easy to find. Because of their scale, It’s a different feel than regular pens, and forces your brain to approach the pen differently. One of the biggest hurtles in learning calligraphy is how to draw with the pointed pen. If you're struggling with changing your mindset from writing to drawing, I would recommend this holder. It works with Brause, Esterbrook and the small hunt nibs. The crowquill holder looks similar, but doesn't have a ball in the center of the holder.
+Small plastic holders (far left) are easy to find. Because of their scale, It’s a different feel than regular pens, and forces your brain to approach the pen differently. One of the biggest hurtles in learning calligraphy is how to draw with the pointed pen. If you're struggling with changing your mindset from writing to drawing, I would recommend this holder. It works with Brause, Esterbrook and the small hunt nibs. The crowquill holder looks similar, but doesn't have a ball in the center of the holder. The crowquill holder can be fun to use, but most crowquill nibs are more advanced with fine points and flexible tines which can make smooth upstrokes difficult.
 
 You can find simple straight and ergonomic holders with a shellacked wood and metal teeth in the middle. They're great, accommodate every nib (besides crowquill) but are more of an investment. If you're a messy calligrapher, you'll find the wood cracks and chips with abuse.
 
 The speedball straight holder is a great, cheap holder that accommodates just about every nib. If the nib is too loose, I wrap the base of the nib with a small piece of tape then insert. These holders are all plastic, clean easily and don't crack or chip.
 
-Straight holders are ideal for upright angles and oblique holders are best suited for traditional or more dramatic calligraphy angles. I use both styles and holders interchangeably, though. The speedball holder (left) is inexpensive and suitable for both left and right-handed calligraphers. You can find some really neat handmade oblique holders at [John Neal Bookseller](http://www.johnnealbooks.com/prod_detail_list/133). The far right holder was inherited from my great-great grandfather. I love it, but I never use it.
+Straight holders are ideal for upright angles and oblique holders are best suited for traditional or more dramatic calligraphy angles. I use both styles and holders interchangeably, though. The speedball holder (left) is inexpensive and suitable for both left and right-handed calligraphers. You can find some really neat handmade oblique holders at [John Neal Bookseller](http://www.johnnealbooks.com/prod_detail_list/133), [Unique Obliques](http://www.etsy.com/shop/UniqueObliques) and [Yoke Pen Company](http://www.yokepencompany.com). The far right holder was inherited from my great-great grandfather. I love having it with me, but it's not comfortable to use. Finding a holder that fits comfortably in your hand is very important.
 
 <img src="{{ 2a-supplies-11-nibplacement.jpg }}"/>
 
-Placing your nib in your holder is pretty straight forward, save for the holders with teeth. Place your nibs along the outside of the metal teeth. You can adjust them for a tighter or looser fit, depending upon your nib size.
+Placing your nib in the holder can be tricky especially if it’s a straight holder with metal teeth or an oblique holder.
+
+For fitting the nib in a straight holder, place your nibs along the outside of the metal teeth. You can adjust the teeth outward for a tighter or looser fit, depending upon your nib size.
+
+![/1-oblique-pen-positioning.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/1-oblique-pen-positioning.jpg)
+
+For fitting the nib in an oblique holder, you want to place the holder on the table with the flange pointing away from you and on the left-hand side of the pen’s staff. Insert the nib facing inward slightly. If you’re a lefty, you’ll want to have pen resting on the table with the flange pointing away from you and to the right-hand side of the pen’s staff. Insert facing inward just slightly. See above for the breakdown.
+
+If you have a brass flange, you can bend the flange by hand in towards the main body of the holder. Be careful to avoid bending it too far. 
 
 <img src="{{ 2a-supplies-14-cleaners.jpg }}"/>
 
 ## CLEANER
 
-Traditional calligraphers use ink cleaner, which is a mixture of glicerine and dishsoap. You can find that at your local art supply store. Fact is, it lasts forever but it’s terribly messy. Heaven forbid that your local toddler gets into it and spills its dark, inky contents everywhere! Alternatively, I use Clorox or baby wet wipes. They’re fantastic for cleaning nibs, wiping up mistakes (if using a coated paper) and they’re easily contained. It’s also likely that you already have them on hand.
+Traditionally you can use ink cleaner, which is a mixture of glycerin and some kind of cleaner. You can find that at your local art supply store. Fact is, it lasts forever but it’s terribly messy. Heaven forbid that your local toddler gets into it and spills its dark, inky contents everywhere! 
+
+I have a small jar of water and a quarter sheet of [Yoke pen wipes](http://www.yokepencompany.com/collections/accessories/products/yoke-pen-company-nib-pen-wipe-sample-pack). I’ll dip my nib into the water and wipe the inky contents off on the lint-free wipe. If I don’t have one of those on-hand, I’ll use water and a paper towel or clorox wipes or baby wipes. 
 
 <img src="{{ 2a-supplies-13-paper.jpg }}"/>
 
@@ -201,45 +254,98 @@ You can’t always pick the kind of paper that you work on, especially if you’
 - Metallic Paper
 - Paper specifically for laser printing
 
-Rule of thumb: if it’s high quality or coated, you’ll be happy with the results. And stay away from "Calligraphy" pads from the art supply store. That paper is better suited for broad-tipped calligraphy. You'll find your nib will skip with nearly each upstroke.
+Rule of thumb: if it’s high quality or coated, you’ll be happy with the results. And stay away from "Calligraphy" pads from the art supply store. That paper is better suited for other types of calligraphy. You'll find your nib will skip with nearly each upstroke.
 
 ## ENVIRONMENT
 
-Having the correct environment is more important than you might think. Here are some things you’ll want to think about as you set up your project space:
+Having the correct environment is more important than you might think. Here are some things you’ll want to think about as you set up your space:
 
 - Lots of elbowroom
-- No table legs in your way
-- A large scrap paper underneath your work
+- A large scrap paper underneath work
 - Cleaner and paper towels at the ready
-- Peace and quiet (light music?)
+- Minimal distractions
 - Computer for spell checking (if needed)
-- NO CARPET anywhere nearby if at all possible
+- No carpet, if at all possible (my studio’s carpet is completely stained)
 - Wear an apron
-- Roll up your sleeves
-- Pull back your hair
+- Roll up sleeves
+- Pull back hair
 - Plenty of good lighting
 - Kids at bay
 
 I try to run through this list as I work on any calligraphy project. I’ve been lettering for some time and know how frustrating it is to completely ruin a project because of a little distraction.  The stakes tend to grow quickly as a piece develops, and that’s when a toddler/husband/cat will sneak up behind you and bump your elbow.
+
+## ADDITIONAL TIPS
+
+Advice given from recent student Karina Lim, about ordering supplies if you're in the Indonesia/Singapore/Malaysia areas: 
+
+*THE ESSENTIALS*
+
+Such as holders nibs, dedicated inks ordering online from the standards such as paper ink arts is best for range and price (by far, even with dreaded shipping) and staff helpfulness. Even if your local art shop carries any supplies, they are likely clueless about anything copperplate and will only give you misinformation or be unable to help you with your questions.
+
+*THE EXTRAS*
+
+For stationery & storage, nib organizers: try the following chain book/ lifestyle stores: 'Popular', Kinokuniya (pens), Daiso, Japan Home, Muji. You know my nib storage box is a nail art organizer box from Daiso.
+
+Art Friend's good for brushes, paints, palettes, watercolor paper etc... But not copperplate calligraphy supplies. Overjoyed seems to be the only place in Singapore that stocks Rhodia pads. 
+
+I still haven't found the ideal source of color mixing containers/ ink dipping containers... its kinda makeshift right now. 
+
+Malaysia has a lot of the same chain stores. 
+
+And Indonesians are always traveling into Singapore to shop/ holiday/ work... so if they had too, they could get supplies here. I think online shopping and shipping isn't so straightforward for them... don't know if it's gotten better. 
+
+I hope that was helpful from a student's perspective!
 
 ### In this lesson, you will learn the basic anatomy of a letter and identifying the basic strokes in each letter.
 
 # basic anatomy of the letter
 <img src="{{ 3-strokes-1-basic-anatomy.png }}"/>
 
-As I’m sure you’ve noticed, many of the letterforms mimic one another. There are basic shapes within the English alphabet that make up each letter: miniscules for lowercase letters and majuscules for uppercase letters. Mastering these strokes in muscle memory will allow you to be more consistent in your lettering and flourishes.
+As I’m sure you’ve noticed, many of the letterforms mimic one another. There are basic shapes within the English alphabet that make up each letter: miniscules for lowercase letters and majuscules for uppercase letters. Mastering these strokes in muscle memory will allow you to be more consistent in your lettering and flourishes. In each calligraphy discipline (Roundhand, Spencerian, Engrosser’s script, etc) there are different basic strokes. The basic strokes below are a simplified version of those strokes according to the book of Melissa. 
+
+Before we go into those basic shapes, let's talk about the basic anatomy of a letter: 
+
+- **Ascender line:** the top guide line at which letters stop
+- **Waistline/Header:** the middle line, where the lowercase letters hit or where strokes ‘pinch’
+- **Baseline:** the bottom line where characters sit
+- **Descender line:** the lowest guide line at which letters go
+- **Backbone:** the spine or primary line of capital letters
+- **Bowl:** the curved line
+- **Counter space:** the interior space (open or closed) of a curved line
+- **Loop:** the enclosed counter of a letter, usually a descender or ascender
+- **Descender:** the part of a letter that descends below the baseline
+- **Ascender:** the part of a letter that ascends above the waistline
+- **Leg:** the bottom stroke of a letter (as seen in K, R, L, etc)
+- **X-height:** the distance between the baseline and waistline
+- **Slope/Angle line:** the angle at which the letters lean
+- **Shade:** the widest point of the letter’s line-weight, always a downstroke
+- **Hairline:** the finest point of the letter’s line-weight, always an upstroke or horizontal stroke
 
 # basic miniscules
 <img src="{{ 3-strokes-2-basic-miniscules.png }}"/>
 
 ## MINISCULES
 
-Each lowercase letter in the alphabet (save a few rogues) uses at least one of these shapes. These shapes are written out in the 55º angle traditionally used in Copperplate calligraphy.
+Each lowercase letter in the alphabet (save a few rogues) uses at least one of these shapes. These shapes are written out in the 55º angle traditionally used in Copperplate calligraphy. For ease of use, all diagrams are going to be in a 63º angle. As you practice on your gridded paper, you can recreate the same slope line by lining up the top right corner of one box and the bottom left corner of the box below it with a ruler and penciling in. Grids and slope lines are crucial for getting consistency down with the basics. Even if you plan on executing a meandering style down the road, practicing muscle memory with consistent angles and scales will help you maintain a consistent meandering style. 
+
+- **Intro stroke:** Connects letters together. Start at the baseline and curve upward, visualizing the bottom right hand side of an oval to get that consistent curve. 
+
+- **O stroke:** It’s the foundation and sets the tone for all the other basic strokes in the group. As you can see, the oval shape is repeated throughout the basics. Start on the right-hand side on the hairline and curve counter-clockwise. 
+
+- **I stroke:** This strokes makes up many of the lowercase letters, but can be difficult to achieve since it starts with a thick square. You can use a square or a slightly rounded top, but the stroke is generally at full shade-width from the get-go. Before moving the pen downward, press the tines apart and pull the pen downward. Before turning the curve, release pressure to a hairline, then lightly touch the pen on the way up, making sure the stroke finishes at the waistline.
+
+- **Wavy stroke:** It looks like an ~, and navigates the exterior space between two ovals side-by-side. Start with a hairline, slowly add pressure as you turn the curve, and start to release it at the mid-point of the x-height. Transition to a hairline just before making the curve at the baseline and finish at the waistline.
+
+- **Ascender stroke:** This stroke makes up most ascender stroke letters (although a few don’t have a loop, like the t and d). Start at the waistline with a hairline, curving around, making the counter-space make a similar curve to the oval in the o stroke. Slowly transition to a shade and keep the pressure all the way down. Finish by releasing pressure upwards. 
+
+- **Descender stroke:** This stroke is used for most letters with a descender (except for p, q and f). Start the stroke off similar to the i stroke with tines separated before moving downward. Maintain pressure until the curve approaches. Release pressure before the curve to a hairline. Finish out the stroke with a loop up to the waistline. 
+
+- **Commadot:** This stroke is used in various forms for flourishing and in lowercase letters. Start just below the waistline, curving up and pressing the tines down as you curve around, making a filled circle. Finish out the stroke to the waistline in a hairline stroke. 
 
 # basic anatomy of the stroke
 <img src="{{ 3-strokes-5-stroke-anatomy.png }}"/>
 
-Notice above where the thick lines transition to the thin lines. Be aware of where that starts to taper off and get ahead of it in your own practice. With each of the miniscule strokes, you always start at the top and work your way down.
+Notice above where the thick lines transition to the thin lines. Be aware of where that starts to taper off and get ahead of it in your own practice. Most strokes start top-left and work their way down, but it’s not always the case. Making sure to transition from thick to thin early enough is key to making your basic strokes look clean and professional.
 
 # basic majuscules
 <img src="{{ 3-strokes-3-basic-majuscules.png }}"/>
@@ -250,31 +356,34 @@ The uppercase characters aren’t nearly as predictable as the lowercase, but yo
 
 Uppercase letters of the alphabet in the Copperplate style are, in my mind, flourished versions of lowercase letters. They often have similar basic structure to the lower case letters, but with a bit more majesty. So as you look at the basic structures that compose the uppercase letters versus the basic strokes that compose flourishes, you see a considerable amount of overlap.
 
+- **Swelled stroke:** This stroke makes up the backbone of most uppercase letters it resembles a / more than an S in curvature. Start with a hairline, swell into the full shade at the waistline, then taper back into the hairline by the base. A slight oval-inspired curve at the top and bottom are made. 
+
+- **Lead-in Loop:** This loop is the lead-in flourish of many uppercase letters. It’s not always the case, but in the alphabet I’ve put together, you do. As you form your own style you may end up nixing this particular stroke all-together. Start at the waistline and curve up to the ascender line, curve downward with the same curvature of the oval in the o stroke, but cut in a little earlier to exit out of the loop. 
+
+- **9 swirl:** A spiral stroke that goes against the grain. Start at the baseline and curve all the way up and to the left, meeting at the ascender line. Curve downward and swell. Cut in a little early and taper into a hairline. As you terminate the stroke, double back on the line to create a comma dot (totally optional, but fun to practice for other styles of calligraphy). 
+
+- **Stunt Swirl:** This loop is used often in flourishing. It’s basically the same as the lead-in loop, but at a larger scale spanning form the baseline to the ascender line. 
+
 # basic flourish strokes
 <img src="{{ 3-strokes-6-basic-flourishes.png }}"/>
 
 ## BASIC FLOURISH STROKES
 
-Flourishes can be broken down into 3 basic shapes. Once you have the shapes down commited to muscle memory, it’s not hard at all to combine.
+Flourishes can be broken down into 4 basic stroke styles. Once you have the shapes down committed to muscle memory, it’s not hard at all to combine.
 
-I approach combining each basic stroke much like a choreographer would combine basic dance steps to create a ballet. We’ll talk more about flourishes, later.
+I approach combining each basic stroke much like a choreographer would combine basic dance steps to create a ballet, but we’ll talk more about flourishes, later.
 
 
 <section class="exercise">
     <h2>EXERCISE 1</h2>
 
     <p>
-      Figure out what letters are related to one another. Group them together and identify what parts are similar. See the worksheet for the answers.
+      Download the practice guides and take a look at the alphabet. On a scratch piece of paper write out which letters use what basic strokes. Click on the link below to see how you did. <b>No need to upload to the gallery.</b>
     </p>
 
     <p>
-        <a href="{{ 3-strokes-answersheet-1.png }}" target="_blank">
+        <a href="{{ 3-strokes-answersheet-3.png }}" target="_blank">
             Excercise 1 Answer Sheet - Miniscules
-        </a>
-    </p>
-    <p>
-        <a href="{{ 3-strokes-answersheet-2.png }}" target="_blank">
-            Excercise 1 Answer Sheet - Majuscules
         </a>
     </p>
 
@@ -320,20 +429,29 @@ Clearly you want to press harder as you make your down strokes. You want to leav
 ## INK
 
 
-When inking up your nib, you want to make sure you have the right amount of ink; not too much and not too little. Dip your nib into the ink well about 1/8th of an inch past the shoulders. As you take the nib out of the well, tap the excess ink off the shoulders once or twice.
+When inking up your nib, you want to make sure you have the right amount of ink; not too much and not too little. Dip your nib into the ink well past the vent. As you take the nib out of the well, scrape excess ink from front and back sides of the nib along the mouth of the jar. Alternatively you could apply the pigment to the underside of the nib with a small brush.
 
 
-When you first start out, you’ll want to make preliminary marks on a scratch sheet of paper to see how much or little ink is on your nib. Also, if it’s the first time that you’re inking your nib, the ink will likely try to pull off the nib. This is because there’s a fine layer of oil covering your nib. Clean it off with a wet wipe or ink cleaner before you get started.
+When you first start out, you’ll want to make preliminary marks on a scratch sheet of paper to see how much or little ink is on your nib. Also, if it’s the first time that you’re inking your nib, the ink will likely try to pull off the nib. This is because there’s a fine layer of oil covering your nib. Make sure the nib is prepped properly. Clean the nib with toothpaste and the ink should adhere to the nib and flow down evenly.
 
 
 If you find your nib is not making a mark, clean off your nib with the wet wipe and dip again. Also, try scratching at the paper. The downside to using waterproof ink is that it can dry and harden at the point, creating a block in the flow. Scratch the dried ink off of the tip to restore flow.
 
-<img src="{{ 4-pointedpen-5-miniscules-majuscules-practice.jpg }}"/>
+# Upload Guidelines
+
+*  Scans are okay, but to save me time from downloading and opening with a third party app, please snap a photo or **save as a JPG**. 
+*  Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+*  Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more feedback.
+*  Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
+
+![/-assignment-2-a.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/-assignment-2-a.jpg)
+
+![/-assignment-2-b.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/-assignment-2-b.jpg)
 
 <section class="exercise">
     <h2>EXERCISE 2</h2>
     <p>
-      Slide your basic strokes worksheet underneath your tracing paper. With a pencil or a paintbrush, practice the basic miniscule and majuscule forms. Refer back to the basic anatomy of the stroke in the previous lesson for your guide to press and release when making the thicks and thins of your letterforms. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      With a pencil, practice the basic miniscule and majuscule forms. For pen-like drama touch the page as lightly as possible on the upstrokes and apply pressure on the downstrokes. You can use tracing paper if you're not comfortable with the stroke forms. Either way, be sure to go very slowly. This practice should take at least 20 minutes to complete. Upload your work to the <a href="#!/gallery">gallery</a> for critique. **This is a great assignment to go back to as you warm up for future assignments!**
     </p>
 
     <ul class="link-list">
@@ -343,12 +461,14 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
     </ul>
 </section>
 
-<img src="{{ 4-pointedpen-6-miniscules-majuscules-practice.jpg }}"/>
+![/-assignment-3-a.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/-assignment-3-a.jpg)
+
+![/-assignment-3-b.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/-assignment-3-b.jpg)
 
 <section class="exercise">
     <h2>EXERCISE 3</h2>
     <p>
-      Once you’ve mastered the basic strokes with your pencil or paintbrush, it’s time to move on to the pointed pen! Slide your basic strokes worksheet underneath a new sheet of tracing paper and practice each miniscule and majuscule stroke. Don’t worry about any shaking that might occur. The goal of this exercise is to get you comfortable with pressing and releasing with your pen. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      Once you’ve mastered the basic strokes with your pencil, it’s time to move on to the pointed pen! Practice the basic strokes with the pointed pen. Your pen's tines should be parallel to the angle lines at all times(if you need to pencil angle lines on your grid, please do so!). Don’t worry about any shaking that might occur. Go slowly, this practice should take 30-40 minutes to complete. The goal of this exercise is to get you comfortable with pressing and releasing with your pen and ink regulation. If you're uncomfortable with the stroke forms, try tracing. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
@@ -358,7 +478,8 @@ If you find your nib is not making a mark, clean off your nib with the wet wipe 
     </ul>
 </section>
 
-Practice your miniscules as many times as it takes to get familiar with the pen. If you’re having a hard time getting it right, upload your project to the assignment [gallery](/#!/gallery). I’ll help you troubleshoot.
+
+Practice your miniscules as many times as it takes to get familiar with the pen. Practicing exercise 2 and/or 3 is a great way to warm up before future assignments. If you’re having a hard time getting it right, be sure to upload your project to the assignment [gallery](/#!/gallery). I’ll help you troubleshoot.
 
 ### In this lesson, you will learn the basic directions on how to take the miniscules and majuscules from the previous lesson and incorporate them into forming the words. You will practice the letters with both a pencil and the pointed pen.
 
@@ -376,14 +497,21 @@ Much like pronouncing a word with the right emphasis on each syllable, thick str
 
 Notice how changes in emphasis affect the letterform. Keep this in mind as you learn to deconstruct each letter and look for clues on where to start each stroke.
 
-<img src="{{ 5-letterforms-3-exercise-example.jpg }}"/>
+# Upload Guidelines
+
+*  Scans are okay, but to save me time from downloading and opening with a third party app, please snap a photo or **save as a JPG**. 
+*  Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+*  Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more feedback.
+*  Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
+
+![/islc-assignment-4.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/islc-assignment-4.jpg)
 
 <section class="exercise">
     <h2>
         EXERCISE 4
     </h2>
     <p>
-      Once you’ve mastered the basic strokes with your pencil or paintbrush, it’s time to move on to the pointed pen! Slide your alphabet worksheet underneath a new sheet of tracing paper and practice each letter. Don’t worry about any shaking that might occur. The goal of this exercise is to get you comfortable with pressing and releasing with your pen and comfortable with the order of each stroke. As you work your way down the alphabet, you’ll find that each letter looks better than the next. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      Once you’ve mastered the basic strokes, it's time to move onto the alphabet! Trace or free-hand the alphabet in pencil. The goal of this exercise is to get you comfortable with structure, stroke order and pressure. As you work your way down the alphabet, you’ll find that each letter looks better than the next. <b>Circle letters you may be struggling with.</b> Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
@@ -393,14 +521,14 @@ Notice how changes in emphasis affect the letterform. Keep this in mind as you l
     </ul>
 </section>
 
-<img src="{{ 5-letterforms-4-exercise-example.jpg }}"/>
+![/-assignment-5-a.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/-assignment-5-a.jpg)
 
 <section class="exercise">
     <h2>
         EXERCISE 5
     </h2>
     <p>
-      After you feel comfortable with tracing the alphabet, grab a piece of calligraphy paper and while looking (no tracing!) at the alphabet as a guide, practice each letter at least 5 times. You may want to graph out lines to make your practice look neat. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      After you feel comfortable with penciling the alphabet, grab a piece of calligraphy paper and while looking (no tracing!) at the alphabet as a guide, practice each letter a few times. You may want to draw out angle lines to make your practice look neat. <b>Circle letters you may be struggling with.</b> Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
@@ -435,12 +563,30 @@ Keep the same speed as you write out each letter. My mantra (thanks Phil from Mo
 
 As you start a project, you’ll want to pencil out your letters very lightly. From here you can fix the letter-spacing to keep the project consistent. When you finalize it with the pointed pen, you’ll find yourself stressing less and focusing more on perfecting the thick and thin strokes.
 
+# Upload Guidelines
+
+*  Scans are okay, but to save me time from downloading and opening images with a third party app, please snap a photo or **save as a JPG**. 
+*  Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+*  Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more inclusive feedback.
+*  Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
+
+![/-assignment-5-a.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/-assignment-5-a.jpg)
+
+![/-assignment-5b.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/-assignment-5b.jpg)
+
 <section class="exercise">
     <h2>
         EXERCISE 6
     </h2>
     <p>
-      Write out the word “hello” several times while paying attention to the pattern of how the letters connect. Once you feel comfortable, write out a word or phrase. The phrase, “The quick brown fox jumps over a lazy dog” uses all of the letters in the alphabet. It will help you practice each letter and how to connect them together. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      Write out the word “hello” several times while paying attention to the pattern of how the letters connect. Once you feel comfortable, write out a word or phrase. The pangram, “The quick brown fox jumps over a lazy dog” uses all of the letters in the alphabet. It will help you practice each letter and how to connect them together. Upload your work to the <a href="#!/gallery">gallery</a> for critique. Here's a list of more pangrams to try: 
+
+*  The five boxing wizards jump quickly. 
+*  Pack my box with five dozen liquor jugs.
+*  How quickly daft jumping zebras vex. 
+*  Sympathizing would fix quaker objectives.
+*  Jackdaws love my big sphinx of quartz.
+
     </p>
 
     <ul class="link-list">
@@ -486,15 +632,14 @@ Above are some examples of how to incorporate the basic flourish strokes with on
 # examples of flourishes in action
 <img src="{{ 7-flourishes-6-example.png }}"/>
 
-
-
+![/islc-assignment-7.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/islc-assignment-7.jpg)
 
 <section class="exercise">
     <h2>
         EXERCISE 7
     </h2>
     <p>
-      Practice the three basic flourish strokes and try combining them in as many ways as you can. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      Practice the three basic flourish strokes, explore combining them with a pencil (no need to upload this exploration). Pick a word, ideally a word with an ascender and descender, and letter the word down the page without intro strokes, cross strokes or terminal strokes (see #1 in example above). Explore the different ways to flourish that word. <b>Highlight areas you like and don't like.</b> Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
@@ -584,6 +729,63 @@ As you upload your work to the gallery, please use the following guidelines for 
     </ul>
 </section>
 
+# Supplies
+
+Through years of trial and error, I’ve found the following to be ideal when addressing envelopes: 
+
+**A high-quality envelope**
+
+*  [LCI Paper](http://www.lcipaper.com/)
+*  [Paper Presentation](http://paperpresentation.com/)
+*  [Paper Source](http://www.paper-source.com/cgi-bin/paper/envelopes/envelopes.html) 
+*  [American Crafts](http://www.americancrafts.com/default.aspx?PageID=49&CategoryID=16)
+
+I’m not familiar with all brands of envelopes, but I've had fabulous luck with all envelopes I've ordered from the above sources.
+
+Mowhawk, Cougar and Moab are fine paper companies that make high-quality papers that will work with ink. 
+
+I’ve also found that some coated metallic envelopes are typically awesome with ink and quite forgiving (to the point where you can literally wipe off mistakes if you catch them early enough!). 
+
+**Brilliant Inks**
+
+[Windsor & Newton Gouache](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+wnser1.html+) - mix any color under the sun with some water, gouache and a little gum arabic (the gum arabic helps consistency and lengthens drying time). Watercolor could be used as well, but gouache’s opacity and thickness do well on just about any paper type.
+
+[Dr Martin’s Pen White](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+penwht.html+) - this white ink is thick and brilliant. You will need to thin it out with several drops of water, but it’ll shine brightly on any dark surface. 
+
+[Ziller North Wind White](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+zilwhi.html+) - I've started to prefer this white over Dr. Martin's Pen white recently. It's already the right consistency out of the jar and still gives brilliant, fine opaque hairlines. 
+
+[Dr. Martin’s Iridescent Copperplate Gold](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+irides---gld.html) - FW and Windsor & Newton golds don’t compare to Dr. Martin’s copperplate gold. It’s bright on any surface and it doesn’t gunk up your fine nibs quite like other brands do. The gold flecks settle quickly so lots of shaking is required. 
+
+[Finetec Arabic Gold](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+arabic.html) - you can get a whole gold pallete, but if you’re not sure how you’re going to like it, you can get refill pots for about $4 each. Add water with a small brush and apply to the underside of the nib. It’s a bright, bright metallic that needs no shaking.
+
+**Drying Rack**
+
+Simply placing the envelope on a flat surface until it’s dry is totally fine. However, if you’re addressing more than 10 envelopes at a time, you may want to get some help to keep that precious desk space clear. 
+
+![drying rack]({{ 9-addressingenvelopes-15-drying-rack.jpg }})
+
+I found this mail sorter at my local thrift store for next to nothing. The rack makes all the difference when I’m doing multiple lettering projects at once. 
+
+Beware, however. If you’re using really thin ink that tends to drip, you may want to find a more horizontal solution for drying organization. Make a test piece to find out if the above applies to any project. 
+
+**Rulers**
+
+You’ll want a clear gridded ruler for making marks on dark envelopes. I’ve found quilting rulers to do the trick, but it's what I had on-hand. You’ll want something with a clear grid for making easy parallel lines like [this one](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+cthrul.html).
+
+**Light Table**
+
+If you’re lettering a lot on plain papers or envelopes and you don’t want to mess with penciling out your guides, use a [light table](http://www.amazon.com/gp/product/B000KNHRH6/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000KNHRH6&linkCode=as2&tag=il0c6-20). I don’t use mine often, but when I do, it’s such a huge time saver. If you're in a pinch and you need a light table asap, try using the bright screen of an iPad or tablet! It works like a charm.
+
+![/phantom-liner-2.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/phantom-liner-2.jpg)
+
+**Phantom Liner**
+
+If you're lettering on a lot of opaque paper, light or dark, a [phantom liner](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+phn100.html+) comes in handy! It's available in two sizes: small and large. I have both, but tend to use the small liner the most. It just fits so nicely on my desk when I want perfect precision and consistency with my spacing. 
+
+For dark papers or sub-ideal lighting, get a small lamp to light the paper *underneath* the phantom liner. This will create less fatigue on the eyes while working. I tend to use my phone in flashlight mode. 
+
+#  My Rules
+
 Addressing envelopes is so much fun, but there are a few rules that you might want to know to help make addressing letters (and in bulk) easy, look beautiful and get through the postal system. 
 
 Most postal services are automated, so by hand-writing your address you’re automatically put into the “manually sort” pile. [The USPS](http://pe.usps.com/businessmail101/addressing/deliveryAddress.htm) has some great suggestions, but most don’t apply to hand-lettered addresses. Here are my guidelines: 
@@ -606,9 +808,9 @@ Below are guidelines (with some opinions from me) based on this article by the [
 *   It’s recommended that the ZIP remain on the same line as the City and State. I tend to keep it on there, but if it’s going to fit better on the next line, I’ll move it to the next line. 
 *   Never forget to put Country information on there (even sender info) if sending an envelope to another country. I don’t tend to mess with what goes on what lines when sending an envelope to another country.
 
-Deviations from these may not necessarily denote a letter as undeliverable, but may create delivery delays. 
+Deviations from these may not necessarily denote a letter as undeliverable, but may create delivery delays. Often times it's not required to write the return address on the front of the envelope, but if you're unsure if the address will be decipherable, you may want to include that on the front. 
 
-I’ve found personally, that Chicago mail is a LOT less forgiving than other cities for fancy addresses. Mail times are doubled, sometimes tripled or returned for that area. 
+I’ve found personally, that Chicago mail is a LOT less forgiving than other cities for fancy addresses. Mail times are doubled, tripled or returned for that area. 
 
  _If you have any experience good or bad with certain cities or states, let me know in the comments so I can add as much info here about mail times as possible, thanks!_
 
@@ -687,51 +889,7 @@ If you’re a little obsessed with collecting - and using - colorful inks, you�
 
 The more contrast you can provide with the envelope and ink, the easier it’s going to be to read and the faster it’s going to reach the recipient. 
 
-# Supplies
-
-Through years of trial and error, I’ve found the following to be must haves when addressing envelopes: 
-
-**A good high-quality envelope**
-
-*  [Paper Source](http://www.paper-source.com/cgi-bin/paper/envelopes/envelopes.html) 
-*  [American Crafts](http://www.americancrafts.com/default.aspx?PageID=49&CategoryID=16)
-*  [Envelopes.com](http://www.envelopes.com/)
-
-I’m not familiar with all brands of envelopes, but Paper Source and American Crafts make great envelopes that can handle ink. I’ve found that GreenGrocer Kraft envelopes do well with ink (not all kraft envelopes are good with ink). 
-
-Mowhawk, Cougar and Moab are fine paper companies that make high-quality papers that will work with ink. 
-
-I’ve also found that coated metallic envelopes are typically awesome with ink and quite forgiving (to the point where you can literally wipe off mistakes if you catch them early enough!). 
-
-**Brilliant Inks**
-
-[Windsor & Newton Gouache](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+wnser1.html) - mix any color under the sun with some water, gouache and a little gum arabic (the gum arabic helps consistency and lengthens drying time). Watercolor could be used as well, but gouache’s opacity and thickness do well on just about any paper type.
-
-[Dr Martin’s Pen White](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+penwht.html) - this white ink is thick and brilliant. You may need to thin it out with a few drops of water, but it’ll shine brightly on any dark surface. 
-
-[Dr. Martin’s Iridescent Copperplate Gold](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+irides---gld.html) - FW and Windsor & Newton golds don’t compare to Dr. Martin’s copperplate gold. It’s bright on any surface and it doesn’t gunk up your fine nibs quite like other brands do. The gold flecks settle quickly so lots of shaking is required. 
-
-[Finetec Arabic Gold](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+arabic.html) - you can get a whole gold pallete, but if you’re not sure how you’re going to like it, you can get refill pots for about $4 each. Add water with a small brush and apply to the underside of the nib. It’s a bright, bright metallic that needs no shaking.
-
-**Drying Rack**
-
-Simply placing the envelope on a flat surface until it’s dry is totally fine. However, if you’re addressing more than 10 envelopes at a time, you may want to get some help to keep that precious desk space clear. 
-
-![drying rack]({{ 9-addressingenvelopes-15-drying-rack.jpg }})
-
-I found this mail sorter coil at my local thrift store for next to nothing. The rack makes all the difference when I’m doing multiple lettering projects at once. 
-
-Beware, however. If you’re using really thin ink that tends to drip, you may want to find a more horizontal solution for drying organization. Make a test piece to find out if the above applies to any project. 
-
-**Rulers**
-
-You’ll want a clear gridded ruler for making marks on dark envelopes. I’ve found quilting rulers to do the trick, but that’s because it’s what I had on-hand. You’ll want something with a clear grid for making easy parallel lines like [this one](http://store.yahoo.com/cgi-bin/clink?yhst-131221940731303+qJkSPN+cthrul.html).
-
-**Light Table**
-
-If you’re lettering a lot on plain papers or envelopes and you don’t want to mess with penciling out your guides, use a [light table](http://www.amazon.com/gp/product/B000KNHRH6/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000KNHRH6&linkCode=as2&tag=il0c6-20). I don’t use mine often, but when I do, it’s such a huge time saver. 
-
-# Guidelines
+# Using Guides
 
 Most of my letters are addressed by hand without guides. I’m usually deploying an organic style that lends itself towards organic baselines and spacing or I’m in a hurry. Or both. But when I want my lines to come out the same every time, I have a method for that. 
 
@@ -769,21 +927,25 @@ Letter your piece and allow ink to dry completely before erasing. If you’re us
 
 Erase those little lines and BAM, the recipient won’t have a clue the awesomeness that’s about to head their way.
 
+![/phantom-liner-3.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/phantom-liner-3.jpg)
 
-As you upload your work to the gallery, please use the following guidelines for the best feedback:
+If you have a phantom liner, you don't have to write out guidelines at all. Simply adjust the liner (directions in the box) for the thickness of your writing material, and letter away! 
 
-- Scans are okay, but to save me time from downloading and opening with a third party app, please snap a photo or **save as a JPG**. 
+![/phantom-liner-1.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/phantom-liner-1.jpg)
 
-- Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+The liner comes with printed guides you can use, but you can make your own if you so desire! If you're including angle lines, imagery or text, be sure to reverse it. 
 
-- Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more feedback.
+# Upload Guidelines
 
-- Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
+*  Scans are okay, but to save me time from downloading and opening with a third party app, please snap a photo or **save as a JPG**. 
+*  Snapping a photo in natural light or a well-lit area will give me the most information to work off of. 
+*  Try to keep uploads to one page (or one photo) per assignment. Seeing the whole exercise at a glance helps me provide you with more feedback.
+*  Be descriptive! Include information on **nib**, **ink**, **paper**, any issues or concerns and if you're a **lefty**. I can give more specific feedback based on those details. 
 
 
 <section class="exercise">
     <h2>
-        EXERCISE 6.5
+        EXERCISE 9
     </h2>
     <p>
         I’d love to see you practice some snail mail! Either on gridded paper or on an actual envelope practice writing addresses. Upload to the <a href="#!/gallery">gallery</a> for critique.

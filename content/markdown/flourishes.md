@@ -34,15 +34,14 @@ Above are some examples of how to incorporate the basic flourish strokes with on
 # examples of flourishes in action
 <img src="{{ 7-flourishes-6-example.png }}"/>
 
-
-
+![/islc-assignment-7.jpg](https://s3.amazonaws.com/images.melissaesplin.com/calligraphy/client/islc-assignment-7.jpg)
 
 <section class="exercise">
     <h2>
         EXERCISE 7
     </h2>
     <p>
-      Practice the three basic flourish strokes and try combining them in as many ways as you can. Upload your work to the <a href="#!/gallery">gallery</a> for critique.
+      Practice the three basic flourish strokes, explore combining them with a pencil (no need to upload this exploration). Pick a word, ideally a word with an ascender and descender, and letter the word down the page without intro strokes, cross strokes or terminal strokes (see #1 in example above). Explore the different ways to flourish that word. <b>Highlight areas you like and don't like.</b> Upload your work to the <a href="#!/gallery">gallery</a> for critique.
     </p>
 
     <ul class="link-list">
