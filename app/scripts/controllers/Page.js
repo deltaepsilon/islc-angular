@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('PageCtrl', function ($scope, page, _) {
+  .controller('PageCtrl', function ($scope, page, _, bookmarkService, $localStorage, $state) {
     $scope.page = page;
 
     var pages = _.clone($scope.pages),
@@ -16,6 +16,13 @@ angular.module('islcAngularApp')
       }
     }
 
+    bookmarkService.setLastPage($scope.page.title);
+
+    $scope.setBookmark = bookmarkService.setBookmark;
+
+    $scope.$storage = $localStorage;
+
+    $scope.pageSlug = $state.params.pageSlug;
 
 
   });

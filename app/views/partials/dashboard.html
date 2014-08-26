@@ -31,6 +31,23 @@
             <br>
 
         </div>
+
+        <div class="column small-12" >
+            <div class="min-500 max-500 centered">
+
+                <a ng-show="$storage.lastPage" ng-click="goToLastPage()">
+                    Most Recent Page
+                    <span ng-show="$storage.lastPage.friendlyName">: {{ $storage.lastPage.friendlyName }}</span>
+                </a>
+                <br>
+                <br>
+                <a ng-show="$storage.bookmark" ng-click="goToBookmark()">
+                    Bookmark
+                    <span ng-show="$storage.bookmark.friendlyName">: {{ $storage.bookmark.friendlyName }}</span>
+                </a>
+            </div>
+
+        </div>
     </div>
 
     <div class="column small-12 small-centered clearfix  max-500 centered" ng-show="getActiveAnnouncements(announcements).length">

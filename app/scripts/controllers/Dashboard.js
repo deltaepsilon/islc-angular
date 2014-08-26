@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('islcAngularApp')
-  .controller('DashboardCtrl', function ($scope, subscriptionService, commentService, subscriptions, comments, galleries, address, transactions, announcements) {
+  .controller('DashboardCtrl', function ($scope, subscriptionService, commentService, subscriptions, comments, galleries, address, transactions, announcements, bookmarkService, $localStorage) {
 
     $scope.subscriptions = subscriptions;
     $scope.comments = commentService.sanitize(comments);
@@ -10,6 +10,7 @@ angular.module('islcAngularApp')
     $scope.transactions = transactions;
     $scope.announcements = announcements;
     $scope.expired = subscriptionService.expired;
+    $scope.$storage = $localStorage;
 
     $scope.getActiveAnnouncements = function (announcements) {
       var keys = Object.keys(announcements),
@@ -24,5 +25,8 @@ angular.module('islcAngularApp')
 
       return result;
     };
+
+    $scope.goToBookmark = bookmarkService.goToBookmark;
+    $scope.goToLastPage = bookmarkService.goToLastPage;
 
   });

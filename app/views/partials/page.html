@@ -1,8 +1,16 @@
 <div class="page">
 
     <div class="column small-12 full-bleed">
-        <h2 class="thick padded text-centered background-gray1">{{ page.title }}</h2>
+        <h2 class="thick padded text-centered background-gray1">
+            {{ page.title }}
+            <a class="title-bookmark right text-xx-small" ng-click="setBookmark(page.title)" ng-hide="$storage.bookmark.params.pageSlug == pageSlug">Set Bookmark</a>
+        </h2>
         <br>
+
+
+
+        <br>
+
 
         <div class="page-body">
             <markdown ng-model="page.signed_html"></markdown>

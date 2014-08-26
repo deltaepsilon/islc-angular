@@ -5067,11 +5067,19 @@ textarea {
   text-decoration: underline;
 }
 /* line 17, modules/_content.scss */
+#content-wrapper .title-bookmark {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  bottom: inherit;
+  left: inherit;
+}
+/* line 21, modules/_content.scss */
 #content-wrapper .page-link {
   letter-spacing: 2px;
   font-weight: 200;
 }
-/* line 27, modules/_content.scss */
+/* line 31, modules/_content.scss */
 #content-wrapper .previous-page-link:before {
   overflow: hidden;
   display: block;
@@ -5086,7 +5094,7 @@ textarea {
   position: relative;
   top: 3px;
 }
-/* line 38, modules/_content.scss */
+/* line 42, modules/_content.scss */
 #content-wrapper .next-page-link:after {
   overflow: hidden;
   display: block;
@@ -5102,55 +5110,55 @@ textarea {
   top: 3px;
 }
 
-/* line 49, modules/_content.scss */
+/* line 53, modules/_content.scss */
 .page-body {
   max-width: 750px;
   margin: auto;
 }
-/* line 53, modules/_content.scss */
+/* line 57, modules/_content.scss */
 .page-body h1 {
   padding: 15px;
   margin-top: 30px;
   text-align: center;
 }
-/* line 63, modules/_content.scss */
+/* line 67, modules/_content.scss */
 .page-body h2 {
   font-weight: 500;
   letter-spacing: 2px;
   margin: 30px 0 15px;
 }
-/* line 72, modules/_content.scss */
+/* line 76, modules/_content.scss */
 .page-body h3 {
   font-weight: 500;
   font-style: italic;
   line-height: 18px;
 }
-/* line 81, modules/_content.scss */
+/* line 85, modules/_content.scss */
 .page-body a {
   text-decoration: underline;
 }
-/* line 86, modules/_content.scss */
+/* line 90, modules/_content.scss */
 .page-body a.button-cta {
   text-decoration: none;
 }
-/* line 93, modules/_content.scss */
+/* line 97, modules/_content.scss */
 .page-body img, .page-body video {
   margin: 30px auto;
 }
-/* line 97, modules/_content.scss */
+/* line 101, modules/_content.scss */
 .page-body img {
   display: table-cell;
 }
-/* line 101, modules/_content.scss */
+/* line 105, modules/_content.scss */
 .page-body video {
   display: block;
 }
-/* line 105, modules/_content.scss */
+/* line 109, modules/_content.scss */
 .page-body .exercise {
   padding: 45px 30px 30px;
   position: relative;
 }
-/* line 111, modules/_content.scss */
+/* line 115, modules/_content.scss */
 .page-body .exercise:before {
   overflow: hidden;
   display: block;
@@ -5169,7 +5177,7 @@ textarea {
   content: "";
   display: block;
 }
-/* line 123, modules/_content.scss */
+/* line 127, modules/_content.scss */
 .page-body .exercise .link-list-item:after {
   top: 4px;
 }
