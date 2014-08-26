@@ -13,7 +13,7 @@ angular.module('islcAngularApp')
     $scope.addComment = function (newComment) {
       galleryService.addComment($scope.gallery.id, $sanitize(newComment)).then(function (res) {
         if (res.error) {
-          notificationService.error('Gallery', res.error);
+          notificationService.warning('Gallery', res.error);
         } else {
           galleryService.get($scope.gallery.id).then(function (ares) {
             $scope.newComment = undefined;
