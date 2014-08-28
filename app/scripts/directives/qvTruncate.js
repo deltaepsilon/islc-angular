@@ -16,24 +16,26 @@ angular.module('islcAngularApp')
               child,
               text;
 
-            for (i; i < length; i++) {
-              child = angular.element(children[i]);
-              if (nuke) {
-                child.remove();
-              } else if (child.children().length) {
-                truncateChildren(max, child);
-              } else {
-                text = child.text();
-                counter += text.length;
-                if (counter > max){
-                  text = text.substr(0, text.length - (counter - max) - 3) + '...';
-                  child.text(text);
-                  nuke = true;
-                }
+              children.remove();
 
-              }
-
-            }
+//            for (i; i < length; i++) {
+//              child = angular.element(children[i]);
+//              if (nuke) {
+//                child.remove();
+//              } else if (child.children().length) {
+//                truncateChildren(max, child);
+//              } else {
+//                text = child.text();
+//                counter += text.length;
+//                if (counter > max){
+//                  text = text.substr(0, text.length - (counter - max) - 3) + '...';
+//                  child.text(text);
+//                  nuke = true;
+//                }
+//
+//              }
+//
+//            }
 
           };
 

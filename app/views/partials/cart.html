@@ -39,7 +39,7 @@
                         <td class="product-title-and-description">
                             <a class="product-title button-link" ui-sref="product({slug: product.slug})">{{ product.title }}</a>
                             <div class="product-description">
-                                <markdown class="visible-tablet" ng-model="product.description" line-breaks="true" strip="true" qv-truncate="195"></markdown>
+                                <markdown class="visible-tablet" ng-model="product.description" line-breaks="true" strip="true"></markdown>
                             </div>
                         </td>
                         <td class="product-price">
@@ -135,10 +135,10 @@
         <div>
             <form class="qv-form address-form max-700 centered" name="addressForm" action="">
                 <div class="column small-12 medium-6">
-                    <input class="small-12" type="text" ng-model="address.first" placeholder="First name..." ng-required="true"/>
+                    <input class="small-12" type="text" ng-model="address.first" placeholder="First name..." required="true"/>
                 </div>
                 <div class="column small-12 medium-6">
-                    <input class="small-12" type="text" ng-model="address.last" placeholder="Last name..." ng-required="true"/>
+                    <input class="small-12" type="text" ng-model="address.last" placeholder="Last name..." required="true"/>
                 </div>
                 <div class="column small-12">
                     <input class="small-12" type="text" ng-model="address.phone" placeholder="Phone number..."/>
@@ -167,17 +167,20 @@
                 <div class="column small-12">
                     <textarea class="small-12" ng-model="address.instructions" placeholder="Shipping instructions..."></textarea>
                 </div>
-                <div class="column small-12">
+                <div class="column small-12 medium-6">
                     <button
                         class="button-secondary"
                         ng-click="updateAddress(address)"
-                        ng-disabled="addressForm.$invalid || $addressForm.$pristine"
+                        ng-disabled="addressForm.$invalid || addressForm.$pristine"
                         qv-flash="address"
                         flash-message="saving..."
                         flash-duration="3000"
                     >Save Address</button>
                     <br>
                     <br>
+                </div>
+                <div class="column small-12 medium-6">
+                    <span class="text-red1 right" ng-show="addressForm.$dirty">Address Changes Not Saved</span>
                 </div>
 
             </form>

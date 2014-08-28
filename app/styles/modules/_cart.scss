@@ -28,6 +28,14 @@
   }
 
   .product-description {
+
+    @extend .border-gray3;
+
+    margin-top: .5rem;
+    max-height: 250px;
+    overflow-y: scroll;
+    padding: .5rem;
+
     a {
       text-decoration: underline;
     }
@@ -47,7 +55,7 @@
     @extend .circle;
     @extend .text-small;
 
-    padding: 8px 12px;
+    padding: 2px 10px;
     margin-left: 20px;
   }
 

@@ -36,22 +36,24 @@
             <div class="min-500 max-500 centered">
 
                 <a ng-show="$storage.lastPage" ng-click="goToLastPage()">
-                    Most Recent Page
+                    <strong>Most Recent Page</strong>
                     <span ng-show="$storage.lastPage.friendlyName">: {{ $storage.lastPage.friendlyName }}</span>
                 </a>
                 <br>
                 <br>
                 <a ng-show="$storage.bookmark" ng-click="goToBookmark()">
-                    Bookmark
+                    <strong>Bookmark</strong>
                     <span ng-show="$storage.bookmark.friendlyName">: {{ $storage.bookmark.friendlyName }}</span>
                 </a>
+                <br>
+                <br>
             </div>
 
         </div>
     </div>
 
     <div class="column small-12 small-centered clearfix  max-500 centered" ng-show="getActiveAnnouncements(announcements).length">
-        <div ng-repeat="announcement in getActiveAnnouncements(announcements)">
+        <div ng-repeat="announcement in announcements | filter:{ active: true }">
             <div class="column small-12 small-centered clearfix border-green2 padded">
                 <br>
                 <h2 class="text-centered text-green2">announcement</h2>

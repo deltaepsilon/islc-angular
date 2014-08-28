@@ -191,7 +191,7 @@ angular.module('islcAngularApp', [
               transactions: function (transactionService) {
                 return transactionService.get();
               },
-              announcements: function (announcementService) {
+              announcementsRef: function (announcementService) {
                 return announcementService.get();
               }
             }

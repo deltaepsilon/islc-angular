@@ -144,6 +144,8 @@ angular.module('islcAngularApp')
           notificationService.error('Address', res.error);
         } else {
           $scope.address = res;
+          $scope.addressForm.$setPristine();
+
         }
       });
     };

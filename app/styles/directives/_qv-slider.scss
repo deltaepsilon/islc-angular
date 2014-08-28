@@ -62,7 +62,7 @@
   .qv-slider-button {
     @extend .circle;
     @extend .background-white;
-    @include single-box-shadow(getColor(gray), 1px, 1px, 4px);
+    @include single-box-shadow(1px, 1px, 4px, 0, getColor(gray));
 
     cursor: pointer;
     margin-top: -25px;
