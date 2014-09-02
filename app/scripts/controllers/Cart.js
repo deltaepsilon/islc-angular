@@ -13,7 +13,7 @@ angular.module('islcAngularApp')
       month = moment().month(),
       setDefaults = function () {
         $scope.newCard = {
-          exp_year: $scope.years[0],
+          exp_year: 0,
           exp_month: 0
         };
 
@@ -45,9 +45,9 @@ angular.module('islcAngularApp')
     while (i--) {
       $scope.years.unshift(i + year);
     }
-    $scope.years.unshift('Expiration Year');
+//    $scope.years.unshift('Expiration Year');
 
-    $scope.months = ['Expiration Month', 'January (1)', 'February (2)', 'March (3)', 'April (4)', 'May (5)', 'June (6)', 'July (7)', 'August (8)', 'September (9)', 'October (10)', 'November (11)', 'December (12)'];
+    $scope.months = ['January (1)', 'February (2)', 'March (3)', 'April (4)', 'May (5)', 'June (6)', 'July (7)', 'August (8)', 'September (9)', 'October (10)', 'November (11)', 'December (12)'];
     setDefaults();
     setShipped();
 

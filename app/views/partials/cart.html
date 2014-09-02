@@ -260,11 +260,15 @@
                 </div>
 
                 <div class="column small-6">
-                    <select name="month" ng-model="newCard.exp_month" ng-options="months.indexOf(m) as m for m in months"></select>
+                    <select name="month" ng-model="newCard.exp_month" ng-options="months.indexOf(m) + 1 as m for m in months" ng-required="true">
+                        <option value="">Expiration Month</option>
+                    </select>
                 </div>
 
                 <div class="column small-6">
-                    <select name="year" ng-model="newCard.exp_year" ng-options="year for year in years"></select>
+                    <select name="year" ng-model="newCard.exp_year" ng-options="year for year in years" ng-required="true">
+                        <option value="">Expiration Year</option>
+                    </select>
                 </div>
 
                 <div class="column small-12 medium-6">
@@ -272,7 +276,7 @@
                     <button
                         class="button-secondary inline-block"
                         ng-click="saveCard(newCard)"
-                        ng-disabled="checkoutForm.$invalid || checkoutForm.cardNumber.$invalid || checkoutForm.cvc.$invalid"
+                        ng-disabled="checkoutForm.$invalid || checkoutForm.cardNumber.$invalid || checkoutForm.cvc.$invalid || !newCard.exp_month || !newCard.exp_year"
                         qv-flash="newCard"
                         flash-message="adding..."
                         flash-duration="4000"
