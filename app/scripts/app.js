@@ -12,7 +12,8 @@ angular.module('islcAngularApp', [
     'seo',
     'jmdobry.angular-cache',
     'firebase',
-    'ngStorage'
+    'ngStorage',
+    'flow'
   ])
   .run(function (cacheService, $location, notificationService, Analytics, $timeout) {
     var search = $location.search();

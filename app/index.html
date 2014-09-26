@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="styles/screen.css">
         <!-- endbuild -->
   </head>
-  <body >
+  <body flow-prevent-drop>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -622,6 +622,8 @@
         <script src="lib/angularfire/dist/angularfire.js"></script>
         <script src="lib/firebase-simple-login/firebase-simple-login.js"></script>
         <script src="lib/ngstorage/ngStorage.js"></script>
+        <script src="lib/flow.js/dist/flow.js"></script>
+        <script src="lib/ng-flow/dist/ng-flow.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -662,7 +664,6 @@
         <script src="scripts/controllers/Gallery.js"></script>
         <script src="scripts/services/galleryService.js"></script>
         <script src="scripts/directives/qvFile.js"></script>
-        <script src="scripts/controllers/IFrame.js"></script>
         <script src="scripts/controllers/Galleries.js"></script>
         <script src="scripts/filters/trimDecimal.js"></script>
         <script src="scripts/directives/qvTruncate.js"></script>
@@ -687,19 +688,6 @@
         <!-- endbuild -->
 
     <script type="text/javascript">
-        var iFrameOnLoad = function (target) {
-            var scope = angular.element(target).scope();
-            if (scope && scope.iFrameLoad) {
-                scope.iFrameLoad(target);
-            }
-        }
-        var iFrameOnSubmit = function (target) {
-            var scope = angular.element(target).scope();
-            if (scope && scope.iFrameSubmit) {
-                scope.iFrameSubmit(target);
-            }
-        }
-
         //Remove style attribute from loader. The style attribute exists only for JS-disabled renders
         var showLoader = function () {
             var loader = angular.element(document.body).find('#loading');
@@ -708,9 +696,7 @@
             }
         }
     </script>
-    <div ng-controller="IFrameCtrl">
-        <iframe id="uploadTarget" name="uploadTarget" height="0" width="0" frameborder="0" qv-file="iFrameLoad" onload="iFrameOnLoad(this);"></iframe>
-    </div>
+
     <div ng-controller="LoadingCtrl">
         <div id="loading" style="display: none;" ng-hide="hide" ng-click="hideLoader()">
             <script type="text/javascript">

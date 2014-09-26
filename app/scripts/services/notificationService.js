@@ -2,7 +2,7 @@
 
 angular.module('islcAngularApp')
   .service('notificationService', function notificationService($notification) {
-    $notification.enableHtml5Mode();
+//    $notification.enableHtml5Mode();
     $notification.setSetting('custom', {duration: 10000, enabled: true});
 
     var service = {

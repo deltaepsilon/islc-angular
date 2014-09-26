@@ -46,7 +46,7 @@
     <div class="column small-12" ui-view="galleryView"></div>
 
     <div class="column small-12 background-gray1" ng-show="galleryAccess">
-        <form class="qv-form full-width-form centered" name="galleryForm" action="/angular/gallery" target="uploadTarget" method="POST" enctype="multipart/form-data" qv-start-loader="submit" onsubmit="iFrameOnSubmit(this);">
+        <form class="qv-form full-width-form centered" flow-init="{target: '/angular/gallery', testChunks: false, query: newGallery}">
             <br>
             <h2 class="text-centered">upload a gallery image</h2>
             <br>
@@ -80,14 +80,21 @@
             <div class="clearfix">
                 <input
                     id="gallery-file"
-                    class="column small-12"
+                    class="display-none"
                     name="file"
                     type="file"
-                    placeholder="Gallery file..."
-                    ng-required="true"
-                    qv-file="fileChange"
-                    ng-model="uploadFile"
+                    flow-btn
                 />
+                <label class="button button-primary text-center" for="gallery-file" ng-hide="$flow.files.length">Choose File</label>
+
+                <ul>
+                    <li ng-repeat="file in $flow.files">
+                        <span>{{ file.name }} {{ file.size / 1000 | number:0 }}kb</span>
+                        <span class="button-link" ng-click="clearFlow($flow)">remove</span>
+
+                    </li>
+                </ul>
+
                 <label class="text-xx-small text-green2" for="gallery-file">5MB maximum file size</label>
             </div>
 
@@ -95,7 +102,8 @@
                 <br>
                 <button
                     class="button button-secondary"
-                    ng-disabled="!newGallery.file"
+                    ng-disabled="!$flow.files.length"
+                    ng-click="upload($flow)"
                 >upload</button>
             </div>
 
