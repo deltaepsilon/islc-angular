@@ -6,7 +6,7 @@ angular.module('islcAngularApp')
     if (galleries.error) {
       notificationService.error('Gallery', galleries.error);
     } else {
-      $rootScope.galleries = galleries;
+      $scope.galleries = galleries;
     }
 
     $rootScope.newGallery = {};
@@ -16,7 +16,7 @@ angular.module('islcAngularApp')
     $scope.removeGallery = function (gallery) {
       galleryService.remove(gallery.id).then(function (res) {
         galleryService.get(null, true).then(function (galleries) {
-          $rootScope.galleries = galleries;
+          $scope.galleries = galleries;
           $state.go('gallery');
           $timeout($rootScope.cancelLoader);
         });
@@ -24,21 +24,16 @@ angular.module('islcAngularApp')
     };
 
     $scope.upload = function (Flow) {
-      galleryService.cacheClear();
-      $rootScope.startLoader();
-
-      Flow.upload();
-
-      Flow.on('catchAll', function (e) {
+      var flowHandler = function (e) {
         switch (e) {
           case 'complete':
             galleryService.cacheClear();
             galleryService.get(null, true).then(function (galleries) {
-              if ($rootScope.galleries && $rootScope.galleries.length === galleries.length) {
+              if ($scope.galleries && $scope.galleries.length === galleries.length) {
                 notificationService.error('Gallery Upload', 'Sorry! Your upload failed. Try a smaller file. Under 5MB is ideal.');
               }
 
-              $rootScope.galleries = galleries;
+              $scope.galleries = galleries;
 
               if (galleries && galleries.length) {
                 $scope.newGallery = {};
@@ -47,13 +42,25 @@ angular.module('islcAngularApp')
               }
 
               $rootScope.cancelLoader();
+              Flow.off('catchAll', flowHandler);
 
             });
             break;
           default:
             break;
         }
-      });
+      };
+
+
+      galleryService.cacheClear();
+      $rootScope.startLoader();
+
+      Flow.opts.query = $scope.newGallery;
+      console.log(Flow.opts.query);
+
+      Flow.upload();
+
+      Flow.on('catchAll', flowHandler);
 
     };
 
