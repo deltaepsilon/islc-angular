@@ -56,7 +56,6 @@ angular.module('islcAngularApp')
       $rootScope.startLoader();
 
       Flow.opts.query = $scope.newGallery;
-      console.log(Flow.opts.query);
 
       Flow.upload();
 
